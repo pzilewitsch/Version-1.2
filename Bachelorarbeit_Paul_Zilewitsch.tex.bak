@@ -1,0 +1,164 @@
+\documentclass[fontsize=12pt]{scrartcl}
+
+%Settings-Datei einbinden
+\input{Settings/Settings}
+
+\begin{document}
+
+%-------------------------------------------------------------------------------------------------------
+%					Titelseite
+%-------------------------------------------------------------------------------------------------------
+\thispagestyle{empty}
+\large
+	%noindent = kein absatzeinzug
+	\noindent Berufsakademie Sachsen \hfill KMS Computer GmbH\\
+	Staatliche Studienakademie Dresden \\
+	Studiengang Informationstechnik
+	%\includegraphics[width=0.5\textwidth]{ba-logo.png}
+\begin{center}	
+	\vspace*{4cm}
+	\textbf{Konzipierung und prototypische Entwicklung einer E-mail Integration auf Basis der Microsoft Exchange Web Services im Service Desk der CAFM Software GEBman 10}\\
+	\vspace*{2cm}
+		Bachelorarbeit\\ zur Erlangung des Abschlusses\\ Bachelor of Engineering\\ im Studiengang 						Informationstechnik\\
+	\vspace*{2cm}
+	eingereicht von:\\Zilewitsch, Paul
+	\vspace*{3cm}
+\end{center}
+	1. Gutachter: Dr. rer. nat., Dipl.-Chem. Hansi Schilling\\
+	2. Gutachter: B.Sc. Sebastian Schulze 
+	\\\\
+	\begin{tabular}{@{}ll}
+		Tag der Themenübergabe:&22.04.2016\\
+		Tag der Einreichung:&18.07.2016
+	\end{tabular}
+\pagebreak
+
+
+%-------------------------------------------------------------------------------------------------------
+%					Auftragsblatt lose hineinlegen, wird aber mitgezählt
+%-------------------------------------------------------------------------------------------------------
+
+
+
+%-------------------------------------------------------------------------------------------------------
+%					Autorenreferat
+%-------------------------------------------------------------------------------------------------------
+\noindent
+\Large\bfseries
+Autorenreferat
+\normalsize\mdseries
+\thispagestyle{empty}
+\newline\newline
+\noindent
+ZILEWITSCH, Paul: Konzipierung und prototypische Entwicklung einer E-mail Integration auf Basis der Microsoft Exchange Web Services im Service Desk der CAFM Software GEBman 10,  Berufsakademie Sachsen, Staatliche Studienakademie Dresden, Studiengang Informationstechnik, Bachelorarbeit, 2016.\\ 
+XXX Seiten, XXX Literaturquellen , XXX Anlagen. 
+\newpage
+
+%-------------------------------------------------------------------------------------------------------
+%					Inhaltsverzeichnis
+%-------------------------------------------------------------------------------------------------------
+\addsec{Inhaltsverzeichnis} %vergebe keine Kapitelnummer\\
+\vspace*{-1cm}
+\pagenumbering{Roman}
+\setcounter{page}{4}
+\tableofcontents 
+\newpage
+
+%-------------------------------------------------------------------------------------------------------
+%					Abbildungsverzeichnis
+%-------------------------------------------------------------------------------------------------------
+\addsec{Abbildungsverzeichnis} %vergebe keine Kapitelnummer
+\vspace*{-1cm}
+\listoffigures
+\newpage
+
+%-------------------------------------------------------------------------------------------------------
+%					Abkürzungsverzeichnis
+%------------------------------------------------------------------------------------------------------
+\addsec{Abkürzungsverzeichnis} %vergebe keine Kapitelnummer
+\begin{enumerate}
+\item[1] CAFM \tabto{3cm} Computer-Aided Facility Management
+\item[2] ITIL \tabto{3cm} Information Technology Infrastructure Libary
+\item[3] HTTP \tabto{3cm} Hypertext Transfer Protocol
+\item[4] HTTPS \tabto{3cm} Hypertext Transfer Protocol Secure
+\item[5] API \tabto{3cm} Application Programming Interface
+\item[6] REST API \tabto{3cm} Representational State Transfer Application Programming Interface
+\item[7] SOAP \tabto{3cm} Simple Object Access Protocol
+\item[8] XML \tabto{3cm} Extensible Markup Language
+\item[9] SPoC \tabto{3cm} Single Point of Contact
+
+\end{enumerate}
+\newpage
+
+%-------------------------------------------------------------------------------------------------------
+%					Tabellenverzeichnis
+%-------------------------------------------------------------------------------------------------------
+\addsec{Tabellenverzeichnis} %vergebe keine Kapitelnummer
+%\listoftables
+\newpage
+
+%-------------------------------------------------------------------------------------------------------
+%					1	Einleitung
+%-------------------------------------------------------------------------------------------------------
+
+
+\pagenumbering{arabic}     
+\setcounter{page}{1}
+\input{Inhalte/1_Einleitung/Einleitung}
+\newpage 
+%-------------------------------------------------------------------------------------------------------
+%					2	Servicedesk und Helpdesk
+%-------------------------------------------------------------------------------------------------------
+
+\input{Inhalte/2_Servicedesk_und_Helpdesk/Servicedesk_und_Helpdesk}
+\newpage
+
+%-------------------------------------------------------------------------------------------------------
+%					3	Servicedesk in GEBman10
+%-------------------------------------------------------------------------------------------------------
+
+\input{Inhalte/3_Service_Desk_GEBman10/Service_Desk_GEBman10}
+\newpage
+
+%-------------------------------------------------------------------------------------------------------
+%					4	Microsoft Exchange Server
+%-------------------------------------------------------------------------------------------------------
+
+\input{Inhalte/4_Microsoft_Exchange_Server/MES}
+\newpage
+
+%-------------------------------------------------------------------------------------------------------
+%					5	Konzipierung
+%-------------------------------------------------------------------------------------------------------
+
+\input{Inhalte/5_Konzipierung/Konzipierung}
+\newpage
+
+%-------------------------------------------------------------------------------------------------------
+%					6	Ummsetzung
+%-------------------------------------------------------------------------------------------------------
+
+\input{Inhalte/6_Umsetzung/Umsetzung}
+\newpage
+
+%-------------------------------------------------------------------------------------------------------
+%					7	Fazit
+%-------------------------------------------------------------------------------------------------------
+
+\input{Inhalte/7_Fazit/Fazit}
+\newpage
+
+%-------------------------------------------------------------------------------------------------------
+%					Anhangsverzeichnis
+%-------------------------------------------------------------------------------------------------------
+\addsec{Anhangsverzeichnis} %vergebe keine Kapitelnummer
+
+\newpage
+
+%-------------------------------------------------------------------------------------------------------
+%					8 Anhang
+%-------------------------------------------------------------------------------------------------------
+
+\addsec{Anhang} %vergebe keine Kapitelnummer
+\input{Inhalte/8_Anhang/Anhang}
+\end{document}

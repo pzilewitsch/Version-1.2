@@ -1,0 +1,123 @@
+% !TEX root = Bachelorarbeit_Paul_Zilewitsch.tex
+\usepackage{comment}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% deutsche Silbentrennung
+\usepackage[ngerman]{babel}
+
+% deutsche Umlauten
+\usepackage[T1]{fontenc}
+\usepackage{inconsolata}
+\usepackage[utf8]{inputenc}
+
+%Anführungszeichen
+\usepackage[autostyle=true,german=quotes]{csquotes}
+
+%Zeilenabstand 1,5 
+\usepackage[onehalfspacing]{setspace}
+
+%Times New Roman
+\usepackage{mathptmx}
+\setkomafont{disposition}{\rmfamily}
+
+%Arrays, Tabellen und Listen
+\usepackage{array}
+\usepackage{tabto}
+\usepackage{longtable}
+\usepackage{supertabular}
+
+%Seitenzahlen
+\usepackage{scrpage2}
+\cfoot[]{}
+\ofoot[\pagemark]{\pagemark}
+\pagestyle{scrheadings}
+
+%Inhaltsverzeichnis
+\usepackage{tocloft}
+\usepackage{titletoc}
+\cftsetindents{section}{0.0in}{0.5in}
+\cftsetindents{subsection}{0.0in}{0.5in}
+\cftsetindents{subsubsection}{0.0in}{0.5in}
+\cftsetindents{paragraph}{0.0in}{0.5in}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand\cftsecfont{\mdseries}
+\renewcommand\cftsecpagefont{\mdseries}
+\renewcaptionname{ngerman}{\contentsname}{} %kein Titel für Inhaltsv. 
+%\usepackage{hyperref} %für links im inhaltsverzeichnis
+
+%Abbildungsverzeichnis
+\renewcaptionname{ngerman}{\listfigurename}{}
+
+\titlecontents{figure}
+  [0em]
+  {}
+  {\figurename\enspace\thecontentslabel:\enspace}
+  {}
+  {\titlerule*[1pc]{.}\contentspage}
+
+%Seitenränder
+\usepackage{geometry}
+\geometry{a4paper, top=21mm, left=30mm, right=20mm, bottom=20mm,
+headsep=10mm, footskip=10mm}
+
+%C# Code-Anzeige
+\usepackage{color}
+\definecolor{bluekeywords}{rgb}{0.13,0.13,1}
+\definecolor{greencomments}{rgb}{0,0.5,0}
+\definecolor{redstrings}{rgb}{0.9,0,0}
+
+\usepackage{listings}
+\lstset{language=[Sharp]C,
+  showspaces=false,
+  showtabs=false,
+  breaklines=true,
+  showstringspaces=false,
+  breakatwhitespace=true,
+  escapeinside={(*@}{@*)},
+  commentstyle=\color{greencomments},
+  keywordstyle=\color{bluekeywords},
+  stringstyle=\color{redstrings},
+  basicstyle=\ttfamily
+}
+
+%Überschriften Definition
+\usepackage{titlesec}
+
+\titleformat{\section}
+  {\normalfont\fontsize{16}{17}\rmfamily\bfseries}
+  {\thesection}
+  {2em}
+  {}
+
+\titleformat{\subsection}
+  {\normalfont\fontsize{14}{17}\rmfamily\bfseries}
+  {\thesubsection}
+  {1.5em}
+  {}
+  
+  \titleformat{\subsubsection}
+  {\normalfont\fontsize{14}{17}\rmfamily\mdseries}
+  {\thesubsubsection}
+  {0.75em}
+  {}
+\titlespacing{\section}{0pt}{*6}{*5} %{Einzug} {abstand nach oben}{abstand nach unten}
+\titlespacing{\subsection}{0pt}{*5}{*3}
+\titlespacing{\susubbsection}{0pt}{*4}{*2}
+
+%Fußnoten
+\usepackage[multiple, hang]{footmisc} % Komma zwischen mehreren Fußnoten
+\setlength{\footnotemargin}{1em}
+%\usepackage[justification=RaggedRight, singlelinecheck=false]{caption}
+%\usepackage{caption}
+%\captionsetup{%
+%  textfont=footnotesize,
+%  labelfont=footnotesize,
+%  font=singlespacing,
+%}
+
+
+
+%Bilder
+\usepackage{graphicx}
+

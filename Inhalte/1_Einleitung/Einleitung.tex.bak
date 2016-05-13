@@ -1,0 +1,27 @@
+% !TEX root = Bachelorarbeit_Paul_Zilewitsch.tex
+\section{Einleitung}
+
+\subsection{Die Software GEBman10 von der KMS Computer GmbH}
+\noindent
+Die KMS Computer GmbH wurde 1990 gegründet und konzentriert sich heute vorrangig auf den Vertrieb von entwickelter Software im Bereich Computer-Aided Facility Management System (CAFM).
+Computer-Aided bedeutet \enquote{computergestützt} und Nävy beschreibt Facility Management präzise
+\enquote{als strategische Management-Disziplin, die die Analyse, Dokumentation und Optimierung aller kostenrelevanten Vorgänge rund um Gebäude und ihre Anlagen und Einrichtungen (Facilities) unter besonderer Berücksichtigung von Arbeitsplatz und Umfeld der Nutzer umfaßt.}\footnote{J. Nävy (2006), Facility Management, Grundlagen Computerunterstützung Systemeinführung Anwendungsbeispiele, S.VII}
+\noindent
+Seit 2011 entwickelt und vertreibt die KMS Computer GmbH die webbasierte Software GEBman 10. Es handelt sich bei GEBman 10 um eine CAFM-Software für Kommunen, Industrie und Gebäudeverwalter.Übersichten geografischer Informationen oder die Analyse von Sachdaten können individuell auf die Kunden abgestimmt werden. Außerdem ist es ein Werkzeug zur Verwaltung und ein Arbeitsmittel zur Unternehmensführung oder der finanziellen Planung. Die Anwendung kann als Desktop-Installation, als interne Weblösung oder als Cloud-Lösung betrieben werden. Aber auch mobile Lösungen einzelner Module sind bereits in Verwendung und werden stetig weiterentwickelt. Es wird schon jetzt deutlich, dass GEBman 10 mannigfaltig ist und mit über 40 Modulen auch in vielen Branchen zum Einsatz kommt.
+Gerade in sehr speziellen Bereichen wie beispielsweise Außenbeleuchtung oder Baumverwaltung kann es zu den unterschiedlichsten und ungewöhnlichsten Problemen kommen. Eine Grundvoraussetzung  für die effiziente Lösung von Problemen, ist das Festhalten der genauen Vorkommnisse. Hierbei kann das Modul Service Desk in GEBman 10 durchaus hilfreich sein.
+
+
+
+\subsection{Modul Service Desk}
+\noindent
+Im Modul Service Desk ist es möglich, Meldungen jeglicher Art aufzugeben. Ist beispielsweise eine Außenbeleuchtung komplett ausgefallen, kann ein Benutzer eine Störmeldung bezüglich der Außenbeleuchtung aufgeben. Dabei trägt er die genaue Problemstellung und das Gebäude in die Meldung ein, an dem dieses Problem auftritt. Ein anderer Benutzer hat nun die Möglichkeit, auf die Störmeldung Einsicht zu nehmen und die beispielhafte defekte Außenbeleuchtung zu reparieren. Oder aber er fragt nach der genauen Ursache nach und antwortet somit auf die Störmeldung. Probleme können genau spezifiziert und archiviert werden. Dadurch ist eine effizientere Lösung des Problems bei einem erneuten Auftreten möglich.
+
+\subsection{Motivation der Bachelorarbeit}
+\noindent
+Ziel der Bachelorarbeit ist es, das Modul Service Desk um eine E-Mail Integration zu erweitern. Mit dieser Erweiterung soll es möglich sein, über den E-Mail Verkehr auf Meldungen im Service Desk zu antworten oder neue Meldungen zu erstellen. Hierfür muss ein Konzept erstellt werden, um anschließend eine gute Implementierung zu erreichen.\newline
+Des Weiteren soll die Lösung für den Service Desk von GEBman10 mit anderen Softwarelösungen und verglichen werden, um Verbesserungsmöglichkeiten zu identifizieren. 
+
+
+\subsection{Vorgehen bei der Bachelorarbeit}
+\noindent
+Zu Beginn wird im Punkt 2 der Begriff Service Desk in einen Kontext gebracht, allgemeine Anforderungen bestimmt und einige Service Desk - Softwarelösungen verglichen. Im Anschluss im Punkt 3 wird der gegenwärtige Service Desk in GEBman10 durchleuchtet. Es werden außerdem die endgültigen Anforderungen an die E-Mail Integration beschrieben. Der Punkt 4 konzentriert sich auf den Microsoft Exchange Server, der einen wesentlichen Bestandteil der E-Maul Integration bildet. Auch wird an dieser Stelle die derzeitige Verwendung der Exchange Web Services in GEbman10 näher betrachtet.  Durch eine Analyse der bis dato errungenen Erkenntnisse, kann im Punkt 5 eine Konzipierung erfolgen. Bei der Umsetzung im Punkt 6 wird auf die Erweiterung des Moduls Service Desk eingegangen und Erfahrungswerte erläutert. Abschließend kann dann im Punkt 7 eine Fazit gezogen werden und die mögliche Verbesserungen des Service Desk in GEBman10 genannt werden.
