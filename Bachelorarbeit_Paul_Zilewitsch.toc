@@ -11,33 +11,33 @@
 \contentsline {section}{\numberline {2}Service Desk nach ITIL v3}{3}
 \contentsline {subsection}{\numberline {2.1}Begriffsabgrenzung}{3}
 \contentsline {subsection}{\numberline {2.2}Unterschied zu Help Desk}{5}
-\contentsline {subsection}{\numberline {2.3}Anforderungen eines Service Desk}{5}
-\contentsline {subsubsection}{\numberline {2.3.1}Aufgaben}{5}
+\contentsline {subsection}{\numberline {2.3}Anforderungen eines Service Desk}{6}
+\contentsline {subsubsection}{\numberline {2.3.1}Aufgaben}{6}
 \contentsline {subsubsection}{\numberline {2.3.2}Kategorien}{7}
 \contentsline {subsection}{\numberline {2.4}Analyse verschiedener Service Desk-L\IeC {\"o}sungen}{8}
 \contentsline {subsubsection}{\numberline {2.4.1}Schwerpunkte der Analyse}{8}
 \contentsline {subsubsection}{\numberline {2.4.2}Ausgew\IeC {\"a}hlte Service Desk-L\IeC {\"o}sungen}{8}
-\contentsline {subsubsection}{\numberline {2.4.3}Zwischenfazit}{9}
-\contentsline {section}{\numberline {3}Der Service Desk in GEBman10}{10}
-\contentsline {subsection}{\numberline {3.1}Aktuelle Umsetzung}{10}
-\contentsline {subsection}{\numberline {3.2}Anforderungen der Erweiterung}{10}
-\contentsline {section}{\numberline {4}Microsoft Exchange Server}{11}
-\contentsline {subsection}{\numberline {4.1}Grundlagen}{11}
-\contentsline {subsection}{\numberline {4.2}Exchange Web Services}{13}
-\contentsline {subsubsection}{\numberline {4.2.1}Funktionsweise}{13}
-\contentsline {subsubsection}{\numberline {4.2.2}Derzeitige Verwendung in GEBman10}{14}
-\contentsline {section}{\numberline {5}Konzipierung}{15}
-\contentsline {subsection}{\numberline {5.1}Analyse aus Kapitel 1 und Kapitel 2 (UML-Diagramme etc.)}{15}
-\contentsline {subsection}{\numberline {5.2}Zielsetzung}{15}
-\contentsline {subsection}{\numberline {5.3}Sicherheitsaspekte}{15}
-\contentsline {section}{\numberline {6}Umsetzung}{17}
-\contentsline {subsection}{\numberline {6.1}Erweiterung des bestehenden Service Desk Moduls}{17}
-\contentsline {subsection}{\numberline {6.2}Erl\IeC {\"a}uterung der wichtigsten Klassen und Methoden}{17}
-\contentsline {subsection}{\numberline {6.3}Fehlschl\IeC {\"a}ge/Erfahrungen}{17}
-\contentsline {section}{\numberline {7}Fazit}{18}
-\contentsline {subsection}{\numberline {7.1}Erweiterungsm\IeC {\"o}glichkeiten}{18}
-\contentsline {subsection}{\numberline {7.2}Schlussbemerkung}{18}
-\contentsline {section}{Anhangsverzeichnis}{19}
-\contentsline {section}{Anhang}{20}
-\contentsline {section}{Literaturverzeichnis}{24}
+\contentsline {subsubsection}{\numberline {2.4.3}Zwischenfazit}{11}
+\contentsline {section}{\numberline {3}Der Service Desk in GEBman10}{12}
+\contentsline {subsection}{\numberline {3.1}Aktuelle Umsetzung}{12}
+\contentsline {subsection}{\numberline {3.2}Anforderungen der Erweiterung}{12}
+\contentsline {section}{\numberline {4}Microsoft Exchange Server}{13}
+\contentsline {subsection}{\numberline {4.1}Grundlagen}{13}
+\contentsline {subsection}{\numberline {4.2}Exchange Web Services}{15}
+\contentsline {subsubsection}{\numberline {4.2.1}Funktionsweise}{15}
+\contentsline {subsubsection}{\numberline {4.2.2}Derzeitige Verwendung in GEBman10}{16}
+\contentsline {section}{\numberline {5}Konzipierung}{17}
+\contentsline {subsection}{\numberline {5.1}Analyse aus Kapitel 1 und Kapitel 2 (UML-Diagramme etc.)}{17}
+\contentsline {subsection}{\numberline {5.2}Zielsetzung}{17}
+\contentsline {subsection}{\numberline {5.3}Sicherheitsaspekte}{17}
+\contentsline {section}{\numberline {6}Umsetzung}{19}
+\contentsline {subsection}{\numberline {6.1}Erweiterung des bestehenden Service Desk Moduls}{19}
+\contentsline {subsection}{\numberline {6.2}Erl\IeC {\"a}uterung der wichtigsten Klassen und Methoden}{19}
+\contentsline {subsection}{\numberline {6.3}Fehlschl\IeC {\"a}ge/Erfahrungen}{19}
+\contentsline {section}{\numberline {7}Fazit}{20}
+\contentsline {subsection}{\numberline {7.1}Erweiterungsm\IeC {\"o}glichkeiten}{20}
+\contentsline {subsection}{\numberline {7.2}Schlussbemerkung}{20}
+\contentsline {section}{Anhangsverzeichnis}{21}
+\contentsline {section}{Anhang}{22}
+\contentsline {section}{Literaturverzeichnis}{26}
 \contentsfinish 

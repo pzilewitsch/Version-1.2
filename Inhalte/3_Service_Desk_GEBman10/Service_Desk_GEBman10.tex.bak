@@ -8,7 +8,7 @@ Der Service Desk in GEBman10 ist ein eigenständiges Modul. Im Dashboard dieses 
 
 \begin{figure}[h!]
 \centering
-	\includegraphics[width=0.50\textwidth]{Abbildungen/GEBman_Service_Desk_Dashboard}
+	\includegraphics[width=0.75\textwidth]{Abbildungen/GEBman_Service_Desk_Dashboard}
 	\caption[GEBman10 Service Desk Dashboard]{GEBman10 Service Desk Dashboard, Quelle: 
 	GEBman10}
 	\label{fig:ITIL_Lebenyzyklus}
