@@ -17,27 +17,27 @@
 \contentsline {subsection}{\numberline {2.4}Analyse verschiedener Service Desk-L\IeC {\"o}sungen}{8}
 \contentsline {subsubsection}{\numberline {2.4.1}Schwerpunkte der Analyse}{8}
 \contentsline {subsubsection}{\numberline {2.4.2}Ausgew\IeC {\"a}hlte Service Desk-L\IeC {\"o}sungen}{8}
-\contentsline {subsubsection}{\numberline {2.4.3}Zwischenfazit}{11}
-\contentsline {section}{\numberline {3}Der Service Desk in GEBman10}{12}
-\contentsline {subsection}{\numberline {3.1}Aktuelle Umsetzung}{12}
-\contentsline {subsection}{\numberline {3.2}Anforderungen der Erweiterung}{12}
-\contentsline {section}{\numberline {4}Microsoft Exchange Server}{13}
-\contentsline {subsection}{\numberline {4.1}Grundlagen}{13}
-\contentsline {subsection}{\numberline {4.2}Exchange Web Services}{15}
-\contentsline {subsubsection}{\numberline {4.2.1}Funktionsweise}{15}
-\contentsline {subsubsection}{\numberline {4.2.2}Derzeitige Verwendung in GEBman10}{16}
-\contentsline {section}{\numberline {5}Konzipierung}{17}
-\contentsline {subsection}{\numberline {5.1}Analyse aus Kapitel 1 und Kapitel 2 (UML-Diagramme etc.)}{17}
-\contentsline {subsection}{\numberline {5.2}Zielsetzung}{17}
-\contentsline {subsection}{\numberline {5.3}Sicherheitsaspekte}{17}
-\contentsline {section}{\numberline {6}Umsetzung}{19}
-\contentsline {subsection}{\numberline {6.1}Erweiterung des bestehenden Service Desk Moduls}{19}
-\contentsline {subsection}{\numberline {6.2}Erl\IeC {\"a}uterung der wichtigsten Klassen und Methoden}{19}
-\contentsline {subsection}{\numberline {6.3}Fehlschl\IeC {\"a}ge/Erfahrungen}{19}
-\contentsline {section}{\numberline {7}Fazit}{20}
-\contentsline {subsection}{\numberline {7.1}Erweiterungsm\IeC {\"o}glichkeiten}{20}
-\contentsline {subsection}{\numberline {7.2}Schlussbemerkung}{20}
-\contentsline {section}{Anhangsverzeichnis}{21}
-\contentsline {section}{Anhang}{22}
-\contentsline {section}{Literaturverzeichnis}{26}
+\contentsline {subsubsection}{\numberline {2.4.3}Zwischenfazit}{12}
+\contentsline {section}{\numberline {3}Der Service Desk in GEBman10}{13}
+\contentsline {subsection}{\numberline {3.1}Aktuelle Umsetzung}{13}
+\contentsline {subsection}{\numberline {3.2}Anforderungen der Erweiterung}{13}
+\contentsline {section}{\numberline {4}Microsoft Exchange Server}{14}
+\contentsline {subsection}{\numberline {4.1}Grundlagen}{14}
+\contentsline {subsection}{\numberline {4.2}Exchange Web Services}{16}
+\contentsline {subsubsection}{\numberline {4.2.1}Funktionsweise}{16}
+\contentsline {subsubsection}{\numberline {4.2.2}Derzeitige Verwendung in GEBman10}{17}
+\contentsline {section}{\numberline {5}Konzipierung}{18}
+\contentsline {subsection}{\numberline {5.1}Analyse aus Kapitel 1 und Kapitel 2 (UML-Diagramme etc.)}{18}
+\contentsline {subsection}{\numberline {5.2}Zielsetzung}{18}
+\contentsline {subsection}{\numberline {5.3}Sicherheitsaspekte}{18}
+\contentsline {section}{\numberline {6}Umsetzung}{20}
+\contentsline {subsection}{\numberline {6.1}Erweiterung des bestehenden Service Desk Moduls}{20}
+\contentsline {subsection}{\numberline {6.2}Erl\IeC {\"a}uterung der wichtigsten Klassen und Methoden}{20}
+\contentsline {subsection}{\numberline {6.3}Fehlschl\IeC {\"a}ge/Erfahrungen}{20}
+\contentsline {section}{\numberline {7}Fazit}{21}
+\contentsline {subsection}{\numberline {7.1}Erweiterungsm\IeC {\"o}glichkeiten}{21}
+\contentsline {subsection}{\numberline {7.2}Schlussbemerkung}{21}
+\contentsline {section}{Anhangsverzeichnis}{22}
+\contentsline {section}{Anhang}{23}
+\contentsline {section}{Literaturverzeichnis}{27}
 \contentsfinish 
