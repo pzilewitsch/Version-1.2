@@ -14,33 +14,33 @@
 \contentsline {subsection}{\numberline {2.3}Anforderungen eines Service Desk}{6}
 \contentsline {subsubsection}{\numberline {2.3.1}Aufgaben}{6}
 \contentsline {subsubsection}{\numberline {2.3.2}Kategorien}{7}
-\contentsline {subsection}{\numberline {2.4}Analyse verschiedener Service Desk-L\IeC {\"o}sungen}{8}
-\contentsline {subsubsection}{\numberline {2.4.1}Schwerpunkte der Analyse und Ausgew\IeC {\"a}hlte Service Desk-L\IeC {\"o}sungen}{8}
-\contentsline {subsubsection}{\numberline {2.4.2}Freshdesk}{9}
-\contentsline {subsubsection}{\numberline {2.4.3}Desk.com}{11}
-\contentsline {subsubsection}{\numberline {2.4.4}Zendesk}{11}
-\contentsline {subsubsection}{\numberline {2.4.5}SysAid}{12}
-\contentsline {subsubsection}{\numberline {2.4.6}Fazit der Analyse}{13}
-\contentsline {section}{\numberline {3}Der Service Desk in GEBman10}{14}
-\contentsline {subsection}{\numberline {3.1}Aktuelle Umsetzung}{14}
-\contentsline {subsection}{\numberline {3.2}Anforderungen der Erweiterung}{14}
-\contentsline {section}{\numberline {4}Microsoft Exchange Server}{15}
-\contentsline {subsection}{\numberline {4.1}Grundlagen}{15}
-\contentsline {subsection}{\numberline {4.2}Exchange Web Services}{17}
-\contentsline {subsubsection}{\numberline {4.2.1}Funktionsweise}{17}
-\contentsline {subsubsection}{\numberline {4.2.2}Derzeitige Verwendung in GEBman10}{18}
-\contentsline {section}{\numberline {5}Konzipierung}{19}
-\contentsline {subsection}{\numberline {5.1}Analyse aus Kapitel 1 und Kapitel 2 (UML-Diagramme etc.)}{19}
-\contentsline {subsection}{\numberline {5.2}Zielsetzung}{19}
-\contentsline {subsection}{\numberline {5.3}Sicherheitsaspekte}{19}
-\contentsline {section}{\numberline {6}Umsetzung}{21}
-\contentsline {subsection}{\numberline {6.1}Erweiterung des bestehenden Service Desk Moduls}{21}
-\contentsline {subsection}{\numberline {6.2}Erl\IeC {\"a}uterung der wichtigsten Klassen und Methoden}{21}
-\contentsline {subsection}{\numberline {6.3}Fehlschl\IeC {\"a}ge/Erfahrungen}{21}
-\contentsline {section}{\numberline {7}Fazit}{22}
-\contentsline {subsection}{\numberline {7.1}Erweiterungsm\IeC {\"o}glichkeiten}{22}
-\contentsline {subsection}{\numberline {7.2}Schlussbemerkung}{22}
-\contentsline {section}{Anhangsverzeichnis}{23}
-\contentsline {section}{Anhang}{24}
-\contentsline {section}{Literaturverzeichnis}{28}
+\contentsline {section}{\numberline {3}Analyse verschiedener Service Desk-L\IeC {\"o}sungen}{9}
+\contentsline {subsection}{\numberline {3.1}Schwerpunkte der Analyse und Ausgew\IeC {\"a}hlte Service Desk-L\IeC {\"o}sungen}{9}
+\contentsline {subsection}{\numberline {3.2}Freshdesk}{10}
+\contentsline {subsection}{\numberline {3.3}Desk.com}{12}
+\contentsline {subsection}{\numberline {3.4}Zendesk}{12}
+\contentsline {subsection}{\numberline {3.5}SysAid}{14}
+\contentsline {subsection}{\numberline {3.6}Fazit der Analyse}{14}
+\contentsline {section}{\numberline {4}Der Service Desk in GEBman10}{15}
+\contentsline {subsection}{\numberline {4.1}Aktuelle Umsetzung}{15}
+\contentsline {subsection}{\numberline {4.2}Anforderungen der Erweiterung}{15}
+\contentsline {section}{\numberline {5}Microsoft Exchange Server}{17}
+\contentsline {subsection}{\numberline {5.1}Grundlagen}{17}
+\contentsline {subsection}{\numberline {5.2}Exchange Web Services}{19}
+\contentsline {subsubsection}{\numberline {5.2.1}Funktionsweise}{19}
+\contentsline {subsubsection}{\numberline {5.2.2}Derzeitige Verwendung in GEBman10}{20}
+\contentsline {section}{\numberline {6}Konzipierung}{21}
+\contentsline {subsection}{\numberline {6.1}Analyse aus Kapitel 1 und Kapitel 2 (UML-Diagramme etc.)}{21}
+\contentsline {subsection}{\numberline {6.2}Zielsetzung}{21}
+\contentsline {subsection}{\numberline {6.3}Sicherheitsaspekte}{21}
+\contentsline {section}{\numberline {7}Umsetzung}{23}
+\contentsline {subsection}{\numberline {7.1}Erweiterung des bestehenden Service Desk Moduls}{23}
+\contentsline {subsection}{\numberline {7.2}Erl\IeC {\"a}uterung der wichtigsten Klassen und Methoden}{23}
+\contentsline {subsection}{\numberline {7.3}Fehlschl\IeC {\"a}ge/Erfahrungen}{23}
+\contentsline {section}{\numberline {8}Fazit}{24}
+\contentsline {subsection}{\numberline {8.1}Erweiterungsm\IeC {\"o}glichkeiten}{24}
+\contentsline {subsection}{\numberline {8.2}Schlussbemerkung}{24}
+\contentsline {section}{Anhangsverzeichnis}{25}
+\contentsline {section}{Anhang}{26}
+\contentsline {section}{Literaturverzeichnis}{31}
 \contentsfinish 

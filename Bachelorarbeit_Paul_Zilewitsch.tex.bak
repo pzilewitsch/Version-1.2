@@ -106,6 +106,7 @@ XXX Seiten, XXX Literaturquellen , XXX Anlagen.
 \setcounter{page}{1}
 \input{Inhalte/1_Einleitung/Einleitung}
 \newpage 
+
 %-------------------------------------------------------------------------------------------------------
 %					2	Service Desk
 %-------------------------------------------------------------------------------------------------------
@@ -113,39 +114,48 @@ XXX Seiten, XXX Literaturquellen , XXX Anlagen.
 \input{Inhalte/2_Service_Desk/Service_Desk}	
 \newpage
 
+
 %-------------------------------------------------------------------------------------------------------
-%					3	Service Desk in GEBman10
+%					3	Analyse verschiedener Softwarelösungen
 %-------------------------------------------------------------------------------------------------------
 
-\input{Inhalte/3_Service_Desk_GEBman10/Service_Desk_GEBman10}
+\input{Inhalte/3_Analyse_Softwareloesungen/Analyse_Softwareloesungen}	
+\newpage
+
+
+%-------------------------------------------------------------------------------------------------------
+%					4	Service Desk in GEBman10
+%-------------------------------------------------------------------------------------------------------
+
+\input{Inhalte/4_Service_Desk_GEBman10/Service_Desk_GEBman10}
 \newpage
 
 %-------------------------------------------------------------------------------------------------------
-%					4	Microsoft Exchange Server
+%					5	Microsoft Exchange Server
 %-------------------------------------------------------------------------------------------------------
 
-\input{Inhalte/4_Microsoft_Exchange_Server/MES}
+\input{Inhalte/5_Microsoft_Exchange_Server/MES}
 \newpage
 
 %-------------------------------------------------------------------------------------------------------
-%					5	Konzipierung
+%					6	Konzipierung
 %-------------------------------------------------------------------------------------------------------
 
-\input{Inhalte/5_Konzipierung/Konzipierung}
+\input{Inhalte/6_Konzipierung/Konzipierung}
 \newpage
 
 %-------------------------------------------------------------------------------------------------------
-%					6	Ummsetzung
+%					7	Ummsetzung
 %-------------------------------------------------------------------------------------------------------
 
-\input{Inhalte/6_Umsetzung/Umsetzung}
+\input{Inhalte/7_Umsetzung/Umsetzung}
 \newpage
 
 %-------------------------------------------------------------------------------------------------------
-%					7	Fazit
+%					8	Fazit
 %-------------------------------------------------------------------------------------------------------
 
-\input{Inhalte/7_Fazit/Fazit}
+\input{Inhalte/8_Fazit/Fazit}
 \newpage
 
 %-------------------------------------------------------------------------------------------------------
@@ -156,9 +166,9 @@ XXX Seiten, XXX Literaturquellen , XXX Anlagen.
 \newpage
 
 %-------------------------------------------------------------------------------------------------------
-%					8 Anhang
+%					9 Anhang
 %-------------------------------------------------------------------------------------------------------
 
 \addsec{Anhang} %vergebe keine Kapitelnummer
-\input{Inhalte/8_Anhang/Anhang}
+\input{Inhalte/9_Anhang/Anhang}
 \end{document}

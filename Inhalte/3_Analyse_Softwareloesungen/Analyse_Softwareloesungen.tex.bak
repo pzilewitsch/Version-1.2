@@ -1,0 +1,128 @@
+\section{Analyse verschiedener Service Desk-Lösungen}
+
+\subsection{Schwerpunkte der Analyse und Ausgewählte Service Desk-Lösungen}
+
+\noindent
+Nach diesem sehr theoretischem Ansatz die Anforderungen eines Service Desks zu klären, wird nun auf Beispiele in der Praxis eingegangen. Wichtig sind dabei nicht Kriterien wie das äußere Erscheinungsbild oder die Kosten. Ziel soll es sein durch einen Vergleich gängiger Softwarelösungen, Verbesserungsmöglichkeiten der eigene Service Desk-Funktionalität in GEBman10 zu ermitteln. Dabei wird auf die drei folgenden Punkte Wert gelegt:
+
+\begin{itemize}
+\item Funktionalität:\\
+		Die Funktionalität ist wohl das fundamentalste Kriterium. Hier ist entscheidend, welche 			
+		Möglichkeiten dem Benutzer gegeben werden bspw. Meldungen/Tickets anzulegen, zu 
+		zuweisen, zu suchen oder zu filtern. Wichtig ist aber auch, welche Informationen in welcher 
+		Darstellungsform erhalten sind (Diagramme etc.) und welche Daten erfasst werden müssen 
+		bzw. können.\\
+		 
+\item Bedienbarkeit:\\
+		Aus diesem Blickwinkel wird untersucht, welche Bedienelemente zur Verfügung stehen. Eine	
+		Bewertung nach intuitiver Bedienbarkeit ist schwierig vorzunehmen, da das immer eine
+		subjektive Ansicht enthält.\\
+		
+\item Anpassbarkeit:\\
+		Inwieweit kann man bspw. die grafische Oberfläche vom Benutzer geändert und auf die 
+		eigenen Bedürfnisse angepasst werden.\\		
+\end{itemize}
+
+
+%hier sollte noch ein abschließender Satz hin
+
+\noindent
+Nach den Recherchen auf mehreren Review und Ranking Websites zum Thema Service Desk / Help Desk, sind drei Softwarelösungen wiederholt erwähnt und gut bis sehr gut bewertet worden.\footnote{siehe Literaturverzeichnis}Diese drei webbasierten Anwendungen werden nun vorgestellt und anschließend ihre Stärken bzw. Besonderheiten dargelegt. Im Anhang auf Seite XX befindet sich jeweils ein Screenshot von jeder Softwarelösung.
+
+\begin{itemize}
+\item Freshdesk:\\
+		Girish Mathrubootham beschloss 2010 nach dem Lesen eines Nachrichtenartikels die Firma 
+		Freshdesk ins Leben zu rufen. Das gleichnamige Produkt wird laut eigenen Angaben von rund 
+		70.000 Kunden aller Unternehmensgrößen genutzt.\footnote{http://freshdesk.de/kunden/}
+		\\
+		 
+\item Desk.com:\\
+		Das Unternehmen Salesforce.com legt laut eigenen Angaben großen Wert auf mobile 
+		Endgeräte und soziale Netzwerke. \footnote{http://www.salesforce.com/de/company/
+		newspress/press-releases/2012/02/120201.jsp}Die Service Desk -Lösung des Unternehmens  
+		nennt sich 	Desk.com und zu ihren Kunden zählen unter anderem die Firma FlixBus und die 
+		Commerzbank.
+		\\
+		
+\item Zendesk:\\
+		Zendesk beschreibt sich selbst als \enquote{Kundenservice-Plattform}. Die gleichnamigen 
+		Firma hat nach eigenen Angaben mehr als 75 000 Unternehmen, die diese Plattform nutzen. 
+		Entstanden ist das Unternehmen 2007 aus einer Idee von drei Freunden aus Kopenhagen.
+		\footnote{https://www.zendesk.de/about/}
+		\\		
+\end{itemize}
+
+\noindent
+Aktuell benutzt der Support von der KMS Computer GmbH die Software SysAid für den Service Desk. Durch eine Vielzahl von Einträgen und Erfahrungen der Mitarbeiter im Support, ist es sinnvoll auch diese Anwendung mit in den Vergleich einfließen zu lassen.
+
+\begin{itemize}
+\item SysAid:\\
+		 Die Help Desk-Software SysAid wird nach eigenen Angaben in über 10 000 Unternehmen in 
+		 140 Ländern eingesetzt. Die Firma SysAid Technologies wurde 2002 gegründet und zählt somit 
+		 zu den erfahrenden Unternehmen dieser Branche.
+		\\
+\end{itemize}	
+
+
+\subsection{Freshdesk}
+\noindent
+Alle im Freshdesk angemeldeten Support Mitarbeiter werden als Agenten bezeichnet
+Der Freshdesk besticht mit seinem sehr simplen Dashboard, was der Bedienbarkeit zugutekommt. Zur Erklärung: ein Dashboard ist üblicherweise eine kompakte meist grafisch aufbereitete Ansicht von Informationen.\footnote{Vgl. https://help.salesforce.com/HTViewHelpDoc?id=bi\_dashboard.htm\&language=de} Der Agent erhält hier nur die wichtigsten bzw. neuesten Informationen. Auf den ersten Blick kann der Agent sehen, welche Tickets offen, nicht zugewiesen oder überfällig sind. Zusätzlich erhält der Agent die Möglichkeit, individuelle Aufgaben zu notieren und wie eine Checkliste abzuarbeiten. Ein sehr nützliches Feature für kleinere Notizen bzw. Probleme.\\ 
+Erst im zweiten Menüpunkt kann der Agent Tickets filtern. Hierfür gibt es gängige auswählbare Filter oder die Option einen Filter selbst zu konfigurieren und zu speichern. Wählt der Agent hier nun ein oder mehrere Ticket aus, gelangt er in eine Detailansicht eines Tickets und kann dann zwischen den ausgewählten wechseln. In der Detailansicht kann er nun den gesamten Verlauf betrachten, auf das Ticket antworten, das Ticket weiterleiten etc. . Ein Seitenmenü ermöglicht die Einsicht auf die wichtigsten Informationen des Ticketerstellers. Außerdem können die Ticket-Eigenschaften in diesem Seitenmenü geändert und somit die Priorität und der Status festgelegt werden. Zusätzlich gibt es eine Typisierung des Tickets. Im Punkt 2.1 wurden die verschiedenen IT Service Managementbereiche dargelegt. Durch die Typisierung kann festgelegt werden, welchem Managementbereich das Ticket entspricht. Handelt es sich beispielsweise um einen Notfall, wird der Typ als Incident bestimmt und kann so bei der Suche schneller gefunden werden.\\
+Ein weiterer Menüpunkt nennt sich \enquote{Soziales} und hat eine spezielle Funktionalität zu bieten. Freshdesk bieten nämlich die Möglichkeit, die Kunden über einen \enquote{sozialen Support} zu betreuen. Laut eigenen Angaben begründet Freshdesk den Kontakt mit Kunden über soziale Kanäle wie folgt: \enquote{Tatsächlich erwarten 32 \% der Kunden in sozialen Netzwerken eine Antwort auf Ihre Anfragen innerhalb von 30 Minuten.} weiterhin heißt es, bei schnellen und effektiven Antworten würden 71\% der Kunden den Support weiterempfehlen. Wie Freshdesk zu diesen Zahlen kommt, bleibt zunächst unklar. Recherchiert man ein wenig im Netz, so kann man diese Zahlen in einem Bericht von t3n wiederfinden, der auf einer Studie von  Bain \& Company beruht.\footnote{Vgl. http://t3n.de/news/zufriedene-kunden-geht-support-549532/} Wichtiger als die Zahlen ist jedoch die Idee, über soziale Netzwerke mit dem Kunden zu interagieren und somit eine teils freundschaftliche Beziehung aufzubauen. Erlaubt man Freshdesk im Administrator-Bereich, sich über ein Twitter-Konto einzuloggen, so kann direkt im Service Desk auf Twitter zugegriffen werden. Auch eine Facebook-Seite kann in den Service Desk von Freshdesk integriert werden. Diese Funktionalität wirkt sehr modern und bietet neue Ansatzpunkte in der Kundenbetreuung.\\
+Im dritten Menüpunkt erhält der Agent die Option eine Knowledge Base anzulegen. Diese Wissensdatenbank kann direkt vom Kunden aufgerufen werde, um eine erste Hilfestellung bei bekannten Problemen zu erhalten. Mit Kategorien wie Frequently Asked Questions (FAQs) kann die Wissensdatenbank unterteilt werden und bietet dem Kunden so eine gute Übersicht.\\
+Auch ein Forum kann mit dem Freshdesk gepflegt werden. Im Unterpunkt Foren können mehrere Foren verwaltet werden und Themen wie \enquote{Tips und Tricks} oder \enquote{Wie erstelle ich ein Ticket?} dem Kunden ein optimales Handbuch oder Nachschlagewerk liefern.\\
+Des Weiteren kann im Menüpunkt Berichte auf umfassende Analysen Einsicht genommen werden. Nicht nur wie lange ein Ticket durchschnittlich bearbeitet wurde ist in Diagrammen dargestellt, sondern auch wie viele Tickets die Kunden aufgegeben haben oder wie viel Tickets ein Agent schon bearbeitet hat. Trotz der großen Informationswiedergabe bleibt Freshdesk übersichtlich und gut strukturiert. Die Berichte kann sich der Agent auch per Mail in Form einer PDF - oder CSV-Datei zuschicken lassen.\\
+Der bereits erwähnte Administrator-Bereich kann sehr gut genutzt werden, um den Service Desk anzupassen. Von allgemeinen Einstellungen wie den Feldern, die bei der Ticketerstellung ausgefüllt werden müssen, bis zu dem Import von Daten aus anderen Service Desk-Lösungen kann der Freshdesk sehr gut and die Bedürfnisse der Agents oder Gruppen von Agents angepasst werden.\\
+Egal in welchem Menüpunkt der Agent sich bewegt, es stehen ihm immer ein Button für das Anlegen eines neuen Tickets und einer Suche in der oberhalb liegenden Menüleiste zur Verfügung. Der Freshdesk ist somit ein in sich schlüssiges System mit vielen modernen und anschaulichen Extras.\\\\
+
+
+\subsection{Desk.com}
+\noindent
+Desk.com ist eine Service Desk-Lösungen, die besonderen Wert auf den mobilen Einsatz des Supports legt. Das spiegelt sich auch in der Desktop Webanwendung wieder. Die Oberfläche erinnert stark an eine App auf einen mobilen Endgerät. Die Benutzer werden in Desk.com ebenfalls Agents genannt. 
+Eine statische Menüleiste ist auch hier oberhalb der Ansicht zu finden. Hier befinden sich große Buttons für das Anlegen eines neuen Tickets, eine Suche, ein Button für weitere Menüs und eine Art Tab-Ansicht der neusten Tickets. Das Dashboard besteht aus eine Auflistung aller Tickets, die nur die nötigsten Informationen liefern. Spalten können sich aber noch zusätzlich einblenden lassen. Filtern lassen sich die Tickets an dieser Stelle mit einer Auswahl auf der linken Seite. Jedoch ist diese Auswahl sehr eingeschränkt auf alle Tickets oder Tickets, die dem Agent zugewiesen wurden. Eine Hoverbox ermöglicht die Einsicht der Beschreibung des Tickets, ohne dieses öffnen zu müssen. Hierfür muss der Agent lediglich den Mauszeiger über das Ticket halten und nach wenigen Sekunden erscheint eine kleines Fenster. Die Service Desk-Lösung von Desk.com hat ebenfalls einen eigenen Menüpunkt für die Einsicht von Berichten. Nicht ganz so umfangreich wie beim Freshdesk, aber dennoch anschaulich in Diagrammen dargestellt. Die Funktionalität einer Wissensdatenbank bietet der Desk.com ebenso. Allerdings kann diese nur im Administrator-Bereich verwaltet und erweitert werden.\\
+Insgesamt wirkt der Desk.com maßgeschneidert für mobile Endgeräte. Und genau hier liegen auch die Stärken der Service Desk-Lösung. Durch die großen Bedienelemente und stark vereinfachten Ansichten, wird das Arbeiten auf Tablet o.ä. deutlich erleichtert. Für eine Desktop Variante nicht unbedingt die beste Wahl, auch weil sich der Service Desk - wenn überhaupt - nur sehr umständlich auf die individuellen Bedürfnisse anpassen  lässt. Für Mitarbeiter, die ständig unterwegs sind, ist das System durchaus attraktiv.\\\\
+
+
+\subsection{Zendesk}
+\noindent 
+Der Zendesk hat seine Stärken in den umfassenden Hilfestellungen für die Agents. Schon im Dashboard erhält ein Agent eine knappe aber präzise Erklärung der einzelnen Teilbereiche des Service Desk. Zunächst muss der Agent die einzelnen Kanäle wie E-Mail oder Telefon einrichten. Auch im Zendesk sind  Twitter und Facebook als Kommunikationswege denkbar. In fast allen Einrichtungsschritten wird der Agent mit Anweisungen unterstützt und kann sich direkt im Zendesk ein Video-Tutorial anschauen.\\
+Eine statische Leiste befindet sich im Zendesk oberhalb mit einer Suchfunktion und er Möglichkeit neue Tickets zu erstellen. Ein ebenfalls festes Menü am Seitenrand hat nur die wichtigsten Unterpunkte: Dashboard, Tickets , Berichte und Einstellungen. Eine Anordnung, die bereits aus den anderen Service Desk-Lösungen bekannt ist. Das Menü kann angepasst werden, wenn alle Kanäle eingerichtet sind.\\
+Neben den bereits bekannten Features von den andern Softwarelösungen, bietet Zendesk weitere Funktionalitäten. Durch eine große Auswahl an Apps kann der Service Desk ganz nach eigenen Vorstellungen des Agents angepasst werden. Ein einfaches Beispiel hierfür ist das Anzeigen von Kontaktinformationen direkt neben einem Ticket. Die App trägt den schlichte Namen Benutzerdaten. Wurde diese Erweiterung erfolgreich installiert, kann der Agent über einen Button die Funktionalitäten der Apps bei der Ticketübersicht nutzen,  um weitere Informationen über den Kunden zu gewinnen. Dabei besteht die Möglichkeit Notizen oder Details über den Kunden in der App einzutragen.\\
+Über ein Web Widget ist es möglich, auf Komponenten von Zendesk wie die Wissensdatenbank oder Live-Chat zu zugreifen. Als Widget bezeichnet man einfache kleine clientseitige Programme, die durch minimalem Eingabeaufwand zusätzliche Funktionen oder Informationen bereitstellen.\footnote{http://www.onlinemarketing-praxis.de/glossar/widget} \footnote{https://www.w3.org/TR/widgets/\#introduction}  Dieses Web Widget kann in Webseiten eingebettet werden, in dem in den Einstellungen das Widget aktiviert und auf der Webseite der Source-Code eingebunden wird. Eine Funktionalität die vor allem bei Unternehmenswebseiten  eingebaut werden könnte.\\
+Um festzustellen, wie sehr die Kunden mit dem Service Desk zufrieden sind, kann mit dem Zendesk eine Kundenumfrage gestartet werden. Die Fragen hierfür lassen sich allerdings nicht konfigurieren. Der Kunde kann (bei aktivierter Option) auch die Tickets bewerten und somit ebenfalls Feedback für den Agent geben.\\
+Zendesk bietet eine Vielzahl von Funktionalitäten, die sowohl neue Kommunikationsmöglichkeiten mit dem Kunden garantieren, als auch die Bedienung des Service Desk für die Agents erleichtern. Es ist aber anzumerken, dass es durchaus eine gewisse Zeit in Anspruch nimmt, alle Features einzurichten und richtig zu bedienen. Einsteiger Agents sollten deshalb gut geschult werden.\\\\
+
+
+\subsection{SysAid}
+\noindent
+Da diese Bachelorarbeit in einem knappen Zeitrahmen fertiggestellt werden muss, konnten keine ausführlichen Betrachtungen der Service Desk-Lösungen durchgeführt werden, wenn diese mit vielen Daten gefüllt sind. Hierzu wären mehrere Kontaktinformationen und Ticket-Erstellungen nötig. Deshalb wird nun der firmeneigene Support nach Besonderheiten in der Softwarelösung SysAid befragt. Bei täglichem Gebrauch kommen unvorhersehbare Situationen zusammen, die kaum in der Vorbetrachtung zu erahnen sind. Daher ist die Betrachtung vom SysAid der KMS Computer GmbH eine sinnvolle Vorgehensweise bei der Ermittlung von Verbesserungsmöglichkeiten im Bereich Service Desk-Anwendungen.\\\\
+
+
+
+
+\subsection{Fazit der Analyse}
+
+\noindent
+Alle Service Desk-Systeme, die betrachtet wurden, waren auf ihre Weise individuell. Die Schwerpunkte waren unterschiedlich gelegt und einen \enquote{Sieger} der Analyse zu bestimmen wäre daher nicht sinnvoll. Wichtiger ist viel mehr, wie die Stärken der Systeme möglicherweise Anreize für Verbesserungen anderer Service Desk-Lösungen bieten.\\
+Der Freshdesk  \\\\
+
+\noindent
+Es lassen sich aber auch Gemeinsamkeiten benennen, die sich in allen Systemen in leicht abgewandelter Form wiederfanden. 
+
+\begin{itemize}
+\item Menüleiste ermöglichte es dem Agent/Benutzer jederzeit zu suchen und ein neues Ticket anzulegen.
+		 
+\item durch farbliche Kennzeichnung waren die Status der Tickets sofort einsehbar
+		
+\item  Kontaktdaten vom Kunden in der Detailansicht eines Tickets
+
+\item Filtereinstellungen für Tickets konfigurierbar und speicherbar
+
+\item alle Berichte in einem Extramenüpunkt.
+
+\item Erstellung und Verwaltung einer Wissensdatenbank möglich
+\end{itemize}
+
+\noindent
+Dieses Fazit der Analyse der verschiedenen Service Desk-Lösungen kann dazu genutzt werden, Verbesserungsmöglichkeiten im Service Desk Modul von GEBman 10 zu  bestimmen. 
