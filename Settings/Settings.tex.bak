@@ -117,7 +117,10 @@ headsep=10mm, footskip=10mm}
 %}
 
 
-
 %Bilder
 \usepackage{graphicx}
 
+
+%Quellen
+\usepackage[square, numbers]{natbib}
+\usepackage[overridenumbers]{bibtopic}

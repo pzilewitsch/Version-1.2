@@ -71,6 +71,8 @@ Blatt 6\\
 %-------------------------------------------------------------------------------------------------------
 %					Literaturverzeichnis
 %-------------------------------------------------------------------------------------------------------
+
+\begin{comment}
 \addsec{Literaturverzeichnis} %vergebe keine Kapitelnummer
 \noindent
 Widl, M (2015): Mircosoft Office 365. Das umfassende Handbuch, 3., aktualisierte Auflage, Bonn\\
@@ -89,3 +91,6 @@ http://www.capterra.com/help-desk-software/ , Oktober 2015
 
 \noindent
 http://www.pcmag.com/article2/0,2817,2489457,00.asp , 22. März 2016
+\end{comment}
+
+

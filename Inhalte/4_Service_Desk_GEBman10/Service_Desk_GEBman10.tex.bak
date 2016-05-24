@@ -4,18 +4,43 @@
 
 \subsection{Aktuelle Umsetzung}
 \noindent
-Der Service Desk  ist ein eigenständiges Modul, welches standardmäßig in jeder Version von GEBman10 enthalten ist. Im Dashboard dieses Moduls werden alle Meldungen angezeigt, die erstellt wurden. Rechts daneben wird der Standort des Objektes angezeigt, für das die Meldung aufgegeben wurde. Es werden auch bereits abgeschlossene bzw. erledigte Meldungen angezeigt. Der Benutzer erhält mittels eines Diagramms direkt einen Einblick auf die Meldungen innerhalb einer Woche. Unterteilt wird hierbei in eingegangene Meldungen, Meldungen die in Bearbeitung sind, unbearbeitete Meldungen und fertige Meldungen. Ein zweites Diagramm veranschaulicht die Verweildauer einer Meldung, in dem die Zeit zwischen dem unbearbeiteten Zustand und dem der Bearbeitung protokolliert wird. Unter den beiden Diagrammen finden sich alle Fakten noch einmal in Form von Zahlen wieder. Der Aufbau wird in der Abbildung XX deutlicher. 
+Der Service Desk  ist ein eigenständiges Modul, welches standardmäßig in jeder Version von GEBman10 enthalten ist. Ist dient in erster Linie dazu unvorhergesehene Störungen für Geräten, Gebäude, Inventare, Fahrzeuge, Bäume, Grünflächen und Beleuchtungseinheiten erfassen zu können. Aus diesem Grund ist das Modul stark an andere Module gebunden und legt die Schwerpunkte auf den Bereich Facility Management.D Das Modul kann aber auch für eine Service Desk-Lösung für das Unternehmen verwendet werden. Hierzu müssen lediglich alle Mitarbeiter einen Account anlegen, um so als Melder agieren oder als Bearbeiter reagieren zu können. \newline 
+Die Bedienoberfläche ist in einzelne Sektionen unterteilt. Im Dashboard dieses Moduls werden alle Meldungen in einer Sektion angezeigt, die erstellt wurden. Rechts daneben wird der Standort des Objektes angezeigt, für das die Meldung aufgegeben wurde. Es werden auch bereits abgeschlossene bzw. erledigte Meldungen angezeigt. Der Benutzer erhält mittels eines Diagramms in einer weiteren Sektion direkt einen Einblick auf die Meldungen innerhalb einer Woche. Unterteilt wird hierbei in eingegangene Meldungen, Meldungen die in Bearbeitung sind, unbearbeitete Meldungen und fertige Meldungen. Ein zweites Diagramm veranschaulicht die Verweildauer einer Meldung, in dem die Zeit zwischen dem unbearbeiteten Zustand und dem der Bearbeitung protokolliert wird. Unter den beiden Diagrammen finden sich alle Fakten noch einmal in Form von Zahlen wieder. Der Aufbau wird in der Abbildung XX deutlicher. 
 
 \begin{figure}[h!]
 \centering
 	\includegraphics[width=0.75\textwidth]{Abbildungen/GEBman.png}
 	\caption[GEBman10 Service Desk Dashboard]{GEBman10 Service Desk Dashboard, Quelle: 
 	GEBman10}
-	\label{fig:ITIL_Lebenyzyklus}
+	\label{fig:GEBman10 Service Desk Dashboard}
 \end{figure}
-\\
+
 \noindent
-Der Benutzer hat nun direkt die Möglichkeit für eine Detailansicht einer oder mehrerer Meldung, eine neue Meldung anzulegen, eine Filterung der Meldung vorzunehmen oder die Einstellungen anzupassen.
+Der Benutzer hat nun direkt die Möglichkeit für eine Detailansicht einer oder mehrerer Meldung, eine neue Meldung anzulegen, eine Filterung der Meldung vorzunehmen oder die Einstellungen anzupassen. Bei den Einstellungen kann entschieden werden, an welchen Positionen die Sektionen der Bedienoberfläche verankert werden sollen. Es gibt keine Möglichkeit in der Dashboard-Ansicht des Service Desk Moduls Filter zu speichern. Hierfür muss der Benutzer in der Suchliste eine Abfrage definieren und diese abspeichern. Außerdem ermöglicht die Suchliste eine detailliertere Filterung, einen Excel Export, das Löschen von Meldungen und die Generierung von Maßnahmen. Das Generieren von Maßnahmen ist eine zentrale Funktionalität im Service Desk. Manche Vorfälle lassen sich nicht ohne Fachpersonal bewältigen. Hierfür müssen unter Umständen spezielle Mitarbeiter oder eine andere Firma angefordert werden. Mit der Maßnhamengenerierung kann ein Auftrag für den Mitarbeiter bzw. der Firma erstellt werden. Wenn sich eine andere Firma um die Maßnahme für den Vorfall kümmert, wird das am Objekt in der Sektion Fremdvergabe angezeigt. \newline
+Bevor man den Service Desk nutzt, ist es sinnvoll, die drei Standardkataloge für den Service Desk zu bearbeiten. Mit Katalogen können in GEBman 10  vorgefertigte Auswahlmöglichkeiten erstellt werden, die später im entsprechenden Modul zur Anwendung kommt. Dem Service Desk stehen folgende Kataloge zur Verfügung:
+
+\begin{itemize}
+\item Art:\\
+		Mit der Art ist in diesem Fall die Meldungsart gemeint. Dem Benutzer steht hier frei, welche 
+		Meldungsarten er hier definiert, um auch die ausgefallensten Vorfälle möglichst präzise beschreiben zu 
+		können.   \\
+		 
+\item Meldungsvorlage:\\
+		Nicht selten ähneln sich Meldungen, da sich Vorfälle wiederholen können. Ein Beispiel hierfür wäre ein 
+		Kraftfahrzeug in der Fuhrparkverwaltung, welches neue Reifen benötigt. Um nun nicht jedes Mal die 
+		gleiche Meldung erstellen zu müssen, gibt es die Möglichkeit eine Meldungsvorlage zu erstellen. \\
+		
+\item Schnellantwort:\\
+		Es können ebenfalls Schnellantworten vordefiniert werden, die eine schnelle Antwort auf eine Meldung 
+		ermöglichen.\\		
+\end{itemize}
+
+
+Wenn ein Mitarbeiter beim Erstellen einer Meldung informiert werden soll, so muss zunächst im Modul Verwaltung der entsprechende Exchange Server dafür konfiguriert werden. 
+
+Berichte im Service Desk können derzeit noch nicht selbst definiert werden.
+
+Service Desk für das ganze Unternehmen
 
 \subsection{Anforderungen der Erweiterung}
 

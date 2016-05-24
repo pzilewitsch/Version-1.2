@@ -171,4 +171,12 @@ XXX Seiten, XXX Literaturquellen , XXX Anlagen.
 
 \addsec{Anhang} %vergebe keine Kapitelnummer
 \input{Inhalte/9_Anhang/Anhang}
+
+
+%\chapter*{Literaturverzeichnis}
+%\addcontentsline{toc}{chapter}{Literaturverzeichnis}  % keine Nummer, aber trotzdem ins Inhaltsverzeichnis
+\input{Inhalte/bib/Literaturverzeichnis}
+%\addcontentsline{toc}{chapter}{Verzeichnis der Internetquellen}  % keine Nummer, aber trotzdem ins Inhaltsverzeichnis
+\newpage
+\input{Inhalte/bib/Onlineverzeichnis}
 \end{document}
