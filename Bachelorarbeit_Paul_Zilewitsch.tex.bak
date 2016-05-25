@@ -1,5 +1,8 @@
 \documentclass[fontsize=12pt]{scrartcl}
 
+\usepackage{babelbib} 
+
+
 %Settings-Datei einbinden
 \input{Settings/Settings}
 
@@ -29,7 +32,7 @@
 	\\\\
 	\begin{tabular}{@{}ll}
 		Tag der Themenübergabe:&22.04.2016\\
-		Tag der Einreichung:&18.07.2016
+		Tag der Einreichung:&18.07.2016 \citep{test2}
 	\end{tabular}
 \pagebreak
 
@@ -76,7 +79,7 @@ XXX Seiten, XXX Literaturquellen , XXX Anlagen.
 %					Abkürzungsverzeichnis
 %------------------------------------------------------------------------------------------------------
 \addsec{Abkürzungsverzeichnis} %vergebe keine Kapitelnummer
-\begin{enumerate}
+\begin{itemize}[leftmargin=*] 
 \item[1] CAFM \tabto{3cm} Computer-Aided Facility Management
 \item[2] ITIL \tabto{3cm} Information Technology Infrastructure Libary
 \item[3] HTTP \tabto{3cm} Hypertext Transfer Protocol
@@ -86,15 +89,15 @@ XXX Seiten, XXX Literaturquellen , XXX Anlagen.
 \item[7] SOAP \tabto{3cm} Simple Object Access Protocol
 \item[8] XML \tabto{3cm} Extensible Markup Language
 \item[9] SPoC \tabto{3cm} Single Point of Contact
-
-\end{enumerate}
+\end{itemize}
 \newpage
 
 %-------------------------------------------------------------------------------------------------------
 %					Tabellenverzeichnis
 %-------------------------------------------------------------------------------------------------------
 \addsec{Tabellenverzeichnis} %vergebe keine Kapitelnummer
-%\listoftables
+\vspace*{-1cm}
+\listoftables
 \newpage
 
 %-------------------------------------------------------------------------------------------------------
@@ -171,12 +174,18 @@ XXX Seiten, XXX Literaturquellen , XXX Anlagen.
 
 \addsec{Anhang} %vergebe keine Kapitelnummer
 \input{Inhalte/9_Anhang/Anhang}
-
-
-%\chapter*{Literaturverzeichnis}
-%\addcontentsline{toc}{chapter}{Literaturverzeichnis}  % keine Nummer, aber trotzdem ins Inhaltsverzeichnis
-\input{Inhalte/bib/Literaturverzeichnis}
-%\addcontentsline{toc}{chapter}{Verzeichnis der Internetquellen}  % keine Nummer, aber trotzdem ins Inhaltsverzeichnis
 \newpage
-\input{Inhalte/bib/Onlineverzeichnis}
+
+%-------------------------------------------------------------------------------------------------------
+%					10 Literaturverzeichnis
+%-------------------------------------------------------------------------------------------------------
+
+\addsec{Literaturverzeichnis} %vergebe keine Kapitelnummer
+%\input{Inhalte/10_Literaturverzeichnis/Literaturverzeichnis}
+
+\bibliographystyle{babplain} 
+\nocite{*}
+\bibliography{literatur}
+
+
 \end{document}
