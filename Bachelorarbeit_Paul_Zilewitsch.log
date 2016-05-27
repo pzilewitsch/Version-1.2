@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.12)  25 MAY 2016 16:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.12)  27 MAY 2016 16:33
 entering extended mode
 **Bachelorarbeit_Paul_Zilewitsch.tex
 (Bachelorarbeit_Paul_Zilewitsch.tex
@@ -88,11 +88,7 @@ LaTeX Info: Redefining \textsubscript on input line 3906.
 \c@figure=\count86
 \c@table=\count87
 \bibindent=\dimen102
-) ("C:\Program Files (x86)\Latex&Latex\tex\latex\babelbib\babelbib.sty"
-Package: babelbib 2012/01/03 v1.31 babelbib: multilingual bibliographies (HH)
-\c@btxromaniannumeral=\count88
-)
-(Settings/Settings.tex
+) (Settings/Settings.tex
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\comment\comment.sty"
 \CommentStream=\write3
 
@@ -117,13 +113,13 @@ Package: amsbsy 1999/11/29 v1.2d
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count89
+\inf@bad=\count88
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count90
-\leftroot@=\count91
+\uproot@=\count89
+\leftroot@=\count90
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count92
-\DOTSCASE@=\count93
+\classnum@=\count91
+\DOTSCASE@=\count92
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
@@ -132,15 +128,15 @@ LaTeX Info: Redefining \cdots on input line 466.
 \big@size=\dimen105
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count94
-\c@MaxMatrixCols=\count95
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
 \dotsspace@=\muskip10
-\c@parentequation=\count96
-\dspbrk@lvl=\count97
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
 \tag@help=\toks16
-\row@=\count98
-\column@=\count99
-\maxfields@=\count100
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
 \andhelp@=\toks17
 \eqnshift@=\dimen106
 \alignsep@=\dimen107
@@ -182,7 +178,7 @@ Language: ngermanb 2013/12/13 v2.7 German support for babel (new orthography)
 
 ("C:\Program Files (x86)\Latex&Latex\tex\generic\babel\babel.def"
 File: babel.def 2015/08/03 3.9m Babel common definitions
-\babel@savecnt=\count101
+\babel@savecnt=\count100
 \U@D=\dimen112
 )
 \l@naustrian = a dialect from \language\l@ngerman 
@@ -282,7 +278,7 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
-\zifour@ocount=\count102
+\zifour@ocount=\count101
 )
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\base\inputenc.sty"
 Package: inputenc 2015/03/17 v1.2c Input encoding file
@@ -581,14 +577,14 @@ Package: csquotes 2015/07/18 v5.1f context-sensitive quotations (JAW)
 
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\etoolbox\etoolbox.sty"
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count103
+\etb@tempcnta=\count102
 )
-\csq@reset=\count104
-\csq@gtype=\count105
-\csq@glevel=\count106
-\csq@qlevel=\count107
-\csq@maxlvl=\count108
-\csq@tshold=\count109
+\csq@reset=\count103
+\csq@gtype=\count104
+\csq@glevel=\count105
+\csq@qlevel=\count106
+\csq@maxlvl=\count107
+\csq@tshold=\count108
 \csq@ltx@everypar=\toks22
 
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\csquotes\csquotes.def"
@@ -660,23 +656,23 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LTright=\skip54
 \LTpre=\skip55
 \LTpost=\skip56
-\LTchunksize=\count110
+\LTchunksize=\count109
 \LTcapwidth=\dimen116
 \LT@head=\box29
 \LT@firsthead=\box30
 \LT@foot=\box31
 \LT@lastfoot=\box32
-\LT@cols=\count111
-\LT@rows=\count112
-\c@LT@tables=\count113
-\c@LT@chunks=\count114
+\LT@cols=\count110
+\LT@rows=\count111
+\c@LT@tables=\count112
+\c@LT@chunks=\count113
 \LT@p@ftn=\toks24
 )
 Class scrartcl Info: longtable captions redefined on input line 28.
 
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\supertabular\supertabular.sty"
 Package: supertabular 2004/02/20 v4.1e the supertabular environment
-\c@tracingst=\count115
+\c@tracingst=\count114
 \ST@wd=\dimen117
 \ST@rightskip=\skip57
 \ST@leftskip=\skip58
@@ -726,8 +722,8 @@ Package tocloft Info: The document has section divisions on input line 44.
 \cftbeforefigskip=\skip83
 \cftfigindent=\skip84
 \cftfignumwidth=\skip85
-\c@lofdepth=\count116
-\c@lotdepth=\count117
+\c@lofdepth=\count115
+\c@lotdepth=\count116
 \cftbeforelottitleskip=\skip86
 \cftafterlottitleskip=\skip87
 \cftbeforetabskip=\skip88
@@ -744,7 +740,7 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@outerparindent=\dimen129
 \enit@toks=\toks25
 \enit@inbox=\box34
-\enitdp@description=\count118
+\enitdp@description=\count117
 )
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
@@ -760,9 +756,9 @@ Package ifvtex Info: VTeX not detected.
 ("C:\Program Files (x86)\Latex&Latex\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count119
-\Gm@cntv=\count120
-\c@Gm@tempcnt=\count121
+\Gm@cnth=\count118
+\Gm@cntv=\count119
+\c@Gm@tempcnt=\count120
 \Gm@bindingoffset=\dimen130
 \Gm@wd@mp=\dimen131
 \Gm@odd@mp=\dimen132
@@ -791,26 +787,26 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 ("C:\Program Files (x86)\Latex&Latex\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count122
+\Gread@gobject=\count121
 ))
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\listings\listings.sty"
-\lst@mode=\count123
+\lst@mode=\count122
 \lst@gtempboxa=\box35
 \lst@token=\toks27
-\lst@length=\count124
+\lst@length=\count123
 \lst@currlwidth=\dimen138
-\lst@column=\count125
-\lst@pos=\count126
+\lst@column=\count124
+\lst@pos=\count125
 \lst@lostspace=\dimen139
 \lst@width=\dimen140
-\lst@newlines=\count127
-\lst@lineno=\count128
+\lst@newlines=\count126
+\lst@lineno=\count127
 \lst@maxwidth=\dimen141
 
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count129
-\lst@skipnumbers=\count130
+\c@lstnumber=\count128
+\lst@skipnumbers=\count129
 \lst@framebox=\box36
 )
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\listings\listings.cfg"
@@ -873,7 +869,7 @@ Package scrartcl Warning: Activating an ugly workaround for a missing
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 \FN@temptoken=\toks29
 \footnotemargin=\dimen147
-\c@pp@next@reset=\count131
+\c@pp@next@reset=\count130
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
 Package footmisc Info: Declaring symbol style wiley on input line 872.
@@ -900,25 +896,6 @@ Package graphics Info: Driver file: pdftex.def on input line 94.
 \Gin@req@height=\dimen148
 \Gin@req@width=\dimen149
 )
-("C:\Program Files (x86)\Latex&Latex\tex\latex\natbib\natbib.sty"
-Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip94
-\bibsep=\skip95
-LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count132
-)
-("C:\Program Files (x86)\Latex&Latex\tex\latex\bibtopic\bibtopic.sty"
-Package: bibtopic 2006/09/08 v1.1a Sectioned Bibliographies
-
-("C:\Program Files (x86)\Latex&Latex\tex\latex\base\ifthen.sty"
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
-\c@btauxfile=\count133
-\bt@infilea=\read1
-\bt@infileb=\read2
-\bt@outfile=\write4
-\bt@tempboxa=\box38
-)
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\pict2e\pict2e.sty"
 Package: pict2e 2016/02/05 v0.3b Improved picture commands (HjG,RN,JT)
 
@@ -935,6 +912,13 @@ File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
 \@arclen=\dimen150
 \@arcrad=\dimen151
 \@tempdimd=\dimen152
+)
+("C:\Program Files (x86)\Latex&Latex\tex\latex\natbib\natbib.sty"
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip94
+\bibsep=\skip95
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count131
 ))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -943,38 +927,34 @@ Package csquotes Info: ... found 'babel' package.
 
 LaTeX Warning: Label `fig:ITIL_Lebenyzyklus' multiply defined.
 
+
+Package natbib Warning: Citation `Naevy' multiply defined.
+
 )
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 7.
  ("C:\Program Files (x86)\Latex&Latex\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 9.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 7.
 
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\psnfss\t1ptm.fd"
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
-babelbib: Use citation-dependent languages in bibliography
-babelbib: Set bibliography fall-back language to ngerman
-("C:\Program Files (x86)\Latex&Latex\tex\latex\babelbib\german.bdf"
-File: german.bdf 2012/01/03 v1.31 babelbib: multilingual bibliographies (HH)
-
-babelbib extension \bibsngerman added to \extrasngerman
-babelbib extension \btxifchangecaseoff added to \extrasngerman
-) ("C:\Program Files (x86)\Latex&Latex\tex\latex\upquote\upquote.sty"
+("C:\Program Files (x86)\Latex&Latex\tex\latex\upquote\upquote.sty"
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 )
@@ -986,9 +966,9 @@ Package scrpage2 Warning: seems you are using a very small headheight.
 (scrpage2)                into the preamble of your document.
 (scrpage2)                A better solution would be to use typearea package.
 
-Package scrbase Info: activating ngerman \contentsname on input line 9.
-Package scrbase Info: activating ngerman \listfigurename on input line 9.
-Package scrbase Info: activating ngerman \listtablename on input line 9.
+Package scrbase Info: activating ngerman \contentsname on input line 7.
+Package scrbase Info: activating ngerman \listfigurename on input line 7.
+Package scrbase Info: activating ngerman \listtablename on input line 7.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1025,61 +1005,57 @@ Package scrbase Info: activating ngerman \listtablename on input line 9.
 
 ("C:\Program Files (x86)\Latex&Latex\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count134
+\scratchcounter=\count132
 \scratchdimen=\dimen153
-\scratchbox=\box39
-\nofMPsegments=\count135
-\nofMParguments=\count136
+\scratchbox=\box38
+\nofMPsegments=\count133
+\nofMParguments=\count134
 \everyMPshowfont=\toks31
-\MPscratchCnt=\count137
+\MPscratchCnt=\count135
 \MPscratchDim=\dimen154
-\MPnumerator=\count138
-\makeMPintoPDFobject=\count139
+\MPnumerator=\count136
+\makeMPintoPDFobject=\count137
 \everyMPtoPDFconversion=\toks32
 )
-\c@lstlisting=\count140
+\c@lstlisting=\count138
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 23.
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 33
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 21.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 31
 .
  ("C:\Program Files (x86)\Latex&Latex\tex\latex\psnfss\ot1ztmcm.fd"
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 33
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 31
 .
 
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\psnfss\omlztmcm.fd"
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 33
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 31
 .
 
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\psnfss\omsztmcm.fd"
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 33
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 31
 .
 
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\psnfss\omxztmcm.fd"
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 33.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 31.
 
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
 
-
-Package natbib Warning: Citation `test2' on page 1 undefined on input line 35.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 30--38
+Underfull \hbox (badness 10000) in paragraph at lines 28--36
 
  []
 
@@ -1087,58 +1063,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--38
 
 {C:/Users/pzilewitsch/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 50.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 48.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 52.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 50.
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--58
+Underfull \hbox (badness 10000) in paragraph at lines 47--56
 
  []
 
 [2]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <16> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 63.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 61.
  (Bachelorarbeit_Paul_Zilewitsch.toc
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
  [4])
-\tf@toc=\write5
+\tf@toc=\write4
  [5]
 (Bachelorarbeit_Paul_Zilewitsch.lof)
-\tf@lof=\write6
+\tf@lof=\write5
  [6]
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 82.
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 80.
 
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\psnfss\ts1ptm.fd"
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [7]
 (Bachelorarbeit_Paul_Zilewitsch.lot)
-\tf@lot=\write7
+\tf@lot=\write6
  [8] (Inhalte/1_Einleitung/Einleitung.tex
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 4.
-
-
-Package natbib Warning: Citation `test1' on page 1 undefined on input line 8.
-
-
-Overfull \hbox (18.90721pt too wide) in paragraph at lines 5--12
-\T1/ptm/m/n/12 den Ver-trieb von ent-wi-ckel-ter Soft-wa-re im Be-reich Compute
-r-Aided Fa-ci-li-ty Ma-na-ge-ment (CAFM).
- []
-
-[1]) [2] (Inhalte/2_Service_Desk/Service_Desk.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
- [3]
+
+Overfull \hbox (18.90721pt too wide) in paragraph at lines 5--12
+\T1/ptm/m/n/12 den Ver-trieb von ent-wi-ckel-ter Soft-wa-re im Be-reich Compute
+r-Aided Fa-ci-li-ty Ma-na-ge-ment (CAFM).
+ []
+
+[1]) [2] (Inhalte/2_Service_Desk/Service_Desk.tex [3]
 <Abbildungen/ITIL_Lebenszyklus.png, id=35, 521.95pt x 521.95pt>
 File: Abbildungen/ITIL_Lebenszyklus.png Graphic file (type png)
 
@@ -1250,39 +1221,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--95
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 98--100
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 98--100
+Underfull \hbox (badness 10000) in paragraph at lines 98--103
 
  []
 
 [13]
-Overfull \hbox (6.04903pt too wide) in paragraph at lines 106--109
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--111
+
+ []
+
+[14]
+Overfull \hbox (6.04903pt too wide) in paragraph at lines 120--123
 \T1/ptm/m/n/12 Alle Ser-vice Desk-Systeme, die be-trach-tet wur-den, wa-ren auf
  ih-re Wei-se in-di-vi-du-ell. Die Schwer-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--109
+Underfull \hbox (badness 10000) in paragraph at lines 120--123
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--109
+Underfull \hbox (badness 10000) in paragraph at lines 120--123
 
  []
 
-) [14] (Inhalte/4_Service_Desk_GEBman10/Service_Desk_GEBman10.tex
-<Abbildungen/GEBman.png, id=74, 1444.64719pt x 812.28468pt>
+) [15] (Inhalte/4_Service_Desk_GEBman10/Service_Desk_GEBman10.tex
+<Abbildungen/GEBman.png, id=77, 1444.64719pt x 812.28468pt>
 File: Abbildungen/GEBman.png Graphic file (type png)
 
 <use Abbildungen/GEBman.png>
 Package pdftex.def Info: Abbildungen/GEBman.png used on input line 12.
 (pdftex.def)             Requested size: 341.43307pt x 191.97763pt.
- [15 <./Abbildungen/GEBman.png>]
+ [16 <./Abbildungen/GEBman.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 24--28
 
  []
@@ -1297,33 +1273,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--37
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--43
-
- []
-
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 91--93
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 90--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--96
+Underfull \hbox (badness 10000) in paragraph at lines 93--95
 
  []
 
-[17])
-Overfull \hbox (196.96312pt too wide) in paragraph at lines 102--134
+[18])
+Overfull \hbox (196.96312pt too wide) in paragraph at lines 101--132
 [][][][][][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--134
+Underfull \hbox (badness 10000) in paragraph at lines 101--132
 
  []
 
-[18] (Inhalte/5_Microsoft_Exchange_Server/MES.tex
-<Abbildungen/RPC_TCP.png, id=90, 380.92313pt x 230.36063pt>
+[19] (Inhalte/5_Microsoft_Exchange_Server/MES.tex
+<Abbildungen/RPC_TCP.png, id=93, 380.92313pt x 230.36063pt>
 File: Abbildungen/RPC_TCP.png Graphic file (type png)
 
 <use Abbildungen/RPC_TCP.png>
@@ -1335,7 +1306,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--22
 ed0-
  []
 
-[19] <Abbildungen/RPC_HTTP.png, id=94, 373.395pt x 83.5622pt>
+[20] <Abbildungen/RPC_HTTP.png, id=97, 373.395pt x 83.5622pt>
 File: Abbildungen/RPC_HTTP.png Graphic file (type png)
 
 <use Abbildungen/RPC_HTTP.png>
@@ -1346,34 +1317,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--36
 []\T1/ptm/m/n/12 RPC over HTTP Prin-zip, in An-leh-nung an:http://
  []
 
-[20 <./Abbildungen/RPC_TCP.png> <./Abbildungen/RPC_HTTP.png>]
-<Abbildungen/EWS_Funktionsumfang.png, id=100, 660.4675pt x 455.7025pt>
+[21 <./Abbildungen/RPC_TCP.png> <./Abbildungen/RPC_HTTP.png>]
+<Abbildungen/EWS_Funktionsumfang.png, id=103, 660.4675pt x 455.7025pt>
 File: Abbildungen/EWS_Funktionsumfang.png Graphic file (type png)
 
 <use Abbildungen/EWS_Funktionsumfang.png>
 Package pdftex.def Info: Abbildungen/EWS_Funktionsumfang.png used on input line
  67.
 (pdftex.def)             Requested size: 295.90588pt x 204.17418pt.
- [21]) [22 <./Abbildungen/EWS_Funktionsumfang.png>] (Inhalte/6_Konzipierung/Kon
+ [22]) [23 <./Abbildungen/EWS_Funktionsumfang.png>] (Inhalte/6_Konzipierung/Kon
 zipierung.tex
-<Abbildungen/Sicherheitsprobleme.png, id=108, 1448.41125pt x 579.16376pt>
+<Abbildungen/Sicherheitsprobleme.png, id=111, 1448.41125pt x 579.16376pt>
 File: Abbildungen/Sicherheitsprobleme.png Graphic file (type png)
 
 <use Abbildungen/Sicherheitsprobleme.png>
 Package pdftex.def Info: Abbildungen/Sicherheitsprobleme.png used on input line
  11.
 (pdftex.def)             Requested size: 386.96027pt x 154.72372pt.
-) [23 <./Abbildungen/Sicherheitsprobleme.png>] [24] (Inhalte/7_Umsetzung/Umsetz
-ung.tex) [25]
-(Inhalte/8_Fazit/Fazit.tex) [26] [27] (Inhalte/9_Anhang/Anhang.tex
-<Abbildungen/Exchange_Verbindungen.png, id=126, 461.47406pt x 643.6547pt>
+) [24 <./Abbildungen/Sicherheitsprobleme.png>] [25] (Inhalte/7_Umsetzung/Umsetz
+ung.tex) [26]
+(Inhalte/8_Fazit/Fazit.tex) [27] [28] (Inhalte/9_Anhang/Anhang.tex
+<Abbildungen/Exchange_Verbindungen.png, id=129, 461.47406pt x 643.6547pt>
 File: Abbildungen/Exchange_Verbindungen.png Graphic file (type png)
 
 <use Abbildungen/Exchange_Verbindungen.png>
 Package pdftex.def Info: Abbildungen/Exchange_Verbindungen.png used on input li
 ne 9.
 (pdftex.def)             Requested size: 295.90588pt x 412.72331pt.
- [28 <./Abbildungen/Exchange_Verbindungen.png>] <Abbildungen/API_1.png, id=131,
+ [29 <./Abbildungen/Exchange_Verbindungen.png>] <Abbildungen/API_1.png, id=134,
  980.16188pt x 457.71pt>
 File: Abbildungen/API_1.png Graphic file (type png)
 
@@ -1381,18 +1352,18 @@ File: Abbildungen/API_1.png Graphic file (type png)
 Package pdftex.def Info: Abbildungen/API_1.png used on input line 23.
 (pdftex.def)             Requested size: 455.24411pt x 212.58153pt.
 
-<Abbildungen/API_2.png, id=132, 981.6675pt x 380.92313pt>
+<Abbildungen/API_2.png, id=135, 981.6675pt x 380.92313pt>
 File: Abbildungen/API_2.png Graphic file (type png)
 
 <use Abbildungen/API_2.png>
 Package pdftex.def Info: Abbildungen/API_2.png used on input line 27.
 (pdftex.def)             Requested size: 455.24411pt x 176.65079pt.
- [29 <./Abbildungen/API_1.png> <./Abbildungen/API_2.png>]
+ [30 <./Abbildungen/API_1.png> <./Abbildungen/API_2.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 38--40
 
  []
 
-<Abbildungen/Freshdesk.png, id=138, 1451.4225pt x 764.8575pt>
+<Abbildungen/Freshdesk.png, id=142, 1451.4225pt x 764.8575pt>
 File: Abbildungen/Freshdesk.png Graphic file (type png)
 
 <use Abbildungen/Freshdesk.png>
@@ -1408,7 +1379,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
-<Abbildungen/Deskcom.png, id=139, 1446.15282pt x 738.50906pt>
+<Abbildungen/Deskcom.png, id=143, 1446.15282pt x 738.50906pt>
 File: Abbildungen/Deskcom.png Graphic file (type png)
 
 <use Abbildungen/Deskcom.png>
@@ -1424,13 +1395,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
  []
 
-<Abbildungen/Zendesk.png, id=140, 1444.64719pt x 807.015pt>
+<Abbildungen/Zendesk.png, id=144, 1444.64719pt x 807.015pt>
 File: Abbildungen/Zendesk.png Graphic file (type png)
 
 <use Abbildungen/Zendesk.png>
 Package pdftex.def Info: Abbildungen/Zendesk.png used on input line 53.
 (pdftex.def)             Requested size: 455.24411pt x 254.30959pt.
- [30 <./Abbildungen/Freshdesk.png> <./Abbildungen/Deskcom.png>]
+ [31 <./Abbildungen/Freshdesk.png> <./Abbildungen/Deskcom.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
@@ -1440,42 +1411,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
-<Abbildungen/SysAid.png, id=147, 1444.64719pt x 776.9025pt>
+<Abbildungen/SysAid.png, id=150, 1444.64719pt x 776.9025pt>
 File: Abbildungen/SysAid.png Graphic file (type png)
 
 <use Abbildungen/SysAid.png>
 Package pdftex.def Info: Abbildungen/SysAid.png used on input line 59.
 (pdftex.def)             Requested size: 455.24411pt x 244.8204pt.
- [31 <./Abbildungen/Zendesk.png> <./Abbildungen/SysAid.png>]) [32]
+ [32 <./Abbildungen/Zendesk.png> <./Abbildungen/SysAid.png>]) [33] (Bachelorarb
+eit_Paul_Zilewitsch.bbl)
+(Bachelorarbeit_Paul_Zilewitsch.bbl)
 
-Package bibtopic Warning: Ignoring `\bibliography' command
-(bibtopic)                (not compatible with bibtopic.sty) on input line 188.
+Package natbib Warning: There were multiply defined citations.
 
-
-
-Package natbib Warning: There were undefined citations.
-
-[33] (Bachelorarbeit_Paul_Zilewitsch.aux)
+[34] (Bachelorarbeit_Paul_Zilewitsch.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 10869 strings out of 493673
- 159338 string characters out of 3141106
- 318453 words of memory out of 3000000
- 13941 multiletter control sequences out of 15000+200000
- 68701 words of font info for 115 fonts, out of 3000000 for 9000
+ 10293 strings out of 493673
+ 150851 string characters out of 3141106
+ 307434 words of memory out of 3000000
+ 13374 multiletter control sequences out of 15000+200000
+ 70442 words of font info for 116 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 41i,18n,46p,1889b,535s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,18n,46p,1889b,365s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/Latex&Latex/fonts/enc/dvips/fontname/8r.enc}<C:/Progr
 am Files (x86)/Latex&Latex/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/P
 rogram Files (x86)/Latex&Latex/fonts/type1/urw/times/utmb8a.pfb><C:/Program Fil
-es (x86)/Latex&Latex/fonts/type1/urw/times/utmr8a.pfb>
-Output written on Bachelorarbeit_Paul_Zilewitsch.pdf (40 pages, 1946624 bytes).
+es (x86)/Latex&Latex/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/L
+atex&Latex/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Bachelorarbeit_Paul_Zilewitsch.pdf (41 pages, 1961135 bytes).
 
 PDF statistics:
- 173 PDF objects out of 1000 (max. 8388607)
+ 180 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  71 words of extra memory for PDF output out of 10000 (max. 10000000)
 

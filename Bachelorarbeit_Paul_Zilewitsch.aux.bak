@@ -1,6 +1,12 @@
 \relax 
 \catcode `"\active 
-\bibstyle{plainnat}
+\citation{Naevy}
+\citation{test1}
+\citation{test2}
+\select@language{ngerman}
+\@writefile{toc}{\select@language{ngerman}}
+\@writefile{lof}{\select@language{ngerman}}
+\@writefile{lot}{\select@language{ngerman}}
 \select@language{ngerman}
 \@writefile{toc}{\select@language{ngerman}}
 \@writefile{lof}{\select@language{ngerman}}
@@ -9,8 +15,7 @@
 \@writefile{toc}{\contentsline {section}{Abbildungsverzeichnis}{VI}}
 \@writefile{toc}{\contentsline {section}{Abk\IeC {\"u}rzungsverzeichnis}{VII}}
 \@writefile{toc}{\contentsline {section}{Tabellenverzeichnis}{VIII}}
-\citation{Naevy}
-\citation{Naevy}
+\citation{test1}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Einleitung}{1}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Die Software GEBman10 von der KMS Computer GmbH}{1}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Das Modul Service Desk}{1}}
@@ -67,9 +72,7 @@
 \@writefile{toc}{\contentsline {section}{Anhang}{29}}
 \newlabel{Exchange Verbindung}{{8.2}{29}}
 \newlabel{API_1}{{8.2}{30}}
-\bibdata{literatur}
-\bibcite{Naevy}{{1}{2006}{{N\IeC {\"a}vy}}{{}}}
-\bibdata{literatur}
-\bibcite{Naevy}{{1}{2006}{{N\IeC {\"a}vy}}{{}}}
+\bibstyle{babplain}
+\csname bt@set@cnt\endcsname{0}
 \@writefile{toc}{\contentsline {section}{Literaturverzeichnis}{34}}
 \ttl@finishall

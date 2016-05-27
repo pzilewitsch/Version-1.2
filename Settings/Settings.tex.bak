@@ -134,18 +134,15 @@ headsep=10mm, footskip=10mm}
 \usepackage{graphicx}
 
 
-%Quellen
-%\usepackage{biblatex}
-\usepackage[square, numbers]{natbib}
-\usepackage[overridenumbers]{bibtopic}
-%\usepackage[numbers,round]{natbib}
-
-
 %Farben und Zeichnungen
 \usepackage{pict2e}  
 \usepackage{color}
 \usepackage{ amssymb }
 \definecolor{gray}{RGB}{150, 150, 150}
 
+
+%Literaturverzeichnis
+\bibliographystyle{plainnat} 
+\usepackage[numbers]{natbib}
 
 

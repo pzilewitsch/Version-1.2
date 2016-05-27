@@ -1,6 +1,8 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: Bachelorarbeit_Paul_Zilewitsch.aux
-The style file: babplain.bst
-I found no \bibdata command---while reading file Bachelorarbeit_Paul_Zilewitsch.aux
-Warning--I didn't find a database entry for "test2"
-Warning--I didn't find a database entry for "test1"
+The style file: plainnat.bst
+Illegal, another \bibdata command---line 72 of file Bachelorarbeit_Paul_Zilewitsch.aux
+ : \bibdata
+ :         {literatur}
+I'm skipping whatever remains of this command
+Database file #1: literatur.bib
 (There was 1 error message)
