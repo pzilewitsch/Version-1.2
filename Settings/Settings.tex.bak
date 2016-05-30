@@ -142,7 +142,11 @@ headsep=10mm, footskip=10mm}
 
 
 %Literaturverzeichnis
-\bibliographystyle{plainnat} 
-\usepackage[numbers]{natbib}
+%\bibliographystyle{apalike} 
+\bibliographystyle{unsrtnat} 
+\usepackage[numbers,round,sort]{natbib}
+\addto\captionsngerman{\renewcommand{\refname}{Literaturverzeichnis}}
+
+
 
 

@@ -178,8 +178,8 @@ XXX Seiten, XXX Literaturquellen , XXX Anlagen.
 %					10 Literaturverzeichnis
 %-------------------------------------------------------------------------------------------------------
 
-\addsec{Literaturverzeichnis} %vergebe keine Kapitelnummer
-
+%\addsec{Literaturverzeichnis} %vergebe keine Kapitelnummer
+\addcontentsline{toc}{section}{Literaturverzeichnis}
 \bibliography{literatur}
 
 \end{document}
