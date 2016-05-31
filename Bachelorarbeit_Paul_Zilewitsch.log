@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.12)  30 MAY 2016 11:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.12)  31 MAY 2016 16:34
 entering extended mode
 **Bachelorarbeit_Paul_Zilewitsch.tex
 (Bachelorarbeit_Paul_Zilewitsch.tex
@@ -1281,12 +1281,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--95
  []
 
 [18])
-Overfull \hbox (196.96312pt too wide) in paragraph at lines 101--132
+Overfull \hbox (196.96312pt too wide) in paragraph at lines 101--133
 [][][][][][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--132
+Underfull \hbox (badness 10000) in paragraph at lines 101--133
 
  []
 
@@ -1324,24 +1324,59 @@ Package pdftex.def Info: Abbildungen/EWS_Funktionsumfang.png used on input line
 (pdftex.def)             Requested size: 295.90588pt x 204.17418pt.
  [22]) [23 <./Abbildungen/EWS_Funktionsumfang.png>] (Inhalte/6_Konzipierung/Kon
 zipierung.tex
-<Abbildungen/Sicherheitsprobleme.png, id=111, 1448.41125pt x 579.16376pt>
+<Abbildungen/Aktivitaetsdiagramm.png, id=111, 1321.93875pt x 992.20688pt>
+File: Abbildungen/Aktivitaetsdiagramm.png Graphic file (type png)
+
+<use Abbildungen/Aktivitaetsdiagramm.png>
+Package pdftex.def Info: Abbildungen/Aktivitaetsdiagramm.png used on input line
+ 11.
+(pdftex.def)             Requested size: 386.96027pt x 290.44266pt.
+
+<Abbildungen/Zustandsdiagramm.png, id=112, 1078.78032pt x 983.17313pt>
+File: Abbildungen/Zustandsdiagramm.png Graphic file (type png)
+
+<use Abbildungen/Zustandsdiagramm.png>
+Package pdftex.def Info: Abbildungen/Zustandsdiagramm.png used on input line 19
+.
+(pdftex.def)             Requested size: 386.96027pt x 352.66689pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Abbildungen/Klassendiagramm.png, id=113, 1397.22pt x 891.33pt>
+File: Abbildungen/Klassendiagramm.png Graphic file (type png)
+
+<use Abbildungen/Klassendiagramm.png>
+Package pdftex.def Info: Abbildungen/Klassendiagramm.png used on input line 27.
+
+(pdftex.def)             Requested size: 386.96027pt x 246.85059pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Abbildungen/Sicherheitsprobleme.png, id=114, 1448.41125pt x 579.16376pt>
 File: Abbildungen/Sicherheitsprobleme.png Graphic file (type png)
 
 <use Abbildungen/Sicherheitsprobleme.png>
 Package pdftex.def Info: Abbildungen/Sicherheitsprobleme.png used on input line
- 11.
+ 42.
 (pdftex.def)             Requested size: 386.96027pt x 154.72372pt.
-) [24 <./Abbildungen/Sicherheitsprobleme.png>] [25] (Inhalte/7_Umsetzung/Umsetz
-ung.tex) [26]
-(Inhalte/8_Fazit/Fazit.tex) [27] [28] (Inhalte/9_Anhang/Anhang.tex
-<Abbildungen/Exchange_Verbindungen.png, id=129, 461.47406pt x 643.6547pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [24 <./Abbildungen/Aktivitaetsdiagramm.png>] [25 <./Abbildungen/Zustandsdiagr
+amm.png> <./Abbildungen/Klassendiagramm.png>] [26 <./Abbildungen/Sicherheitspro
+bleme.png>] (Inhalte/7_Umsetzung/Umsetzung.tex) [27] (Inhalte/8_Fazit/Fazit.tex
+) [28] [29] (Inhalte/9_Anhang/Anhang.tex
+<Abbildungen/Exchange_Verbindungen.png, id=138, 461.47406pt x 643.6547pt>
 File: Abbildungen/Exchange_Verbindungen.png Graphic file (type png)
 
 <use Abbildungen/Exchange_Verbindungen.png>
 Package pdftex.def Info: Abbildungen/Exchange_Verbindungen.png used on input li
 ne 9.
 (pdftex.def)             Requested size: 295.90588pt x 412.72331pt.
- [29 <./Abbildungen/Exchange_Verbindungen.png>] <Abbildungen/API_1.png, id=134,
+ [30 <./Abbildungen/Exchange_Verbindungen.png>] <Abbildungen/API_1.png, id=144,
  980.16188pt x 457.71pt>
 File: Abbildungen/API_1.png Graphic file (type png)
 
@@ -1349,18 +1384,18 @@ File: Abbildungen/API_1.png Graphic file (type png)
 Package pdftex.def Info: Abbildungen/API_1.png used on input line 23.
 (pdftex.def)             Requested size: 455.24411pt x 212.58153pt.
 
-<Abbildungen/API_2.png, id=135, 981.6675pt x 380.92313pt>
+<Abbildungen/API_2.png, id=145, 981.6675pt x 380.92313pt>
 File: Abbildungen/API_2.png Graphic file (type png)
 
 <use Abbildungen/API_2.png>
 Package pdftex.def Info: Abbildungen/API_2.png used on input line 27.
 (pdftex.def)             Requested size: 455.24411pt x 176.65079pt.
- [30 <./Abbildungen/API_1.png> <./Abbildungen/API_2.png>]
+ [31 <./Abbildungen/API_1.png> <./Abbildungen/API_2.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 38--40
 
  []
 
-<Abbildungen/Freshdesk.png, id=142, 1451.4225pt x 764.8575pt>
+<Abbildungen/Freshdesk.png, id=151, 1451.4225pt x 764.8575pt>
 File: Abbildungen/Freshdesk.png Graphic file (type png)
 
 <use Abbildungen/Freshdesk.png>
@@ -1376,7 +1411,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
-<Abbildungen/Deskcom.png, id=143, 1446.15282pt x 738.50906pt>
+<Abbildungen/Deskcom.png, id=152, 1446.15282pt x 738.50906pt>
 File: Abbildungen/Deskcom.png Graphic file (type png)
 
 <use Abbildungen/Deskcom.png>
@@ -1392,13 +1427,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
  []
 
-<Abbildungen/Zendesk.png, id=144, 1444.64719pt x 807.015pt>
+<Abbildungen/Zendesk.png, id=153, 1444.64719pt x 807.015pt>
 File: Abbildungen/Zendesk.png Graphic file (type png)
 
 <use Abbildungen/Zendesk.png>
 Package pdftex.def Info: Abbildungen/Zendesk.png used on input line 53.
 (pdftex.def)             Requested size: 455.24411pt x 254.30959pt.
- [31 <./Abbildungen/Freshdesk.png> <./Abbildungen/Deskcom.png>]
+ [32 <./Abbildungen/Freshdesk.png> <./Abbildungen/Deskcom.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
@@ -1408,36 +1443,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
-<Abbildungen/SysAid.png, id=150, 1444.64719pt x 776.9025pt>
+<Abbildungen/SysAid.png, id=159, 1444.64719pt x 776.9025pt>
 File: Abbildungen/SysAid.png Graphic file (type png)
 
 <use Abbildungen/SysAid.png>
 Package pdftex.def Info: Abbildungen/SysAid.png used on input line 59.
 (pdftex.def)             Requested size: 455.24411pt x 244.8204pt.
- [32 <./Abbildungen/Zendesk.png> <./Abbildungen/SysAid.png>]) [33] (Bachelorarb
-eit_Paul_Zilewitsch.bbl) [34]
+ [33 <./Abbildungen/Zendesk.png> <./Abbildungen/SysAid.png>]) [34] (Bachelorarb
+eit_Paul_Zilewitsch.bbl) [35]
 (Bachelorarbeit_Paul_Zilewitsch.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 10305 strings out of 493673
- 150979 string characters out of 3141106
+ 10323 strings out of 493673
+ 151558 string characters out of 3141106
  307434 words of memory out of 3000000
- 13387 multiletter control sequences out of 15000+200000
+ 13402 multiletter control sequences out of 15000+200000
  70775 words of font info for 117 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 41i,18n,46p,1889b,365s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,18n,46p,1867b,365s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/Latex&Latex/fonts/enc/dvips/fontname/8r.enc}<C:/Progr
 am Files (x86)/Latex&Latex/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/P
 rogram Files (x86)/Latex&Latex/fonts/type1/urw/times/utmb8a.pfb><C:/Program Fil
 es (x86)/Latex&Latex/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/L
 atex&Latex/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Bachelorarbeit_Paul_Zilewitsch.pdf (41 pages, 1966287 bytes).
+Output written on Bachelorarbeit_Paul_Zilewitsch.pdf (42 pages, 2111841 bytes).
 
 PDF statistics:
- 180 PDF objects out of 1000 (max. 8388607)
+ 189 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
 

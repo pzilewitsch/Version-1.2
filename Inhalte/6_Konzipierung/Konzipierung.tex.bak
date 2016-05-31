@@ -1,6 +1,11 @@
 % !TEX root = Bachelorarbeit_Paul_Zilewitsch.tex
 \section{Konzipierung}
 \subsection{Analyse aus Kapitel 1 und Kapitel 2 (UML-Diagramme etc.)}
+
+\noindent
+Grundlage der Modellierung bildet die Unifed Modeling Language (UML) in der Version 2.2. UML hat sich in den letzten Jahren in der  
+
+
 \subsection{Zielsetzung}
 \subsection{Sicherheitsaspekte}
 \noindent
