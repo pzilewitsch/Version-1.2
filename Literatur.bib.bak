@@ -36,6 +36,24 @@
   publisher={Berlin}
 }
 
+@book{Schneider,
+  title={Taschenbuch der Informatik: mit 108 Tabellen},
+  author={Schneider, U.},
+  year={2012},
+  Edition = {7}, 
+  publisher={Fachbuchverl. Leipzig im Carl-Hanser-Verlag}
+}
+
+@book{Balzert,
+  title={UML 2 kompakt: mit Checklisten},
+  author={Balzert, H.},
+  year={2010},
+  Edition = {3}, 
+  publisher={Spektrum Akademischer Verlag}
+}
+
+
+
 
 
 @Comment{jabref-meta: databaseType:bibtex;}

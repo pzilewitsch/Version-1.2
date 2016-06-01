@@ -26,6 +26,7 @@
 \usepackage{tabto}
 \usepackage{longtable}
 \usepackage{supertabular}
+\renewcommand{\arraystretch}{1.4} %Zeilenhöhe
 
 %Seitenzahlen
 \usepackage{scrpage2}

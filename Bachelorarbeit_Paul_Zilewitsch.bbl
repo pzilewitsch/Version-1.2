@@ -1,4 +1,4 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{7}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -9,20 +9,20 @@
 J.~Nävy.
 \newblock \emph{Facility Management: Grundlagen, Computerunterstützung,
   Systemeinführung, Anwendungsbeispiele}.
-\newblock Springer-Verlag Berlin Heidelberg, 2006.
+\newblock Springer-Verlag Berlin Heidelberg, 4 edition, 2006.
 
 \bibitem[Olbrich(2008)]{Olbrich}
 A.~Olbrich.
 \newblock \emph{ITIL kompakt und verst{\"a}ndlich: effizientes
   IT-Service-Management - den Standard f{\"u}r IT-Prozesse kennenlernen,
   verstehen und erfolgreich in der Praxis umsetzen}.
-\newblock Vieweg+Teubner Verlag, 2008.
+\newblock Vieweg+Teubner Verlag, 4 edition, 2008.
 
-\bibitem[Buchsein(2008)]{Buchsein}
+\bibitem[Buchsein(2007)]{Buchsein}
 Victor F. G{\"u}nther H. Machmeier~V. Buchsein, R.
 \newblock \emph{IT-Management mit ITIL{\textregistered} V3: Strategien,
   Kennzahlen, Umsetzung}.
-\newblock Vieweg+Teubner Verlag, 2008.
+\newblock Vieweg+Teubner Verlag, 2007.
 
 \bibitem[Ebel(2008)]{Ebel}
 N.~Ebel.
@@ -35,5 +35,15 @@ DIN EN~ISO 9000.
 \newblock \emph{DIN EN ISO 9000 (2005) : Qualitätsmanagementsysteme -
   Grundlagen und Begriffe.}
 \newblock Berlin, 2005.
+
+\bibitem[Schneider(2012)]{Schneider}
+U.~Schneider.
+\newblock \emph{Taschenbuch der Informatik: mit 108 Tabellen}.
+\newblock Fachbuchverl. Leipzig im Carl-Hanser-Verlag, 7 edition, 2012.
+
+\bibitem[Balzert(2010)]{Balzert}
+H.~Balzert.
+\newblock \emph{UML 2 kompakt: mit Checklisten}.
+\newblock Spektrum Akademischer Verlag, 3 edition, 2010.
 
 \end{thebibliography}
