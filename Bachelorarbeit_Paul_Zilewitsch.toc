@@ -17,7 +17,7 @@
 \contentsline {subsection}{\numberline {3.2}Freshdesk}{9}
 \contentsline {subsection}{\numberline {3.3}Desk.com}{11}
 \contentsline {subsection}{\numberline {3.4}Zendesk}{11}
-\contentsline {subsection}{\numberline {3.5}SysAid}{13}
+\contentsline {subsection}{\numberline {3.5}SysAid}{12}
 \contentsline {subsection}{\numberline {3.6}Fazit der Analyse}{14}
 \contentsline {section}{\numberline {4}Der Service Desk in GEBman10}{15}
 \contentsline {subsection}{\numberline {4.1}Aktuelle Umsetzung}{15}
@@ -28,10 +28,10 @@
 \contentsline {subsubsection}{\numberline {5.2.1}Funktionsweise}{21}
 \contentsline {subsubsection}{\numberline {5.2.2}Derzeitige Verwendung in GEBman10}{22}
 \contentsline {section}{\numberline {6}Konzipierung}{23}
-\contentsline {subsection}{\numberline {6.1}Grundidee Webservice }{23}
+\contentsline {subsection}{\numberline {6.1}Grundidee Module Service }{23}
 \contentsline {subsection}{\numberline {6.2}UML - Modellierung}{23}
-\contentsline {subsection}{\numberline {6.3}Zielsetzung}{25}
-\contentsline {subsection}{\numberline {6.4}Sicherheitsaspekte}{25}
+\contentsline {subsection}{\numberline {6.3}Zielsetzung}{26}
+\contentsline {subsection}{\numberline {6.4}Sicherheitsaspekte}{26}
 \contentsline {section}{\numberline {7}Umsetzung}{28}
 \contentsline {subsection}{\numberline {7.1}Erweiterung des bestehenden Service Desk Moduls}{28}
 \contentsline {subsection}{\numberline {7.2}Erl\IeC {\"a}uterung der wichtigsten Klassen und Methoden}{28}

@@ -2,6 +2,7 @@
 \usepackage{comment}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{url}
 
 % deutsche Silbentrennung
 \usepackage[ngerman]{babel}
@@ -26,7 +27,7 @@
 \usepackage{tabto}
 \usepackage{longtable}
 \usepackage{supertabular}
-\renewcommand{\arraystretch}{1.4} %Zeilenhöhe
+\renewcommand{\arraystretch}{1.5} %Zeilenhöhe
 
 %Seitenzahlen
 \usepackage{scrpage2}

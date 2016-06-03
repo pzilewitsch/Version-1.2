@@ -1,7 +1,12 @@
 % !TEX root = Bachelorarbeit_Paul_Zilewitsch.tex
 \section{Konzipierung}
 
-\subsection{Grundidee Webservice }
+\subsection{Zielsetzung und Grundidee Module Service }
+Ausgangspunkt ist ein Benutzer, der Mails an den Exchange Server schreiben kann. Alle E-Mails, die an den Exchnage Server gesendet werden, landen im Posteingang. Ziel ist es, diesen Posteingang in regelmäßigen Zeitabständen auszulesen. Durch die Auswertung des Betreffs einer jeden Mail, wird dann das weitere Vorgehen entschieden. Der Benutzer soll somit eine neue Meldung erstellen, auf eine vorhandene Meldung antworten oder einer Meldung den Status \enquote{Technisch fertig} zuteilen können.\newline 
+In GEBman10  ist eine Klasse Module Service implementiert, die es ermöglicht, einen Service asynchron vom restlichen System für das entsprechende Modul laufen zu lassen. Demnach muss in GEBman10 ein neuer Service erstellt werden, der in bestimmten Intervallen seine Funktion ausführt. Das geschieht im Code im Package Common. In diesem zentralen Package werden Funktionalitäten implementiert, die für alle Module allgemein gültig sind. Dadurch kann die Erweiterung später auch für andere Module verwendet werden außer dem Service Desk Modul.\newline
+Nach dem Auswerten der E-Mails im Packge Common muss im Module Service Desk auf eine Meldung erstellt oder bearbeitet werden. Das heißt, dass diese Funktionalität im Package Service Desk implementiert werden sollte. Hier befinden sich alle Komponenten, die auf die Meldungen in GEBman10 zugreifen. Nach der erfolgreichen Erstellung einer neuen Meldung, soll der Benutzer eine Bestätigungsmail erhalten. Hierfür können die bereits vorhandenen Funktionalitäten als Grundlage genutzt werden.\newline
+Um diese Grundidee besser erläutern und umsetzen zu können, ist eine Darstellung der einzelnen Schritten in UML-Diagrammen sinvoll.
+
 
 
 \subsection{UML - Modellierung}
@@ -56,15 +61,12 @@ Anders als beim Aktivitätsdiagramm wird in der nachfolgenden Abbildung ein Zust
 \end{figure}
 
 \noindent
-Sobald der Webserver gestartet ist, ist Anfangszustand der aktive Web-Service in GEBman 10 . In regelmäßigen Zeitabständen, werden über den WebService die neuesten Mails von dem Exchange Server geholt. Dann werden die in der Betreffzeile der Mail befindlichen ID's ausgewertet. Ist keine ID vorhanden, aber der Vermerk \enquote{\#neu} enthalten, geht der Web-Service in den Zustand einer neuen Meldungserstellung über. Anschließend wird die Bestätigungsmail versendet\newline
-Ist in der Meldung allerdings eine ID vorhanden, wird zunächst einen Status-Vermerk geprüft. Sollte keiner enthalten sein, tritt der Zustand ein, in dem der Mail-Body als Antwort der Meldung hinzugefügt wird. Ist ein jedoch ein Status-Vermerk vorhanden, ändert der Web-Service den Status der zugehörigen Meldung.\newline
-Nachdem das Intervall abgeschlossen ist, wechselt der Web-Service in den aktiven/wartenden Zustand und holt sich im nächsten Intervall die Mails vom Exchange Server. Nur wenn der Webserver beendet wird, ist logischerweise auch der Web-Service deaktiviert. Ansonsten soll er permanent laufen.\\
+Sobald der Webserver gestartet ist, wird  der aktive Module Service der Anfangszustand sein . In regelmäßigen Zeitabständen, werden über diesen Service die neuesten Mails von dem Exchange Server geholt. Dann werden die in der Betreffzeile der Mail befindlichen ID's ausgewertet. Ist keine ID vorhanden, aber der Vermerk \enquote{\#neu} enthalten, geht der Module Service in den Zustand einer neuen Meldungserstellung über. Anschließend wird die Bestätigungsmail versendet\newline
+Ist in der Meldung allerdings eine ID vorhanden, wird zunächst einen Status-Vermerk geprüft. Sollte keiner enthalten sein, tritt der Zustand ein, in dem der Mail-Body als Antwort der Meldung hinzugefügt wird. Ist ein jedoch ein Status-Vermerk vorhanden, ändert der Module Service den Status der zugehörigen Meldung.\newline
+Nachdem das Intervall abgeschlossen ist, wechselt der Module Service in den aktiven/wartenden Zustand und holt sich im nächsten Intervall die Mails vom Exchange Server. Nur wenn der Webserver beendet wird, ist logischerweise auch der Module Service deaktiviert. Ansonsten soll er permanent laufen.\\
 
 \noindent
-Die Verhaltensdiagramme aus Benutzer -und Systemperspektive sind somit abgeschlossen. Das Klassendiagramm in Abbildung ~\ref{fig:Klassendiagramm} ist ein Strukturdiagramm, dass einen groben Überblick in den zu implementierenden Web-Service und der Beziehung zu dem restlichen System geben soll.
-
-
-
+Die Verhaltensdiagramme aus Benutzer -und Systemperspektive sind somit abgeschlossen. Das Klassendiagramm in Abbildung ~\ref{fig:Klassendiagramm} ist ein Strukturdiagramm, dass einen groben Überblick in den zu implementierenden Module Service und seiner Beziehung zu dem restlichen System geben soll. 
 
 \begin{figure}[h!]
 \centering
@@ -73,13 +75,16 @@ Die Verhaltensdiagramme aus Benutzer -und Systemperspektive sind somit abgeschlo
 	\label{fig:Klassendiagramm}
 \end{figure}
 
+\noindent
+Die Funktionalitäten für das Versenden von E-Mails in GEBman 10 befinden sich im Namensraum GeoMan.Common.Core.GroupWare. Die Klasse für den Service wird GroupWareTicketHandler heißen und sich ebenfalls in diesem Namensraum befinden. Sie erbt von der abstrakten Klasse Module Service, welche sich im Boom Framework befindet. GroupWareTicketHandler besitzt nur eine öffentliches Attribut und das ist dateFromLastEmail mit dem DateTime als Datentyp. Diese variable speichert das Ankunftsdatum von der neuesten E-Mail im Exchange Postfach. Somit müssen nicht alle E-Mails abgerufen werden, sondern nur die, die nach dem Ankunftsdatum der letzten E-Mail eingetroffen sind.\newline
+Diese Klasse GroupWareTicketHandler wird auf die Exchange Webservices zugreifen und sich Methoden der Klasse Exchange Service bedienen, um die E-Mails von Exchange Server abzufragen. Das übernimmt die Methode getMails, die den Zeitpunkt der zuletzt abgerufenen E-Mail als Argument übergeben bekommt. Der Rückgabewert ist Iterator mit Items vom Exchange Webservice. Deshalb wird eine Referenz auf die Microsoft Exchange Web Services Data benötigt.
+\newline 
+Die Methode checkIdFromMails wird die ID's überprüfen, die in den Betreff der Mails eingetragen wurde. Ein boolscher Rückgabewert schafft dann Klarheit, ob die Mail eine ID besitzt und ob es diese gibt oder ob es die ID nicht gibt. Die Methoden createTicket, ticketAnswer und saveAttachements() werden dann je nach Ausgang der überprüften ID's aufgerufen. Sie müssen auf das Modul Service Desk zugreifen und haben deshalb eine Referenz auf GeoMan.ServiceDesk. Dadurch stehen den Methoden die Funktionalitäten für das Erstellen oder Antworten einer Meldung vom Service Desk zur Verfügung.
 
 
-
-\subsection{Zielsetzung}
 \subsection{Sicherheitsaspekte}
 \noindent
-Immer wieder vernachlässigen Entwickler die Sicherheit ihrer Implementierungen. Das liegt meistens an mangelnder Zeit, da Releases einen festen Zeitplan verfolgen, den es einzuhalten gilt. Es kann aber auch sein, dass die Implementierung nicht aus dem Blickwinkel der Sicherheit betrachtet wird. "Hauptsache es funktioniert erst einmal", wird dann häufig als Argument genutzt. Natürlich hat das wenig mit Sicherheit zu tun. Dabei können es Entwickler mit wenig Aufwand, Angreifern deutlich schwerer machen. Deswegen werden im nachfolgendem zwei Sicherheitsprobleme für die Umsetzung des Konzepts in GEBman 10 besprochen. Die Abbildung XX zeigt zwei kritische Bereiche, die genauer erläutert werden müssen.
+Immer wieder vernachlässigen Entwickler die Sicherheit ihrer Implementierungen. Das liegt meistens an mangelnder Zeit, da Releases einen festen Zeitplan verfolgen, den es einzuhalten gilt. Es kann aber auch sein, dass die Implementierung nicht aus dem Blickwinkel der Sicherheit betrachtet wird. "Hauptsache es funktioniert erst einmal", wird dann häufig als Argument genutzt. Natürlich hat das wenig mit Sicherheit zu tun. Dabei können es Entwickler mit wenig Aufwand, Angreifern deutlich schwerer machen. Deswegen werden im nachfolgendem zwei Sicherheitsprobleme für die Umsetzung des Konzepts in GEBman 10 besprochen. Die Abbildung ~\ref{fig:Sicherheitsprobleme} zeigt zwei kritische Bereiche, die genauer erläutert werden müssen.
 
 \begin{figure}[h!]
 \centering
@@ -89,14 +94,13 @@ Immer wieder vernachlässigen Entwickler die Sicherheit ihrer Implementierungen.
 \end{figure}
 
 \noindent
-Der rechte rote Blitz - gekennzeichnet mit der (1) - symbolisiert das erste Problem.
+Der erste rote Blitz - gekennzeichnet mit der (1) - symbolisiert das erste Problem.
 
 \noindent
-Beim zweiten roten Blitz der Abbildung XX - gekennzeichnet mit der (2) - wird uns die Arbeit nicht wie beim ersten kritischen Bereich abgenommen. GEBman 10 synchronisiert in regelmäßigen Abständen die Nachrichten vom hinterlegten Exchange Server. Entsprechend ihrer ID werden die Nachrichten in die Datenbank von GEBman 10 gespeichert. Nun könnte ein Angreifer beispielsweise versuchen, in den Mail-Body versteckte SQL -Anweisungen oder JavaScript-Code einzuschleusen. Werden die SQL-Anweisungen in die Datenbank geschrieben, ohne sie vorher zu validieren, könnte der Angreifer Informationen über Daten in der Datenbank erlangen. Im schlimmsten Fall könnte er sie zerstören. Diese Angriffstmethode nennt sich SQL-Injection und zielt darauf ab, die normalen SQL-Statements mittels Sonderzeichen zu manipulieren. Selbst einfache Zeichen wie "--" können bewirken, dass alles, was hinter den beiden Bindestrichen steht, ignoriert wird. In T-SQL sind die beiden Bindestriche das Zeichen für einen Kommentar.
+Beim zweiten roten Blitz der Abbildung ~\ref{fig:Sicherheitsprobleme} - gekennzeichnet mit der (2) - wird uns die Arbeit nicht wie beim ersten kritischen Bereich abgenommen. GEBman 10 synchronisiert in regelmäßigen Abständen die Nachrichten vom hinterlegten Exchange Server. Entsprechend ihrer ID werden die Nachrichten in die Datenbank von GEBman 10 gespeichert. Nun könnte ein Angreifer beispielsweise versuchen, in den Mail-Body versteckte SQL -Anweisungen oder JavaScript-Code einzuschleusen. Werden die SQL-Anweisungen in die Datenbank geschrieben, ohne sie vorher zu validieren, könnte der Angreifer Informationen über Daten in der Datenbank erlangen. Im schlimmsten Fall könnte er sie zerstören. Diese Angriffstmethode nennt sich SQL-Injection und zielt darauf ab, die normalen SQL-Statements mittels Sonderzeichen zu manipulieren. Selbst einfache Zeichen wie "--" können bewirken, dass alles, was hinter den beiden Bindestrichen steht, ignoriert wird. In T-SQL sind die beiden Bindestriche das Zeichen für einen Kommentar.
 \noindent
-Bei JavaScript-Code haben wir ein ähnliches Problem mit bestimmten Zeichen. Wird zum Beispiel die einfache Zeichenfolge "<script>alert('hallo')<script>" in die Datenbank geschrieben, passiert ersst einmal gar nichts. Die SQL-Statements werden hierdruch nicht manipuliert. Doch wird diese Zeichenfolge beispielsweise als Antwort auf eine Meldung geladen, erkennt der Browser möglicherweise JavaScript-Code anstatt einfachen Text. Das hat in unserem Beispiel zur Folge, dass der Browser eine kleine Nachricht meldet (siehe Abbildung).
-Auch hier muss vor dem Einfügen der Zeichenfolge, eine Validierung vollzogen werden. Welche Zeichen genau gefiltert werden müssen, wird im Punkt 5 Umsetzung erläutert. Man sollte sich jedoch nicht darauf verlassen, dass die Schutzmechanismen des Microsoft Exchange Servers alle Zeichen und Zeichenfolgen als Bedrohung erkennen. Zeichen wie "--" oder ">" können durchaus im normalen Schriftverkehr gebräuchlich sein.
+Bei JavaScript-Code gibt es ein ein ähnliches Problem mit bestimmten Zeichen. Wird zum Beispiel die einfache Zeichenfolge "<script>alert('hallo')<script>" in die Datenbank geschrieben, beleibt das zunächst ohne Folgen. Die SQL-Statements werden hierdruch nicht manipuliert. Doch wird diese Zeichenfolge beispielsweise als Antwort auf eine Meldung geladen, erkennt der Browser möglicherweise JavaScript-Code anstatt einfachen Text. Das hat in unserem Beispiel zur Folge, dass der Browser eine kleine Nachricht meldet (siehe Abbildung).
+Auch hier muss vor dem Einfügen der Zeichenfolge, eine Validierung vollzogen werden. Welche Zeichen genau gefiltert werden müssen, wird im Punkt 7 Umsetzung erläutert. Man sollte sich jedoch nicht darauf verlassen, dass die Schutzmechanismen des Microsoft Exchange Servers alle Zeichen und Zeichenfolgen als Bedrohung erkennen. Zeichen wie "--" oder ">" können durchaus im normalen Schriftverkehr gebräuchlich sein.
 \noindent
-Es gibt für Angreifer noch mehr Angriffsmöglichkeiten beispielsweise zwischen Client und Internet/Server über Man-in-the-Middle etc.. Darauf soll aber in dieser Arbeit nicht weiter eingegangen werden, da das ein sehr umfangreiches Thema ist und eine eigenständige Bachelorarbeit bilden könnte. Eins sollte jedem klar sein: Hat ein Cracker genügend Zeit und Ressourcen, ist ein System, das über das Internet kommuniziert, äußert schwer vollkommen zu sichern. 
-\noindent
-Durch die Analyse aus Punkt 2 und Punkt 3 konnte ein genaues Ziel gesetzt werden. Die Funktionsweise der Exchange Web Services sind geklärt und auch Sicherheitsaspekte wurden berücksichtigt. Die Konzipierung ist somit abgeschlossen und er Implementierung steht nichts mehr im Wege.
+ 
+

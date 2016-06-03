@@ -38,8 +38,7 @@ Ab Exchange 20013 wird der Datenaustausch zwischen dem Outlook-Client und dem Ex
 \end{figure}
 
 \noindent
-In der Abbildung \ref{fig:RPC_HTTP} sieht man deutlich, dass der Outlook-Client über HTTPS mit dem IIS kommuniziert, auf dem ein virtuelles RPC-Verzeichnis existiert. Der IIS ist eine Microsoft-Webserverplattform, die Webanwendungen und Dienste bereitstellen und verwalten kann.\footnote{Vgl. Volodarsky, M./Cheah, B./Londer, O./Hill,B./Schofield, S./Aguilar Mares,C./Meyer,K./ Microsoft IIS Team (2009):Microsoft
-Internetinformations-dienste (IIS) 7.0 – Die technische Referenz, S.3.} Der IIS wiederum, baut über einen RPC-Proxy eine Verbindung mit dem Exchange Server auf. Wichtig ist hierbei, dass die Kommunikation des Clients sich auf HTTP oder HTTPS beschränkt.\footnote{Vgl. http://www.msxfaq.de/clients/oagrundlagen.htm}
+In der Abbildung \ref{fig:RPC_HTTP} sieht man deutlich, dass der Outlook-Client über HTTPS mit dem IIS kommuniziert, auf dem ein virtuelles RPC-Verzeichnis existiert. Der IIS ist eine Microsoft-Webserverplattform, die Webanwendungen und Dienste bereitstellen und verwalten kann.\footnote{Vgl. \citeauthor{Volodarsky} \citeyear{Volodarsky}, S.3.} Der IIS wiederum, baut über einen RPC-Proxy eine Verbindung mit dem Exchange Server auf. Wichtig ist hierbei, dass die Kommunikation des Clients sich auf HTTP oder HTTPS beschränkt.\footnote{Vgl. http://www.msxfaq.de/clients/oagrundlagen.htm}
 
 
 \subsection{Exchange Web Services}
@@ -75,7 +74,15 @@ EWS bietet einen großen Funktionsumfang und ist somit eine hervorragende Mögli
 
 \subsubsection{Derzeitige Verwendung in GEBman10}
 \noindent
-GEBman10 unterstützt Exchange Server 2007, Exchange Server 2007\_SP1, Exchange Server 2010 sowie Exchange Server 2010\_SP1. 
-In Groupware kann....Auswahl getroffen werden. Die Implementation erfolge über EWS bzw. mit der Hilfe von der Microsoft Exchange Web Services Managed API 2.2.
+Um bei der Implementierung den Exchange Web Service nutzen zu können, musste die Microsoft Exchange Web Services Managed API 2.2. dem Projekt als .NET-Assembly hinzugefügt werden. Wie bereits im Punkt 4 erwähnt, kann im Adminbereich von GEBman10 kann in der der Rubrik GroupWare die Konfiguration des Exchange Servers durchgeführt werden. Wichtig ist hierbei zunächst, welche Version vom Exchnage Server verlangt wird, da das entscheidend für die Microsoft Web Services Managed API ist. GEBman10 unterstützt folgende Exchange Server-Versionen:
 
-Diese bereits vorhandenen Funktionalitäten werden als Grundlage für die folgenden Konzipierung und anschließende Implementierung genutzt. 
+\begin{itemize}[topsep=-0.5\parskip]
+\item Exchange 2007
+\item  Exchange 2007 SP1
+\item  Exchange 2010 
+\item  Exchange 2010 SP1
+\item  Exchange 2013 
+\end{itemize}
+
+\noindent
+Nachdem die Version bestimmt und die Benutzerdaten eingetragen wurden, kann direkt im Code mittels der API direkt auf den Exchange Server zugegriffen werden. Derzeit ist das Versenden von E-Mails über den Code implementiert, sodass eine Grundlage für die Erweiterung bereits vorhanden ist. Auch das Auswerten von E-Mails ist über diese API möglich und eine Schnittstelle muss nicht mehr implementiert werden. Diese vorhandenen Funktionalitäten werden als Grundlage für die folgenden Konzipierung und anschließende Implementierung genutzt. 
