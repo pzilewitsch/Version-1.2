@@ -28,18 +28,17 @@
 \contentsline {subsubsection}{\numberline {5.2.1}Funktionsweise}{21}
 \contentsline {subsubsection}{\numberline {5.2.2}Derzeitige Verwendung in GEBman10}{22}
 \contentsline {section}{\numberline {6}Konzipierung}{23}
-\contentsline {subsection}{\numberline {6.1}Grundidee Module Service }{23}
+\contentsline {subsection}{\numberline {6.1}Zielsetzung und Grundidee Module Service }{23}
 \contentsline {subsection}{\numberline {6.2}UML - Modellierung}{23}
-\contentsline {subsection}{\numberline {6.3}Zielsetzung}{26}
-\contentsline {subsection}{\numberline {6.4}Sicherheitsaspekte}{26}
-\contentsline {section}{\numberline {7}Umsetzung}{28}
-\contentsline {subsection}{\numberline {7.1}Erweiterung des bestehenden Service Desk Moduls}{28}
-\contentsline {subsection}{\numberline {7.2}Erl\IeC {\"a}uterung der wichtigsten Klassen und Methoden}{28}
-\contentsline {subsection}{\numberline {7.3}Fehlschl\IeC {\"a}ge/Erfahrungen}{28}
-\contentsline {section}{\numberline {8}Fazit}{29}
-\contentsline {subsection}{\numberline {8.1}Erweiterungsm\IeC {\"o}glichkeiten}{29}
-\contentsline {subsection}{\numberline {8.2}Schlussbemerkung}{29}
-\contentsline {section}{Anhangsverzeichnis}{30}
-\contentsline {section}{Anhang}{31}
-\contentsline {section}{Literaturverzeichnis}{36}
+\contentsline {subsection}{\numberline {6.3}Sicherheitsaspekte}{27}
+\contentsline {section}{\numberline {7}Umsetzung}{29}
+\contentsline {subsection}{\numberline {7.1}Erweiterung des bestehenden Service Desk Moduls}{29}
+\contentsline {subsection}{\numberline {7.2}Erl\IeC {\"a}uterung der wichtigsten Klassen und Methoden}{29}
+\contentsline {subsection}{\numberline {7.3}Fehlschl\IeC {\"a}ge/Erfahrungen}{29}
+\contentsline {section}{\numberline {8}Fazit}{30}
+\contentsline {subsection}{\numberline {8.1}Erweiterungsm\IeC {\"o}glichkeiten}{30}
+\contentsline {subsection}{\numberline {8.2}Schlussbemerkung}{30}
+\contentsline {section}{Anhangsverzeichnis}{31}
+\contentsline {section}{Anhang}{32}
+\contentsline {section}{Literaturverzeichnis}{37}
 \contentsfinish 
