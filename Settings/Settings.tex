@@ -2,6 +2,7 @@
 \usepackage{comment}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{url}
 
 % deutsche Silbentrennung
 \usepackage[ngerman]{babel}
@@ -26,6 +27,7 @@
 \usepackage{tabto}
 \usepackage{longtable}
 \usepackage{supertabular}
+\renewcommand{\arraystretch}{1.5} %Zeilenhöhe
 
 %Seitenzahlen
 \usepackage{scrpage2}
@@ -46,6 +48,9 @@
 \renewcaptionname{ngerman}{\contentsname}{} %kein Titel für Inhaltsv. 
 %\usepackage{hyperref} %für links im inhaltsverzeichnis
 
+%Abkürzungsverzeichnis
+\usepackage{enumitem} 
+
 %Abbildungsverzeichnis
 \renewcaptionname{ngerman}{\listfigurename}{}
 
@@ -53,6 +58,16 @@
   [0em]
   {}
   {\figurename\enspace\thecontentslabel:\enspace}
+  {}
+  {\titlerule*[1pc]{.}\contentspage}
+  
+  %Tabellenverzeichnis
+\renewcaptionname{ngerman}{\listtablename}{}
+
+\titlecontents{table}
+  [0em]
+  {}
+  {\tablename\enspace\thecontentslabel:\enspace}
   {}
   {\titlerule*[1pc]{.}\contentspage}
 
@@ -117,7 +132,23 @@ headsep=10mm, footskip=10mm}
 %}
 
 
-
 %Bilder
 \usepackage{graphicx}
+
+
+%Farben und Zeichnungen
+\usepackage{pict2e}  
+\usepackage{color}
+\usepackage{ amssymb }
+\definecolor{gray}{RGB}{150, 150, 150}
+
+
+%Literaturverzeichnis
+%\bibliographystyle{apalike} 
+\bibliographystyle{unsrtnat} 
+\usepackage[numbers,round,sort]{natbib}
+\addto\captionsngerman{\renewcommand{\refname}{Literaturverzeichnis}}
+
+
+
 

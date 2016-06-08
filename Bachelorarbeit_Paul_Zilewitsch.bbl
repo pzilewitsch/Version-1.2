@@ -1,0 +1,88 @@
+\begin{thebibliography}{13}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Nävy(2006)]{Naevy}
+J.~Nävy.
+\newblock \emph{Facility Management: Grundlagen, Computerunterstützung,
+  Systemeinführung, Anwendungsbeispiele}.
+\newblock Springer-Verlag Berlin Heidelberg, 4 edition, 2006.
+
+\bibitem[Olbrich(2008)]{Olbrich}
+A.~Olbrich.
+\newblock \emph{ITIL kompakt und verst{\"a}ndlich: effizientes
+  IT-Service-Management - den Standard f{\"u}r IT-Prozesse kennenlernen,
+  verstehen und erfolgreich in der Praxis umsetzen}.
+\newblock Vieweg+Teubner Verlag, 4 edition, 2008.
+
+\bibitem[Andenmatten(28.06.2011)]{Andenmatten}
+Martin Andenmatten.
+\newblock Itil® 2011 edition – mehr als nur ein update.
+\newblock
+  \url{http://blog.itil.org/2011/06/itil/itil%C2%AE-2011-edition-mehr-als-nur-ein-update},
+  28.06.2011.
+\newblock abgerufen am: 10.05.2016.
+
+\bibitem[{Buchsein, R., Victor, F., G{\"u}nther, H., Machmeier,
+  V.}(2007)]{Buchsein}
+{Buchsein, R., Victor, F., G{\"u}nther, H., Machmeier, V.}
+\newblock \emph{IT-Management mit ITIL{\textregistered} V3: Strategien,
+  Kennzahlen, Umsetzung}.
+\newblock Vieweg+Teubner Verlag, 2007.
+
+\bibitem[Ebel(2008)]{Ebel}
+N.~Ebel.
+\newblock \emph{ITIL V3 Basis-Zertifizierung: Grundlagenwissen und
+  Zertifizierungsvorbereitung f{\"u}r die ITIL-Foundation-Pr{\"u}fung}.
+\newblock Pearson Deutschland, 2008.
+
+\bibitem[9000(2005)]{ISO9000}
+DIN EN~ISO 9000.
+\newblock \emph{DIN EN ISO 9000 (2005) : Qualitätsmanagementsysteme -
+  Grundlagen und Begriffe.}
+\newblock Berlin, 2005.
+
+\bibitem[{Cannon, D., Wheeldon, D.}(2007)]{Cannon}
+{Cannon, D., Wheeldon, D.}
+\newblock \emph{Service Operation}.
+\newblock The Stationery Office (TSO), 2007.
+
+\bibitem[{Meier, A., Myrach, T.}(2004)]{Meier}
+{Meier, A., Myrach, T.}
+\newblock \emph{IT-Servicemanagement in deutschen Unternehmen - Ergebnisse
+  einer empirischen Studie zu ITIL}.
+\newblock dpunkt.verlag.Heidelberg, 2004.
+
+\bibitem[Wikipedia(09.05.2016)]{WikiServiceDesk}
+Wikipedia.
+\newblock Servicedesk.
+\newblock \url{https://de.wikipedia.org/wiki/Servicedesk}, 09.05.2016.
+\newblock abgerufen am: 24.05.2016.
+
+\bibitem[Freshdesk()]{Freshdesk}
+Freshdesk.
+\newblock \url{http://freshdesk.de/kunden/}.
+\newblock abgerufen am: 15.05.2016.
+
+\bibitem[{Volodarsky, M., Cheah, B., Londer, O., Hill, B., Schofield, S.,
+  Aguilar Mares, C., Meyer, K.}(2009)]{Volodarsky}
+{Volodarsky, M., Cheah, B., Londer, O., Hill, B., Schofield, S., Aguilar Mares,
+  C., Meyer, K.}
+\newblock \emph{Microsoft Internetinformations-dienste (IIS) 7.0 – Die
+  technische Referenz}.
+\newblock Microsoft Press Deutschland, 2009.
+
+\bibitem[Schneider(2012)]{Schneider}
+U.~Schneider.
+\newblock \emph{Taschenbuch der Informatik: mit 108 Tabellen}.
+\newblock Fachbuchverl. Leipzig im Carl-Hanser-Verlag, 7 edition, 2012.
+
+\bibitem[Balzert(2010)]{Balzert}
+H.~Balzert.
+\newblock \emph{UML 2 kompakt: mit Checklisten}.
+\newblock Spektrum Akademischer Verlag, 3 edition, 2010.
+
+\end{thebibliography}
