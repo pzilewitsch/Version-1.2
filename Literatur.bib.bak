@@ -98,6 +98,46 @@
   note = {abgerufen am: 15.05.2016}
 }
 
+@misc{Salesforce,
+  author =  {Salesforce},
+  howpublished = {\url{http://www.salesforce.com/de/company/newspress/press-releases/2012/02/120201.jsp}},
+  note = {abgerufen am: 16.05.2016}
+}
+
+@misc{Zendesk,
+  author =  {Zendesk},
+  howpublished = {\url{https://www.zendesk.de/about/}},
+  note = {abgerufen am: 17.05.2016}
+}
+
+@misc{Rixecker,
+	titel = {Zufriedene Kunden: So geht Support auf Facebook & Co.},
+  	author =  {Kim Rixecker},
+  	year = {05.06.2014},
+  	howpublished = {\url{http://t3n.de/news/zufriedene-kunden-geht-support-549532/}},
+  	note = {abgerufen am: 19.05.2016}
+}
+
+@misc{Widget1,
+	titel = {Definition Widget},
+  	howpublished = {\url{http://www.onlinemarketing-praxis.de/glossar/widget}},
+  	note = {abgerufen am: 22.05.2016}
+}
+
+@misc{Widget2,
+	titel = {Packaged Web Apps (Widgets) - Packaging and XML Configuration (Second Edition)},
+	author = {W3C Recommendation},
+  	howpublished = {\url{https://www.w3.org/TR/widgets/#Introduction}},
+  	year = {27.12.2012},
+  	note = {abgerufen am: 22.05.2016}
+}
+
+
+
+ 
+
+
+
 
 
 @Comment{jabref-meta: databaseType:bibtex;}
