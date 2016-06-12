@@ -1,4 +1,4 @@
-\begin{thebibliography}{18}
+\begin{thebibliography}{19}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -92,6 +92,12 @@ Kim Rixecker.
 W3C Recommendation.
 \newblock \url{https://www.w3.org/TR/widgets/#Introduction}, 27.12.2012.
 \newblock abgerufen am: 22.05.2016.
+
+\bibitem[{Ellis, C. A., Gibbs, S. J., Rein, G. L.}(1991)]{Ellis}
+{Ellis, C. A., Gibbs, S. J., Rein, G. L.}
+\newblock \emph{Groupware - Some Issues and Experiences. Communications of the
+  ACM}.
+\newblock ACM New York, NY, USA, 1991.
 
 \bibitem[{Volodarsky, M., Cheah, B., Londer, O., Hill, B., Schofield, S.,
   Aguilar Mares, C., Meyer, K.}(2009)]{Volodarsky}

@@ -3,30 +3,21 @@
 
 \subsection{Grundlagen}
 \noindent 
-Der  Microsoft Exchange Server ist eine serverseitige Anwendung, die den Nachrichtenaustausch und die Zusammenarbeit im Unternehmen erleichtern soll.\footnote{Joos, T. (2013): Microsoft Exchange Server 2013, S.26.} Im Juni 1996 wurde die erste Version von Microsoft Exchange veröffentlicht. Sie löste das Mailsystem MS Mail ab, da dieses für einen Gebrauch mit über 500 Postfächern nicht ausgelegt und somit für größere Unternehmen nicht mehr sinnvoll war. Dieser Wechsel der Software wurde passend durch den Namen Exchange beschrieben, da es so viel heißt wie \enquote{Austausch}.\footnote{Vgl. Übersetzer}
-Ziel des Microsoft Exchange Servers ist es, Nachrichten zu verarbeiten und zu verwalten. Obwohl Exchange ein Mailserver ist, können neben E-Mails auch Termine angelegt oder Aufgaben vergeben werden. Somit wäre es denkbar, Exchange als zentrale Anlaufstelle der Unternehmenskommunikation einzusetzen.
-
-\noindent 
+Der  Microsoft Exchange Server ist eine serverseitige Anwendung, die den Nachrichtenaustausch und die Zusammenarbeit im Unternehmen erleichtern soll.\footnote{Joos, T. (2013): Microsoft Exchange Server 2013, S.26.} Im Juni 1996 wurde die erste Version von Microsoft Exchange veröffentlicht. Sie löste das Mailsystem MS Mail ab, da dieses für einen Gebrauch mit über 500 Postfächern nicht ausgelegt und somit für größere Unternehmen nicht mehr sinnvoll war. Dieser Wechsel der Software wurde passend durch den Namen Exchange beschrieben, da es so viel heißt wie \enquote{Austausch}. Ziel des Microsoft Exchange Servers ist es, Nachrichten zu verarbeiten und zu verwalten. Obwohl Exchange ein Mailserver ist, können neben E-Mails auch Termine angelegt oder Aufgaben vergeben werden. Somit wäre es denkbar, Exchange als zentrale Anlaufstelle der Unternehmenskommunikation einzusetzen.\newline
 Microsoft Exchange ist klar in den Bereich Groupware einzuordnen. Gropuware-Software wird vor allem zur Unterstützung der internen als auch der externen Unternehmenskommunikation genutzt. Ellis, Gibbs und Rein beschreiben die bekannteste Form von Groupware als ein 
-\enquote{computer-based message system, which supports the asynchronous exchange of textual messages between groups of users}\footnote{Ellis, C. A./Gibbs, S. J./Rein, G. L. (1991): Groupware - Some Issues and Experiences. Communications of the ACM, 34(1), S. 38-58.}. Also ein Computersystem für den asynchronen Austausch von von Textnachrichten innerhalb einer Gruppe. Meistens sind dies Arbeitsgruppen im Unternehmensumfeld. Mircosoft Exchange erfüllt dieses Kriterium. Vorausgesetzt die Benutzer verfügen über eine Client-Software.
-
-\noindent
-Um auf die Inhalte des Microsoft Exchange Servers zugreifen zu können, benötigt jeder Benutzer eine Client-Software. Verwaltung des Postfaches, Zugriff auf öffentliche Ordner und natürlich auch Empfangen und Senden von E-Mails sind die Hauptziele einer Client-Software. Im Anhang auf Seite~\pageref{Exchange Verbindung} findet man eine Abbildung, die eine umfassende Übersicht verschiedener Clients darstellt. Diese Übersicht ist nicht Vollständigkeit, bildet aber dennoch die am häufigsten verwendeten Client-Systeme ab.
-
-\noindent
+\enquote{computer-based message system, which supports the asynchronous exchange of textual messages between groups of users.}\footnote{Vgl. \citeauthor{Ellis} (\citeyear{Ellis}), S. 38 ff.} Also ein Computersystem für den asynchronen Austausch von von Textnachrichten innerhalb einer Gruppe. Meistens sind dies Arbeitsgruppen im Unternehmensumfeld. Mircosoft Exchange erfüllt dieses Kriterium. Vorausgesetzt die Benutzer verfügen über eine Client-Software.\newline
+Um auf die Inhalte des Microsoft Exchange Servers zugreifen zu können, benötigt jeder Benutzer eine Client-Software. Verwaltung des Postfaches, Zugriff auf öffentliche Ordner und natürlich auch Empfangen und Senden von E-Mails sind die Hauptziele einer Client-Software. Im Anhang auf Seite~\pageref{Exchange Verbindung} findet man eine Abbildung, die eine umfassende Übersicht verschiedener Clients darstellt. Diese Übersicht ist nicht Vollständigkeit, bildet aber dennoch die am häufigsten verwendeten Client-Systeme ab.\newline
 Am bekanntesten ist sicher der Microsoft Outlook-Client. Aus diesem Grund wird die Verbindung eines Clients mit dem Exchange Server am Beispiel des Outlook-Clients erläutert. Outlook kommuniziert nach dem RPC-Prinzip mit dem Exchange Server. Die Variante RPC über TCP/IP  gilt zwar seit Exchange 2013 als veraltet, ist aber für das nähere Verständnis durchaus wichtig, da alle Weiterentwicklungen RPC im Hintergrund weiter nutzen. RPC bedeutet "Remote Procedure Call" und wird verwendet, um eine Verbindung zu einem Dienst eines Servers herzustellen. Als Übertragungsprotokoll fungiert TCP/IP (Transfer Control Protocol/Internet Protocol).\footnote{Vgl. http://www.msxfaq.de/verschiedenes/rpc.htm}Um die Kommunikation von RPC über TCP/IP zu verstehen, ist die nachfolgende Abbildung hilfreich.
 
 \begin{figure}[h!]
 \centering
-	\includegraphics[width=0.60\textwidth]{Abbildungen/RPC_TCP}
+	\includegraphics[width=0.59\textwidth]{Abbildungen/RPC_TCP}
 	\caption[Aufbau einer klassischen RPC Verbindung]{Aufabu einer klassischen RPC Verbindung,    in Anlehnung an:\\https://technet.microsoft.com/de-de/library/e8feb37e-f3a9-4f26-bed0-6583d8a110ed}
 	\label{fig:RPC_TCP}
 \end{figure}
 
 \noindent 
-Der Client ruft eine Prozedur mit spezifischen Argumenten (Eingabeparameter) auf. Der Client-Stub aktiviert eine gleichnamige Prozedur und wandelt die Argumente in ein plattformunabhängiges Datenformat um. Die Daten werden dann über das Netz mithilfe des TCP/IP-Protokolls an den Server geschickt. Dort erhält der Server-Stub die Anfrage und wandelt die Argumente in das lokale Format des Servers um. Nun ruft der Server die gewünschte Prozedur mit den Eingabeparametern auf und der Rückgabewert kehrt in den Server-Stub zurück. Nach einer erneuten plattformunabhängigen Umwandlung der Datenformate, wird die Antwort an den Client-Stub geschickt. Im letzten Schritt erhält der Client die in das lokale Format umgewandelte Antwort (Rückgabewerte) auf seine Anfrage.\footnote{Vgl. Schneider, U. (2012): Taschenbuch der Informatik, S.406 f.}
-
-\noindent 
+Der Client ruft eine Prozedur mit spezifischen Argumenten (Eingabeparameter) auf. Der Client-Stub aktiviert eine gleichnamige Prozedur und wandelt die Argumente in ein plattformunabhängiges Datenformat um. Die Daten werden dann über das Netz mithilfe des TCP/IP-Protokolls an den Server geschickt. Dort erhält der Server-Stub die Anfrage und wandelt die Argumente in das lokale Format des Servers um. Nun ruft der Server die gewünschte Prozedur mit den Eingabeparametern auf und der Rückgabewert kehrt in den Server-Stub zurück. Nach einer erneuten plattformunabhängigen Umwandlung der Datenformate, wird die Antwort an den Client-Stub geschickt. Im letzten Schritt erhält der Client die in das lokale Format umgewandelte Antwort (Rückgabewerte) auf seine Anfrage.\footnote{Vgl. Schneider, U. (2012): Taschenbuch der Informatik, S.406 f.}\newline
 Ab Exchange 20013 wird der Datenaustausch zwischen dem Outlook-Client und dem Exchanger Server standardmäßig über RPC/HTTP (auch Oulook Anywhere genannt) geregelt. Wie der Name schon vermuten lässt, läuft die gesamte Kommunikation bei dieser Variante über HTTP bzw. HTTPS. Somit kann über das Internet auf den Exchange Server zugegriffen werden. Outlook Anywhere ist besonders für Mitarbeiter geeignet, die von zu Hause auf ihr Exchange-Postfach zugreifen möchten, da sie sich nicht im Unternehmensnetzwerk befinden müssen.\footnote{Vgl. Joos, T. (2013): Microsoft Exchange Server 2013, S.33, S.254.} 
 
 \begin{figure}[h!]
@@ -77,10 +68,8 @@ EWS bietet einen großen Funktionsumfang und ist somit eine hervorragende Mögli
 Um bei der Implementierung den Exchange Web Service nutzen zu können, musste die Microsoft Exchange Web Services Managed API 2.2. dem Projekt als .NET-Assembly hinzugefügt werden. Wie bereits im Punkt 4 erwähnt, kann im Adminbereich von GEBman10 kann in der der Rubrik GroupWare die Konfiguration des Exchange Servers durchgeführt werden. Wichtig ist hierbei zunächst, welche Version vom Exchnage Server verlangt wird, da das entscheidend für die Microsoft Web Services Managed API ist. GEBman10 unterstützt folgende Exchange Server-Versionen:
 
 \begin{itemize}[topsep=-0.5\parskip]
-\item Exchange 2007
-\item  Exchange 2007 SP1
-\item  Exchange 2010 
-\item  Exchange 2010 SP1
+\item Exchange 2007 inkl. SP1
+\item  Exchange 2010 inkl. SP1
 \item  Exchange 2013 
 \end{itemize}
 
