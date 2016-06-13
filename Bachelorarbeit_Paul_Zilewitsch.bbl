@@ -1,4 +1,4 @@
-\begin{thebibliography}{19}
+\begin{thebibliography}{27}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -93,11 +93,26 @@ W3C Recommendation.
 \newblock \url{https://www.w3.org/TR/widgets/#Introduction}, 27.12.2012.
 \newblock abgerufen am: 22.05.2016.
 
+\bibitem[Joos(2014)]{Joos}
+T.~Joos.
+\newblock \emph{Microsoft Exchange Server 2013}.
+\newblock O'Reilly, Deutschland, 2014.
+
 \bibitem[{Ellis, C. A., Gibbs, S. J., Rein, G. L.}(1991)]{Ellis}
 {Ellis, C. A., Gibbs, S. J., Rein, G. L.}
 \newblock \emph{Groupware - Some Issues and Experiences. Communications of the
   ACM}.
 \newblock ACM New York, NY, USA, 1991.
+
+\bibitem[Carius({\natexlab{a}})]{MSXrpc}
+Frank Carius.
+\newblock \url{http://www.msxfaq.de/windows/rpc.htm}, {\natexlab{a}}.
+\newblock abgerufen am: 13.06.2016.
+
+\bibitem[Schneider(2012)]{Schneider}
+U.~Schneider.
+\newblock \emph{Taschenbuch der Informatik: mit 108 Tabellen}.
+\newblock Fachbuchverl. Leipzig im Carl-Hanser-Verlag, 7 edition, 2012.
 
 \bibitem[{Volodarsky, M., Cheah, B., Londer, O., Hill, B., Schofield, S.,
   Aguilar Mares, C., Meyer, K.}(2009)]{Volodarsky}
@@ -107,10 +122,41 @@ W3C Recommendation.
   technische Referenz}.
 \newblock Microsoft Press Deutschland, 2009.
 
-\bibitem[Schneider(2012)]{Schneider}
-U.~Schneider.
-\newblock \emph{Taschenbuch der Informatik: mit 108 Tabellen}.
-\newblock Fachbuchverl. Leipzig im Carl-Hanser-Verlag, 7 edition, 2012.
+\bibitem[Carius({\natexlab{b}})]{MSXoutlook}
+Frank Carius.
+\newblock \url{http://www.msxfaq.de/clients/oagrundlagen.htm}, {\natexlab{b}}.
+\newblock abgerufen am: 14.06.2016.
+
+\bibitem[Carius({\natexlab{c}})]{MSXews}
+Frank Carius.
+\newblock \url{http://www.msxfaq.de/code/ews.htm}, {\natexlab{c}}.
+\newblock abgerufen am: 14.06.2016.
+
+\bibitem[Redmond(2011)]{Redmond}
+T.~Redmond.
+\newblock \emph{Microsoft Exchange Server 2010 - Das Handbuch}.
+\newblock O'Reilly, Deutschland, 2011.
+
+\bibitem[Microsoft({\natexlab{a}})]{MicrosoftAPI}
+Microsoft.
+\newblock Office 365-rest-apis für e-mail, kalender und kontakte.
+\newblock
+  \url{https://msdn.microsoft.com/de-de/library/office/dn776319%28v=exchg.150%29.aspx},
+  {\natexlab{a}}.
+\newblock abgerufen am: 15.06.2016.
+
+\bibitem[{Schill, A., Springer, T.}(2012)]{Schill}
+{Schill, A., Springer, T.}
+\newblock \emph{Verteilte Systeme: Grundlagen und Basistechnologien}.
+\newblock Springer Berlin Heidelberg, 2012.
+
+\bibitem[Microsoft({\natexlab{b}})]{MicrosoftSDK}
+Microsoft.
+\newblock Exchange server 2010 web services sdk.
+\newblock \url{
+  https://msdn.microsoft.com/en-us/library/office/dd877045\%28v=exchg.140\%29.aspx},
+  {\natexlab{b}}.
+\newblock abgerufen am: 15.06.2016.
 
 \bibitem[Balzert(2010)]{Balzert}
 H.~Balzert.
