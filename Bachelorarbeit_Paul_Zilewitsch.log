@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.12)  13 JUN 2016 16:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.12)  14 JUN 2016 16:31
 entering extended mode
 **Bachelorarbeit_Paul_Zilewitsch.tex
 (Bachelorarbeit_Paul_Zilewitsch.tex
@@ -672,7 +672,7 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count113
 \LT@p@ftn=\toks24
 )
-Class scrartcl Info: longtable captions redefined on input line 29.
+Class scrartcl Info: longtable captions redefined on input line 30.
 
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\supertabular\supertabular.sty"
 Package: supertabular 2004/02/20 v4.1e the supertabular environment
@@ -830,7 +830,7 @@ Class scrartcl Warning: Usage of package `titlesec' together
 (scrartcl)              the extended optional argument of the section
 (scrartcl)              commands.
 (scrartcl)              Nevertheless, using requested
-(scrartcl)              package `titlesec' on input line 101.
+(scrartcl)              package `titlesec' on input line 102.
 
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\titlesec\titlesec.sty"
 Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
@@ -867,7 +867,7 @@ Package titlesec Warning: Non standard sectioning command detected
 )
 
 Package scrartcl Warning: Activating an ugly workaround for a missing
-(scrartcl)                feature of package `titlesec` on input line 101.
+(scrartcl)                feature of package `titlesec` on input line 102.
 
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\footmisc\footmisc.sty"
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
@@ -927,11 +927,7 @@ LaTeX Info: Redefining \cite on input line 694.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 
-(Bachelorarbeit_Paul_Zilewitsch.aux
-
-LaTeX Warning: Label `fig:ITIL_Lebenyzyklus' multiply defined.
-
-)
+(Bachelorarbeit_Paul_Zilewitsch.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
@@ -946,7 +942,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 6.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 6.
- ("C:\Program Files (x86)\Latex&Latex\tex\latex\base\ts1cmr.fd"
+
+("C:\Program Files (x86)\Latex&Latex\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 6.
@@ -1020,43 +1017,43 @@ Package scrbase Info: activating ngerman \listtablename on input line 6.
 )
 \c@lstlisting=\count138
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 20.
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 30
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 19.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 29
 .
  ("C:\Program Files (x86)\Latex&Latex\tex\latex\psnfss\ot1ztmcm.fd"
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 30
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 29
 .
 
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\psnfss\omlztmcm.fd"
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 30
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 29
 .
 
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\psnfss\omsztmcm.fd"
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 30
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 29
 .
 
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\psnfss\omxztmcm.fd"
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 30.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 29.
 
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--35
+Underfull \hbox (badness 10000) in paragraph at lines 26--34
 
  []
 
@@ -1064,17 +1061,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--35
 
 {C:/Users/pzilewitsch/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 47.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 46.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 49.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 48.
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--55
+Underfull \hbox (badness 10000) in paragraph at lines 45--54
 
  []
 
 [2]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <16> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 60.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 59.
  (Bachelorarbeit_Paul_Zilewitsch.toc
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
@@ -1088,7 +1085,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Bachelorarbeit_Paul_Zilewitsch.lof)
 \tf@lof=\write5
  [6]
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 79.
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 78.
 
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\psnfss\ts1ptm.fd"
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
@@ -1118,14 +1115,8 @@ File: Abbildungen/ITIL_Lebenszyklus.png Graphic file (type png)
 Package pdftex.def Info: Abbildungen/ITIL_Lebenszyklus.png used on input line 2
 9.
 (pdftex.def)             Requested size: 227.62206pt x 227.61984pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
-[]\T1/ptm/m/n/12 ITIL Ser-vice Li-fe-cy-cle, Quel-le: http://os.itil.org/osMedi
-a/site/t1
- []
-
-[4 <./Abbildungen/ITIL_Lebenszyklus.png>]
-<Abbildungen/SPOC_2.png, id=39, 426.84468pt x 117.43875pt>
+ [4 <./Abbildungen/ITIL_Lebenszyklus.png>] <Abbildungen/SPOC_2.png, id=39, 426.
+84468pt x 117.43875pt>
 File: Abbildungen/SPOC_2.png Graphic file (type png)
 
 <use Abbildungen/SPOC_2.png>
@@ -1137,12 +1128,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--42
  []
 
 [5 <./Abbildungen/SPOC_2.png>] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 109--111
+Underfull \hbox (badness 10000) in paragraph at lines 110--112
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--114
+Underfull \hbox (badness 10000) in paragraph at lines 113--115
 
  []
 
@@ -1207,24 +1198,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--92
  []
 
 [11] [12]
-Overfull \hbox (6.04903pt too wide) in paragraph at lines 111--119
+Overfull \hbox (6.04903pt too wide) in paragraph at lines 111--113
 \T1/ptm/m/n/12 Alle Ser-vice Desk-Systeme, die be-trach-tet wur-den, wa-ren auf
  ih-re Wei-se in-di-vi-du-ell. Die Schwer-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--119
+Underfull \hbox (badness 10000) in paragraph at lines 111--113
 
  []
 
-[13]) [14] (Inhalte/4_Service_Desk_GEBman10/Service_Desk_GEBman10.tex
-<Abbildungen/GEBman.png, id=74, 1444.64719pt x 812.28468pt>
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 127--133
+
+ []
+
+[14]) [15] (Inhalte/4_Service_Desk_GEBman10/Service_Desk_GEBman10.tex
+<Abbildungen/GEBman.png, id=77, 1444.64719pt x 812.28468pt>
 File: Abbildungen/GEBman.png Graphic file (type png)
 
 <use Abbildungen/GEBman.png>
 Package pdftex.def Info: Abbildungen/GEBman.png used on input line 12.
 (pdftex.def)             Requested size: 341.43307pt x 191.97763pt.
- [15 <./Abbildungen/GEBman.png>]
+ [16 <./Abbildungen/GEBman.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 24--28
 
  []
@@ -1239,7 +1235,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--37
 
  []
 
-[16]
+[17]
 Underfull \hbox (badness 10000) in paragraph at lines 80--82
 
  []
@@ -1249,8 +1245,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--85
 
  []
 
-[17]) [18] (Inhalte/5_Microsoft_Exchange_Server/MES.tex
-<Abbildungen/RPC_TCP.png, id=90, 380.92313pt x 230.36063pt>
+[18]) [19] (Inhalte/5_Microsoft_Exchange_Server/MES.tex
+<Abbildungen/RPC_TCP.png, id=93, 380.92313pt x 230.36063pt>
 File: Abbildungen/RPC_TCP.png Graphic file (type png)
 
 <use Abbildungen/RPC_TCP.png>
@@ -1265,7 +1261,7 @@ ed0-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[19] <Abbildungen/RPC_HTTP.png, id=94, 373.395pt x 83.5622pt>
+[20] <Abbildungen/RPC_HTTP.png, id=97, 373.395pt x 83.5622pt>
 File: Abbildungen/RPC_HTTP.png Graphic file (type png)
 
 <use Abbildungen/RPC_HTTP.png>
@@ -1276,8 +1272,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--27
 []\T1/ptm/m/n/12 RPC over HTTP Prin-zip, in An-leh-nung an:http://
  []
 
-[20 <./Abbildungen/RPC_TCP.png> <./Abbildungen/RPC_HTTP.png>]
-<Abbildungen/EWS_Funktionsumfang.png, id=100, 660.4675pt x 455.7025pt>
+[21 <./Abbildungen/RPC_TCP.png> <./Abbildungen/RPC_HTTP.png>]
+<Abbildungen/EWS_Funktionsumfang.png, id=103, 660.4675pt x 455.7025pt>
 File: Abbildungen/EWS_Funktionsumfang.png Graphic file (type png)
 
 <use Abbildungen/EWS_Funktionsumfang.png>
@@ -1288,8 +1284,8 @@ Package pdftex.def Info: Abbildungen/EWS_Funktionsumfang.png used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[21]) [22 <./Abbildungen/EWS_Funktionsumfang.png>]
-(Inhalte/6_Konzipierung/Konzipierung.tex [23]
+[22]) [23 <./Abbildungen/EWS_Funktionsumfang.png>]
+(Inhalte/6_Konzipierung/Konzipierung.tex [24]
 Underfull \hbox (badness 5924) in paragraph at lines 43--43
 []|\T1/ptm/m/n/12 Aktivitätsdiagramm, Zu-stands-dia-
  []
@@ -1314,7 +1310,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--57
 
  []
 
-[24] <Abbildungen/Aktivitaetsdiagramm.png, id=115, 712.91344pt x 627.84563pt>
+[25] <Abbildungen/Aktivitaetsdiagramm.png, id=118, 712.91344pt x 627.84563pt>
 File: Abbildungen/Aktivitaetsdiagramm.png Graphic file (type png)
 
 <use Abbildungen/Aktivitaetsdiagramm.png>
@@ -1326,8 +1322,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--73
 
  []
 
-[25 <./Abbildungen/Aktivitaetsdiagramm.png>]
-<Abbildungen/Zustandsdiagramm.png, id=120, 1103.62312pt x 420.82219pt>
+[26 <./Abbildungen/Aktivitaetsdiagramm.png>]
+<Abbildungen/Zustandsdiagramm.png, id=123, 1103.62312pt x 420.82219pt>
 File: Abbildungen/Zustandsdiagramm.png Graphic file (type png)
 
 <use Abbildungen/Zustandsdiagramm.png>
@@ -1339,7 +1335,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--88
 
  []
 
-<Abbildungen/Klassendiagramm.png, id=121, 885.3075pt x 494.59781pt>
+<Abbildungen/Klassendiagramm.png, id=124, 885.3075pt x 494.59781pt>
 File: Abbildungen/Klassendiagramm.png Graphic file (type png)
 
 <use Abbildungen/Klassendiagramm.png>
@@ -1350,8 +1346,8 @@ Package pdftex.def Info: Abbildungen/Klassendiagramm.png used on input line 94.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[26 <./Abbildungen/Zustandsdiagramm.png>] [27 <./Abbildungen/Klassendiagramm.pn
-g>] <Abbildungen/Sicherheitsprobleme.png, id=130, 1448.41125pt x 579.16376pt>
+[27 <./Abbildungen/Zustandsdiagramm.png>] [28 <./Abbildungen/Klassendiagramm.pn
+g>] <Abbildungen/Sicherheitsprobleme.png, id=133, 1448.41125pt x 579.16376pt>
 File: Abbildungen/Sicherheitsprobleme.png Graphic file (type png)
 
 <use Abbildungen/Sicherheitsprobleme.png>
@@ -1363,17 +1359,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 117--119
 
  []
 
-[28 <./Abbildungen/Sicherheitsprobleme.png>]) [29]
-(Inhalte/7_Umsetzung/Umsetzung.tex) [30] (Inhalte/8_Fazit/Fazit.tex) [31]
-[32] (Inhalte/9_Anhang/Anhang.tex
-<Abbildungen/Exchange_Verbindungen.png, id=148, 461.47406pt x 643.6547pt>
+[29 <./Abbildungen/Sicherheitsprobleme.png>]) [30]
+(Inhalte/7_Umsetzung/Umsetzung.tex) [31] (Inhalte/8_Fazit/Fazit.tex) [32]
+[33] (Inhalte/9_Anhang/Anhang.tex
+<Abbildungen/Exchange_Verbindungen.png, id=151, 461.47406pt x 643.6547pt>
 File: Abbildungen/Exchange_Verbindungen.png Graphic file (type png)
 
 <use Abbildungen/Exchange_Verbindungen.png>
 Package pdftex.def Info: Abbildungen/Exchange_Verbindungen.png used on input li
 ne 9.
 (pdftex.def)             Requested size: 295.90588pt x 412.72331pt.
- [33 <./Abbildungen/Exchange_Verbindungen.png>] <Abbildungen/API_1.png, id=153,
+ [34 <./Abbildungen/Exchange_Verbindungen.png>] <Abbildungen/API_1.png, id=156,
  980.16188pt x 457.71pt>
 File: Abbildungen/API_1.png Graphic file (type png)
 
@@ -1381,18 +1377,18 @@ File: Abbildungen/API_1.png Graphic file (type png)
 Package pdftex.def Info: Abbildungen/API_1.png used on input line 23.
 (pdftex.def)             Requested size: 455.24411pt x 212.58153pt.
 
-<Abbildungen/API_2.png, id=154, 981.6675pt x 380.92313pt>
+<Abbildungen/API_2.png, id=157, 981.6675pt x 380.92313pt>
 File: Abbildungen/API_2.png Graphic file (type png)
 
 <use Abbildungen/API_2.png>
 Package pdftex.def Info: Abbildungen/API_2.png used on input line 27.
 (pdftex.def)             Requested size: 455.24411pt x 176.65079pt.
- [34 <./Abbildungen/API_1.png> <./Abbildungen/API_2.png>]
+ [35 <./Abbildungen/API_1.png> <./Abbildungen/API_2.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 38--40
 
  []
 
-<Abbildungen/Freshdesk.png, id=160, 1451.4225pt x 764.8575pt>
+<Abbildungen/Freshdesk.png, id=163, 1451.4225pt x 764.8575pt>
 File: Abbildungen/Freshdesk.png Graphic file (type png)
 
 <use Abbildungen/Freshdesk.png>
@@ -1408,7 +1404,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
-<Abbildungen/Deskcom.png, id=161, 1446.15282pt x 738.50906pt>
+<Abbildungen/Deskcom.png, id=164, 1446.15282pt x 738.50906pt>
 File: Abbildungen/Deskcom.png Graphic file (type png)
 
 <use Abbildungen/Deskcom.png>
@@ -1424,13 +1420,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
  []
 
-<Abbildungen/Zendesk.png, id=162, 1444.64719pt x 807.015pt>
+<Abbildungen/Zendesk.png, id=165, 1444.64719pt x 807.015pt>
 File: Abbildungen/Zendesk.png Graphic file (type png)
 
 <use Abbildungen/Zendesk.png>
 Package pdftex.def Info: Abbildungen/Zendesk.png used on input line 53.
 (pdftex.def)             Requested size: 455.24411pt x 254.30959pt.
- [35 <./Abbildungen/Freshdesk.png> <./Abbildungen/Deskcom.png>]
+ [36 <./Abbildungen/Freshdesk.png> <./Abbildungen/Deskcom.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
@@ -1440,60 +1436,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
-<Abbildungen/SysAid.png, id=168, 1444.64719pt x 776.9025pt>
+<Abbildungen/SysAid.png, id=172, 1444.64719pt x 776.9025pt>
 File: Abbildungen/SysAid.png Graphic file (type png)
 
 <use Abbildungen/SysAid.png>
 Package pdftex.def Info: Abbildungen/SysAid.png used on input line 59.
 (pdftex.def)             Requested size: 455.24411pt x 244.8204pt.
- [36 <./Abbildungen/Zendesk.png> <./Abbildungen/SysAid.png>]) [37] (Bachelorarb
+ [37 <./Abbildungen/Zendesk.png> <./Abbildungen/SysAid.png>]) [38] (Bachelorarb
 eit_Paul_Zilewitsch.bbl
-LaTeX Font Info:    Try loading font information for T1+zi4 on input line 25.
-
-("C:\Program Files (x86)\Latex&Latex\tex\latex\inconsolata\t1zi4.fd"
-File: t1zi4.fd 2014/06/22 T1/zi4 (Inconsolata)
-)
-Underfull \hbox (badness 10000) in paragraph at lines 22--28
-$\T1/zi4/m/n/12 itil . org / 2011 / 06 / itil / itil % C2 % AE-[]2011-[]edition
--[]mehr-[]als-[]nur-[]ein-[]update$\T1/ptm/m/n/12 ,
+Underfull \hbox (badness 1122) in paragraph at lines 81--85
+[]\T1/ptm/m/n/12 Salesforce.  $http : / / www . salesforce . com / de / company
+ / newspress / press-[]releases / 2012 / 02 /$
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 88--90
-[]$\T1/zi4/m/n/12 http : / / www . onlinemarketing-[]praxis . de / glossar / wi
-dget$\T1/ptm/m/n/12 .  ab-ge-ru-fen am:
+[39]
+Underfull \hbox (badness 2005) in paragraph at lines 136--139
+[]\T1/ptm/m/n/12 Frank Ca-ri-us.  $http : / / www . msxfaq . de / clients / oag
+rundlagen . htm$, .  ab-ge-ru-fen am:
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 92--95
-[]\T1/ptm/m/n/12 W3C Re-com-men-da-ti-on.  $\T1/zi4/m/n/12 https : / / www . w3
- . org / TR / widgets / #Introduction$\T1/ptm/m/n/12 ,
- []
-
-[38]) [39] (Bachelorarbeit_Paul_Zilewitsch.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+) [40] (Bachelorarbeit_Paul_Zilewitsch.aux) ) 
 Here is how much of TeX's memory you used:
- 10488 strings out of 493673
- 154029 string characters out of 3141106
- 308523 words of memory out of 3000000
- 13559 multiletter control sequences out of 15000+200000
- 70760 words of font info for 117 fonts, out of 3000000 for 9000
+ 10474 strings out of 493673
+ 153796 string characters out of 3141106
+ 308522 words of memory out of 3000000
+ 13549 multiletter control sequences out of 15000+200000
+ 70461 words of font info for 116 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 41i,18n,46p,1867b,365s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/Latex&Latex/fonts/enc/dvips/inconsolata/i4-t1-0.enc}{
-C:/Program Files (x86)/Latex&Latex/fonts/enc/dvips/fontname/8r.enc}<C:/Program 
-Files (x86)/Latex&Latex/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:
-/Program Files (x86)/Latex&Latex/fonts/type1/public/amsfonts/symbols/msam10.pfb
-><C:/Program Files (x86)/Latex&Latex/fonts/type1/urw/times/utmb8a.pfb><C:/Progr
-am Files (x86)/Latex&Latex/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (
-x86)/Latex&Latex/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Bachelorarbeit_Paul_Zilewitsch.pdf (46 pages, 2094648 bytes).
+ 41i,18n,46p,1738b,372s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/Latex&Late
+x/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/Latex&Latex/fonts/typ
+e1/public/amsfonts/symbols/msam10.pfb><C:/Program Files (x86)/Latex&Latex/fonts
+/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/Latex&Latex/fonts/type1/urw
+/times/utmr8a.pfb><C:/Program Files (x86)/Latex&Latex/fonts/type1/urw/times/utm
+ri8a.pfb>
+Output written on Bachelorarbeit_Paul_Zilewitsch.pdf (47 pages, 2129600 bytes).
 
 PDF statistics:
- 207 PDF objects out of 1000 (max. 8388607)
+ 205 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  86 words of extra memory for PDF output out of 10000 (max. 10000000)
 

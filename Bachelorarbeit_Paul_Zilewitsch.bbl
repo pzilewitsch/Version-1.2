@@ -1,4 +1,4 @@
-\begin{thebibliography}{27}
+\begin{thebibliography}{29}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -31,7 +31,7 @@ Martin Andenmatten.
 {Buchsein, R., Victor, F., G{\"u}nther, H., Machmeier, V.}
 \newblock \emph{IT-Management mit ITIL{\textregistered} V3: Strategien,
   Kennzahlen, Umsetzung}.
-\newblock Vieweg+Teubner Verlag, 2007.
+\newblock Vieweg+Teubner Verlag, 2 edition, 2007.
 
 \bibitem[Ebel(2008)]{Ebel}
 N.~Ebel.
@@ -61,6 +61,16 @@ Wikipedia.
 \newblock Servicedesk.
 \newblock \url{https://de.wikipedia.org/wiki/Servicedesk}, 09.05.2016.
 \newblock abgerufen am: 24.05.2016.
+
+\bibitem[{Steinbaerg, R. A., Orr, A. T.}(2011)]{ITILBuch}
+{Steinbaerg, R. A., Orr, A. T.}
+\newblock \emph{ITIL Service Operation 2011}.
+\newblock The Stationery Office Ltd, 2011 ed. edition, 2011.
+
+\bibitem[{Victor, F., G{\"u}nther, H.}(2005)]{Victor}
+{Victor, F., G{\"u}nther, H.}
+\newblock \emph{Optimiertes IT-Management mit ITIL}.
+\newblock Springer Fachmedien Wiesbaden, 2 edition, 2005.
 
 \bibitem[Freshdesk()]{Freshdesk}
 Freshdesk.
