@@ -1,6 +1,9 @@
 % !TEX root = Bachelorarbeit_Paul_Zilewitsch.tex
 
 \section{Der Service Desk in GEBman10}
+\noindent
+Zunächst ist anzumerken, dass sich das Service Desk Modul stark an die anderen Module in GEBman 10 orientiert und an sie gebunden ist. Das unterscheidet sich deshalb sehr stark von den zuvor betrachteten Service Desk-Lösungen und wurde bisher nur im Bereich Facility Management eingesetzt. Aus diesem Grund ist es nur bis zu einem gewissen Grad möglich, diese Lösung in GEBman 10 mit anderen Service Desk-Softwarelösungen zu vergleichen. Ihre Aufgabenfelder und Schwerpunkte sind schlicht zu unterschiedlich sind. Dennoch ist es möglich, Verbesserungsmöglichkeiten identifiziert werden, welche das Service Desk Modul auch außerhalb des Facility Management Bereiches einsetzbar machen können. Hierzu wird zunächst die aktuelle Umsetzung von dem Service Desk in GEBman10 festgehalten.
+
 
 \subsection{Aktuelle Umsetzung}
 \noindent
@@ -79,10 +82,6 @@ Für das Verständnis der Status im Service Desk ist die nachfolgende Tabelle hi
 
 \noindent
 Qualität ist ein Maß für das Erfüllen von Anforderungen. Die Qualität des Service Desk kann deshalb nur gesichert werden, wenn die Anforderungen möglichst genau definiert werden. Neben den zu erfüllen Anforderungen sollte aber noch festgehalten werden, welche Anforderungen nicht erfüllt werden sollen. Letzteres wird häufig nicht beachtet, ist jedoch ein wesentlicher Schritt für das Sicherstellen der Anforderungen.\\
-
-\noindent
-Aus Kundensicht bestehen leider keine Anforderungen an die E-Mail Integration. Es wurde vor längerer Zeit von einem Kunden gefragt, ob die Erweiterung in Planung ist. Deshalb kann nur auf die Anforderungen Bezug genommen werden, die die KMS Computer GmbH vorgibt und die sich zwangsläufig aus den vorherigen Erkenntnissen ergeben.\\
-
 \noindent
 Ziel der Erweiterung des Service Desks ist es, über den E-Mail Kommunikationsweg Meldung zu erstellen, oder auf eingegangene Meldungen zu antworten. Um E-Mails Meldungen eindeutig zuordnen zu können, muss in der Betreffzeile der E-Mail ein Identifikator (kurz ID) enthalten sein. Diese ID muss ausgewertet und mit den ID's der Meldungen verglichen werden. Sollte es keine Meldung mit der ID, die in der Betreffzeile der Mail steht geben, wird eine neue Meldung im Service DEsk Modul angelegt und erhält vom System eine eindeutige ID. Bei einer erfolgreichen Erstellung einer Meldung soll der Benutzer eine Bestätigungs-E-Mail erhalten, die dann gleichzeitig die eindeutige ID im Betreff beinhaltet. Sollte die Erstellung einer Meldung oder einer Antwort scheitern, muss der Benutzer informiert werden. Hierzu muss eine Ausnahmebehandlung im Programmcode und die damit verbundenen Benachrichtigung an den Benutzer geplant werden. Außerdem müssen die Anhänge in GEBman 10 ebenfalls abgespeichert werden, wenn die E-Mail einen solchen besitzt. \newline
 Es soll nicht möglich sein, über eine E-Mail Maßnahmen einer Meldung zu generieren, bestehende Meldungen zu löschen oder zu bearbeiten. Es ist auch nicht unbedingt nötig, dass eine Meldung über die E-Mail-Integration auf den Status \enquote{Fertig} gesetzt werden kann. Diese Idee könnte aber in den Erweiterungsmöglichkeiten Einzug erhalten.

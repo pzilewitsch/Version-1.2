@@ -3,13 +3,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{url}
-%% Define a new 'leo' style for the package that will use a smaller font.
-\makeatletter
-\def\url@leostyle{%
-  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\ttfamily}}}
-\makeatother
-%% Now actually use the newly defined style.
-\urlstyle{leo}
+\urlstyle{same}
 
 % deutsche Silbentrennung
 \usepackage[ngerman]{babel}
