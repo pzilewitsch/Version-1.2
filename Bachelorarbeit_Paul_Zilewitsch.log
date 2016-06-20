@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.12)  15 JUN 2016 16:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.12)  20 JUN 2016 16:56
 entering extended mode
 **Bachelorarbeit_Paul_Zilewitsch.tex
 (Bachelorarbeit_Paul_Zilewitsch.tex
@@ -1369,7 +1369,7 @@ File: Abbildungen/API_2.png Graphic file (type png)
 Package pdftex.def Info: Abbildungen/API_2.png used on input line 27.
 (pdftex.def)             Requested size: 455.24411pt x 176.65079pt.
  [35 <./Abbildungen/API_1.png> <./Abbildungen/API_2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 38--40
+Underfull \hbox (badness 10000) in paragraph at lines 39--41
 
  []
 
@@ -1377,15 +1377,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--40
 File: Abbildungen/Freshdesk.png Graphic file (type png)
 
 <use Abbildungen/Freshdesk.png>
-Package pdftex.def Info: Abbildungen/Freshdesk.png used on input line 41.
+Package pdftex.def Info: Abbildungen/Freshdesk.png used on input line 42.
 (pdftex.def)             Requested size: 455.24411pt x 239.89268pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
@@ -1393,15 +1393,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--44
 File: Abbildungen/Deskcom.png Graphic file (type png)
 
 <use Abbildungen/Deskcom.png>
-Package pdftex.def Info: Abbildungen/Deskcom.png used on input line 47.
+Package pdftex.def Info: Abbildungen/Deskcom.png used on input line 48.
 (pdftex.def)             Requested size: 455.24411pt x 232.47382pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
@@ -1409,15 +1409,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--50
 File: Abbildungen/Zendesk.png Graphic file (type png)
 
 <use Abbildungen/Zendesk.png>
-Package pdftex.def Info: Abbildungen/Zendesk.png used on input line 53.
+Package pdftex.def Info: Abbildungen/Zendesk.png used on input line 54.
 (pdftex.def)             Requested size: 455.24411pt x 254.30959pt.
  [36 <./Abbildungen/Freshdesk.png> <./Abbildungen/Deskcom.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
@@ -1425,40 +1425,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--56
 File: Abbildungen/SysAid.png Graphic file (type png)
 
 <use Abbildungen/SysAid.png>
-Package pdftex.def Info: Abbildungen/SysAid.png used on input line 59.
+Package pdftex.def Info: Abbildungen/SysAid.png used on input line 60.
 (pdftex.def)             Requested size: 455.24411pt x 244.8204pt.
  [37 <./Abbildungen/Zendesk.png> <./Abbildungen/SysAid.png>]) [38] (Bachelorarb
 eit_Paul_Zilewitsch.bbl
-Underfull \hbox (badness 1122) in paragraph at lines 81--85
+Underfull \hbox (badness 10000) in paragraph at lines 76--83
+[]\T1/ptm/m/n/12 Ricardo Bil-ton.  10 po-wer-ful, cloud-based help-desk ser-vic
+es to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--83
+\T1/ptm/m/n/12 help you win at cu-sto-mer ser-vice.  $http : / / venturebeat . 
+com / 2014 / 01 / 22 /$
+ []
+
+
+Underfull \hbox (badness 5403) in paragraph at lines 76--83
+$\T1/ptm/m/n/12 help-[]desk-[]software-[]heres-[]some-[]of-[]the-[]best-[]and-[
+]most-[]interesting/$, 22.01.2014.  ab-
+ []
+
+
+Underfull \hbox (badness 2277) in paragraph at lines 93--99
+[]\T1/ptm/m/n/12 Oliver Has-lam.  The best help desk soft-wa-re of 2016.  $http
+ : / / uk . pcmag . com /$
+ []
+
+[39]
+Underfull \hbox (badness 1122) in paragraph at lines 106--110
 []\T1/ptm/m/n/12 Salesforce.  $http : / / www . salesforce . com / de / company
  / newspress / press-[]releases / 2012 / 02 /$
  []
 
-[39]
-Underfull \hbox (badness 2005) in paragraph at lines 136--139
+
+Underfull \hbox (badness 2005) in paragraph at lines 161--164
 []\T1/ptm/m/n/12 Frank Ca-ri-us.  $http : / / www . msxfaq . de / clients / oag
 rundlagen . htm$, .  ab-ge-ru-fen am:
  []
 
-) [40] (Bachelorarbeit_Paul_Zilewitsch.aux) ) 
+[40]) [41] (Bachelorarbeit_Paul_Zilewitsch.aux) ) 
 Here is how much of TeX's memory you used:
- 10474 strings out of 493673
- 153796 string characters out of 3141106
+ 10484 strings out of 493673
+ 153949 string characters out of 3141106
  308522 words of memory out of 3000000
- 13549 multiletter control sequences out of 15000+200000
+ 13559 multiletter control sequences out of 15000+200000
  70461 words of font info for 116 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 41i,18n,46p,1738b,372s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/Latex&Late
-x/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/Latex&Latex/fonts/typ
-e1/public/amsfonts/symbols/msam10.pfb><C:/Program Files (x86)/Latex&Latex/fonts
-/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/Latex&Latex/fonts/type1/urw
-/times/utmr8a.pfb><C:/Program Files (x86)/Latex&Latex/fonts/type1/urw/times/utm
-ri8a.pfb>
-Output written on Bachelorarbeit_Paul_Zilewitsch.pdf (47 pages, 2131312 bytes).
+ 41i,18n,46p,1738b,386s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/Latex&
+Latex/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/Latex&Latex/fonts
+/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files (x86)/Latex&Latex/f
+onts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/Latex&Latex/fonts/type1
+/urw/times/utmr8a.pfb><C:/Program Files (x86)/Latex&Latex/fonts/type1/urw/times
+/utmri8a.pfb>
+Output written on Bachelorarbeit_Paul_Zilewitsch.pdf (48 pages, 2134152 bytes).
 
 PDF statistics:
- 205 PDF objects out of 1000 (max. 8388607)
+ 208 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  86 words of extra memory for PDF output out of 10000 (max. 10000000)
 

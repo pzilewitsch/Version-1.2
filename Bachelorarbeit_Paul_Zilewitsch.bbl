@@ -1,4 +1,4 @@
-\begin{thebibliography}{29}
+\begin{thebibliography}{32}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -71,6 +71,31 @@ Wikipedia.
 {Victor, F., G{\"u}nther, H.}
 \newblock \emph{Optimiertes IT-Management mit ITIL}.
 \newblock Springer Fachmedien Wiesbaden, 2 edition, 2005.
+
+\bibitem[Bilton(22.01.2014)]{Ranking1}
+Ricardo Bilton.
+\newblock 10 powerful, cloud-based help-desk services to help you win at
+  customer service.
+\newblock
+  \url{http://venturebeat.com/2014/01/22/help-desk-software-heres-some-of-the-best-and-most-interesting/},
+  22.01.2014.
+\newblock abgerufen am: 20.06.2016.
+
+\bibitem[Thornton(20.05.2014)]{Ranking2}
+James Thornton.
+\newblock 10 great online support and help desk apps.
+\newblock
+  \url{http://web.appstorm.net/roundups/communication-roundups/10-online-support-and-help-desk-apps/},
+  20.05.2014.
+\newblock abgerufen am: 20.06.2016.
+
+\bibitem[Haslam(22.03.2016)]{Ranking3}
+Oliver Haslam.
+\newblock The best help desk software of 2016.
+\newblock
+  \url{http://uk.pcmag.com/software/70330/guide/the-best-help-desk-software-of-2016},
+  22.03.2016.
+\newblock abgerufen am: 20.06.2016.
 
 \bibitem[Freshdesk()]{Freshdesk}
 Freshdesk.

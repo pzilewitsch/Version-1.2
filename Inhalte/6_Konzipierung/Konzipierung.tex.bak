@@ -3,7 +3,7 @@
 
 \subsection{Vorbetrachtung}
 \noindent
-Für die Erstellung einer Meldung sind festgelegte Eigenschaften nötig. Ohne diese Pflichtfelder in der Benutzeroberfläche auszufüllen, kann der Benutzer von GEBman10 keine Meldung erstellen. Die Tabelle~\ref{tab:Medlungseigenschaften} zeigt, welche Eigenschaften das Sind. 
+Für die Erstellung einer Meldung sind festgelegte Eigenschaften nötig. Ohne diese Pflichtfelder in der Benutzeroberfläche auszufüllen, kann der Benutzer von GEBman10 keine Meldung erstellen. Die Tabelle~\ref{tab:Medlungseigenschaften} zeigt, welche Eigenschaften das sind. 
 
 \begin{table}[h!]
     \begin{tabular}{ | l | p{11cm}|}

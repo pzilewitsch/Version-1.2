@@ -1,5 +1,11 @@
 % Encoding: UTF-8
 
+
+%-------------------------------------------------------------------------------------------------------
+%					Bücher/Artikel
+%-------------------------------------------------------------------------------------------------------
+
+
 @book{Naevy,
   author    = {Nävy, J.},
   title     = {Facility Management: Grundlagen, Computerunterstützung, Systemeinführung,   
@@ -123,6 +129,11 @@
 }
 
 
+%-------------------------------------------------------------------------------------------------------
+%					Websites
+%-------------------------------------------------------------------------------------------------------
+
+
 @misc{WikiServiceDesk,
   title = {Servicedesk},
   author = {Wikipedia},
@@ -212,6 +223,37 @@
   author = {Microsoft},
   howpublished = {\url{https://msdn.microsoft.com/de-de/library/office/dn776319%28v=exchg.150%29.aspx}},
   note = {abgerufen am: 15.06.2016}
+}
+
+
+
+%-------------------------------------------------------------------------------------------------------
+%					Ranking Websites
+%-------------------------------------------------------------------------------------------------------
+
+
+@misc{Ranking1,
+  title = {10 powerful, cloud-based help-desk services to help you win at customer service},
+  author = {Ricardo Bilton},
+  howpublished = {\url{http://venturebeat.com/2014/01/22/help-desk-software-heres-some-of-the-best-and-most-interesting/}},
+  year ={22.01.2014},
+  note = {abgerufen am: 20.06.2016}
+}
+
+@misc{Ranking2,
+  title = {10 Great Online Support and Help Desk Apps},
+  author = {James Thornton},
+  howpublished = {\url{http://web.appstorm.net/roundups/communication-roundups/10-online-support-and-help-desk-apps/}},
+  year ={20.05.2014},
+  note = {abgerufen am: 20.06.2016}
+}
+
+@misc{Ranking3,
+  title = {The Best Help Desk Software of 2016},
+  author = {Oliver Haslam },
+  howpublished = {\url{http://uk.pcmag.com/software/70330/guide/the-best-help-desk-software-of-2016}},
+  year ={22.03.2016},
+  note = {abgerufen am: 20.06.2016}
 }
 
 
