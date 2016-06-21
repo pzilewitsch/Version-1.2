@@ -2,8 +2,8 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Generiert durch Microsoft Visio, SVG Export Aktivitätsdiagramm.svg Page-1 -->
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
-		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="22.8858in" height="8.26772in"
-		viewBox="0 0 1647.78 595.276" xml:space="preserve" color-interpolation-filters="sRGB" class="st15">
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="11.6929in" height="8.26772in"
+		viewBox="0 0 841.89 595.276" xml:space="preserve" color-interpolation-filters="sRGB" class="st15">
 	<v:documentProperties v:langID="1031" v:metric="true" v:viewMarkup="false">
 		<v:userDefs>
 			<v:ud v:nameU="msvSubprocessMaster" v:prompt="" v:val="VT4(Rectangle)"/>
@@ -60,7 +60,7 @@
 		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
 				v:shadowOffsetY="-8.50394"/>
 		<v:layer v:name="Verbinder" v:index="0"/>
-		<g id="shape1-1" v:mID="1" v:groupContext="shape" transform="translate(1230.34,-538.583)">
+		<g id="shape1-1" v:mID="1" v:groupContext="shape" transform="translate(424.447,-538.583)">
 			<title>Anfangsknoten</title>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
@@ -71,7 +71,7 @@
 			</g>
 			<ellipse cx="12.7559" cy="582.52" rx="12.7559" ry="12.7559" class="st3"/>
 		</g>
-		<g id="shape2-6" v:mID="2" v:groupContext="shape" transform="translate(1230.34,-31.1811)">
+		<g id="shape2-6" v:mID="2" v:groupContext="shape" transform="translate(424.447,-31.1811)">
 			<title>Abschlussknoten</title>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
@@ -80,7 +80,7 @@
 			<path d="M25.51 582.52 A12.7559 12.7559 -180 1 0 0 582.52 A12.7559 12.7559 -180 1 0 25.51 582.52" class="st5"/>
 			<path d="M22.96 582.52 A10.2047 10.2047 -180 1 0 2.55 582.52 A10.2047 10.2047 -180 1 0 22.96 582.52" class="st5"/>
 		</g>
-		<g id="shape3-12" v:mID="3" v:groupContext="shape" transform="translate(1226.08,-453.543)">
+		<g id="shape3-12" v:mID="3" v:groupContext="shape" transform="translate(420.195,-453.543)">
 			<title>Entscheidung</title>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
@@ -91,7 +91,7 @@
 			</g>
 			<path d="M17.01 595.28 L34.02 578.27 L17.01 561.26 L0 578.27 L17.01 595.28 Z" class="st6"/>
 		</g>
-		<g id="shape4-17" v:mID="4" v:groupContext="shape" transform="translate(1226.08,-93.5433)">
+		<g id="shape4-17" v:mID="4" v:groupContext="shape" transform="translate(420.195,-93.5433)">
 			<title>Zusammenführungsknoten</title>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
@@ -102,7 +102,7 @@
 			</g>
 			<path d="M17.01 595.28 L34.02 578.27 L17.01 561.26 L0 578.27 L17.01 595.28 Z" class="st6"/>
 		</g>
-		<g id="shape5-22" v:mID="5" v:groupContext="shape" transform="translate(1429.51,-457.795)">
+		<g id="shape5-22" v:mID="5" v:groupContext="shape" transform="translate(623.622,-457.795)">
 			<title>Aktion</title>
 			<desc>E-Mail an GEBman10</desc>
 			<v:userDefs>
@@ -117,7 +117,7 @@
 			<rect x="0" y="569.764" width="85.0394" height="25.5118" rx="8.50394" ry="8.50394" class="st8"/>
 			<text x="19.61" y="578.92" class="st9" v:langID="1031"><v:paragraph v:horizAlign="1"/><v:tabList/>E-Mail an <tspan
 						x="15.64" dy="1.2em" class="st10">GEBman</tspan>10</text>		</g>
-		<g id="shape6-29" v:mID="6" v:groupContext="shape" transform="translate(947.622,-457.795)">
+		<g id="shape6-29" v:mID="6" v:groupContext="shape" transform="translate(141.732,-457.795)">
 			<title>Aktion.6</title>
 			<desc>E-Mail von GEBman10</desc>
 			<v:userDefs>
@@ -132,7 +132,7 @@
 			<rect x="0" y="569.764" width="85.0394" height="25.5118" rx="8.50394" ry="8.50394" class="st8"/>
 			<text x="16.61" y="578.92" class="st9" v:langID="1031"><v:paragraph v:horizAlign="1"/><v:tabList/>E-Mail von <tspan
 						x="15.64" dy="1.2em" class="st10">GEBman</tspan>10</text>		</g>
-		<g id="shape7-36" v:mID="7" v:groupContext="shape" transform="translate(933.449,-354.331)">
+		<g id="shape7-36" v:mID="7" v:groupContext="shape" transform="translate(127.559,-354.331)">
 			<title>Aktion.7</title>
 			<desc>Antworten auf E-Mail</desc>
 			<v:userDefs>
@@ -146,7 +146,7 @@
 			</g>
 			<rect x="0" y="569.764" width="113.386" height="25.5118" rx="8.50394" ry="8.50394" class="st8"/>
 			<text x="4.27" y="586.12" class="st9" v:langID="1031"><v:paragraph v:horizAlign="1"/><v:tabList/>Antworten auf E-Mail</text>		</g>
-		<g id="shape8-42" v:mID="8" v:groupContext="shape" transform="translate(1429.51,-354.331)">
+		<g id="shape8-42" v:mID="8" v:groupContext="shape" transform="translate(623.622,-354.331)">
 			<title>Aktion.8</title>
 			<desc>Betreff, Body etc. ausfüllen</desc>
 			<v:userDefs>
@@ -161,7 +161,7 @@
 			<rect x="0" y="569.764" width="85.0394" height="25.5118" rx="8.50394" ry="8.50394" class="st8"/>
 			<text x="10.37" y="578.92" class="st9" v:langID="1031"><v:paragraph v:horizAlign="1"/><v:tabList/>Betreff, Body <tspan
 						x="9.87" dy="1.2em" class="st10">etc</tspan>. ausfüllen</text>		</g>
-		<g id="shape9-49" v:mID="9" v:groupContext="shape" transform="translate(1415.34,-212.598)">
+		<g id="shape9-49" v:mID="9" v:groupContext="shape" transform="translate(609.449,-212.598)">
 			<title>Aktion.9</title>
 			<desc>Benutzer erhält Bestätigungsmail</desc>
 			<v:userDefs>
@@ -176,7 +176,7 @@
 			<rect x="0" y="569.764" width="113.386" height="25.5118" rx="8.50394" ry="8.50394" class="st8"/>
 			<text x="18.83" y="578.92" class="st9" v:langID="1031"><v:paragraph v:horizAlign="1"/><v:tabList/>Benutzer erhält <tspan
 						x="15.11" dy="1.2em" class="st10">Bestätigungsmail</tspan></text>		</g>
-		<g id="shape10-56" v:mID="10" v:groupContext="shape" transform="translate(973.134,-269.291)">
+		<g id="shape10-56" v:mID="10" v:groupContext="shape" transform="translate(167.244,-269.291)">
 			<title>Entscheidung.10</title>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
@@ -187,7 +187,7 @@
 			</g>
 			<path d="M17.01 595.28 L34.02 578.27 L17.01 561.26 L0 578.27 L17.01 595.28 Z" class="st6"/>
 		</g>
-		<g id="shape11-61" v:mID="11" v:groupContext="shape" transform="translate(973.134,-150.236)">
+		<g id="shape11-61" v:mID="11" v:groupContext="shape" transform="translate(167.244,-150.236)">
 			<title>Zusammenführungsknoten.11</title>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
@@ -198,7 +198,7 @@
 			</g>
 			<path d="M17.01 595.28 L34.02 578.27 L17.01 561.26 L0 578.27 L17.01 595.28 Z" class="st6"/>
 		</g>
-		<g id="shape12-66" v:mID="12" v:groupContext="shape" transform="translate(1046.83,-212.598)">
+		<g id="shape12-66" v:mID="12" v:groupContext="shape" transform="translate(240.945,-212.598)">
 			<title>Aktion.12</title>
 			<desc>Datei anhängen</desc>
 			<v:userDefs>
@@ -212,94 +212,94 @@
 			</g>
 			<rect x="0" y="569.764" width="85.0394" height="25.5118" rx="8.50394" ry="8.50394" class="st8"/>
 			<text x="4.06" y="586.12" class="st9" v:langID="1031"><v:paragraph v:horizAlign="1"/><v:tabList/>Datei anhängen</text>		</g>
-		<g id="shape13-72" v:mID="13" v:groupContext="shape" v:layerMember="0" transform="translate(1236.01,-538.583)">
+		<g id="shape13-72" v:mID="13" v:groupContext="shape" v:layerMember="0" transform="translate(430.116,-538.583)">
 			<title>Dynamischer Verbinder</title>
 			<path d="M7.09 595.28 L7.09 639.26" class="st11"/>
 		</g>
-		<g id="shape14-78" v:mID="14" v:groupContext="shape" v:layerMember="0" transform="translate(1260.1,-463.465)">
+		<g id="shape14-78" v:mID="14" v:groupContext="shape" v:layerMember="0" transform="translate(454.21,-463.465)">
 			<title>Dynamischer Verbinder.14</title>
 			<path d="M0 588.19 L162.37 588.19" class="st11"/>
 		</g>
-		<g id="shape15-83" v:mID="15" v:groupContext="shape" v:layerMember="0" transform="translate(1464.94,-457.795)">
+		<g id="shape15-83" v:mID="15" v:groupContext="shape" v:layerMember="0" transform="translate(659.055,-457.795)">
 			<title>Dynamischer Verbinder.15</title>
 			<path d="M7.09 595.28 L7.09 666.19" class="st11"/>
 		</g>
-		<g id="shape16-88" v:mID="16" v:groupContext="shape" v:layerMember="0" transform="translate(1464.94,-354.331)">
+		<g id="shape16-88" v:mID="16" v:groupContext="shape" v:layerMember="0" transform="translate(659.055,-354.331)">
 			<title>Dynamischer Verbinder.16</title>
 			<path d="M7.09 595.28 L7.09 704.46" class="st11"/>
 		</g>
-		<g id="shape17-93" v:mID="17" v:groupContext="shape" v:layerMember="0" transform="translate(1472.03,-212.598)">
+		<g id="shape17-93" v:mID="17" v:groupContext="shape" v:layerMember="0" transform="translate(666.142,-212.598)">
 			<title>Dynamischer Verbinder.17</title>
 			<path d="M0 595.28 L0 697.32 L-204.89 697.32" class="st11"/>
 		</g>
-		<g id="shape19-98" v:mID="19" v:groupContext="shape" v:layerMember="0" transform="translate(1226.08,-463.465)">
+		<g id="shape19-98" v:mID="19" v:groupContext="shape" v:layerMember="0" transform="translate(420.195,-463.465)">
 			<title>Dynamischer Verbinder.19</title>
 			<path d="M0 588.19 L-186.38 588.19" class="st11"/>
 		</g>
-		<g id="shape20-103" v:mID="20" v:groupContext="shape" v:layerMember="0" transform="translate(983.055,-457.795)">
+		<g id="shape20-103" v:mID="20" v:groupContext="shape" v:layerMember="0" transform="translate(177.165,-457.795)">
 			<title>Dynamischer Verbinder.20</title>
 			<path d="M7.09 595.28 L7.09 666.19" class="st11"/>
 		</g>
-		<g id="shape21-108" v:mID="21" v:groupContext="shape" v:layerMember="0" transform="translate(983.055,-354.331)">
+		<g id="shape21-108" v:mID="21" v:groupContext="shape" v:layerMember="0" transform="translate(177.165,-354.331)">
 			<title>Dynamischer Verbinder.21</title>
 			<path d="M7.09 595.28 L7.09 639.26" class="st11"/>
 		</g>
-		<g id="shape22-113" v:mID="22" v:groupContext="shape" v:layerMember="0" transform="translate(1007.15,-286.299)">
+		<g id="shape22-113" v:mID="22" v:groupContext="shape" v:layerMember="0" transform="translate(201.26,-286.299)">
 			<title>Dynamischer Verbinder.22</title>
 			<path d="M0 595.28 L82.2 595.28 L82.2 636.42" class="st11"/>
 		</g>
-		<g id="shape23-118" v:mID="23" v:groupContext="shape" v:layerMember="0" transform="translate(1089.35,-212.598)">
+		<g id="shape23-118" v:mID="23" v:groupContext="shape" v:layerMember="0" transform="translate(283.465,-212.598)">
 			<title>Dynamischer Verbinder.23</title>
 			<path d="M0 595.28 L0 640.63 L-75.16 640.63" class="st11"/>
 		</g>
-		<g id="shape24-123" v:mID="24" v:groupContext="shape" v:layerMember="0" transform="translate(990.142,-150.236)">
+		<g id="shape24-123" v:mID="24" v:groupContext="shape" v:layerMember="0" transform="translate(184.252,-150.236)">
 			<title>Dynamischer Verbinder.24</title>
 			<path d="M0 595.28 L0 634.96 L228.9 634.96" class="st11"/>
 		</g>
-		<g id="shape25-128" v:mID="25" v:groupContext="shape" v:layerMember="0" transform="translate(1236.01,-93.5433)">
+		<g id="shape25-128" v:mID="25" v:groupContext="shape" v:layerMember="0" transform="translate(430.116,-93.5433)">
 			<title>Dynamischer Verbinder.25</title>
 			<path d="M7.09 595.28 L7.09 625.09" class="st11"/>
 		</g>
-		<g id="shape26-133" v:mID="26" v:groupContext="shape" v:layerMember="0" transform="translate(966.047,-286.299)">
+		<g id="shape26-133" v:mID="26" v:groupContext="shape" v:layerMember="0" transform="translate(160.157,-286.299)">
 			<title>Dynamischer Verbinder.26</title>
 			<path d="M7.09 595.28 L-67.61 595.28 L-67.61 714.33 L0.05 714.33" class="st11"/>
 		</g>
-		<g id="shape27-138" v:mID="27" v:groupContext="shape" transform="translate(985.008,-467.559)">
+		<g id="shape27-138" v:mID="27" v:groupContext="shape" transform="translate(179.118,-467.559)">
 			<title>Tabelle.27</title>
 			<desc>nein</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="76" cy="585.276" width="152" height="20"/>
 			<rect x="0" y="575.276" width="152" height="20" class="st13"/>
 			<text x="65.33" y="588.88" class="st14" v:langID="1031"><v:paragraph v:horizAlign="1"/><v:tabList/>nein</text>		</g>
-		<g id="shape28-141" v:mID="28" v:groupContext="shape" transform="translate(1310.99,-467.559)">
+		<g id="shape28-141" v:mID="28" v:groupContext="shape" transform="translate(505.102,-467.559)">
 			<title>Tabelle.28</title>
 			<desc>ja</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="76" cy="585.276" width="152.01" height="20"/>
 			<rect x="0" y="575.276" width="152" height="20" class="st13"/>
 			<text x="71.69" y="588.88" class="st14" v:langID="1031"><v:paragraph v:horizAlign="1"/><v:tabList/>ja</text>		</g>
-		<g id="shape29-144" v:mID="29" v:groupContext="shape" transform="translate(799.874,-255.118)">
+		<g id="shape29-144" v:mID="29" v:groupContext="shape" transform="translate(28.3465,-255.118)">
 			<title>Tabelle.29</title>
 			<desc>nein</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
-			<v:textRect cx="76" cy="585.276" width="152" height="20"/>
-			<rect x="0" y="575.276" width="152" height="20" class="st13"/>
-			<text x="65.33" y="588.88" class="st14" v:langID="1031"><v:paragraph v:horizAlign="1"/><v:tabList/>nein</text>		</g>
-		<g id="shape30-147" v:mID="30" v:groupContext="shape" transform="translate(1028.41,-256.378)">
+			<v:textRect cx="42.5197" cy="585.276" width="85.04" height="20"/>
+			<rect x="0" y="575.276" width="85.0394" height="20" class="st13"/>
+			<text x="31.85" y="588.88" class="st14" v:langID="1031"><v:paragraph v:horizAlign="1"/><v:tabList/>nein</text>		</g>
+		<g id="shape30-147" v:mID="30" v:groupContext="shape" transform="translate(222.52,-256.378)">
 			<title>Tabelle.30</title>
 			<desc>ja</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="76" cy="585.276" width="152.01" height="20"/>
 			<rect x="0" y="575.276" width="152" height="20" class="st13"/>
 			<text x="71.69" y="588.88" class="st14" v:langID="1031"><v:paragraph v:horizAlign="1"/><v:tabList/>ja</text>		</g>
-		<g id="shape31-150" v:mID="31" v:groupContext="shape" transform="translate(1089.35,-507.559)">
+		<g id="shape31-150" v:mID="31" v:groupContext="shape" transform="translate(283.465,-507.559)">
 			<title>Tabelle.31</title>
 			<desc>[neues Problem erkannt]</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="76" cy="585.276" width="152.01" height="20"/>
 			<rect x="0" y="575.276" width="152" height="20" class="st13"/>
 			<text x="15.33" y="588.88" class="st14" v:langID="1031"><v:paragraph v:horizAlign="1"/><v:tabList/>[neues Problem erkannt]</text>		</g>
-		<g id="shape32-153" v:mID="32" v:groupContext="shape" transform="translate(838.142,-315.984)">
+		<g id="shape32-153" v:mID="32" v:groupContext="shape" transform="translate(32.252,-315.984)">
 			<title>Tabelle.32</title>
 			<desc>[Zusätzliche Informationen]</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
