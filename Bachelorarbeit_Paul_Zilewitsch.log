@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.12)  20 JUN 2016 16:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.12)  21 JUN 2016 11:51
 entering extended mode
 **Bachelorarbeit_Paul_Zilewitsch.tex
 (Bachelorarbeit_Paul_Zilewitsch.tex
@@ -1345,16 +1345,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 117--119
  []
 
 [29 <./Abbildungen/Sicherheitsprobleme.png>]) [30]
-(Inhalte/7_Umsetzung/Umsetzung.tex) [31] (Inhalte/8_Fazit/Fazit.tex) [32]
-[33] (Inhalte/9_Anhang/Anhang.tex
-<Abbildungen/Exchange_Verbindungen.png, id=151, 461.47406pt x 643.6547pt>
+(Inhalte/7_Umsetzung/Umsetzung.tex [31]) [32] (Inhalte/8_Fazit/Fazit.tex)
+[33] [34] (Inhalte/9_Anhang/Anhang.tex
+<Abbildungen/Exchange_Verbindungen.png, id=154, 461.47406pt x 643.6547pt>
 File: Abbildungen/Exchange_Verbindungen.png Graphic file (type png)
 
 <use Abbildungen/Exchange_Verbindungen.png>
 Package pdftex.def Info: Abbildungen/Exchange_Verbindungen.png used on input li
 ne 9.
 (pdftex.def)             Requested size: 295.90588pt x 412.72331pt.
- [34 <./Abbildungen/Exchange_Verbindungen.png>] <Abbildungen/API_1.png, id=156,
+ [35 <./Abbildungen/Exchange_Verbindungen.png>] <Abbildungen/API_1.png, id=159,
  980.16188pt x 457.71pt>
 File: Abbildungen/API_1.png Graphic file (type png)
 
@@ -1362,18 +1362,18 @@ File: Abbildungen/API_1.png Graphic file (type png)
 Package pdftex.def Info: Abbildungen/API_1.png used on input line 23.
 (pdftex.def)             Requested size: 455.24411pt x 212.58153pt.
 
-<Abbildungen/API_2.png, id=157, 981.6675pt x 380.92313pt>
+<Abbildungen/API_2.png, id=160, 981.6675pt x 380.92313pt>
 File: Abbildungen/API_2.png Graphic file (type png)
 
 <use Abbildungen/API_2.png>
 Package pdftex.def Info: Abbildungen/API_2.png used on input line 27.
 (pdftex.def)             Requested size: 455.24411pt x 176.65079pt.
- [35 <./Abbildungen/API_1.png> <./Abbildungen/API_2.png>]
+ [36 <./Abbildungen/API_1.png> <./Abbildungen/API_2.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 39--41
 
  []
 
-<Abbildungen/Freshdesk.png, id=163, 1451.4225pt x 764.8575pt>
+<Abbildungen/Freshdesk.png, id=167, 1451.4225pt x 764.8575pt>
 File: Abbildungen/Freshdesk.png Graphic file (type png)
 
 <use Abbildungen/Freshdesk.png>
@@ -1389,7 +1389,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
-<Abbildungen/Deskcom.png, id=164, 1446.15282pt x 738.50906pt>
+<Abbildungen/Deskcom.png, id=168, 1446.15282pt x 738.50906pt>
 File: Abbildungen/Deskcom.png Graphic file (type png)
 
 <use Abbildungen/Deskcom.png>
@@ -1405,13 +1405,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
-<Abbildungen/Zendesk.png, id=165, 1444.64719pt x 807.015pt>
+<Abbildungen/Zendesk.png, id=169, 1444.64719pt x 807.015pt>
 File: Abbildungen/Zendesk.png Graphic file (type png)
 
 <use Abbildungen/Zendesk.png>
 Package pdftex.def Info: Abbildungen/Zendesk.png used on input line 54.
 (pdftex.def)             Requested size: 455.24411pt x 254.30959pt.
- [36 <./Abbildungen/Freshdesk.png> <./Abbildungen/Deskcom.png>]
+ [37 <./Abbildungen/Freshdesk.png> <./Abbildungen/Deskcom.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
@@ -1421,13 +1421,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
-<Abbildungen/SysAid.png, id=172, 1444.64719pt x 776.9025pt>
+<Abbildungen/SysAid.png, id=175, 1444.64719pt x 776.9025pt>
 File: Abbildungen/SysAid.png Graphic file (type png)
 
 <use Abbildungen/SysAid.png>
 Package pdftex.def Info: Abbildungen/SysAid.png used on input line 60.
 (pdftex.def)             Requested size: 455.24411pt x 244.8204pt.
- [37 <./Abbildungen/Zendesk.png> <./Abbildungen/SysAid.png>]) [38] (Bachelorarb
+ [38 <./Abbildungen/Zendesk.png> <./Abbildungen/SysAid.png>]) [39] (Bachelorarb
 eit_Paul_Zilewitsch.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 76--83
 []\T1/ptm/m/n/12 Ricardo Bil-ton.  10 po-wer-ful, cloud-based help-desk ser-vic
@@ -1452,24 +1452,24 @@ Underfull \hbox (badness 2277) in paragraph at lines 93--99
  : / / uk . pcmag . com /$
  []
 
-[39]
+[40]
 Underfull \hbox (badness 1122) in paragraph at lines 106--110
 []\T1/ptm/m/n/12 Salesforce.  $http : / / www . salesforce . com / de / company
  / newspress / press-[]releases / 2012 / 02 /$
  []
 
 
-Underfull \hbox (badness 2005) in paragraph at lines 161--164
+Underfull \hbox (badness 2005) in paragraph at lines 166--169
 []\T1/ptm/m/n/12 Frank Ca-ri-us.  $http : / / www . msxfaq . de / clients / oag
 rundlagen . htm$, .  ab-ge-ru-fen am:
  []
 
-[40]) [41] (Bachelorarbeit_Paul_Zilewitsch.aux) ) 
+[41]) [42] (Bachelorarbeit_Paul_Zilewitsch.aux) ) 
 Here is how much of TeX's memory you used:
- 10484 strings out of 493673
- 153949 string characters out of 3141106
+ 10490 strings out of 493673
+ 154048 string characters out of 3141106
  308522 words of memory out of 3000000
- 13559 multiletter control sequences out of 15000+200000
+ 13565 multiletter control sequences out of 15000+200000
  70461 words of font info for 116 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  41i,18n,46p,1738b,386s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1479,10 +1479,10 @@ Latex/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/Latex&Latex/fonts
 onts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/Latex&Latex/fonts/type1
 /urw/times/utmr8a.pfb><C:/Program Files (x86)/Latex&Latex/fonts/type1/urw/times
 /utmri8a.pfb>
-Output written on Bachelorarbeit_Paul_Zilewitsch.pdf (48 pages, 2134152 bytes).
+Output written on Bachelorarbeit_Paul_Zilewitsch.pdf (49 pages, 2135420 bytes).
 
 PDF statistics:
- 208 PDF objects out of 1000 (max. 8388607)
+ 212 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  86 words of extra memory for PDF output out of 10000 (max. 10000000)
 

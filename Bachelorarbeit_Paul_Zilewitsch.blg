@@ -4,10 +4,12 @@ Database file #1: literatur.bib
 Warning--empty year in Freshdesk
 Warning--empty year in Salesforce
 Warning--empty year in Zendesk
+Warning--empty year in SysAid
 Warning--empty year in Widget1
 Warning--empty year in MSXrpc
 Warning--empty year in MSXoutlook
 Warning--empty year in MSXews
 Warning--empty year in MicrosoftAPI
 Warning--empty year in MicrosoftSDK
-(There were 9 warnings)
+Warning--empty year in DownloadAPI
+(There were 11 warnings)
