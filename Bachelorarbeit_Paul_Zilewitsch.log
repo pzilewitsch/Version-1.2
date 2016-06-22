@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.12)  21 JUN 2016 11:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.12)  22 JUN 2016 16:30
 entering extended mode
 **Bachelorarbeit_Paul_Zilewitsch.tex
 (Bachelorarbeit_Paul_Zilewitsch.tex
@@ -165,6 +165,92 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
+("C:\Program Files (x86)\Latex&Latex\tex\latex\pdfpages\pdfpages.sty"
+Package: pdfpages 2016/04/19 v0.5f Insert pages of external PDF documents (AM)
+
+("C:\Program Files (x86)\Latex&Latex\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Program Files (x86)\Latex&Latex\tex\latex\tools\calc.sty"
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count100
+\calc@Bcount=\count101
+\calc@Adimen=\dimen112
+\calc@Bdimen=\dimen113
+\calc@Askip=\skip51
+\calc@Bskip=\skip52
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count102
+\calc@Cskip=\skip53
+)
+("C:\Program Files (x86)\Latex&Latex\tex\latex\eso-pic\eso-pic.sty"
+Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
+
+("C:\Program Files (x86)\Latex&Latex\tex\generic\oberdiek\atbegshi.sty"
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+
+("C:\Program Files (x86)\Latex&Latex\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files (x86)\Latex&Latex\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+("C:\Program Files (x86)\Latex&Latex\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+))
+("C:\Program Files (x86)\Latex&Latex\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+("C:\Program Files (x86)\Latex&Latex\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+("C:\Program Files (x86)\Latex&Latex\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+\Gread@gobject=\count103
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
+("C:\Program Files (x86)\Latex&Latex\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\Latex&Latex\tex\latex\graphics\graphics.sty"
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\Latex&Latex\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\Latex&Latex\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+)
+\Gin@req@height=\dimen114
+\Gin@req@width=\dimen115
+)
+\AM@pagewidth=\dimen116
+\AM@pageheight=\dimen117
+
+("C:\Program Files (x86)\Latex&Latex\tex\latex\pdfpages\pppdftex.def"
+File: pppdftex.def 2016/04/19 v0.5f Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box29
+\AM@global@opts=\toks20
+\AM@toc@title=\toks21
+\c@AM@survey=\count104
+\AM@templatesizebox=\box30
+)
 ("C:\Program Files (x86)\Latex&Latex\tex\generic\babel\babel.sty"
 Package: babel 2015/08/03 3.9m The Babel package
 
@@ -182,8 +268,8 @@ Language: ngermanb 2013/12/13 v2.7 German support for babel (new orthography)
 
 ("C:\Program Files (x86)\Latex&Latex\tex\generic\babel\babel.def"
 File: babel.def 2015/08/03 3.9m Babel common definitions
-\babel@savecnt=\count100
-\U@D=\dimen112
+\babel@savecnt=\count105
+\U@D=\dimen118
 )
 \l@naustrian = a dialect from \language\l@ngerman 
 \l@nswissgerman = a dialect from \language\l@ngerman 
@@ -282,12 +368,12 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
-\zifour@ocount=\count101
+\zifour@ocount=\count106
 )
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\base\inputenc.sty"
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks20
-\inpenc@posthook=\toks21
+\inpenc@prehook=\toks22
+\inpenc@posthook=\toks23
 
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\base\utf8.def"
 File: utf8.def 2015/06/27 v1.1n UTF-8 support for inputenc
@@ -581,15 +667,15 @@ Package: csquotes 2015/07/18 v5.1f context-sensitive quotations (JAW)
 
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\etoolbox\etoolbox.sty"
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count102
+\etb@tempcnta=\count107
 )
-\csq@reset=\count103
-\csq@gtype=\count104
-\csq@glevel=\count105
-\csq@qlevel=\count106
-\csq@maxlvl=\count107
-\csq@tshold=\count108
-\csq@ltx@everypar=\toks22
+\csq@reset=\count108
+\csq@gtype=\count109
+\csq@glevel=\count110
+\csq@qlevel=\count111
+\csq@maxlvl=\count112
+\csq@tshold=\count113
+\csq@ltx@everypar=\toks24
 
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\csquotes\csquotes.def"
 File: csquotes.def 2015/07/18 v5.1f csquotes generic definitions (JAW)
@@ -644,54 +730,54 @@ LaTeX Info: Redefining \hbar on input line 50.
 )
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\tools\array.sty"
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen113
-\extrarowheight=\dimen114
-\NC@list=\toks23
-\extratabsurround=\skip51
-\backup@length=\skip52
+\col@sep=\dimen119
+\extrarowheight=\dimen120
+\NC@list=\toks25
+\extratabsurround=\skip54
+\backup@length=\skip55
 )
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\tabto\tabto.sty"
 Package: tabto 2013/03/25  v 1.3  Another tabbing mechanism
-\CurrentLineWidth=\dimen115
+\CurrentLineWidth=\dimen121
 )
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\tools\longtable.sty"
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
-\LTleft=\skip53
-\LTright=\skip54
-\LTpre=\skip55
-\LTpost=\skip56
-\LTchunksize=\count109
-\LTcapwidth=\dimen116
-\LT@head=\box29
-\LT@firsthead=\box30
-\LT@foot=\box31
-\LT@lastfoot=\box32
-\LT@cols=\count110
-\LT@rows=\count111
-\c@LT@tables=\count112
-\c@LT@chunks=\count113
-\LT@p@ftn=\toks24
+\LTleft=\skip56
+\LTright=\skip57
+\LTpre=\skip58
+\LTpost=\skip59
+\LTchunksize=\count114
+\LTcapwidth=\dimen122
+\LT@head=\box31
+\LT@firsthead=\box32
+\LT@foot=\box33
+\LT@lastfoot=\box34
+\LT@cols=\count115
+\LT@rows=\count116
+\c@LT@tables=\count117
+\c@LT@chunks=\count118
+\LT@p@ftn=\toks26
 )
-Class scrartcl Info: longtable captions redefined on input line 30.
+Class scrartcl Info: longtable captions redefined on input line 31.
 
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\supertabular\supertabular.sty"
 Package: supertabular 2004/02/20 v4.1e the supertabular environment
-\c@tracingst=\count114
-\ST@wd=\dimen117
-\ST@rightskip=\skip57
-\ST@leftskip=\skip58
-\ST@parfillskip=\skip59
-\ST@pageleft=\dimen118
-\ST@headht=\dimen119
-\ST@tailht=\dimen120
-\ST@pagesofar=\dimen121
-\ST@pboxht=\dimen122
-\ST@lineht=\dimen123
-\ST@stretchht=\dimen124
-\ST@prevht=\dimen125
-\ST@toadd=\dimen126
-\ST@dimen=\dimen127
-\ST@pbox=\box33
+\c@tracingst=\count119
+\ST@wd=\dimen123
+\ST@rightskip=\skip60
+\ST@leftskip=\skip61
+\ST@parfillskip=\skip62
+\ST@pageleft=\dimen124
+\ST@headht=\dimen125
+\ST@tailht=\dimen126
+\ST@pagesofar=\dimen127
+\ST@pboxht=\dimen128
+\ST@lineht=\dimen129
+\ST@stretchht=\dimen130
+\ST@prevht=\dimen131
+\ST@toadd=\dimen132
+\ST@dimen=\dimen133
+\ST@pbox=\box35
 )
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\koma-script\scrpage2.sty"
 Package: scrpage2 2015/10/03 v3.19a KOMA-Script package (page head and foot)
@@ -700,59 +786,55 @@ LaTeX Info: Redefining \pagemark on input line 174.
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\tocloft\tocloft.sty"
 Package: tocloft 2013/05/02 v2.3f parameterised ToC, etc., typesetting
 Package tocloft Info: The document has section divisions on input line 44.
-\cftparskip=\skip60
-\cftbeforetoctitleskip=\skip61
-\cftaftertoctitleskip=\skip62
-\cftbeforepartskip=\skip63
-\cftpartnumwidth=\skip64
-\cftpartindent=\skip65
-\cftbeforesecskip=\skip66
-\cftsecindent=\skip67
-\cftsecnumwidth=\skip68
-\cftbeforesubsecskip=\skip69
-\cftsubsecindent=\skip70
-\cftsubsecnumwidth=\skip71
-\cftbeforesubsubsecskip=\skip72
-\cftsubsubsecindent=\skip73
-\cftsubsubsecnumwidth=\skip74
-\cftbeforeparaskip=\skip75
-\cftparaindent=\skip76
-\cftparanumwidth=\skip77
-\cftbeforesubparaskip=\skip78
-\cftsubparaindent=\skip79
-\cftsubparanumwidth=\skip80
-\cftbeforeloftitleskip=\skip81
-\cftafterloftitleskip=\skip82
-\cftbeforefigskip=\skip83
-\cftfigindent=\skip84
-\cftfignumwidth=\skip85
-\c@lofdepth=\count115
-\c@lotdepth=\count116
-\cftbeforelottitleskip=\skip86
-\cftafterlottitleskip=\skip87
-\cftbeforetabskip=\skip88
-\cfttabindent=\skip89
-\cfttabnumwidth=\skip90
+\cftparskip=\skip63
+\cftbeforetoctitleskip=\skip64
+\cftaftertoctitleskip=\skip65
+\cftbeforepartskip=\skip66
+\cftpartnumwidth=\skip67
+\cftpartindent=\skip68
+\cftbeforesecskip=\skip69
+\cftsecindent=\skip70
+\cftsecnumwidth=\skip71
+\cftbeforesubsecskip=\skip72
+\cftsubsecindent=\skip73
+\cftsubsecnumwidth=\skip74
+\cftbeforesubsubsecskip=\skip75
+\cftsubsubsecindent=\skip76
+\cftsubsubsecnumwidth=\skip77
+\cftbeforeparaskip=\skip78
+\cftparaindent=\skip79
+\cftparanumwidth=\skip80
+\cftbeforesubparaskip=\skip81
+\cftsubparaindent=\skip82
+\cftsubparanumwidth=\skip83
+\cftbeforeloftitleskip=\skip84
+\cftafterloftitleskip=\skip85
+\cftbeforefigskip=\skip86
+\cftfigindent=\skip87
+\cftfignumwidth=\skip88
+\c@lofdepth=\count120
+\c@lotdepth=\count121
+\cftbeforelottitleskip=\skip89
+\cftafterlottitleskip=\skip90
+\cftbeforetabskip=\skip91
+\cfttabindent=\skip92
+\cfttabnumwidth=\skip93
 )
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\titlesec\titletoc.sty"
 Package: titletoc 2011/12/15 v1.6 TOC entries
-\ttl@leftsep=\dimen128
+\ttl@leftsep=\dimen134
 )
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\enumitem\enumitem.sty"
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\labelindent=\skip91
-\enit@outerparindent=\dimen129
-\enit@toks=\toks25
-\enit@inbox=\box34
-\enitdp@description=\count117
+\labelindent=\skip94
+\enit@outerparindent=\dimen135
+\enit@toks=\toks27
+\enit@inbox=\box36
+\enitdp@description=\count122
 )
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-("C:\Program Files (x86)\Latex&Latex\tex\generic\oberdiek\ifpdf.sty"
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
-)
 ("C:\Program Files (x86)\Latex&Latex\tex\generic\oberdiek\ifvtex.sty"
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
@@ -760,58 +842,39 @@ Package ifvtex Info: VTeX not detected.
 ("C:\Program Files (x86)\Latex&Latex\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count118
-\Gm@cntv=\count119
-\c@Gm@tempcnt=\count120
-\Gm@bindingoffset=\dimen130
-\Gm@wd@mp=\dimen131
-\Gm@odd@mp=\dimen132
-\Gm@even@mp=\dimen133
-\Gm@layoutwidth=\dimen134
-\Gm@layoutheight=\dimen135
-\Gm@layouthoffset=\dimen136
-\Gm@layoutvoffset=\dimen137
-\Gm@dimlist=\toks26
+\Gm@cnth=\count123
+\Gm@cntv=\count124
+\c@Gm@tempcnt=\count125
+\Gm@bindingoffset=\dimen136
+\Gm@wd@mp=\dimen137
+\Gm@odd@mp=\dimen138
+\Gm@even@mp=\dimen139
+\Gm@layoutwidth=\dimen140
+\Gm@layoutheight=\dimen141
+\Gm@layouthoffset=\dimen142
+\Gm@layoutvoffset=\dimen143
+\Gm@dimlist=\toks28
 
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\geometry\geometry.cfg"))
-("C:\Program Files (x86)\Latex&Latex\tex\latex\graphics\color.sty"
-Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
-
-("C:\Program Files (x86)\Latex&Latex\tex\latex\00miktex\color.cfg"
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
-)
-Package color Info: Driver file: pdftex.def on input line 142.
-
-("C:\Program Files (x86)\Latex&Latex\tex\latex\pdftex-def\pdftex.def"
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-("C:\Program Files (x86)\Latex&Latex\tex\generic\oberdiek\infwarerr.sty"
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-("C:\Program Files (x86)\Latex&Latex\tex\generic\oberdiek\ltxcmds.sty"
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count121
-))
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\listings\listings.sty"
-\lst@mode=\count122
-\lst@gtempboxa=\box35
-\lst@token=\toks27
-\lst@length=\count123
-\lst@currlwidth=\dimen138
-\lst@column=\count124
-\lst@pos=\count125
-\lst@lostspace=\dimen139
-\lst@width=\dimen140
-\lst@newlines=\count126
-\lst@lineno=\count127
-\lst@maxwidth=\dimen141
+\lst@mode=\count126
+\lst@gtempboxa=\box37
+\lst@token=\toks29
+\lst@length=\count127
+\lst@currlwidth=\dimen144
+\lst@column=\count128
+\lst@pos=\count129
+\lst@lostspace=\dimen145
+\lst@width=\dimen146
+\lst@newlines=\count130
+\lst@lineno=\count131
+\lst@maxwidth=\dimen147
 
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count128
-\lst@skipnumbers=\count129
-\lst@framebox=\box36
+\c@lstnumber=\count132
+\lst@skipnumbers=\count133
+\lst@framebox=\box38
 )
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\listings\listings.cfg"
 File: listings.cfg 2015/06/04 1.6 listings configuration
@@ -830,19 +893,19 @@ Class scrartcl Warning: Usage of package `titlesec' together
 (scrartcl)              the extended optional argument of the section
 (scrartcl)              commands.
 (scrartcl)              Nevertheless, using requested
-(scrartcl)              package `titlesec' on input line 102.
+(scrartcl)              package `titlesec' on input line 103.
 
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\titlesec\titlesec.sty"
 Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
-\ttl@box=\box37
-\beforetitleunit=\skip92
-\aftertitleunit=\skip93
-\ttl@plus=\dimen142
-\ttl@minus=\dimen143
-\ttl@toksa=\toks28
-\titlewidth=\dimen144
-\titlewidthlast=\dimen145
-\titlewidthfirst=\dimen146
+\ttl@box=\box39
+\beforetitleunit=\skip95
+\aftertitleunit=\skip96
+\ttl@plus=\dimen148
+\ttl@minus=\dimen149
+\ttl@toksa=\toks30
+\titlewidth=\dimen150
+\titlewidthlast=\dimen151
+\titlewidthfirst=\dimen152
 
 
 Package titlesec Warning: Non standard sectioning command detected
@@ -867,13 +930,13 @@ Package titlesec Warning: Non standard sectioning command detected
 )
 
 Package scrartcl Warning: Activating an ugly workaround for a missing
-(scrartcl)                feature of package `titlesec` on input line 102.
+(scrartcl)                feature of package `titlesec` on input line 103.
 
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\footmisc\footmisc.sty"
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
-\FN@temptoken=\toks29
-\footnotemargin=\dimen147
-\c@pp@next@reset=\count130
+\FN@temptoken=\toks31
+\footnotemargin=\dimen153
+\c@pp@next@reset=\count134
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
 Package footmisc Info: Declaring symbol style wiley on input line 872.
@@ -882,23 +945,6 @@ Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
 Package footmisc Info: Declaring symbol style lamport* on input line 903.
 Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 .
-)
-("C:\Program Files (x86)\Latex&Latex\tex\latex\graphics\graphicx.sty"
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
-
-("C:\Program Files (x86)\Latex&Latex\tex\latex\graphics\graphics.sty"
-Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
-
-("C:\Program Files (x86)\Latex&Latex\tex\latex\graphics\trig.sty"
-Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
-)
-("C:\Program Files (x86)\Latex&Latex\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
-)
-Package graphics Info: Driver file: pdftex.def on input line 94.
-)
-\Gin@req@height=\dimen148
-\Gin@req@width=\dimen149
 )
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\pict2e\pict2e.sty"
 Package: pict2e 2016/02/05 v0.3b Improved picture commands (HjG,RN,JT)
@@ -912,17 +958,17 @@ Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 121.
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\pict2e\p2e-pdftex.def"
 File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
 )
-\pIIe@GRAPH=\toks30
-\@arclen=\dimen150
-\@arcrad=\dimen151
-\@tempdimd=\dimen152
+\pIIe@GRAPH=\toks32
+\@arclen=\dimen154
+\@arcrad=\dimen155
+\@tempdimd=\dimen156
 )
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\natbib\natbib.sty"
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip94
-\bibsep=\skip95
+\bibhang=\skip97
+\bibsep=\skip98
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count131
+\c@NAT@ctr=\count135
 ))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -951,6 +997,29 @@ LaTeX Font Info:    Try loading font information for T1+ptm on input line 6.
 
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\psnfss\t1ptm.fd"
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+)
+\AtBeginShipoutBox=\box40
+
+("C:\Program Files (x86)\Latex&Latex\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count136
+\scratchdimen=\dimen157
+\scratchbox=\box41
+\nofMPsegments=\count137
+\nofMParguments=\count138
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count139
+\MPscratchDim=\dimen158
+\MPnumerator=\count140
+\makeMPintoPDFobject=\count141
+\everyMPtoPDFconversion=\toks34
+) ("C:\Program Files (x86)\Latex&Latex\tex\latex\oberdiek\pdflscape.sty"
+Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
+
+("C:\Program Files (x86)\Latex&Latex\tex\latex\graphics\lscape.sty"
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 )
 ("C:\Program Files (x86)\Latex&Latex\tex\latex\upquote\upquote.sty"
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
@@ -1001,26 +1070,12 @@ Package scrbase Info: activating ngerman \listtablename on input line 6.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-("C:\Program Files (x86)\Latex&Latex\tex\context\base\supp-pdf.mkii"
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count132
-\scratchdimen=\dimen153
-\scratchbox=\box38
-\nofMPsegments=\count133
-\nofMParguments=\count134
-\everyMPshowfont=\toks31
-\MPscratchCnt=\count135
-\MPscratchDim=\dimen154
-\MPnumerator=\count136
-\makeMPintoPDFobject=\count137
-\everyMPtoPDFconversion=\toks32
-)
-\c@lstlisting=\count138
+\c@lstlisting=\count142
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 19.
 LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 29
 .
- ("C:\Program Files (x86)\Latex&Latex\tex\latex\psnfss\ot1ztmcm.fd"
+("C:\Program Files (x86)\Latex&Latex\tex\latex\psnfss\ot1ztmcm.fd"
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 29
@@ -1345,16 +1400,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 117--119
  []
 
 [29 <./Abbildungen/Sicherheitsprobleme.png>]) [30]
-(Inhalte/7_Umsetzung/Umsetzung.tex [31]) [32] (Inhalte/8_Fazit/Fazit.tex)
-[33] [34] (Inhalte/9_Anhang/Anhang.tex
-<Abbildungen/Exchange_Verbindungen.png, id=154, 461.47406pt x 643.6547pt>
+(Inhalte/7_Umsetzung/Umsetzung.tex
+<Abbildungen/Screenshot_Verweise.pdf, id=142, 969.6225pt x 368.37625pt>
+File: Abbildungen/Screenshot_Verweise.pdf Graphic file (type pdf)
+
+<use Abbildungen/Screenshot_Verweise.pdf>
+Package pdftex.def Info: Abbildungen/Screenshot_Verweise.pdf used on input line
+ 11.
+(pdftex.def)             Requested size: 341.43307pt x 129.71492pt.
+
+<Abbildungen/Entwurfsmuster.png, id=143, 423.83344pt x 248.42813pt>
+File: Abbildungen/Entwurfsmuster.png Graphic file (type png)
+
+<use Abbildungen/Entwurfsmuster.png>
+Package pdftex.def Info: Abbildungen/Entwurfsmuster.png used on input line 23.
+(pdftex.def)             Requested size: 341.43307pt x 200.13774pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--30
+
+ []
+
+[31 <./Abbildungen/Screenshot_Verweise.pdf>] [32 <./Abbildungen/Entwurfsmuster.
+png>]) [33] (Inhalte/8_Fazit/Fazit.tex) [34] [35] (Inhalte/9_Anhang/Anhang.tex
+<Abbildungen/Exchange_Verbindungen.png, id=162, 461.47406pt x 643.6547pt>
 File: Abbildungen/Exchange_Verbindungen.png Graphic file (type png)
 
 <use Abbildungen/Exchange_Verbindungen.png>
 Package pdftex.def Info: Abbildungen/Exchange_Verbindungen.png used on input li
 ne 9.
 (pdftex.def)             Requested size: 295.90588pt x 412.72331pt.
- [35 <./Abbildungen/Exchange_Verbindungen.png>] <Abbildungen/API_1.png, id=159,
+ [36 <./Abbildungen/Exchange_Verbindungen.png>] <Abbildungen/API_1.png, id=168,
  980.16188pt x 457.71pt>
 File: Abbildungen/API_1.png Graphic file (type png)
 
@@ -1362,18 +1441,18 @@ File: Abbildungen/API_1.png Graphic file (type png)
 Package pdftex.def Info: Abbildungen/API_1.png used on input line 23.
 (pdftex.def)             Requested size: 455.24411pt x 212.58153pt.
 
-<Abbildungen/API_2.png, id=160, 981.6675pt x 380.92313pt>
+<Abbildungen/API_2.png, id=169, 981.6675pt x 380.92313pt>
 File: Abbildungen/API_2.png Graphic file (type png)
 
 <use Abbildungen/API_2.png>
 Package pdftex.def Info: Abbildungen/API_2.png used on input line 27.
 (pdftex.def)             Requested size: 455.24411pt x 176.65079pt.
- [36 <./Abbildungen/API_1.png> <./Abbildungen/API_2.png>]
+ [37 <./Abbildungen/API_1.png> <./Abbildungen/API_2.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 39--41
 
  []
 
-<Abbildungen/Freshdesk.png, id=167, 1451.4225pt x 764.8575pt>
+<Abbildungen/Freshdesk.png, id=175, 1451.4225pt x 764.8575pt>
 File: Abbildungen/Freshdesk.png Graphic file (type png)
 
 <use Abbildungen/Freshdesk.png>
@@ -1389,7 +1468,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
-<Abbildungen/Deskcom.png, id=168, 1446.15282pt x 738.50906pt>
+<Abbildungen/Deskcom.png, id=176, 1446.15282pt x 738.50906pt>
 File: Abbildungen/Deskcom.png Graphic file (type png)
 
 <use Abbildungen/Deskcom.png>
@@ -1405,13 +1484,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
-<Abbildungen/Zendesk.png, id=169, 1444.64719pt x 807.015pt>
+<Abbildungen/Zendesk.png, id=177, 1444.64719pt x 807.015pt>
 File: Abbildungen/Zendesk.png Graphic file (type png)
 
 <use Abbildungen/Zendesk.png>
 Package pdftex.def Info: Abbildungen/Zendesk.png used on input line 54.
 (pdftex.def)             Requested size: 455.24411pt x 254.30959pt.
- [37 <./Abbildungen/Freshdesk.png> <./Abbildungen/Deskcom.png>]
+ [38 <./Abbildungen/Freshdesk.png> <./Abbildungen/Deskcom.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
@@ -1421,13 +1500,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
-<Abbildungen/SysAid.png, id=175, 1444.64719pt x 776.9025pt>
+<Abbildungen/SysAid.png, id=183, 1444.64719pt x 776.9025pt>
 File: Abbildungen/SysAid.png Graphic file (type png)
 
 <use Abbildungen/SysAid.png>
 Package pdftex.def Info: Abbildungen/SysAid.png used on input line 60.
 (pdftex.def)             Requested size: 455.24411pt x 244.8204pt.
- [38 <./Abbildungen/Zendesk.png> <./Abbildungen/SysAid.png>]) [39] (Bachelorarb
+ [39 <./Abbildungen/Zendesk.png> <./Abbildungen/SysAid.png>]) [40] (Bachelorarb
 eit_Paul_Zilewitsch.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 76--83
 []\T1/ptm/m/n/12 Ricardo Bil-ton.  10 po-wer-ful, cloud-based help-desk ser-vic
@@ -1452,7 +1531,7 @@ Underfull \hbox (badness 2277) in paragraph at lines 93--99
  : / / uk . pcmag . com /$
  []
 
-[40]
+[41]
 Underfull \hbox (badness 1122) in paragraph at lines 106--110
 []\T1/ptm/m/n/12 Salesforce.  $http : / / www . salesforce . com / de / company
  / newspress / press-[]releases / 2012 / 02 /$
@@ -1464,25 +1543,25 @@ Underfull \hbox (badness 2005) in paragraph at lines 166--169
 rundlagen . htm$, .  ab-ge-ru-fen am:
  []
 
-[41]) [42] (Bachelorarbeit_Paul_Zilewitsch.aux) ) 
+[42]) [43] (Bachelorarbeit_Paul_Zilewitsch.aux) ) 
 Here is how much of TeX's memory you used:
- 10490 strings out of 493673
- 154048 string characters out of 3141106
- 308522 words of memory out of 3000000
- 13565 multiletter control sequences out of 15000+200000
+ 11781 strings out of 493673
+ 173138 string characters out of 3141106
+ 336644 words of memory out of 3000000
+ 14824 multiletter control sequences out of 15000+200000
  70461 words of font info for 116 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 41i,18n,46p,1738b,386s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 46i,18n,51p,1738b,398s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/Latex&
 Latex/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/Latex&Latex/fonts
 /type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files (x86)/Latex&Latex/f
 onts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/Latex&Latex/fonts/type1
 /urw/times/utmr8a.pfb><C:/Program Files (x86)/Latex&Latex/fonts/type1/urw/times
 /utmri8a.pfb>
-Output written on Bachelorarbeit_Paul_Zilewitsch.pdf (49 pages, 2135420 bytes).
+Output written on Bachelorarbeit_Paul_Zilewitsch.pdf (50 pages, 2277548 bytes).
 
 PDF statistics:
- 212 PDF objects out of 1000 (max. 8388607)
+ 220 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 

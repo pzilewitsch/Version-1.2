@@ -12,14 +12,14 @@ Für die Erstellung einer Meldung sind festgelegte Eigenschaften nötig. Ohne di
  Art & Hier muss die Art der Meldung angegeben werden. Ist es beispielsweise eine Störmeldung oder eine Servicemeldung \\ \hline
  Status & Dieses Pflichtfeld ist standardmäßig auf unbearbeitet gestellt.  \\ \hline
 Standort oder Objekt & Eines der beiden Felder muss ausgefüllt sein, um die Meldung einem Standort oder einem Objekt zuweisen zu können. \\ \hline
-Meldung & Das wichtigste Feld, denn hier wird kurz beschrieben, um was Vorgefallen ist. \\ \hline
+Meldung & Das wichtigste Feld, denn hier wird kurz beschrieben, welcher Vorfall sich ereignet hat. \\ \hline
     \end{tabular}
     \caption{Notwendige Eigenschaften für eine Meldung, Quelle: eigene Darstellung}
     \label{tab:Medlungseigenschaften}
 \end{table}
 
 \noindent
-Bei erforderlichen Eigenschaften einer Meldung tut sich ein Problem für die Erstellung einer Meldung über die E-Mail Integration auf. Derjenige, der eine E-Mail an den Exchnage Server von GEBman10 schreibt, müsste eine genaue Angabe über den Standort und/oder das Objekt der Meldung machen. Das ist in der Praxis nicht bedienerfreundlich und könnte zu Schreibfehlern führen. Auf der Seite der Implementierung hieße das, dass eine ein möglicher Schreibfehler abgefangen werden muss, da dieser Standort oder diese Objekt nicht in Datenbank existiert. Außerdem hatten bereits mehrere Kunden von der KMS Computer GmbH dieses Pflichtfeld als nicht hilfreich bezeichnet. Will der Kunde einfach nur Meldungen in dem Service Desk Modul aufgeben, ist diese Eigenschaft unnütz. Aus diesen Gründen wurde entschieden, die Eigenschaften Standort und Objekt nicht mehr als notwendige Eigenschaft zu definieren. Dadurch werden diesen beiden Eigenschaften in der Implementierung auch nicht weiter beachtet.
+Bei erforderlichen Eigenschaften einer Meldung tut sich ein Problem für die Erstellung einer Meldung über die E-Mail Integration auf. Derjenige, der eine E-Mail an den Exchnage Server von GEBman10 schreibt, müsste eine genaue Angabe über den Standort und/oder das Objekt der Meldung machen. Das ist in der Praxis nicht bedienerfreundlich und könnte zu Schreibfehlern führen. Auf der Seite der Implementierung hieße das, dass ein möglicher Schreibfehler abgefangen werden muss, da dieser Standort oder diese Objekt nicht in Datenbank existiert. Außerdem hatten bereits mehrere Kunden von der KMS Computer GmbH dieses Pflichtfeld als nicht hilfreich bezeichnet. Will der Kunde einfach nur Meldungen in dem Service Desk Modul aufgeben, ist diese Eigenschaft unnütz. Aus diesen Gründen wurde entschieden, die Felder Standort und Objekt nicht mehr als notwendige Eigenschaften einer Meldung zu definieren. Dadurch werden diesen beiden Eigenschaften in der Implementierung auch nicht weiter beachtet.
 
 \subsection{Zielsetzung und Grundidee Module Service }
 \noindent

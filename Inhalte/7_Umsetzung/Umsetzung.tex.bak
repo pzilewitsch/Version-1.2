@@ -4,7 +4,28 @@
 \subsection{Erweiterung des bestehenden Service Desk Moduls}
 \noindent
 Grundlage für die Erweiterung ist die bereits erwähnte Microsoft Exchange Web Services Managed API 2.2, die kostenlos zum Download von Microsoft angeboten wird. Voraussetzung für diese API ist ein Betriebssystem von Windows (mindestens Windows 7) und das .NET Framwork 3.5 oder höher.\footnote{Website:\cite{DownloadAPI}}\newline 
-Da diese API bereits in GEBman10 für das Versenden von E-Mails integriert wurde, konnte direkt ohne zusätzlichen Aufwand auf die Funktionalitäten zugegriffen werden. Wichtig war lediglich das Einfügen des Verweises in den Projektmappenordner und der using-Direktive in den entsprechenden Klassen. 
+Da diese API bereits in GEBman10 für das Versenden von E-Mails integriert wurde, konnte direkt ohne zusätzlichen Aufwand auf die Funktionalitäten zugegriffen werden. Wichtig war lediglich das Einfügen des Assemblerverweises in die entsprechenden Projektmappenordner. Um nicht den vollständigen Namespace jeder Klasse ausschreiben zu müssen, wurde außerdem die using-Direktive in den Klassen MailsToObjectsFactory und TicketHandler hinzugefügt.
+
+
+\includepdf{Abbildungen/Screenshot_Verweise.pdf}
+
+
+
+Bei der Implementierung wurde sich stark an das Fabrikmethoden-Entwurfsmuster gehalten. Bevor hierauf näher eingegangen wird, sollte das Entwurfsmuster näher erläutert werden.\\
+\noindent
+Die Fabrikmethode (Factory Method) ist ein Erzeugungsmuster, bei dem die Objekterstellung von der Objektverarbeitung getrennt wird. Hierbei wird die Unterklasse durch eine abstrakte Methode der Oberklasse erzeugt.\footnote{Vgl. \citeauthor{PatternsKompakt} \citeyear{PatternsKompakt}, S.34ff.} Dieses Entwurfsmuster wurde auch bei der Implementierung in GEBman10 verwendet. 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.75\textwidth]{Abbildungen/Entwurfsmuster.png}
+	\caption[Entwurfsmuster Fabrikmethode]{Entwurfsmuster Fabrikmethode, Quelle: in Anlehnung an Eilebrecht, Starke (2013) S.35}
+	\label{fig:Entwurfsmuster}
+\end{figure}
+
+\noindent
+Bei jedem Intervall wird über den SchedulerService (Abbildung~\ref{fig:Entwurfsmuster} links) der Module Service TicketHandler instanziiert und die Methode MailsToObjects( ) der abstrakten Oberklasse aufgerufen. Die Fabrikmethode (rechts) macht deutlich, dass die abstrakte Klasse GroupwareMailToObjectFactory der Erzeuger und Ticket Handler der konkrete Erzeuger ist. Der konkrete Erzeuger wiederum erstellt dann ein Object über die abstrakte Methode CreateObject( ). Das Object ist in diesem Falle ein Ticket (Meldung). Vorteil dieses Entwurfsmusters ist die klare Kapselung des Erzeugers. Somit kann die Klasse GroupwareMailToObjectFactory auch für andere Module eingesetzt werden, die ebenfalls neue Objekte aus E-Mails erzeugen sollen. Eilebrecht und Starke sehen die Anwendung der Fabrikmethode als sinnvoll, wenn \enquote{eine Klasse die von ihr zu erzeugenden Objekte nicht im Voraus kennt}.\footnote{Vgl. \citeauthor{PatternsKompakt} \citeyear{PatternsKompakt}, S.34ff.} Genau dieser Anwendungsfall trifft hier zu und ist deshalb auch gerechtfertigt.\\
+
+
 
 
 

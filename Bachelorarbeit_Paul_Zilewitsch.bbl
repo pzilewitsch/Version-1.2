@@ -1,4 +1,4 @@
-\begin{thebibliography}{34}
+\begin{thebibliography}{35}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -209,5 +209,11 @@ Microsoft.
 \newblock \url{https://www.microsoft.com/en-us/download/details.aspx?id=42951},
   {\natexlab{c}}.
 \newblock abgerufen am: 21.06.2016.
+
+\bibitem[{Eilebrecht, K., Starke, G.}(2013)]{PatternsKompakt}
+{Eilebrecht, K., Starke, G.}
+\newblock \emph{Patterns Kompakt - Entwurfsmuster für effektive
+  Software-Entwicklung}.
+\newblock Springer-Verlag Berlin Heidelberg, 4 edition, 2013.
 
 \end{thebibliography}

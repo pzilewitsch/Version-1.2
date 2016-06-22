@@ -128,6 +128,14 @@
   publisher={The Stationery Office Ltd}
 }
 
+@book{PatternsKompakt,
+  title={Patterns Kompakt - Entwurfsmuster für effektive Software-Entwicklung},
+  author={{Eilebrecht, K., Starke, G.}},
+  year={2013},
+  edition = {4},
+  publisher={Springer-Verlag Berlin Heidelberg}
+}
+
 
 %-------------------------------------------------------------------------------------------------------
 %					Websites
