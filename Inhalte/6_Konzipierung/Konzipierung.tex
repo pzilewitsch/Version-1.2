@@ -3,36 +3,38 @@
 
 \subsection{Vorbetrachtung}
 \noindent
-Für die Erstellung einer Meldung sind festgelegte Eigenschaften nötig. Ohne diese Pflichtfelder in der Benutzeroberfläche auszufüllen, kann der Benutzer von GEBman10 keine Meldung erstellen. Die Tabelle~\ref{tab:Medlungseigenschaften} zeigt, welche Eigenschaften das sind. 
+Für die Erstellung einer Meldung sind mehrere Information bzw. Eigenschaften nötig. Dabei sind einige Informationsangaben Pflichtfelder in der Benutzeroberfläche von GEBman10. Füllt der Benutzer diese nicht aus, kann keine neue Meldung erstellt werden. Die Tabelle~\ref{tab:Medlungseigenschaften} zeigt nun einige Eigenschaften, die für die spätere Erstellung einer Meldung im Programmcode wichtig sein werden.
 
 \begin{table}[h!]
     \begin{tabular}{ | l | p{11cm}|}
     \hline
     Bezeichnung & Erläuterung \\ \hline
- Art & Hier muss die Art der Meldung angegeben werden. Ist es beispielsweise eine Störmeldung oder eine Servicemeldung \\ \hline
- Status & Dieses Pflichtfeld ist standardmäßig auf unbearbeitet gestellt.  \\ \hline
-Standort oder Objekt & Eines der beiden Felder muss ausgefüllt sein, um die Meldung einem Standort oder einem Objekt zuweisen zu können. \\ \hline
-Meldung & Das wichtigste Feld, denn hier wird kurz beschrieben, welcher Vorfall sich ereignet hat. \\ \hline
+ * Art & Hier muss die Art der Meldung angegeben werden. Ist es beispielsweise eine Störmeldung oder eine Servicemeldung \\ \hline
+ * Status & Dieses Pflichtfeld ist standardmäßig auf unbearbeitet gestellt.  \\ \hline
+* Standort oder Objekt & Eines der beiden Felder muss ausgefüllt sein, um die Meldung einem Standort oder einem Objekt zuweisen zu können. \\ \hline
+* Meldung & Das wichtigste Feld, denn hier wird kurz beschrieben, welcher Vorfall sich ereignet hat. \\ \hline
+Beschreibung & Für eine genauere Beschreibung des Vorfalls ist dieses Feld vorgesehen und bietet hierfür ausreichend Platz. \\ \hline
     \end{tabular}
-    \caption{Notwendige Eigenschaften für eine Meldung, Quelle: eigene Darstellung}
+    \caption{Einige Eigenschaften für eine Meldung, Quelle: eigene Darstellung}
     \label{tab:Medlungseigenschaften}
 \end{table}
 
 \noindent
-Bei erforderlichen Eigenschaften einer Meldung tut sich ein Problem für die Erstellung einer Meldung über die E-Mail Integration auf. Derjenige, der eine E-Mail an den Exchnage Server von GEBman10 schreibt, müsste eine genaue Angabe über den Standort und/oder das Objekt der Meldung machen. Das ist in der Praxis nicht bedienerfreundlich und könnte zu Schreibfehlern führen. Auf der Seite der Implementierung hieße das, dass ein möglicher Schreibfehler abgefangen werden muss, da dieser Standort oder diese Objekt nicht in Datenbank existiert. Außerdem hatten bereits mehrere Kunden von der KMS Computer GmbH dieses Pflichtfeld als nicht hilfreich bezeichnet. Will der Kunde einfach nur Meldungen in dem Service Desk Modul aufgeben, ist diese Eigenschaft unnütz. Aus diesen Gründen wurde entschieden, die Felder Standort und Objekt nicht mehr als notwendige Eigenschaften einer Meldung zu definieren. Dadurch werden diesen beiden Eigenschaften in der Implementierung auch nicht weiter beachtet.
+Die Eigenschaften mit dem Stern ( * ) als Kennzeichnung sind die erwähnten Pflichtfelder. Bei diesen erforderlichen Eigenschaften ergibt sich ein Problem für die Erstellung einer Meldung über die E-Mail Integration. Derjenige, der eine E-Mail an den Exchange Server von GEBman10 schreibt, müsste eine genaue Angabe über den Standort und/oder das Objekt der Meldung machen. Das ist in der Praxis nicht bedienerfreundlich und könnte zu Schreibfehlern führen. Auf der Seite der Implementierung hieße das, dass ein möglicher Schreibfehler abgefangen werden muss, da dieser Standort oder diese Objekt nicht in Datenbank existiert. Außerdem hatten bereits mehrere Kunden von der KMS Computer GmbH dieses Pflichtfeld als nicht hilfreich bezeichnet. Will der Kunde einfach nur Meldungen in dem Service Desk Modul aufgeben, ist diese Eigenschaft unnütz. Aus diesen Gründen wurde entschieden, die Felder Standort und Objekt nicht mehr als notwendige Eigenschaften einer Meldung zu definieren. Dadurch werden diese beiden Eigenschaften in der Implementierung auch weiter beachtet und der Service Desk wird weiter vom Facility Management Bereich gelöst. \newline
+Die Informationsangabe Beschreibung ohne den Stern sind nicht verpflichtend, ist aber durchaus sinnvoll bei der Erstellung einer Meldung. Es gibt noch weitere Felder, die der Benutzer in der Benutzeroberfläche ausfüllen kann, die aber nicht verpflichtend sind. Diese zusätzlichen Information sind für die nachfolgenden Ausführen nicht relevant.
 
-\subsection{Zielsetzung und Grundidee Module Service }
+\subsection{Zielsetzung und Grundidee Module-Service }
 \noindent
-Ausgangspunkt ist ein Benutzer, der Mails an den Exchange Server schreiben kann. Alle E-Mails, die an den Exchnage Server gesendet werden, landen im Posteingang. Ziel ist es, diesen Posteingang in regelmäßigen Zeitabständen auszulesen. Durch die Auswertung des Betreffs einer jeden Mail, wird dann das weitere Vorgehen entschieden. Der Benutzer soll somit eine neue Meldung erstellen, auf eine vorhandene Meldung antworten oder einer Meldung den Status \enquote{Technisch fertig} zuteilen können.\newline 
-In GEBman10  ist eine Klasse Module Service implementiert, die es ermöglicht, einen Service asynchron vom restlichen System für das entsprechende Modul laufen zu lassen. Demnach muss in GEBman10 ein neuer Service erstellt werden, der in bestimmten Intervallen seine Funktion ausführt. Das geschieht im Code im Package Common. In diesem zentralen Package werden Funktionalitäten implementiert, die für alle Module allgemein gültig sind. Dadurch kann die Erweiterung später auch für andere Module verwendet werden außer dem Service Desk Modul.\newline
-Nach dem Auswerten der E-Mails im Packge Common muss im Module Service Desk auf eine Meldung erstellt oder bearbeitet werden. Das heißt, dass diese Funktionalität im Package Service Desk implementiert werden sollte. Hier befinden sich alle Komponenten, die auf die Meldungen in GEBman10 zugreifen. Nach der erfolgreichen Erstellung einer neuen Meldung, soll der Benutzer eine Bestätigungsmail erhalten. Hierfür können die bereits vorhandenen Funktionalitäten als Grundlage genutzt werden.\newline
-Um diese Grundidee besser erläutern und umsetzen zu können, ist eine Darstellung der einzelnen Schritten in UML-Diagrammen sinvoll.
+Ausgangspunkt ist ein Benutzer, der Mails an den Exchange Server schreiben kann, um somit neue Meldung im Service Desk Modul anzulegen. Alle E-Mails, die an den Exchange Server gesendet werden, landen im Posteingang Exchange Servers. Ziel ist es, durch das Auswerten dieser Posteingang befindlichen E-Mails, Meldungen zu erstellen, ohne das sich ein Benutzer in GEBman10 anmelden muss. Der Benutzer soll somit eine neue Meldung erstellen, auf eine vorhandene Meldung antworten können. Hierfür ist eine ID notwendig, die jeder neuen Meldung zugeteilt wird. Sollte der Benutzer einer Meldung eine Antwort hinzufügen wollen, muss die ID der Meldung im Betreff der E-Mail stehen. Demzufolge ist der Betreff einer E-Mail entscheidend für das weitere Vorgehen im Programmcode. Außerdem soll es möglich sein, mögliche E-Mail Anhänge direkt an der Meldung zu binden. In GEBman10 hat jede Meldung bereits einen Bereich für Dokumente. So kann über den Programmcode dieser Bereich mit durch mögliche E-Mail Anhänge erweitert werden. \newline 
+In GEBman10 ist eine Klasse Module-Service implementiert, die es ermöglicht, einen Service asynchron vom restlichen System für das entsprechende Modul laufen zu lassen. Demnach muss in GEBman10 ein neuer Service erstellt werden, der in bestimmten Intervallen seine Funktion ausführt. Das geschieht im Code im Package Common. In diesem zentralen Package werden Funktionalitäten implementiert, die für alle Module allgemein gültig sind. Dadurch kann die Erweiterung später auch für andere Module verwendet werden und nicht nur im Service Desk Modul.\newline
+Nach dem Auswerten der E-Mails im Packge Common muss im Modul Service Desk auf eine Meldung erstellt oder bearbeitet werden. Das heißt, dass diese Funktionalität im Package Service Desk implementiert werden sollte. Hier befinden sich alle Komponenten, die auf die Meldungen in GEBman10 zugreifen. Nach der erfolgreichen Erstellung einer neuen Meldung, soll der Benutzer eine Bestätigungsmail erhalten. Hierfür können die bereits vorhandenen Funktionalitäten als Grundlage genutzt werden.\newline
+Um diese Grundidee besser erläutern und umsetzen zu können, ist eine Darstellung der einzelnen Schritten in verschiedenen UML-Diagrammen sinnvoll.
 
 
 
 \subsection{UML - Modellierung}
 \noindent
-Grundlage der Modellierung bildet die grafische Notation Unifed Modeling Language (UML) in der Version 2.3. UML hat sich in den letzten Jahren bei der Erstellung objektorientierter Modelle bewährt und ermöglicht somit einheitliche Diagrammdarstellungen und Begriffsabgrenzungen. Deshalb kann UML als Standrad für die Modellierung objektorientierter Software gesehen werden.\footnote{Vgl. \citeauthor{Schneider} (\citeyear{Schneider}), S. 233.}\footnote{Vgl. \citeauthor{Balzert} (\citeyear{Balzert}), S. V.} \newline
+Grundlage der Modellierung bildet die grafische Notation Unifed Modeling Language (UML) in der Version 2.3. UML hat sich in den letzten Jahren bei der Erstellung objektorientierter Modelle bewährt und ermöglicht somit einheitliche Diagrammdarstellungen und Begriffsabgrenzungen. Deshalb gilt UML als Standard für die Modellierung objektorientierter Software gesehen werden.\footnote{Vgl. \citeauthor{Schneider} (\citeyear{Schneider}), S. 233.}\footnote{Vgl. \citeauthor{Balzert} (\citeyear{Balzert}), S. V.}\\\\
 Grundsätzlich werden zwei Sichtweisen in der UML unterschieden. Die nachfolgenden Tabelle erläutert die wichtigsten Unterschiede:
 
 \begin{table}[h!]
@@ -53,26 +55,24 @@ Grundsätzlich werden zwei Sichtweisen in der UML unterschieden. Die nachfolgend
 
 
 \noindent
-Insgesamt gibt es sieben Verhaltens -und Strukturdiagramme. Es können nicht alle vierzehn Diagramme in dieser Arbeit platz finden und bei diesem Vorgehen würde auch der Fokus auf die wichtigsten Fragestellungen verloren  gehen. Aus diesem Grund wurden zwei Verhaltensdiagramme und ein Strukturdiagramm ausgewählt, die die Abläufe bei der Erweiterung des Service Desk von GEBman 10 ersichtlich machen und die Implementierung erleichtern sollen. \\
+Insgesamt gibt es sieben Verhaltens -und sieben Strukturdiagramme. Es können nicht alle vierzehn Diagramme in dieser Arbeit platz finden und bei einem solchen Vorgehen würde auch der Fokus auf die wichtigsten Fragestellungen verloren gehen. Aus diesem Grund wurden zwei Verhaltensdiagramme und ein Strukturdiagramm ausgewählt, die die Abläufe bei der Erweiterung des Service Desk von GEBman 10 ersichtlich machen und die Implementierung erleichtern sollen. \\
 
 \noindent
 Das erste Verhaltensdiagramm soll die Frage klären, welche Aktionen der Benutzer mit dem Versenden einer E-Mail ausführen kann und wie das System darauf reagiert. Im Punkt 4.2 wurde auf die Anforderungen der Erweiterung eingegangen. Diese werden nun mit dem Aktivitätsdiagramm  in der Abbildung~\ref{fig:Aktivitaetsdiagramm} erläutert.
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.65\textwidth]{Abbildungen/Aktivitaetsdiagramm.png}
+\includegraphics[width=0.90\textwidth]{Abbildungen/Aktivitaetsdiagramm.pdf}
 	\caption[Aktivit{\"a}tsdiagramm]{Aktivit{\"a}tsdiagramm, Quelle: eigene Darstellung}
 	\label{fig:Aktivitaetsdiagramm}
 \end{figure}
 
 \noindent
-Die erste Fallentscheidung (F1), muss direkt zu Beginn vom Benutzer getroffen werden. \newline
-Sollte er ein neues Problem erkannt haben, schickt er eine Mail an GEBman 10. Hierfür müssen die entsprechenden Parameter ausgefüllt werden. Wichtig ist, dass im Betreff der Vermerk \enquote{\#neu} eingetragen wird. GEBman 10 wertet diese Mail aus und legt eine neue Meldung im Service Desk an. Diese Meldung erhält eine eindeutige ID. Der Benutzer erhält anschließend eine Bestätigungsmail mit der ID der Meldung, wenn die Erstellung erfolgreich war.\newline
-Möchte der Benutzer allerdings nur auf bereits bestehende Meldungen antworten, muss in anderer Weise vorgegangen werden. Entscheidet sich der Benutzer in der zweiten Fallentscheidung (F2), einer Meldung eine Antwort oder einen Anhang hinzuzufügen, so muss er die entsprechende ID der Meldung in den Betreff eintragen und kann dann die Antwort in den Mail Body eingeben. GEBman fügt dann die Antwort an die entsprechende Meldung mit der ID an oder fügt ihr einen Anhang hinzu.\newline
-Natürlich kann er auch direkt auf eine Mail antworten, die er von GEBman erhalten hat, hierbei übernimmt das Mail-System automatisch den Betreff mit der entsprechenden ID. Der Benutzer hat außerdem die Möglichkeit, eine Meldung den Status \enquote{Fertig} zuzuweisen. Dafür muss in den Betreff der E-Mail der Vermerk \enquote{\#fertig}. Im Service Desk wird daraufhin die Meldung ebenfalls den Status \enquote{Fertig} annehmen.\\
+Der Benutzer muss sich direkt zu Beginn entscheiden, ob er eine neue Meldung erstellen oder auf eine bestehende Meldung antworten möchte. Sollte er ein neues Problem erkannt haben, schickt er eine E-Mail an GEBman10. Im Betreff muss die Meldung eingetragen werden und im Textkörper der E-Mail kann der Benutzer die ausführliche Beschreibung des Problems angeben. Der ModulService in  GEBman10 wertet diese E-Mail aus und legt eine neue Meldung im Service Desk an. Diese Meldung erhält eine eindeutige ID. Der Benutzer erhält anschließend eine Bestätigungsmail mit der ID der Meldung, wenn die Erstellung erfolgreich war.\newline
+Möchte der Benutzer allerdings auf bereits bestehende Meldungen antworten, so kann er direkt auf eine E-Mail von GEBman10 antworten. Der Betreff wird automatisch übernommen und somit ist die ID schon eingetragen. Sollte der Benutzer zusätzliche Information wie eine Excel-Tablle oder ein Bild an die Meldung binden wollen, kann er der E-Mail einen Anhang hinzufügen.\\\\
 
 \noindent
-Anders als beim Aktivitätsdiagramm wird in der nachfolgenden Abbildung ein Zustandsdiagramm dargestellt. Die beiden Diagramme ähneln sich von ihrer Notation sehr, das Zustandsdiagramm legt aber mehr Fokus auf die Zustände des Systems, die es während der Laufzeit annehmen kann. Deshalb ist es auch das zweite Verhaltensdiagramm. Hierbei ist es wichtig, dass immer ein Ereignis eintreffen muss, damit das System in ein anderen Zustand wechseln kann.\footnote{Vgl. \citeauthor{Balzert} (\citeyear{Balzert}), S. 40.}
+Anders als beim Aktivitätsdiagramm wird in der nachfolgenden Abbildung ein Zustandsdiagramm dargestellt. Die beiden Diagramme ähneln sich von ihrer Notation sehr. Das Zustandsdiagramm legt aber mehr Fokus auf die Zustände des Systems, die es während der Laufzeit annehmen kann. Deshalb ist es auch das zweite Verhaltensdiagramm. Hierbei ist es wichtig, dass immer ein Ereignis eintreffen muss, damit das System in ein anderen Zustand wechseln kann.\footnote{Vgl. \citeauthor{Balzert} (\citeyear{Balzert}), S. 40.}
 
 \begin{figure}[h!]
 \centering
@@ -82,22 +82,22 @@ Anders als beim Aktivitätsdiagramm wird in der nachfolgenden Abbildung ein Zust
 \end{figure}
 
 \noindent
-Sobald der Webserver gestartet ist, wird  der aktive Module Service der Anfangszustand sein . In regelmäßigen Zeitabständen, werden über diesen Service die neuesten Mails von dem Exchange Server geholt. Dann werden die in der Betreffzeile der Mail befindlichen ID's ausgewertet. Ist keine ID vorhanden, aber der Vermerk \enquote{\#neu} enthalten, geht der Module Service in den Zustand einer neuen Meldungserstellung über. Anschließend wird die Bestätigungsmail versendet\newline
-Ist in der Meldung allerdings eine ID vorhanden, wird zunächst einen Status-Vermerk geprüft. Sollte keiner enthalten sein, tritt der Zustand ein, in dem der Mail-Body als Antwort der Meldung hinzugefügt wird. Ist ein jedoch ein Status-Vermerk vorhanden, ändert der Module Service den Status der zugehörigen Meldung.\newline
-Nachdem das Intervall abgeschlossen ist, wechselt der Module Service in den aktiven/wartenden Zustand und holt sich im nächsten Intervall die Mails vom Exchange Server. Nur wenn der Webserver beendet wird, ist logischerweise auch der Module Service deaktiviert. Ansonsten soll er permanent laufen.\\
+Sobald der Webserver gestartet ist, befindet sich das System im Zustand aktiver Module-Service. In regelmäßigen Zeitabständen, werden über diesen Service die neuesten Mails von dem Exchange Server geholt. Dann werden die in der Betreffzeile der Mail befindlichen ID's ausgewertet. Ist keine ID vorhanden, geht der Module-Service in den Zustand einer neuen Meldungserstellung über. Anschließend wird die Bestätigungsmail versendet\newline
+Ist in der Meldung allerdings eine ID vorhanden, wird der Textkörper der E-Mail als Antwort der Meldung hinzugefügt wird.\newline
+Nachdem das Intervall abgeschlossen ist, wechselt der Module-Service in den aktiven/wartenden Zustand und holt sich im nächsten Intervall die Mails vom Exchange Server. Nur wenn der Webserver beendet wird, ist logischerweise auch der Module-Service deaktiviert. Ansonsten wird der Service permanent laufen.\\
 
 \noindent
-Die Verhaltensdiagramme aus Benutzer -und Systemperspektive sind somit abgeschlossen. Das Klassendiagramm in Abbildung ~\ref{fig:Klassendiagramm} ist ein Strukturdiagramm, welches einen groben Überblick über den zu implementierenden Module Service und seiner Beziehung zu dem restlichen System geben soll. 
+Die Verhaltensdiagramme aus Benutzer -und Systemperspektive sind somit abgeschlossen. Das Klassendiagramm in Abbildung ~\ref{fig:Klassendiagramm} ist ein Strukturdiagramm, welches einen groben Überblick über den zu implementierenden Module-Service und seiner Beziehung zu dem restlichen System geben soll. 
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.75\textwidth]{Abbildungen/Klassendiagramm.png}
+\includegraphics[width=0.75\textwidth]{Abbildungen/Klassendiagramm.pdf}
 	\caption[Klassendiagramm]{Klassendiagramm, Quelle: eigene Darstellung}
 	\label{fig:Klassendiagramm}
 \end{figure}
 
 \noindent
-Die Funktionalitäten für das Versenden von E-Mails in GEBman 10 befinden sich im Package GeoMan.Common.Core.GroupWare. Die Klasse für den Modul Service wird GroupWareTicketHandler heißen und sich ebenfalls in diesem Package befinden. Sie erbt von der abstrakten Klasse Module Service, welche sich in einem Framework befindet, das ein Partnerunternehmen der KMS Computer GmbH entwickelt. Die Klasse GroupWareTicketHandler besitzt nur ein öffentliches Attribut und das ist dateFromLastEmail mit. Diese variable speichert das Ankunftsdatum von der neuesten E-Mail im Exchange Postfach und hat deshalb den Datentypen DateTime. Somit müssen nicht alle E-Mails abgerufen werden, sondern nur die, die nach dem Ankunftsdatum der letzten E-Mail eingetroffen sind.\newline
+Die Funktionalitäten für das Versenden von E-Mails in GEBman 10 befinden sich im Package GeoMan.Common.Core.GroupWare. Die Klasse für den Modul Service wird GroupWareTicketHandler heißen und sich ebenfalls in diesem Package befinden. Sie erbt von der abstrakten Klasse ModuleService welche sich in einem Framework befindet, das ein Partnerunternehmen der KMS Computer GmbH entwickelt. Die Klasse GroupWareTicketHandler besitzt nur ein öffentliches Attribut und das ist dateFromLastEmail mit. Diese variable speichert das Ankunftsdatum von der neuesten E-Mail im Exchange Postfach und hat deshalb den Datentypen DateTime. Somit müssen nicht alle E-Mails abgerufen werden, sondern nur die, die nach dem Ankunftsdatum der letzten E-Mail eingetroffen sind.\newline
 Diese Klasse GroupWareTicketHandler wird auf die Exchange Webservices zugreifen und sich Methoden der Klasse Exchange Service bedienen, um die E-Mails von Exchange Server abzufragen. Das übernimmt die Methode GetMails(), die den Zeitpunkt der zuletzt abgerufenen E-Mail als Argument übergeben bekommt. Der Rückgabewert ist eone ItemView vom Exchange Webservice. Deshalb wird eine Referenz auf die Microsoft Exchange Web Services Data benötigt.
 \newline 
 Die Methode CheckIdFromMails() wird die ID's überprüfen, die in den Betreff der Mails eingetragen wurde. Auch ist sie dafür zuständig, die entsprechenden Methoden für das weitere Vorgehen aufzurufen. Es wird drei abstrakte Methoden geben, die eine Meldung erstellen (CreateObject), eine Meldung bearbeiten (EditObject) oder den Status einer Meldung ändern (CompleteObject). Ihnen wird jeweils die entsprechende Mail als Attribut mitgegeben. Die abstrakten Methoden werden dann in der Klasse TicketHandlelServiceDesk überschrieben. Erst in dieser Klasse wird es zu der eigentlichen Erstellung, Bearbeitung oder Änderung des Status kommen. Dafür muss die Klasse TicketHandlerServiceDesk von der Klasse GroupWareTicketHandler erben. Die Microsoft Web Services werden ebenfalls in der Klasse TickethandlerServiceDesk benötigt, da erst hier die Parameter wie E-Mail-Body oder Recipient ausgewertet werden.
@@ -105,11 +105,11 @@ Die Methode CheckIdFromMails() wird die ID's überprüfen, die in den Betreff de
 
 \subsection{Sicherheitsaspekte}
 \noindent
-Immer wieder vernachlässigen Entwickler die Sicherheit ihrer Implementierungen. Das liegt meistens an mangelnder Zeit, da Releases einen festen Zeitplan verfolgen, den es einzuhalten gilt. Es kann aber auch sein, dass die Implementierung nicht aus dem Blickwinkel der Sicherheit betrachtet wird. "Hauptsache es funktioniert erst einmal", wird dann häufig als Argument genutzt. Natürlich hat das wenig mit Sicherheit zu tun. Dabei können es Entwickler mit wenig Aufwand, Angreifern deutlich schwerer machen. Deswegen werden im nachfolgendem zwei Sicherheitsprobleme für die Umsetzung des Konzepts in GEBman 10 besprochen. Die Abbildung ~\ref{fig:Sicherheitsprobleme} zeigt zwei kritische Bereiche, die genauer erläutert werden müssen.
+Immer wieder vernachlässigen Entwickler die Sicherheit ihrer Implementierungen.\footnote{Vgl. \citeauthor{Ziegler} (\citeyear{Ziegler}), S. 53.}\footnote{Website:\cite{Sicherheit1}} Das liegt häufig an mangelnder Zeit, da Releases einen festen Zeitplan verfolgen, den es einzuhalten gilt. Es kann aber auch sein, dass die Implementierung nicht aus dem Blickwinkel der Sicherheit betrachtet wird und der Fokus eher auf Bereiche wie Benutzerfreundlichkeit gelegt wird. Natürlich hat das wenig mit Sicherheit zu tun. Dabei können es Entwickler mit wenig Aufwand, Angreifern deutlich schwerer machen. Deswegen werden im nachfolgendem zwei Sicherheitsprobleme für die Umsetzung des Konzepts in GEBman 10 besprochen. Die Abbildung~\ref{fig:Sicherheitsprobleme} zeigt zwei kritische Bereiche, die genauer erläutert werden müssen.
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.85\textwidth]{Abbildungen/Sicherheitsprobleme.png}
+\includegraphics[width=0.85\textwidth]{Abbildungen/Sicherheitsaspekte.pdf}
 	\caption[Sicherheitsprobleme]{Sicherheitsprobleme, Quelle: eigene Darstellung}
 	\label{fig:Sicherheitsprobleme}
 \end{figure}
@@ -118,7 +118,7 @@ Immer wieder vernachlässigen Entwickler die Sicherheit ihrer Implementierungen.
 Der erste kritische Bereich - gekennzeichnet mit der (1) - symbolisiert das erste Problem. Sollte der Exchange Server mit E-Mails überhäuft werden, so wird für jede E-Mail eine neue Meldung in GEBman 10 angelegt. Das bedeutet, dass wenn pro Minute 100 E-Mails in den Exchange Server erreichen, auch 100 Meldungen angelegt werden. Das würde das System ungemein verlangsamen, wenn nicht sogar zum Absturz bringen. Eine Möglichkeit dieser Gefahrenquelle entgegen zu treten, ist die Sender der E-Mails zu sperren, sobald diese eine ungewöhnlich hohe Anzahl an E-Mails versenden. Dadurch würden dann die E-Mails von dem Benutzer nicht ausgelesen werden, alle anderen E-Mails jedoch schon. Dadurch würde keine Meldung der andren Benutzer verloren gehen.\\
 
 \noindent
-Bei dem zweiten kritischen Bereich der Abbildung ~\ref{fig:Sicherheitsprobleme} - gekennzeichnet mit der (2) - muss auf die Speicherung der Daten in Datenbank geachtet werden.. GEBman 10 synchronisiert in regelmäßigen Abständen die Nachrichten vom hinterlegten Exchange Server. Entsprechend ihrer ID werden die Nachrichten in die Datenbank von GEBman 10 gespeichert. Nun könnte ein Angreifer beispielsweise versuchen, in den Mail-Body versteckte SQL -Anweisungen oder JavaScript-Code einzuschleusen. Werden die SQL-Anweisungen in die Datenbank geschrieben, ohne sie vorher zu validieren, könnte der Angreifer Informationen über Daten in der Datenbank erlangen. Im schlimmsten Fall könnte er sie zerstören. Diese Angriffstmethode nennt sich SQL-Injection und zielt darauf ab, die normalen SQL-Statements mittels Sonderzeichen zu manipulieren. Selbst einfache Zeichen wie "--" können bewirken, dass alles, was hinter den beiden Bindestrichen steht, ignoriert wird. In T-SQL sind die beiden Bindestriche das Zeichen für einen Kommentar.
+Bei dem zweiten kritischen Bereich der Abbildung~\ref{fig:Sicherheitsprobleme} - gekennzeichnet mit der (2) - muss auf die Speicherung der Daten in Datenbank geachtet werden.. GEBman 10 synchronisiert in regelmäßigen Abständen die Nachrichten vom hinterlegten Exchange Server. Entsprechend ihrer ID werden die Nachrichten in die Datenbank von GEBman 10 gespeichert. Nun könnte ein Angreifer beispielsweise versuchen, in den Mail-Body versteckte SQL -Anweisungen oder JavaScript-Code einzuschleusen. Werden die SQL-Anweisungen in die Datenbank geschrieben, ohne sie vorher zu validieren, könnte der Angreifer Informationen über Daten in der Datenbank erlangen. Im schlimmsten Fall könnte er sie zerstören. Diese Angriffstmethode nennt sich SQL-Injection und zielt darauf ab, die normalen SQL-Statements mittels Sonderzeichen zu manipulieren. Selbst einfache Zeichen wie "--" können bewirken, dass alles, was hinter den beiden Bindestrichen steht, ignoriert wird. In T-SQL sind die beiden Bindestriche das Zeichen für einen Kommentar.
 \noindent
 Bei JavaScript-Code gibt es ein ein ähnliches Problem mit bestimmten Zeichen. Wird zum Beispiel die einfache Zeichenfolge "<script>alert('hallo')<script>" in die Datenbank geschrieben, beleibt das zunächst ohne Folgen. Die SQL-Statements werden hierdruch nicht manipuliert. Doch wird diese Zeichenfolge beispielsweise als Antwort auf eine Meldung geladen, erkennt der Browser möglicherweise JavaScript-Code anstatt einfachen Text. Das hat in unserem Beispiel zur Folge, dass der Browser eine kleine Nachricht meldet (siehe Abbildung).
 Auch hier muss vor dem Einfügen der Zeichenfolge, eine Validierung vollzogen werden. Welche Zeichen genau gefiltert werden müssen, wird im Punkt 7 Umsetzung erläutert. Man sollte sich jedoch nicht darauf verlassen, dass die Schutzmechanismen des Microsoft Exchange Servers alle Zeichen und Zeichenfolgen als Bedrohung erkennen. Zeichen wie "--" oder ">" können durchaus im normalen Schriftverkehr gebräuchlich sein.

@@ -1,4 +1,4 @@
-\begin{thebibliography}{35}
+\begin{thebibliography}{37}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -202,6 +202,20 @@ Microsoft.
 H.~Balzert.
 \newblock \emph{UML 2 kompakt: mit Checklisten}.
 \newblock Spektrum Akademischer Verlag, 3 edition, 2010.
+
+\bibitem[Ziegler(2014)]{Ziegler}
+M.~Ziegler.
+\newblock \emph{Web Hacking: Sicherheitsl{\"u}cken in Webanwendungen --
+  L{\"o}sungswege f{\"u}r Entwickler. Mit Playground im Internet.}
+\newblock Carl Hanser Verlag GmbH \& Company KG, 2014.
+
+\bibitem[Gaßner(18.09.2012)]{Sicherheit1}
+S.~Gaßner.
+\newblock Studie: Webentwickler vernachlässigen die sicherheit.
+\newblock
+  \url{http://www.zdnet.de/88123948/studie-webentwickler-vernachlassigen-sicherheit/},
+  18.09.2012.
+\newblock abgerufen am: 23.06.2016.
 
 \bibitem[Microsoft({\natexlab{c}})]{DownloadAPI}
 Microsoft.
