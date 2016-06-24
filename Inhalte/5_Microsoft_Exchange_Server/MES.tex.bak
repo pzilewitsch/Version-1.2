@@ -61,7 +61,7 @@ Mit Exchange 2007 wurde erstmals der Exchange Web Services  bereitgestellt und l
 \noindent
 EWS bietet einen großen Funktionsumfang und ist somit eine hervorragende Möglichkeit auf die Daten des Exchange Servers zuzugreifen. Aus diesem Grund haben sich die Entwickler der KMS Computer GmbH für diese Programmierschnittstelle entschieden.
 
-\subsubsection{Derzeitige Verwendung in GEBman10}
+\subsubsection{Derzeitige Verwendung in GEBman 10}
 \noindent
 Um bei der Implementierung den Exchange Web Service nutzen zu können, musste die Microsoft Exchange Web Services Managed API 2.2. dem Projekt als .NET-Assembly hinzugefügt werden. Wie bereits im Punkt 4 erwähnt, kann im Adminbereich von GEBman10 kann in der der Rubrik GroupWare die Konfiguration des Exchange Servers durchgeführt werden. Wichtig ist hierbei zunächst, welche Version vom Exchnage Server verlangt wird, da das entscheidend für die Microsoft Web Services Managed API ist. GEBman10 unterstützt folgende Exchange Server-Versionen:
 

@@ -4,7 +4,7 @@
 \contentsline {section}{Abk\IeC {\"u}rzungsverzeichnis}{VII}
 \contentsline {section}{Tabellenverzeichnis}{VIII}
 \contentsline {section}{\numberline {1}Einleitung}{1}
-\contentsline {subsection}{\numberline {1.1}Die Software GEBman10 von der KMS Computer GmbH}{1}
+\contentsline {subsection}{\numberline {1.1}Die Software GEBman 10 von der KMS Computer GmbH}{1}
 \contentsline {subsection}{\numberline {1.2}Das Modul Service Desk}{1}
 \contentsline {subsection}{\numberline {1.3}Motivation der Bachelorarbeit}{2}
 \contentsline {subsection}{\numberline {1.4}Vorgehen bei der Bachelorarbeit}{2}
@@ -19,27 +19,28 @@
 \contentsline {subsection}{\numberline {3.4}Zendesk}{11}
 \contentsline {subsection}{\numberline {3.5}SysAid}{12}
 \contentsline {subsection}{\numberline {3.6}Fazit der Analyse}{14}
-\contentsline {section}{\numberline {4}Der Service Desk in GEBman10}{16}
+\contentsline {section}{\numberline {4}Der Service Desk in GEBman 10}{16}
 \contentsline {subsection}{\numberline {4.1}Aktuelle Umsetzung}{16}
 \contentsline {subsection}{\numberline {4.2}Anforderungen der Erweiterung}{18}
 \contentsline {section}{\numberline {5}Microsoft Exchange Server}{20}
 \contentsline {subsection}{\numberline {5.1}Grundlagen}{20}
 \contentsline {subsection}{\numberline {5.2}Exchange Web Services}{22}
 \contentsline {subsubsection}{\numberline {5.2.1}Funktionsweise}{22}
-\contentsline {subsubsection}{\numberline {5.2.2}Derzeitige Verwendung in GEBman10}{23}
+\contentsline {subsubsection}{\numberline {5.2.2}Derzeitige Verwendung in GEBman 10}{23}
 \contentsline {section}{\numberline {6}Konzipierung}{24}
 \contentsline {subsection}{\numberline {6.1}Vorbetrachtung}{24}
 \contentsline {subsection}{\numberline {6.2}Zielsetzung und Grundidee Module-Service }{25}
-\contentsline {subsection}{\numberline {6.3}UML - Modellierung}{25}
-\contentsline {subsection}{\numberline {6.4}Sicherheitsaspekte}{29}
-\contentsline {section}{\numberline {7}Umsetzung}{31}
-\contentsline {subsection}{\numberline {7.1}Erweiterung des bestehenden Service Desk Moduls}{31}
-\contentsline {subsection}{\numberline {7.2}Erl\IeC {\"a}uterung der wichtigsten Klassen und Methoden}{32}
-\contentsline {subsection}{\numberline {7.3}Fehlschl\IeC {\"a}ge/Erfahrungen}{32}
-\contentsline {section}{\numberline {8}Fazit}{34}
-\contentsline {subsection}{\numberline {8.1}Erweiterungsm\IeC {\"o}glichkeiten}{34}
-\contentsline {subsection}{\numberline {8.2}Schlussbemerkung}{34}
-\contentsline {section}{Anhangsverzeichnis}{35}
-\contentsline {section}{Anhang}{36}
-\contentsline {section}{Literaturverzeichnis}{41}
+\contentsline {subsection}{\numberline {6.3}UML - Modellierung}{26}
+\contentsline {subsection}{\numberline {6.4}Sicherheitsaspekte}{30}
+\contentsline {section}{\numberline {7}Umsetzung}{32}
+\contentsline {subsection}{\numberline {7.1}Erweiterung des bestehenden Service Desk Moduls}{32}
+\contentsline {subsection}{\numberline {7.2}Erl\IeC {\"a}uterung der wichtigsten Klassen und Methoden}{33}
+\contentsline {subsection}{\numberline {7.3}Testf\IeC {\"a}lle}{33}
+\contentsline {subsection}{\numberline {7.4}Fehlschl\IeC {\"a}ge/Erfahrungen}{33}
+\contentsline {section}{\numberline {8}Fazit}{35}
+\contentsline {subsection}{\numberline {8.1}Erweiterungsm\IeC {\"o}glichkeiten}{35}
+\contentsline {subsection}{\numberline {8.2}Schlussbemerkung}{35}
+\contentsline {section}{Anhangsverzeichnis}{36}
+\contentsline {section}{Anhang}{37}
+\contentsline {section}{Literaturverzeichnis}{42}
 \contentsfinish 
