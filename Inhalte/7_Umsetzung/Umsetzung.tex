@@ -20,7 +20,7 @@ Die Fabrikmethode (Factory Method) ist ein Erzeugungsmuster, bei dem die Objekte
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.75\textwidth]{Abbildungen/Entwurfsmuster.png}
+\includegraphics[width=0.75\textwidth]{Abbildungen/Entwurfsmuster.pdf}
 	\caption[Entwurfsmuster Fabrikmethode]{Entwurfsmuster Fabrikmethode, Quelle: in Anlehnung an Eilebrecht, Starke (2013) S.35}
 	\label{fig:Entwurfsmuster}
 \end{figure}
@@ -33,14 +33,24 @@ Bei jedem Intervall wird über den SchedulerService (Abbildung~\ref{fig:Entwurfs
 
 
 
-\subsection{Erläuterung der wichtigsten Klassen und Methoden}
+\subsection{Erläuterung einzelner Methoden}
 \noindent
-Wie erstellt man eine Meldung?
+Die Methode GetMails( ) in der Klasse GroupwareMailsToObjectFactory ist die entscheidene Methode der Erweiterung bei dem Abrufen der E-Mails eines Exchange Servers. Hier werden nicht nur alle Mails abgerufen, sondern auch verschiedene Attribute der einer E-Mails geladen. Im Anhang auf Seite XX ist ein Ausschnitt des Quellcodes abgebildet. Zu sehen ist, wie...\\
+
+\noindent
+Das erstellen einer Meldung (Objektes) erfolgt in der Methode CreateObject( ). Diese Methode ist in der GroupwareMailsToObjectFatory als abstrakte Methode definiert, wird der Klasse TicketHandler vererbt und hier auch explizit aufgerufen. Wichtig bei diese Methode ist die Übergabe einer Session. In GEBman10 benötigt jede Datenbankbearbeitung eine neue SessionTransaction.
+%https://books.google.de/books?id=gnoeauhpC-cC&pg=PA103&hl=de#v=onepage&q&f=false
+Mithilfe der Session lässt sich somit auf die Create-Methode der Ticket Klasse zugreifen. Anschließend werden die Eigenschaften des E-Mail-items den zuvor angedeuteten nötigen Eigenschaften eines Tickets zugewiesen. Nach diesem Prozess wird die Session committed, um die neu erstellte Meldung in der Datenbank zu speichern. Erst jetzt erhält die Meldung eine eindeutige ID. Diese ID kann dazu genutzt werden, um im nächsten Schritt einen möglichen Anhang der E-Mail zu speichern. Das übernimmt die Methode SaveAttachment( ). In dieser Methode wird zunächst ein Dokument mit dem selben Inhalt des Anhangs der E-Mail erstellt. Dann wird dieses Dokument dem entsprechenden Ticket mit Hilfe der übergebenen ID zugeordnet. Wurden diese Anweisungen erfolgreich durchgeführt, wird eine Bestätigungsmail mit der Methode SendConfirmationMail( ) gesendet.\\
+
+\noindent
+Bei jedem Versuch die Datenbank zu verändern, kann es zu Fehlern kommen, die dem Benutzer auch mitgeteilt werden müssen. Der Benutzer muss schließlich darüber informiert werden, wenn eine Meldung nicht korrekt angelegt wurde. Aus diesem Grund wurden try-catch-Anweisungen bei jedem Datenbankzugriff verwendet. Durch diese try-catch-Anweisungen werden Ausnahmen beim Ausführen des Codes abgefangen. Dadurch ist es möglich, eine Ausnahmebehandlung zu vollziehen. 
+%https://msdn.microsoft.com/de-de/library/0yd65esw.aspx
 
 
 \subsection{Testfälle}
 \noindent
 Um das ganze zu testen, muss als erstes ein Exchange Server angelegt werden. Der bekommt eine Mail. Mail abrufen und Ticket anlegen. Prüfen ob Meldung in Datenbank angelegt wurde.
+%http://link.springer.com/book/10.1007/978-3-658-09964-0
 
 
 \subsection{Fehlschläge/Erfahrungen}
