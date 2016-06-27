@@ -20,7 +20,7 @@ Die Fabrikmethode (Factory Method) ist ein Erzeugungsmuster, bei dem die Objekte
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.75\textwidth]{Abbildungen/Entwurfsmuster.pdf}
+\includegraphics[width=0.9\textwidth]{Abbildungen/Entwurfsmuster.pdf}
 	\caption[Entwurfsmuster Fabrikmethode]{Entwurfsmuster Fabrikmethode, Quelle: in Anlehnung an Eilebrecht, Starke (2013) S.35}
 	\label{fig:Entwurfsmuster}
 \end{figure}
@@ -38,13 +38,11 @@ Bei jedem Intervall wird über den SchedulerService (Abbildung~\ref{fig:Entwurfs
 Die Methode GetMails( ) in der Klasse GroupwareMailsToObjectFactory ist die entscheidene Methode der Erweiterung bei dem Abrufen der E-Mails eines Exchange Servers. Hier werden nicht nur alle Mails abgerufen, sondern auch verschiedene Attribute der einer E-Mails geladen. Im Anhang auf Seite XX ist ein Ausschnitt des Quellcodes abgebildet. Zu sehen ist, wie...\\
 
 \noindent
-Das erstellen einer Meldung (Objektes) erfolgt in der Methode CreateObject( ). Diese Methode ist in der GroupwareMailsToObjectFatory als abstrakte Methode definiert, wird der Klasse TicketHandler vererbt und hier auch explizit aufgerufen. Wichtig bei diese Methode ist die Übergabe einer Session. In GEBman10 benötigt jede Datenbankbearbeitung eine neue SessionTransaction.
-%https://books.google.de/books?id=gnoeauhpC-cC&pg=PA103&hl=de#v=onepage&q&f=false
+Das erstellen einer Meldung (Objektes) erfolgt in der Methode CreateObject( ). Diese Methode ist in der GroupwareMailsToObjectFatory als abstrakte Methode definiert, wird der Klasse TicketHandler vererbt und hier auch explizit aufgerufen. Wichtig bei diese Methode ist die Übergabe einer Session. In GEBman10 benötigt jede Datenbankbearbeitung eine neue SessionTransaction.\footnote{Vgl. \citeauthor{Fowler} \citeyear{Fowler}, S.103ff.} 
 Mithilfe der Session lässt sich somit auf die Create-Methode der Ticket Klasse zugreifen. Anschließend werden die Eigenschaften des E-Mail-items den zuvor angedeuteten nötigen Eigenschaften eines Tickets zugewiesen. Nach diesem Prozess wird die Session committed, um die neu erstellte Meldung in der Datenbank zu speichern. Erst jetzt erhält die Meldung eine eindeutige ID. Diese ID kann dazu genutzt werden, um im nächsten Schritt einen möglichen Anhang der E-Mail zu speichern. Das übernimmt die Methode SaveAttachment( ). In dieser Methode wird zunächst ein Dokument mit dem selben Inhalt des Anhangs der E-Mail erstellt. Dann wird dieses Dokument dem entsprechenden Ticket mit Hilfe der übergebenen ID zugeordnet. Wurden diese Anweisungen erfolgreich durchgeführt, wird eine Bestätigungsmail mit der Methode SendConfirmationMail( ) gesendet.\\
 
 \noindent
-Bei jedem Versuch die Datenbank zu verändern, kann es zu Fehlern kommen, die dem Benutzer auch mitgeteilt werden müssen. Der Benutzer muss schließlich darüber informiert werden, wenn eine Meldung nicht korrekt angelegt wurde. Aus diesem Grund wurden try-catch-Anweisungen bei jedem Datenbankzugriff verwendet. Durch diese try-catch-Anweisungen werden Ausnahmen beim Ausführen des Codes abgefangen. Dadurch ist es möglich, eine Ausnahmebehandlung zu vollziehen. 
-%https://msdn.microsoft.com/de-de/library/0yd65esw.aspx
+Bei jedem Versuch die Datenbank zu verändern, kann es zu Fehlern kommen, die dem Benutzer auch mitgeteilt werden müssen. Der Benutzer muss schließlich darüber informiert werden, wenn eine Meldung nicht korrekt angelegt wurde. Aus diesem Grund wurden try-catch-Anweisungen bei jedem Datenbankzugriff verwendet. Durch diese try-catch-Anweisungen werden Ausnahmen beim Ausführen des Codes abgefangen. Dadurch ist es möglich, eine Ausnahmebehandlung zu vollziehen.\footnote{Website:\cite{TryCatch}}
 
 
 \subsection{Testfälle}
@@ -59,4 +57,11 @@ Bei der Implementierung in GEBman10 gab es zwei nicht vorhersehbare Probleme bei
 %Es gäbe noch einen anderen WorkAround für dieses Problem, allerdings wäre diese Lösung mit mehr Aufwand verbunden. 
 %https://msdn.microsoft.com/en-us/library/office/dd633698(v=exchg.80).aspx
 Das zweite Problem bestand bei der Abfrage der neusten Mails vom Exchange Server, ebenfalls in der GetMails( )-Methode beschrieben. Bei jedem Abfrage Intervall wird der Zeitpunkt der zuletzt eingetroffenen Mail gespeichert. Beim nächsten Intervalldurchlauf werden dann nur alle Mails abgefragt, die ein aktuelles Datum besitzen. Hierfür bietet die Managed API einen SearchFilter an, der die Mails nach definierten Eigenschaften suchen kann. In diesem Fall ist war die Filter-Methode IsGreatherThan( ) optimal für dieses Vorhaben. Theoretisch hätten alle Mails abgefragt werden müssen, die ein \enquote{größeres} und damit aktuelleres Datum als die zuletzt eingetroffene Mail vom vorherigen Intervalldurchlauf hatten. Tatsächlich hat sich beim Debuggen gezeigt, dass der Filter zusätzlich ebenfalls die Mails liefert, die das gleiche Datum besitzen. Dadurch würde eine Mail in jedem Intervall zweimal gefiltert werden, was eine womöglich redundante Objekterzeugung zur Folge hätte. Wodurch dieses Problem entstand bleibt unklar. Umgangen wurde es, indem dem Datum der zuletzt eingetroffenen Mail nur eine Sekunde hinzugefügt wurde. Nach dieser minimalen Veränderung wurden die Mails korrekt gefiltert.
+
+
+\subsection{Erweiterungsmöglichkeiten der E-Mail Integration}
+\noindent
+Programmtechnisch:
+Erweiterung der Benutzermöglichkeiten, Status ändern bzw. Meldung schließen. Über Betreff oder Link zu einem Webfrontend.
+
 

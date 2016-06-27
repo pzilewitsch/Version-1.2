@@ -1,4 +1,4 @@
-\begin{thebibliography}{38}
+\begin{thebibliography}{40}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -236,5 +236,16 @@ Microsoft.
 \newblock \emph{Patterns Kompakt - Entwurfsmuster für effektive
   Software-Entwicklung}.
 \newblock Springer-Verlag Berlin Heidelberg, 4 edition, 2013.
+
+\bibitem[Fowler(2003)]{Fowler}
+M.~Fowler.
+\newblock \emph{Patterns f{\"u}r Enterprise-Application-Architekturen}.
+\newblock mitp-Verlag, 2003.
+
+\bibitem[Microsoft.()]{TryCatch}
+Microsoft.
+\newblock try-catch (c-sharp-referenz).
+\newblock \url{https://msdn.microsoft.com/de-de/library/0yd65esw.aspx}.
+\newblock abgerufen am: 27.06.2016.
 
 \end{thebibliography}

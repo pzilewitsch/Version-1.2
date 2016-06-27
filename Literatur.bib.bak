@@ -144,6 +144,22 @@
 }
 
 
+@book{Rohr,
+  title={Sicherheit von Webanwendungen in der Praxis: Wie sich Unternehmen sch{\"u}tzen k{\"o}nnen -- Hintergr{\"u}nde, Ma{\ss}nahmen, Pr{\"u}fverfahren und Prozesse},
+  author={Rohr, M.},
+  year={2015},
+  publisher={Springer Fachmedien Wiesbaden}
+}
+
+@book{Fowler,
+  title={Patterns f{\"u}r Enterprise-Application-Architekturen},
+  author={Fowler, M.},
+  year={2003},
+  publisher={mitp-Verlag}
+}
+
+
+
 %-------------------------------------------------------------------------------------------------------
 %					Websites
 %-------------------------------------------------------------------------------------------------------
@@ -262,6 +278,13 @@
   howpublished = {\url{http://www.zdnet.de/88123948/studie-webentwickler-vernachlassigen-sicherheit/}},
   year ={18.09.2012},
   note = {abgerufen am: 23.06.2016}
+}
+
+@misc{TryCatch,
+  title = {try-catch (C-Sharp-Referenz)},
+  author = {Microsoft.},
+  howpublished = {\url{https://msdn.microsoft.com/de-de/library/0yd65esw.aspx}},
+  note = {abgerufen am: 27.06.2016}
 }
 
 
