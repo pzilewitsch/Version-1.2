@@ -47,8 +47,9 @@ Bei jedem Versuch die Datenbank zu verändern, kann es zu Fehlern kommen, die de
 
 \subsection{Testfälle}
 \noindent
-Um das ganze zu testen, muss als erstes ein Exchange Server angelegt werden. Der bekommt eine Mail. Mail abrufen und Ticket anlegen. Prüfen ob Meldung in Datenbank angelegt wurde.
-%http://link.springer.com/book/10.1007/978-3-658-09964-0
+In den letzten Jahren hat sich das Testen von Software zunehmende etabliert und ist ein fester Bestandteil von Softwareprojekten für die Qualitätssicherung..\footnote{Vgl.\citeauthor{Vivenzio} \citeyear{Vivenzio}, S.1f.} Deshalb werden auch bei der Erweiterung des Service Desk Moduls einige Testfälle die wichtigsten Funktionalitäten überprüfen. Hierfür muss zunächst ein Testablauf erarbeitet und ein die zu erwartenden Werte des Testresultats festgehalten werden.\newline
+Bei den Testfällen in GEBman 10 wird im ersten Schritt der Webserver gestartet. Dadurch wird auch der implementierte ModulService TicketHandler initialisiert. Nun werden alle Modultests ausgeführt. Für den Test des ModulService wird ein Exchange Server benötigt. Dieser wird mittels einer Methode in der TestHelper-Klasse angelegt. An diesen Exchange Service wird eine E-Mail gesendet und anschließend der ModulSerive aufgerufen. Theoretisch könnte der Modultest auch bis zum nächsten Intervall des Modul Service warten, bis dieser die neuesten Mails vom Exchange Server abfragt. Doch ein Modultest sollte so wenig Zeit wie möglich beanspruchen. Aus diesem Grund wird die Methode MailsToObjects vom ModulService manuell aufgerufen. Eine neue Meldung wird aus der zuvor gesendeten E-Mail erstellt. Erst jetzt beginnt der eigentliche Test. Es wird eine Datenbankabfrage erstellt, die nach der Meldung sucht, die der ModulService angelegt haben müsste. Sollte die Abfrage erfolglos sein, wird der Modultest mit einem Fehler beendet. Sollte die Meldung gefunden werden, wird im nächsten Schritt geprüft, ob der Anhang der E-Mail als Dokument der Meldung angelegt wurde. Wurde kein Dokument gefunden, dass der zuvor erstellten Meldung zugeordnet ist, schlägt der Modultest fehl und eine entsprechende Meldung wird ausgegeben.\newline
+Die Testfälle können noch weiter ausgebaut werden, in dem weitere Methoden implementiert werden, die eine erfolgreiche Antworterstellung oder das Versenden von Bestätigungsmails prüfen. Abschließend ist festzuhalten, dass niemals alle möglichen Szenarien in Testfällen berücksichtigt werden können, aber auch gar nicht müssen. Es geht lediglich darum, die Szenarien zu testen, die am häufigsten in der Praxis auftreten.\footnote{Vgl.\citeauthor{Witte} \citeyear{Witte}, S.11f.}
 
 
 \subsection{Fehlschläge/Erfahrungen}
@@ -57,4 +58,14 @@ Bei der Implementierung in GEBman10 gab es zwei nicht vorhersehbare Probleme bei
 %Es gäbe noch einen anderen WorkAround für dieses Problem, allerdings wäre diese Lösung mit mehr Aufwand verbunden. 
 %https://msdn.microsoft.com/en-us/library/office/dd633698(v=exchg.80).aspx
 Das zweite Problem bestand bei der Abfrage der neusten Mails vom Exchange Server, ebenfalls in der GetMails( )-Methode beschrieben. Bei jedem Abfrage Intervall wird der Zeitpunkt der zuletzt eingetroffenen Mail gespeichert. Beim nächsten Intervalldurchlauf werden dann nur alle Mails abgefragt, die ein aktuelles Datum besitzen. Hierfür bietet die Managed API einen SearchFilter an, der die Mails nach definierten Eigenschaften suchen kann. In diesem Fall ist war die Filter-Methode IsGreatherThan( ) optimal für dieses Vorhaben. Theoretisch hätten alle Mails abgefragt werden müssen, die ein \enquote{größeres} und damit aktuelleres Datum als die zuletzt eingetroffene Mail vom vorherigen Intervalldurchlauf hatten. Tatsächlich hat sich beim Debuggen gezeigt, dass der Filter zusätzlich ebenfalls die Mails liefert, die das gleiche Datum besitzen. Dadurch würde eine Mail in jedem Intervall zweimal gefiltert werden, was eine womöglich redundante Objekterzeugung zur Folge hätte. Wodurch dieses Problem entstand bleibt unklar. Umgangen wurde es, indem dem Datum der zuletzt eingetroffenen Mail nur eine Sekunde hinzugefügt wurde. Nach dieser minimalen Veränderung wurden die Mails korrekt gefiltert.
+
+
+\subsection{Erweiterungsmöglichkeiten der E-Mail Integration}
+\noindent
+Die E-Mail Integration könnte dahingehend erweitert werden, dass der Benutzer mit einer E-Mail mehr Möglichkeiten zum Verändern vorhandener Meldungen hat. Sollte ein benutzer beispielsweise eine meldung auf \enquote{Technisch fertig setzen} setzen wollen, könnt er das über eine E-Mail bewerkstelligen, ohne dabei in GEBman 10 eingeloggt sein zu müssen.
+
+
+Programmtechnisch:
+Erweiterung der Benutzermöglichkeiten, Status ändern bzw. Meldung schließen. Über Betreff oder Link zu einem Webfrontend.
+
 

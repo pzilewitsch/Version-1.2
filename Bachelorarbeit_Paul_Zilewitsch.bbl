@@ -1,4 +1,4 @@
-\begin{thebibliography}{40}
+\begin{thebibliography}{42}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -247,5 +247,17 @@ Microsoft.
 \newblock try-catch (c-sharp-referenz).
 \newblock \url{https://msdn.microsoft.com/de-de/library/0yd65esw.aspx}.
 \newblock abgerufen am: 27.06.2016.
+
+\bibitem[{Vivenzio, A., Vivenzio, D.}(2012)]{Vivenzio}
+{Vivenzio, A., Vivenzio, D.}
+\newblock \emph{Testmanagement bei SAP-Projekten: Erfolgreich Planen , Steuern,
+  Reporten bei der Einf{\"u}hrung von SAP-Banking}.
+\newblock Springer Fachmedien Wiesbaden, 2012.
+
+\bibitem[Witte(2015)]{Witte}
+F.~Witte.
+\newblock \emph{Testmanagement und Softwaretest: Theoretische Grundlagen und
+  praktische Umsetzung}.
+\newblock Springer Fachmedien Wiesbaden, 2015.
 
 \end{thebibliography}

@@ -47,8 +47,9 @@ Bei jedem Versuch die Datenbank zu verändern, kann es zu Fehlern kommen, die de
 
 \subsection{Testfälle}
 \noindent
-Um das ganze zu testen, muss als erstes ein Exchange Server angelegt werden. Der bekommt eine Mail. Mail abrufen und Ticket anlegen. Prüfen ob Meldung in Datenbank angelegt wurde.
-%http://link.springer.com/book/10.1007/978-3-658-09964-0
+In den letzten Jahren hat sich das Testen von Software zunehmende etabliert und ist ein fester Bestandteil von Softwareprojekten für die Qualitätssicherung..\footnote{Vgl.\citeauthor{Vivenzio} \citeyear{Vivenzio}, S.1f.} Deshalb werden auch bei der Erweiterung des Service Desk Moduls einige Testfälle die wichtigsten Funktionalitäten überprüfen. Hierfür muss zunächst ein Testablauf erarbeitet und ein die zu erwartenden Werte des Testresultats festgehalten werden.\newline
+Bei den Testfällen in GEBman 10 wird im ersten Schritt der Webserver gestartet. Dadurch wird auch der implementierte ModulService TicketHandler initialisiert. Nun werden alle Modultests ausgeführt. Für den Test des ModulService wird ein Exchange Server benötigt. Dieser wird mittels einer Methode in der TestHelper-Klasse angelegt. An diesen Exchange Service wird eine E-Mail gesendet und anschließend der ModulSerive aufgerufen. Theoretisch könnte der Modultest auch bis zum nächsten Intervall des Modul Service warten, bis dieser die neuesten Mails vom Exchange Server abfragt. Doch ein Modultest sollte so wenig Zeit wie möglich beanspruchen. Aus diesem Grund wird die Methode MailsToObjects vom ModulService manuell aufgerufen. Eine neue Meldung wird aus der zuvor gesendeten E-Mail erstellt. Erst jetzt beginnt der eigentliche Test. Es wird eine Datenbankabfrage erstellt, die nach der Meldung sucht, die der ModulService angelegt haben müsste. Sollte die Abfrage erfolglos sein, wird der Modultest mit einem Fehler beendet. Sollte die Meldung gefunden werden, wird im nächsten Schritt geprüft, ob der Anhang der E-Mail als Dokument der Meldung angelegt wurde. Wurde kein Dokument gefunden, dass der zuvor erstellten Meldung zugeordnet ist, schlägt der Modultest fehl und eine entsprechende Meldung wird ausgegeben.\newline
+Die Testfälle können noch weiter ausgebaut werden, in dem weitere Methoden implementiert werden, die eine erfolgreiche Antworterstellung oder das Versenden von Bestätigungsmails prüfen. Abschließend ist festzuhalten, dass niemals alle möglichen Szenarien in Testfällen berücksichtigt werden können, aber auch gar nicht müssen. Es geht lediglich darum, die Szenarien zu testen, die am häufigsten in der Praxis auftreten.\footnote{Vgl.\citeauthor{Witte} \citeyear{Witte}, S.11f.}
 
 
 \subsection{Fehlschläge/Erfahrungen}
@@ -61,6 +62,9 @@ Das zweite Problem bestand bei der Abfrage der neusten Mails vom Exchange Server
 
 \subsection{Erweiterungsmöglichkeiten der E-Mail Integration}
 \noindent
+Die E-Mail Integration könnte dahingehend erweitert werden, dass der Benutzer mit einer E-Mail mehr Möglichkeiten zum Verändern vorhandener Meldungen hat. Sollte ein benutzer beispielsweise eine meldung auf \enquote{Technisch fertig setzen} setzen wollen, könnt er das über eine E-Mail bewerkstelligen, ohne dabei in GEBman 10 eingeloggt sein zu müssen.
+
+
 Programmtechnisch:
 Erweiterung der Benutzermöglichkeiten, Status ändern bzw. Meldung schließen. Über Betreff oder Link zu einem Webfrontend.
 
