@@ -21,18 +21,18 @@ Die Bedienoberfläche ist in einzelne Sektionen unterteilt. Im Dashboard dieses 
 \noindent
 Der Benutzer hat nun direkt die Möglichkeit für eine Detailansicht einer oder mehrerer Meldung, eine neue Meldung anzulegen, eine Filterung der Meldung vorzunehmen oder die Einstellungen anzupassen. Bei den Einstellungen kann entschieden werden, an welchen Positionen die Sektionen der Bedienoberfläche verankert werden sollen.\newline
 Es gibt keine Möglichkeit in der Dashboard-Ansicht des Service Desk Moduls Filter zu speichern. Hierfür muss der Benutzer in der Suchliste eine Abfrage definieren und diese abspeichern. Außerdem ermöglicht die Suchliste eine detailliertere Filterung, einen Excel Export, das Löschen von Meldungen und die Generierung von Maßnahmen. Das Generieren von Maßnahmen ist eine zentrale Funktionalität im Service Desk. Manche Vorfälle lassen sich nicht ohne Fachpersonal bewältigen. Hierfür müssen unter Umständen spezielle Mitarbeiter oder eine andere Firma angefordert werden. Mit der Maßnhamengenerierung kann ein Auftrag für den Mitarbeiter bzw. der Firma erstellt werden. Wenn sich eine andere Firma um die Maßnahme für den Vorfall kümmert, wird das am Objekt in der Sektion Fremdvergabe angezeigt. \newline
-Bevor man den Service Desk nutzt, ist es sinnvoll, die drei Standardkataloge für den Service Desk zu bearbeiten. Mit Katalogen können in GEBman 10  vorgefertigte Auswahlmöglichkeiten erstellt werden, die später im entsprechenden Modul zur Anwendung kommt. Dem Service Desk stehen folgende Kataloge zur Verfügung:
+Bevor man den Service Desk nutzt, ist es sinnvoll, die drei Standardkataloge für den Service Desk zu bearbeiten. Mit Katalogen können in GEBman 10  vorgefertigte Auswahlmöglichkeiten erstellt werden, die später im entsprechenden Modul zur Anwendung kommt. Dem Service Desk stehen folgende Kataloge zur Verfügung:\\
 
-\begin{itemize}
+\begin{itemize}[itemsep=10pt]
 \item Art:\\
 		Mit der Art ist in diesem Fall die Meldungsart gemeint. Dem Benutzer steht hier frei, welche 
 		Meldungsarten er hier definiert, um auch die ausgefallensten Vorfälle möglichst präzise beschreiben zu 
-		können.   \\
+		können.  \\
 		 
 \item Meldungsvorlage:\\
 		Nicht selten ähneln sich Meldungen, da sich Vorfälle wiederholen können. Ein Beispiel hierfür wäre ein 
 		Kraftfahrzeug in der Fuhrparkverwaltung, welches neue Reifen benötigt. Um nun nicht jedes Mal die 
-		gleiche Meldung erstellen zu müssen, gibt es die Möglichkeit eine Meldungsvorlage zu erstellen. \\
+		gleiche Meldung erstellen zu müssen, gibt es die Möglichkeit eine Meldungsvorlage zu erstellen. \\\\
 		
 \item Schnellantwort:\\
 		Es können ebenfalls Schnellantworten vordefiniert werden, die eine schnelle Antwort auf eine Meldung 
@@ -74,7 +74,7 @@ Für das Verständnis der Status im Service Desk ist die nachfolgende Tabelle hi
 \end{picture}Blau & Wiedereröffnet & Die Meldung wurde wiedereröffnet  \\
     \hline
     \end{tabular}
-    \caption{Übersicht der Status im Service Desk}
+    \caption[Übersicht der Status im Service Desk]{Übersicht der Status im Service Desk, Quelle: eigene Darstellung}
 \end{table}
 
 
