@@ -99,7 +99,7 @@ Das System erkennt  gleiche Absender nicht und alle Tickets kommen daher in einz
 Beim Erstellen eines Tickets ist es wie bei Zendesk und Desk.com nicht möglich, Bilder direkt in den Text einzufügen. Durch das anhängen von Screenshots o.ä. geht nach dem Support der direkte Bezug zwischen Beschreibung des Problems und der Verdeutlichung mit Hilfe eines Bilds verloren.\newline
 Der Support gab an, das die Wissensdatenbank von Kunden kaum genutzt wird. Das liegt wohl daran, dass sich die Kunden in SysAid nicht einloggen. Es werden auch wenige Tickets direkt über SysAid erstellt, sondern über die E-Mail Integration.\newline
 Der Administrationsbereich von SysAid bietet die Möglichkeit, die Benutzeroberfläche umfassend anzupassen. Dadurch können nicht gebrauchte Informationen ausgeblendet werden und die Benutzeroberfläche für den Support-Mitarbeiter auf das nötigste reduzieren. Des Weiteren können die Betriebszeiten des Help Desks eingestellt werden, was sinnvoll für die Eskalation von Meldung ist\newline
-Es fällt auf, dass die Alarme in SysAid nur begrenzt konfigurierbar sind. Es sind lediglich vier Alarmstufen bzw. Status die man damit abdecken kann, was von den Mitarbeitern des Supports bemängelt wird. Auch eine grafische Auswertung fehlt in der Version, die der Support von der KMS Computer GmbH zur Verfügung hat. Es gibt aber die Option, Reports in Form von Excel - oder PDF-Dateien erstellen zu lassen.\\
+Es fällt auf, dass die Alarme in SysAid nur begrenzt konfigurierbar sind. Es sind lediglich vier Alarmstufen bzw. Status die man damit abdecken kann, was von den Mitarbeitern des Supports bemängelt wird. Auch eine grafische Auswertung fehlt in der Version, die der Support von der KMS Computer GmbH zur Verfügung hat. Es gibt aber die Option, Reports in Form von Excel - oder PDF-Dateien erstellen zu lassen.
 
 \subsection{Fazit der Analyse}
 
@@ -111,13 +111,19 @@ Die Service Desk-Lösungen werden nun nach den in Punkt 3.1 genannten Kriterien 
     \hline
        & Freshdesk & Desk.com & Zendesk & SysAid \\ \hline
    Funktionalität (5) & 9 & 6 & 8,5 & 8 \\ \hline
-   Bedienbarkeit (3) & 9 & 7 & 9 & 6,5 \\ \hline
+   Bedienbarkeit (3) & 9 & 8 & 9 & 6,5 \\ \hline
    Anpassbarkeit (2) & 7,5 & 5 & 7,5 & 6 \\ \hline
-   Gesamtpunktzahl & 87 & 61 & 84,5 & 71,5 \\ \hline
+   Gesamtpunktzahl & 87 & 64 & 84,5 & 71,5 \\ \hline
     \end{tabular}
     \caption[Bewertung der Service Desk-Lösungen]{Bewertung der Service Desk-Lösungen, Quelle: eigene Darstellung}
     \label{tab:Auswertung}
 \end{table}
+
+\noindent
+Die Lösung von Freshdesk und Zendesk überzeugten am meisten. Aufgrund des großen Funktionalitätsumfangs und guter Bedienbarkeit erhielten sie fast die höchste Punktzahl in diesen Bereichen. Nur bei der Anpassbarkeit - gerade in der Gestaltung der Bedienoberfläche - mussten kleine Abstriche gemacht werden.\newline
+Desk.com stach weder bei den Funktionalitäten, noch in der Anpassbarkeit heraus und konnte sich deshalb auch in der Punktetabelle nicht durchsetzen. Lediglich bei der schlicht gehaltenen Bedienung gab es Punkte.\newline
+SysAid befindet sich im Mittelfeld der Punktetabelle, da die Funktionalitäten gut sind, die Softwarelösung aber in der Bedienbarkeit und Anpassbarkeit nicht überzeugen konnte.\\
+
 
 \noindent
 Alle Service Desk-Systeme, die betrachtet wurden, waren auf ihre Weise individuell. Die Schwerpunkte waren unterschiedlich gelegt und einen \enquote{Sieger} der Analyse zu bestimmen wäre daher nicht sinnvoll. Wichtiger ist viel mehr, wie die Stärken der Systeme möglicherweise Anreize für Verbesserungen der Service Desk-Lösungen in GEBman 10 bieten.\\

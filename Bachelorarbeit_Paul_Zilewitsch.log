@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.12)  30 JUN 2016 15:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.12)  1 JUL 2016 16:17
 entering extended mode
 **Bachelorarbeit_Paul_Zilewitsch.tex
 (Bachelorarbeit_Paul_Zilewitsch.tex
@@ -1332,28 +1332,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 106--108
  []
 
 [15]
-Overfull \hbox (6.04903pt too wide) in paragraph at lines 122--124
+Underfull \hbox (badness 10000) in paragraph at lines 122--126
+
+ []
+
+
+Overfull \hbox (6.04903pt too wide) in paragraph at lines 128--130
 \T1/ptm/m/n/12 Alle Ser-vice Desk-Systeme, die be-trach-tet wur-den, wa-ren auf
  ih-re Wei-se in-di-vi-du-ell. Die Schwer-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--124
+Underfull \hbox (badness 10000) in paragraph at lines 128--130
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--131
+Underfull \hbox (badness 10000) in paragraph at lines 131--137
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--131
+Underfull \hbox (badness 10000) in paragraph at lines 131--137
 
  []
 
 [16]) [17] (Inhalte/4_Service_Desk_GEBman10/Service_Desk_GEBman10.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--6
+Underfull \hbox (badness 10000) in paragraph at lines 6--8
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--14
 
  []
 
@@ -1361,44 +1376,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--6
 File: Abbildungen/GEBman.png Graphic file (type png)
 
 <use Abbildungen/GEBman.png>
-Package pdftex.def Info: Abbildungen/GEBman.png used on input line 15.
+Package pdftex.def Info: Abbildungen/GEBman.png used on input line 17.
 (pdftex.def)             Requested size: 341.43307pt x 191.97763pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--25
+Underfull \hbox (badness 10000) in paragraph at lines 23--27
 
  []
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 27--31
+Underfull \hbox (badness 10000) in paragraph at lines 29--33
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--36
+Underfull \hbox (badness 10000) in paragraph at lines 34--38
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--36
+Underfull \hbox (badness 10000) in paragraph at lines 34--38
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--40
+Underfull \hbox (badness 10000) in paragraph at lines 39--42
 
  []
 
-[19 <./Abbildungen/GEBman.png>] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 82--87
+[19 <./Abbildungen/GEBman.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 44--49
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--92
+Underfull \hbox (badness 10000) in paragraph at lines 83--88
+
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 89--93
 
  []
 
@@ -1759,7 +1779,7 @@ e1/public/amsfonts/symbols/msam10.pfb><C:/Program Files (x86)/Latex&Latex/fonts
 /type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/Latex&Latex/fonts/type1/urw
 /times/utmr8a.pfb><C:/Program Files (x86)/Latex&Latex/fonts/type1/urw/times/utm
 ri8a.pfb>
-Output written on Bachelorarbeit_Paul_Zilewitsch.pdf (56 pages, 2868271 bytes).
+Output written on Bachelorarbeit_Paul_Zilewitsch.pdf (56 pages, 2869124 bytes).
 
 PDF statistics:
  371 PDF objects out of 1000 (max. 8388607)

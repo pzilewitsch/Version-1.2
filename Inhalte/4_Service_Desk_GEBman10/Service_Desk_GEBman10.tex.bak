@@ -1,14 +1,16 @@
 % !TEX root = Bachelorarbeit_Paul_Zilewitsch.tex
 
 \section{Der Service Desk in GEBman 10}
-\noindent
-Zunächst ist anzumerken, dass sich das Service Desk Modul stark an die anderen Module in GEBman 10 orientiert und an sie gebunden ist. Das unterscheidet sich deshalb sehr stark von den zuvor betrachteten Service Desk-Lösungen und wurde bisher nur im Bereich Facility Management eingesetzt. Aus diesem Grund ist es nur bis zu einem gewissen Grad möglich, diese Lösung in GEBman 10 mit anderen Service Desk-Softwarelösungen zu vergleichen. Ihre Aufgabenfelder und Schwerpunkte sind schlicht zu unterschiedlich sind. Dennoch ist es möglich, Verbesserungsmöglichkeiten identifiziert werden, welche das Service Desk Modul auch außerhalb des Facility Management Bereiches einsetzbar machen können. Hierzu wird zunächst die aktuelle Umsetzung von dem Service Desk in GEBman10 festgehalten.
-
 
 \subsection{Aktuelle Umsetzung}
 \noindent
-Der Service Desk  ist ein eigenständiges Modul, welches standardmäßig in jeder Version von GEBman 10 enthalten ist. Ist dient in erster Linie dazu unvorhergesehene Störungen für Geräten, Gebäude, Inventare, Fahrzeuge, Bäume, Grünflächen und Beleuchtungseinheiten erfassen zu können. Aus diesem Grund ist das Modul stark an andere Module gebunden und legt die Schwerpunkte auf den Bereich Facility Management.D Das Modul kann aber auch für eine Service Desk-Lösung für das Unternehmen verwendet werden. Hierzu müssen lediglich alle Mitarbeiter einen Account anlegen, um so als Melder agieren oder als Bearbeiter reagieren zu können. \newline 
-Die Bedienoberfläche ist in einzelne Sektionen unterteilt. Im Dashboard dieses Moduls werden alle Meldungen in einer Sektion angezeigt, die erstellt wurden. Alle Meldungen haben eine eindeutige Nummer (Identifikator). Rechts daneben wird der Standort des Objektes angezeigt, für das die Meldung aufgegeben wurde. Es werden auch bereits abgeschlossene bzw. erledigte Meldungen angezeigt. Der Benutzer erhält mittels eines Berichtes in Diagrammform in einer weiteren Sektion direkt einen Einblick auf die Meldungen innerhalb einer Woche. Unterteilt wird hierbei in eingegangene Meldungen, Meldungen die in Bearbeitung sind, unbearbeitete Meldungen und fertige Meldungen. Ein weiterer Bericht veranschaulicht die Verweildauer einer Meldung, in dem die Zeit zwischen dem unbearbeiteten Zustand und dem der Bearbeitung protokolliert wird. Unter den beiden Diagrammen finden sich alle Fakten noch einma in Form von Zahlen wieder. Ist derzeit noch nicht Möglich diese Berichte/Diagramme individuell anzupassen. Der Aufbau wird in der Abbildung ~\ref{fig:GEBman10 Service Desk Dashboard} deutlicher. 
+Zunächst ist anzumerken, dass sich das Service Desk Modul stark an die anderen Module in GEBman 10 orientiert und an sie gebunden ist. Das unterscheidet sich deshalb sehr stark von den zuvor betrachteten Service Desk-Lösungen und wurde bisher nur im Bereich Facility Management eingesetzt. Aus diesem Grund ist es nur bis zu einem gewissen Grad möglich, diese Lösung in GEBman 10 mit anderen Service Desk-Softwarelösungen zu vergleichen. Ihre Aufgabenfelder und Schwerpunkte sind schlicht zu unterschiedlich sind. Dennoch ist es möglich, Verbesserungsmöglichkeiten identifiziert werden, welche das Service Desk Modul auch außerhalb des Facility Management Bereiches einsetzbar machen können. Hierzu wird zunächst die aktuelle Umsetzung von dem Service Desk in GEBman10 festgehalten.\\
+
+\noindent
+Der Service Desk  ist ein eigenständiges Modul, welches standardmäßig in jeder Version von GEBman 10 enthalten ist. Ist dient in erster Linie dazu unvorhergesehene Störungen für Geräten, Gebäude, Inventare, Fahrzeuge, Bäume, Grünflächen und Beleuchtungseinheiten erfassen zu können. Aus diesem Grund ist das Modul stark an andere Module gebunden und legt die Schwerpunkte auf den Bereich Facility Management. Das Modul kann aber auch für eine Service Desk-Lösung für das Unternehmen verwendet werden. Hierzu müssen lediglich alle Mitarbeiter einen Account anlegen, um so als Melder agieren oder als Bearbeiter reagieren zu können.\\
+
+\noindent 
+Die Bedienoberfläche ist in einzelne Sektionen unterteilt. Im Dashboard dieses Moduls werden alle Meldungen in einer Sektion angezeigt, die erstellt wurden. Alle Meldungen haben eine eindeutige Nummer (Identifikator). Rechts daneben wird der Standort des Objektes angezeigt, für das die Meldung aufgegeben wurde. Es werden auch bereits abgeschlossene bzw. erledigte Meldungen angezeigt. Der Benutzer erhält mittels eines Berichtes in Diagrammform in einer weiteren Sektion direkt einen Einblick auf die Meldungen innerhalb einer Woche. Unterteilt wird hierbei in eingegangene Meldungen, Meldungen die in Bearbeitung sind, unbearbeitete Meldungen und fertige Meldungen. Ein weiterer Bericht veranschaulicht die Verweildauer einer Meldung, in dem die Zeit zwischen dem unbearbeiteten Zustand und dem der Bearbeitung protokolliert wird. Unter den beiden Diagrammen finden sich alle Fakten noch einmal in Form von Zahlen wieder. Ist derzeit noch nicht Möglich diese Berichte/Diagramme individuell anzupassen. Der Aufbau wird in der Abbildung ~\ref{fig:GEBman10 Service Desk Dashboard} deutlicher. \\ 
 
 \begin{figure}[h!]
 \centering
@@ -19,7 +21,7 @@ Die Bedienoberfläche ist in einzelne Sektionen unterteilt. Im Dashboard dieses 
 \end{figure}
 
 \noindent
-Der Benutzer hat nun direkt die Möglichkeit für eine Detailansicht einer oder mehrerer Meldung, eine neue Meldung anzulegen, eine Filterung der Meldung vorzunehmen oder die Einstellungen anzupassen. Bei den Einstellungen kann entschieden werden, an welchen Positionen die Sektionen der Bedienoberfläche verankert werden sollen.\newline
+Der Benutzer hat im Dashboard die Möglichkeit für eine direkte Detailansicht einer oder mehrerer Meldung, eine neue Meldung anzulegen, eine Filterung der Meldung vorzunehmen oder die Einstellungen anzupassen. Bei den Einstellungen kann entschieden werden, an welchen Positionen die Sektionen der Bedienoberfläche verankert werden sollen.\newline
 Es gibt keine Möglichkeit in der Dashboard-Ansicht des Service Desk Moduls Filter zu speichern. Hierfür muss der Benutzer in der Suchliste eine Abfrage definieren und diese abspeichern. Außerdem ermöglicht die Suchliste eine detailliertere Filterung, einen Excel Export, das Löschen von Meldungen und die Generierung von Maßnahmen. Das Generieren von Maßnahmen ist eine zentrale Funktionalität im Service Desk. Manche Vorfälle lassen sich nicht ohne Fachpersonal bewältigen. Hierfür müssen unter Umständen spezielle Mitarbeiter oder eine andere Firma angefordert werden. Mit der Maßnhamengenerierung kann ein Auftrag für den Mitarbeiter bzw. der Firma erstellt werden. Wenn sich eine andere Firma um die Maßnahme für den Vorfall kümmert, wird das am Objekt in der Sektion Fremdvergabe angezeigt. \newline
 Bevor man den Service Desk nutzt, ist es sinnvoll, die drei Standardkataloge für den Service Desk zu bearbeiten. Mit Katalogen können in GEBman 10  vorgefertigte Auswahlmöglichkeiten erstellt werden, die später im entsprechenden Modul zur Anwendung kommt. Dem Service Desk stehen folgende Kataloge zur Verfügung:\\
 
@@ -43,7 +45,7 @@ Bevor man den Service Desk nutzt, ist es sinnvoll, die drei Standardkataloge fü
 Wenn ein Mitarbeiter beim Erstellen einer Meldung informiert werden soll, so muss zunächst im Modul Verwaltung der entsprechende Exchange Server dafür konfiguriert werden. Hierfür muss der Benutzer unter Einstellungen und dann die Rubrik Groupware wählen. Die Einrichtung des Exchange Servers gestaltet sich wie üblich mit den Kontodaten und der verwendeten Exchange Server Version.\newline
 Interessanter gestaltet sich die Konfiguration der Events. Hier können Events erstellt werden, bei denen eine Mail von an dem zuvor erstellten Server an eine beliebige Person geschickt werden kann. Ein Beispielszenario für das Modul Service Desk:\newline
 Bei dem Service Desk bietet es sich an, die Meldungen für einen möglichen Eventauslöser zu bestimmen. Es kann entschieden, ob beim Erstellen, Bearbeiten, Löschen oder bei einer Wertänderung dieser Meldung eine Mail verschickt werden soll. Dafür muss noch ein Betreff und eine Beschreibung der Mail eingetragen werden. GEBman 10 besitzt das Feature, das es ermöglicht, Parameter in der Mail mit zu übergeben. Somit kann beispielsweise mit der Mail in Erfahrung gebracht werden, zu welchem Gebäude die Meldung gehört. Somit hat der Empfänger der Mail einen direkten Einblick auf die Daten, ohne direkt in den Service Desk schauen zu müssen.\newline
-Für das Verständnis der Status im Service Desk ist die nachfolgende Tabelle hilfreich.
+Für das Verständnis der Status im Service Desk ist die nachfolgende Tabelle hilfreich.\\
 
 \begin{table}[h!]
     \begin{tabular}{ | l | l | p{8cm} |}
@@ -77,7 +79,6 @@ Für das Verständnis der Status im Service Desk ist die nachfolgende Tabelle hi
     \caption[Übersicht der Status im Service Desk]{Übersicht der Status im Service Desk, Quelle: eigene Darstellung}
 \end{table}
 
-
 \subsection{Verbesserungsmöglichkeiten des Service Desk Moduls}
 \noindent
 Das Service Desk Modul wurde kurz vorgestellt und mit Hilfe der Analyse aus Punkt 3 lassen sich einige Verbesserungsmöglichkeiten identifizieren. Dabei ist nochmals klar anzumerken, dass eine vollständige Entkopplung des Service Desk Moduls vom restlichen System und damit auch dem Facility Management Bereich nicht möglich ist.\newline
@@ -90,12 +91,14 @@ Die Funktionalitäten des Service Desk Moduls bietet ebenfalls Verbesserungsmög
 Im Freshdesk ist es möglich, Bilder direkt in der Beschreibung der Meldung einzufügen. Dadurch kann ein besserer Bezug zwischen Text und Bild hergestellt werden und somit das Problem auf den ersten Blick verdeutlichen. Dieses Feature wurde über einen Button realisiert, der das Einfügen von Bilder erlaubt. Es wäre also möglich, auch eine Prüfung vorzunehmen, ob es sich wirklich um ein Bild handelt oder womöglich versucht wird, andere Dateitypen oder Schadcode einzufügen.\newline
 Aufgefallen ist außerdem, dass im Service Desk Modul keine Wissensdatenbank vorhanden ist. Durch das Einführen einer Wissensdatenbank könnten häufig auftauchende Meldungen archiviert werden und somit zu einer schnelleren Problemlösung beitragen. Es wäre zu überlegen, eine solche Wissensdatenbank auch für andere Module bereitzustellen. \\
 
+\noindent
+Neben diesen bereits genannten Verbesserungsmöglichkeiten, steht in erster Linie die Erweiterung der E-Mail Integration des Service Desk Moduls im Vordergrund. Alle betrachteten Service Desk-Lösungen hatten eine E-Mail Kommunikationsschnittstelle, mit der Tickets/Meldungen im Service Desk angelegt werden konnten. Diese Funktionalität soll auch in GEBman 10 implementiert werden. Dafür müssen zunächst die Anforderungen der Erweiterung bestimmt werden.
+
 \subsection{Anforderungen der Erweiterung}
 
 \noindent
 Qualität ist ein Maß für das Erfüllen von Anforderungen. Die Qualität des Service Desk kann deshalb nur gesichert werden, wenn die Anforderungen möglichst genau definiert werden. Neben den zu erfüllen Anforderungen sollte aber noch festgehalten werden, welche Anforderungen nicht erfüllt werden sollen. Letzteres wird häufig nicht beachtet, ist jedoch ein wesentlicher Schritt für das Sicherstellen der Anforderungen.\\
 \noindent
 Ziel der Erweiterung des Service Desks ist es, über den E-Mail Kommunikationsweg Meldung zu erstellen, oder auf eingegangene Meldungen zu antworten. Um E-Mails Meldungen eindeutig zuordnen zu können, muss in der Betreffzeile der E-Mail ein Identifikator (kurz ID) enthalten sein. Diese ID muss ausgewertet und mit den ID's der Meldungen verglichen werden. Sollte es keine Meldung mit der ID, die in der Betreffzeile der Mail steht geben, wird eine neue Meldung im Service DEsk Modul angelegt und erhält vom System eine eindeutige ID. Bei einer erfolgreichen Erstellung einer Meldung soll der Benutzer eine Bestätigungs-E-Mail erhalten, die dann gleichzeitig die eindeutige ID im Betreff beinhaltet. Sollte die Erstellung einer Meldung oder einer Antwort scheitern, muss der Benutzer informiert werden. Hierzu muss eine Ausnahmebehandlung im Programmcode und die damit verbundenen Benachrichtigung an den Benutzer geplant werden. Außerdem müssen die Anhänge in GEBman 10 ebenfalls abgespeichert werden, wenn die E-Mail einen solchen besitzt. \newline
-Es soll nicht möglich sein, über eine E-Mail Maßnahmen einer Meldung zu generieren, bestehende Meldungen zu löschen oder zu bearbeiten. Es ist auch nicht unbedingt nötig, dass eine Meldung über die E-Mail-Integration auf den Status \enquote{Fertig} gesetzt werden kann. Diese Idee könnte aber in den Erweiterungsmöglichkeiten Einzug erhalten.
-
+Es soll nicht möglich sein, über eine E-Mail Maßnahmen einer Meldung zu generieren, bestehende Meldungen zu löschen oder zu bearbeiten. Auch eine Veränderung des Status einer Meldung ist über die E-Mail Integration nicht vorgesehen.
 
