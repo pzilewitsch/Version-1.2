@@ -4,6 +4,7 @@
 \usepackage{amssymb}
 \usepackage{url}
 \urlstyle{same}
+\usepackage{pdfpages}
 
 % deutsche Silbentrennung
 \usepackage[ngerman]{babel}
@@ -62,6 +63,7 @@
   {}
   {\titlerule*[1pc]{.}\contentspage}
   
+  
   %Tabellenverzeichnis
 \renewcaptionname{ngerman}{\listtablename}{}
 
@@ -71,6 +73,13 @@
   {\tablename\enspace\thecontentslabel:\enspace}
   {}
   {\titlerule*[1pc]{.}\contentspage}
+
+%Anhangsverzeichnis
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{nameref}
+\usepackage{caption}
+
 
 %Seitenränder
 \usepackage{geometry}

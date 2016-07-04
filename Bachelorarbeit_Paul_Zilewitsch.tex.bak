@@ -81,7 +81,7 @@ Ziel der vorliegenden Arbeit ist es...
 \addsec{Abkürzungsverzeichnis} %vergebe keine Kapitelnummer
 \begin{itemize}[leftmargin=*] 
 \item[1] CAFM \tabto{3cm} Computer-Aided Facility Management
-\item[2] ITIL \tabto{3cm} Information Technology Infrastructure Libary
+\item[2] ITIL \tabto{3cm} Information Technology Infrastructure Library
 \item[3] HTTP \tabto{3cm} Hypertext Transfer Protocol
 \item[4] HTTPS \tabto{3cm} Hypertext Transfer Protocol Secure
 \item[5] API \tabto{3cm} Application Programming Interface
@@ -169,6 +169,12 @@ Ziel der vorliegenden Arbeit ist es...
 %-------------------------------------------------------------------------------------------------------
 \addsec{Anhangsverzeichnis} %vergebe keine Kapitelnummer
 
+\begin{tabularx}{\textwidth}{Xr}
+	\addlinespace[1em]
+	Exchange Verbindung \dotfill   &   \pageref{Exchange Verbindung}\\
+	\nameref{API_1} \dotfill   &   \pageref{API_1}\\
+\end{tabularx}
+	
 \newpage
 
 %-------------------------------------------------------------------------------------------------------

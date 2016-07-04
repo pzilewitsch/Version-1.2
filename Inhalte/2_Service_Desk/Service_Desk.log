@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.12)  30 JUN 2016 14:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.12)  4 JUL 2016 10:55
 entering extended mode
 **Service_Desk.tex
 (Service_Desk.tex
@@ -198,6 +198,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no L in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no b in font nullfont!
+Missing character: There is no r in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no y in font nullfont!
@@ -1036,8 +1037,8 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no d in font nullfont!
-Missing character: There is no i in font nullfont!
 Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
 Missing character: There is no V in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -1775,6 +1776,9 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
 Missing character: There is no I in font nullfont!
 Missing character: There is no T in font nullfont!
 Missing character: There is no S in font nullfont!
@@ -2389,7 +2393,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
 
 Overfull \hbox (4.48613pt too wide) in paragraph at lines 20--22
-                                           []
+                                            []
  []
 
 
@@ -2561,6 +2565,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no g in font nullfont!
 Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no i in font nullfont!
@@ -2635,6 +2640,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no z in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
 \@footnotetext ...tins {\reset@font \footnotesize 
                                                   \interlinepenalty \interfo...
@@ -3373,7 +3379,27 @@ $[]\OML/cmm/m/it/10 ebenszyklus\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 ITILServiceLif
 ecycle\OT1/cmr/m/n/10 ][][]$ 
  []
 
-Missing character: There is no A in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no a in font nullfont!
@@ -3386,9 +3412,6 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no b in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no i in font nullfont!
@@ -3405,53 +3428,6 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no w in font nullfont!
-Missing character: There is no √ in font nullfont!
-Missing character: There is no § in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no z in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no z in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no w in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no √ in font nullfont!
-Missing character: There is no ∂ in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no g in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no D in font nullfont!
 Missing character: There is no e in font nullfont!
@@ -3835,6 +3811,8 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
 Missing character: There is no I in font nullfont!
 Missing character: There is no T in font nullfont!
 Missing character: There is no S in font nullfont!
@@ -4351,7 +4329,7 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no √ in font nullfont!
 Missing character: There is no º in font nullfont!
-Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
 Missing character: There is no z in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no n in font nullfont!
@@ -5068,6 +5046,7 @@ Missing character: There is no . in font nullfont!
 Missing character: There is no E in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
 Missing character: There is no S in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no √ in font nullfont!
@@ -5098,14 +5077,13 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no m in font nullfont!
+Missing character: There is no n in font nullfont!
 Missing character: There is no G in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no √ in font nullfont!
 Missing character: There is no § in font nullfont!
 Missing character: There is no t in font nullfont!
-Missing character: There is no , in font nullfont!
 Missing character: There is no w in font nullfont!
 Missing character: There is no √ in font nullfont!
 Missing character: There is no º in font nullfont!
@@ -5126,8 +5104,6 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
 Missing character: There is no z in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no m in font nullfont!
@@ -5257,7 +5233,7 @@ Missing character: There is no h in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
-Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no d in font nullfont!
@@ -5313,7 +5289,7 @@ Missing character: There is no . in font nullfont!
 \@footnotetext ...tins {\reset@font \footnotesize 
                                                   \interlinepenalty \interfo...
 l.46 ...author{Ebel} (\citeyear{Ebel}), S. 65 ff.}
-                                                  
+                                                  \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -5324,7 +5300,7 @@ and I'll forget about whatever was undefined.
 \@footnotetext ...}\color@begingroup \@makefntext 
                                                   {\rule \z@ \footnotesep \i...
 l.46 ...author{Ebel} (\citeyear{Ebel}), S. 65 ff.}
-                                                  
+                                                  \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -5335,7 +5311,7 @@ and I'll forget about whatever was undefined.
 <argument> Vgl. \citeauthor 
                             {Ebel} (\citeyear {Ebel}), S. 65 ff.
 l.46 ...author{Ebel} (\citeyear{Ebel}), S. 65 ff.}
-                                                  
+                                                  \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -5346,7 +5322,7 @@ and I'll forget about whatever was undefined.
 <argument> Vgl. \citeauthor {Ebel} (\citeyear 
                                               {Ebel}), S. 65 ff.
 l.46 ...author{Ebel} (\citeyear{Ebel}), S. 65 ff.}
-                                                  
+                                                  \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -5385,7 +5361,7 @@ Overfull \hbox (8.61115pt too wide) in paragraph at lines 46--46
 
 
 Overfull \hbox (8.47226pt too wide) in paragraph at lines 45--47
-                                                [] 
+                                               [] 
  []
 
 ! Undefined control sequence.
@@ -5686,7 +5662,7 @@ Overfull \hbox (12.77782pt too wide) in paragraph at lines 51--51
 \@footnotetext ...tins {\reset@font \footnotesize 
                                                   \interlinepenalty \interfo...
 l.51 ...eauthor{Meier} (\citeyear{Meier}), S. 26.}
-                                                  Im Internet hei√üt es Beis...
+                                                  Im Internet hei√üt es beis...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -5697,7 +5673,7 @@ and I'll forget about whatever was undefined.
 \@footnotetext ...}\color@begingroup \@makefntext 
                                                   {\rule \z@ \footnotesep \i...
 l.51 ...eauthor{Meier} (\citeyear{Meier}), S. 26.}
-                                                  Im Internet hei√üt es Beis...
+                                                  Im Internet hei√üt es beis...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -5708,7 +5684,7 @@ and I'll forget about whatever was undefined.
 <argument> Vgl. \citeauthor 
                             {Meier} (\citeyear {Meier}), S. 26.
 l.51 ...eauthor{Meier} (\citeyear{Meier}), S. 26.}
-                                                  Im Internet hei√üt es Beis...
+                                                  Im Internet hei√üt es beis...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -5719,7 +5695,7 @@ and I'll forget about whatever was undefined.
 <argument> Vgl. \citeauthor {Meier} (\citeyear 
                                                {Meier}), S. 26.
 l.51 ...eauthor{Meier} (\citeyear{Meier}), S. 26.}
-                                                  Im Internet hei√üt es Beis...
+                                                  Im Internet hei√üt es beis...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -5769,7 +5745,7 @@ Missing character: There is no ü in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
-Missing character: There is no B in font nullfont!
+Missing character: There is no b in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
@@ -5797,7 +5773,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no : in font nullfont!
 ! Undefined control sequence.
-l.51 ... es Beispielsweise auf Wikipedia: \enquote
+l.51 ... es beispielsweise auf Wikipedia: \enquote
                                                   {Die Artikel Helpdesk und ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5952,7 +5928,7 @@ Missing character: There is no H in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no p in font nullfont!
-Missing character: There is no d in font nullfont!
+Missing character: There is no D in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no k in font nullfont!
@@ -6408,9 +6384,7 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no f in font nullfont!
-Missing character: There is no ‚ in font nullfont!
-Missing character: There is no Ä in font nullfont!
-Missing character: There is no û in font nullfont!
+Missing character: There is no ' in font nullfont!
 Missing character: There is no H in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -6419,9 +6393,7 @@ Missing character: There is no D in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no k in font nullfont!
-Missing character: There is no ‚ in font nullfont!
-Missing character: There is no Ä in font nullfont!
-Missing character: There is no ú in font nullfont!
+Missing character: There is no ' in font nullfont!
 Missing character: There is no w in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -6802,14 +6774,9 @@ Missing character: There is no D in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no k in font nullfont!
-
-Overfull \hbox (20.0pt too wide) in paragraph at lines 61--62
-[]
- []
-
 Missing character: There is no I in font nullfont!
 Missing character: There is no m in font nullfont!
-Missing character: There is no f in font nullfont!
+Missing character: There is no F in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no g in font nullfont!
@@ -6879,15 +6846,15 @@ Missing character: There is no I in font nullfont!
 Missing character: There is no L in font nullfont!
 Missing character: There is no v in font nullfont!
 Missing character: There is no 3 in font nullfont!
+Missing character: There is no b in font nullfont!
 Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
 Missing character: There is no r in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no √ in font nullfont!
-Missing character: There is no § in font nullfont!
-Missing character: There is no u in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no w in font nullfont!
 Missing character: There is no e in font nullfont!
@@ -7026,8 +6993,8 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
 Missing character: There is no A in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no s in font nullfont!
@@ -7052,7 +7019,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no s in font nullfont!
 ! Undefined control sequence.
-l.64 ...auf der Ausarbeitung Olbrichs aus \enquote
+l.63 ...auf die Ausarbeitung Olbrichs aus \enquote
                                                   {ITIL Kompakt und verst√§n...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7090,7 +7057,7 @@ Missing character: There is no h in font nullfont!
 ! Undefined control sequence.
 \@footnotetext ...tins {\reset@font \footnotesize 
                                                   \interlinepenalty \interfo...
-l.64 ...or{Olbrich} (\citeyear{Olbrich}), S. 19f.}
+l.63 ...or{Olbrich} (\citeyear{Olbrich}), S. 19f.}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7101,7 +7068,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \@footnotetext ...}\color@begingroup \@makefntext 
                                                   {\rule \z@ \footnotesep \i...
-l.64 ...or{Olbrich} (\citeyear{Olbrich}), S. 19f.}
+l.63 ...or{Olbrich} (\citeyear{Olbrich}), S. 19f.}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7112,7 +7079,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> Vgl. \citeauthor 
                             {Olbrich} (\citeyear {Olbrich}), S. 19f.
-l.64 ...or{Olbrich} (\citeyear{Olbrich}), S. 19f.}
+l.63 ...or{Olbrich} (\citeyear{Olbrich}), S. 19f.}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7123,7 +7090,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> Vgl. \citeauthor {Olbrich} (\citeyear 
                                                  {Olbrich}), S. 19f.
-l.64 ...or{Olbrich} (\citeyear{Olbrich}), S. 19f.}
+l.63 ...or{Olbrich} (\citeyear{Olbrich}), S. 19f.}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7132,37 +7099,37 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (18.0556pt too wide) in paragraph at lines 64--64
+Overfull \hbox (18.0556pt too wide) in paragraph at lines 63--63
 [][]\OT1/cmr/m/n/10 Vgl.
  []
 
 
-Overfull \hbox (13.88892pt too wide) in paragraph at lines 64--64
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 63--63
 \OT1/cmr/m/n/10 Ol-
  []
 
 
-Overfull \hbox (21.97226pt too wide) in paragraph at lines 64--64
+Overfull \hbox (21.97226pt too wide) in paragraph at lines 63--63
 \OT1/cmr/m/n/10 brich
  []
 
 
-Overfull \hbox (17.77782pt too wide) in paragraph at lines 64--64
+Overfull \hbox (17.77782pt too wide) in paragraph at lines 63--63
 \OT1/cmr/m/n/10 (Ol-
  []
 
 
-Overfull \hbox (28.63895pt too wide) in paragraph at lines 64--64
+Overfull \hbox (28.63895pt too wide) in paragraph at lines 63--63
 \OT1/cmr/m/n/10 brich),
  []
 
 
-Overfull \hbox (8.33336pt too wide) in paragraph at lines 64--64
+Overfull \hbox (8.33336pt too wide) in paragraph at lines 63--63
 \OT1/cmr/m/n/10 S.
  []
 
 
-Overfull \hbox (15.83339pt too wide) in paragraph at lines 64--64
+Overfull \hbox (15.83339pt too wide) in paragraph at lines 63--63
 \OT1/cmr/m/n/10 19f.| 
  []
 
@@ -7232,7 +7199,7 @@ Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
 \@footnotetext ...tins {\reset@font \footnotesize 
                                                   \interlinepenalty \interfo...
-l.65 ...thor{Cannon} (\citeyear{Cannon}), S. 110.}
+l.64 ...thor{Cannon} (\citeyear{Cannon}), S. 110.}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7243,7 +7210,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \@footnotetext ...}\color@begingroup \@makefntext 
                                                   {\rule \z@ \footnotesep \i...
-l.65 ...thor{Cannon} (\citeyear{Cannon}), S. 110.}
+l.64 ...thor{Cannon} (\citeyear{Cannon}), S. 110.}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7254,7 +7221,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> Vgl. \citeauthor 
                             {Cannon} (\citeyear {Cannon}), S. 110.
-l.65 ...thor{Cannon} (\citeyear{Cannon}), S. 110.}
+l.64 ...thor{Cannon} (\citeyear{Cannon}), S. 110.}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7265,7 +7232,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> Vgl. \citeauthor {Cannon} (\citeyear 
                                                 {Cannon}), S. 110.
-l.65 ...thor{Cannon} (\citeyear{Cannon}), S. 110.}
+l.64 ...thor{Cannon} (\citeyear{Cannon}), S. 110.}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7274,59 +7241,64 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (18.0556pt too wide) in paragraph at lines 65--65
+Overfull \hbox (18.0556pt too wide) in paragraph at lines 64--64
 [][]\OT1/cmr/m/n/10 Vgl.
  []
 
 
-Overfull \hbox (21.11115pt too wide) in paragraph at lines 65--65
+Overfull \hbox (21.11115pt too wide) in paragraph at lines 64--64
 \OT1/cmr/m/n/10 Can-
  []
 
 
-Overfull \hbox (16.11116pt too wide) in paragraph at lines 65--65
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 64--64
 \OT1/cmr/m/n/10 non
  []
 
 
-Overfull \hbox (25.00005pt too wide) in paragraph at lines 65--65
+Overfull \hbox (25.00005pt too wide) in paragraph at lines 64--64
 \OT1/cmr/m/n/10 (Can-
  []
 
 
-Overfull \hbox (22.77785pt too wide) in paragraph at lines 65--65
+Overfull \hbox (22.77785pt too wide) in paragraph at lines 64--64
 \OT1/cmr/m/n/10 non),
  []
 
 
-Overfull \hbox (8.33336pt too wide) in paragraph at lines 65--65
+Overfull \hbox (8.33336pt too wide) in paragraph at lines 64--64
 \OT1/cmr/m/n/10 S.
  []
 
 
-Overfull \hbox (17.77783pt too wide) in paragraph at lines 65--65
+Overfull \hbox (17.77783pt too wide) in paragraph at lines 64--64
 \OT1/cmr/m/n/10 110.| 
  []
 
 
-Overfull \hbox (8.47226pt too wide) in paragraph at lines 63--66
-                                         []
+Overfull \hbox (20.0pt too wide) in paragraph at lines 61--65
+[]
  []
 
 
-Overfull \hbox (8.47226pt too wide) in paragraph at lines 63--66
+Overfull \hbox (8.47226pt too wide) in paragraph at lines 61--65
+[]
+ []
+
+
+Overfull \hbox (8.47226pt too wide) in paragraph at lines 61--65
 [] 
  []
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 67--67
+Overfull \hbox (20.0pt too wide) in paragraph at lines 66--66
 [] 
  []
 
 ! Undefined control sequence.
 <recently read> \enquote 
                          
-l.68 \item \enquote
+l.67 \item \enquote
                    {Einheitlichen, zentralen Kommunikationsschnittstelle (SP...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7449,6 +7421,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
+Missing character: There is no , in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
@@ -7539,9 +7512,8 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no d in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
 Missing character: There is no S in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -7727,10 +7699,12 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no t in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no b in font nullfont!
+Missing character: There is no j in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
 Missing character: There is no V in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -7823,14 +7797,14 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 74--74
+Overfull \hbox (20.0pt too wide) in paragraph at lines 73--73
 [] 
  []
 
 ! Undefined control sequence.
 <recently read> \enquote 
                          
-l.75 \item \enquote
+l.74 \item \enquote
                    {Aufnahme, Dokumentation und Auswertung aller Vorf√§lle}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -8137,14 +8111,14 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 80--80
+Overfull \hbox (20.0pt too wide) in paragraph at lines 79--79
 [] 
  []
 
 ! Undefined control sequence.
 <recently read> \enquote 
                          
-l.81 \item \enquote
+l.80 \item \enquote
                    {√úberwachung, Nachverfolgung und Eskalation von laufenden
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -8303,6 +8277,7 @@ Missing character: There is no § in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
 Missing character: There is no k in font nullfont!
 Missing character: There is no √ in font nullfont!
 Missing character: There is no ∂ in font nullfont!
@@ -8533,7 +8508,7 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
-Missing character: There is no l in font nullfont!
+Missing character: There is no L in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no g in font nullfont!
 Missing character: There is no - in font nullfont!
@@ -8853,12 +8828,27 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no . in font nullfont!
-Missing character: There is no U in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no i in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no G in font nullfont!
 Missing character: There is no e in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no e in font nullfont!
@@ -8882,10 +8872,6 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no e in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
@@ -8957,11 +8943,13 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no v in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no r in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
-Missing character: There is no i in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no h in font nullfont!
-Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no S in font nullfont!
 Missing character: There is no o in font nullfont!
@@ -9125,7 +9113,7 @@ Missing character: There is no t in font nullfont!
 ! Undefined control sequence.
 \@footnotetext ...tins {\reset@font \footnotesize 
                                                   \interlinepenalty \interfo...
-l.86 ...or{ITILBuch} (\citeyear{Victor}), S. 80f.}
+l.85 ...or{ITILBuch} (\citeyear{Victor}), S. 80f.}
                                                   \footnote{Vgl. \citeauthor...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -9136,7 +9124,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \@footnotetext ...}\color@begingroup \@makefntext 
                                                   {\rule \z@ \footnotesep \i...
-l.86 ...or{ITILBuch} (\citeyear{Victor}), S. 80f.}
+l.85 ...or{ITILBuch} (\citeyear{Victor}), S. 80f.}
                                                   \footnote{Vgl. \citeauthor...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -9147,7 +9135,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> Vgl. \citeauthor 
                             {ITILBuch} (\citeyear {Victor}), S. 80f.
-l.86 ...or{ITILBuch} (\citeyear{Victor}), S. 80f.}
+l.85 ...or{ITILBuch} (\citeyear{Victor}), S. 80f.}
                                                   \footnote{Vgl. \citeauthor...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -9158,7 +9146,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> Vgl. \citeauthor {ITILBuch} (\citeyear 
                                                   {Victor}), S. 80f.
-l.86 ...or{ITILBuch} (\citeyear{Victor}), S. 80f.}
+l.85 ...or{ITILBuch} (\citeyear{Victor}), S. 80f.}
                                                   \footnote{Vgl. \citeauthor...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -9167,44 +9155,44 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (18.0556pt too wide) in paragraph at lines 86--86
+Overfull \hbox (18.0556pt too wide) in paragraph at lines 85--85
 [][]\OT1/cmr/m/n/10 Vgl.
  []
 
 
-Overfull \hbox (24.0278pt too wide) in paragraph at lines 86--86
+Overfull \hbox (24.0278pt too wide) in paragraph at lines 85--85
 \OT1/cmr/m/n/10 ITIL-
  []
 
 
-Overfull \hbox (22.36116pt too wide) in paragraph at lines 86--86
+Overfull \hbox (22.36116pt too wide) in paragraph at lines 85--85
 \OT1/cmr/m/n/10 Buch
  []
 
 
-Overfull \hbox (21.94447pt too wide) in paragraph at lines 86--86
+Overfull \hbox (21.94447pt too wide) in paragraph at lines 85--85
 \OT1/cmr/m/n/10 (Vic-
  []
 
 
-Overfull \hbox (19.47227pt too wide) in paragraph at lines 86--86
+Overfull \hbox (19.47227pt too wide) in paragraph at lines 85--85
 \OT1/cmr/m/n/10 tor),
  []
 
 
-Overfull \hbox (8.33336pt too wide) in paragraph at lines 86--86
+Overfull \hbox (8.33336pt too wide) in paragraph at lines 85--85
 \OT1/cmr/m/n/10 S.
  []
 
 
-Overfull \hbox (15.83339pt too wide) in paragraph at lines 86--86
+Overfull \hbox (15.83339pt too wide) in paragraph at lines 85--85
 \OT1/cmr/m/n/10 80f.| 
  []
 
 ! Undefined control sequence.
 \@footnotetext ...tins {\reset@font \footnotesize 
                                                   \interlinepenalty \interfo...
-l.86 ...hor{Victor} (\citeyear{Victor}), S. 26ff.}
+l.85 ...hor{Victor} (\citeyear{Victor}), S. 26ff.}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -9215,7 +9203,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \@footnotetext ...}\color@begingroup \@makefntext 
                                                   {\rule \z@ \footnotesep \i...
-l.86 ...hor{Victor} (\citeyear{Victor}), S. 26ff.}
+l.85 ...hor{Victor} (\citeyear{Victor}), S. 26ff.}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -9226,7 +9214,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> Vgl. \citeauthor 
                             {Victor} (\citeyear {Victor}), S. 26ff.
-l.86 ...hor{Victor} (\citeyear{Victor}), S. 26ff.}
+l.85 ...hor{Victor} (\citeyear{Victor}), S. 26ff.}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -9237,7 +9225,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> Vgl. \citeauthor {Victor} (\citeyear 
                                                 {Victor}), S. 26ff.
-l.86 ...hor{Victor} (\citeyear{Victor}), S. 26ff.}
+l.85 ...hor{Victor} (\citeyear{Victor}), S. 26ff.}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -9246,55 +9234,55 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (18.0556pt too wide) in paragraph at lines 86--86
+Overfull \hbox (18.0556pt too wide) in paragraph at lines 85--85
 [][]\OT1/cmr/m/n/10 Vgl.
  []
 
 
-Overfull \hbox (18.05557pt too wide) in paragraph at lines 86--86
+Overfull \hbox (18.05557pt too wide) in paragraph at lines 85--85
 \OT1/cmr/m/n/10 Vic-
  []
 
 
-Overfull \hbox (12.80559pt too wide) in paragraph at lines 86--86
+Overfull \hbox (12.80559pt too wide) in paragraph at lines 85--85
 \OT1/cmr/m/n/10 tor
  []
 
 
-Overfull \hbox (21.94447pt too wide) in paragraph at lines 86--86
+Overfull \hbox (21.94447pt too wide) in paragraph at lines 85--85
 \OT1/cmr/m/n/10 (Vic-
  []
 
 
-Overfull \hbox (19.47227pt too wide) in paragraph at lines 86--86
+Overfull \hbox (19.47227pt too wide) in paragraph at lines 85--85
 \OT1/cmr/m/n/10 tor),
  []
 
 
-Overfull \hbox (8.33336pt too wide) in paragraph at lines 86--86
+Overfull \hbox (8.33336pt too wide) in paragraph at lines 85--85
 \OT1/cmr/m/n/10 S.
  []
 
 
-Overfull \hbox (18.61118pt too wide) in paragraph at lines 86--86
+Overfull \hbox (18.61118pt too wide) in paragraph at lines 85--85
 \OT1/cmr/m/n/10 26ff.| 
  []
 
 
-Overfull \hbox (16.94452pt too wide) in paragraph at lines 85--87
+Overfull \hbox (16.94452pt too wide) in paragraph at lines 84--86
                                                                                
-                                                     [][] 
+                                                       [][] 
  []
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 89--89
+Overfull \hbox (20.0pt too wide) in paragraph at lines 88--88
 [] 
  []
 
 ! Undefined control sequence.
 <recently read> \enquote 
                          
-l.90 \item \enquote
+l.89 \item \enquote
                    {√úberpr√ºfung der Einhaltung des Dienstleistungsgegenstands
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -9497,7 +9485,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
+Missing character: There is no n in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
@@ -9553,14 +9541,14 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 96--96
+Overfull \hbox (20.0pt too wide) in paragraph at lines 95--95
 [] 
  []
 
 ! Undefined control sequence.
 <recently read> \enquote 
                          
-l.97 \item \enquote
+l.96 \item \enquote
                    {Reporting ‚Äì Beauskunftung gegen√ºber den Usern (Kunden)
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -9832,6 +9820,8 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no d in font nullfont!
@@ -9945,14 +9935,14 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 105--105
+Overfull \hbox (20.0pt too wide) in paragraph at lines 104--104
 [] 
  []
 
 ! Undefined control sequence.
 <recently read> \enquote 
                          
-l.106 \item \enquote
+l.105 \item \enquote
                     {√úberpr√ºfen der Kundenzufriedenheit, St√§rkung der Kun...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -10336,7 +10326,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
-l.114 \subsection
+l.113 \subsection
                  {Nachteile ohne Servie Desk}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -10750,7 +10740,7 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no k in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 114--117
+Overfull \hbox (20.0pt too wide) in paragraph at lines 113--116
 []
  []
 
@@ -10838,7 +10828,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
-Missing character: There is no W in font nullfont!
+Missing character: There is no w in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
@@ -11006,13 +10996,6 @@ Missing character: There is no h in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no e in font nullfont!
 Missing character: There is no w in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -11324,8 +11307,6 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no g in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no w in font nullfont!
@@ -11395,8 +11376,8 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no D in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no d in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no h in font nullfont!
@@ -11466,7 +11447,6 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no k in font nullfont!
 Missing character: There is no s in font nullfont!
-Missing character: There is no , in font nullfont!
 Missing character: There is no k in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
@@ -11589,7 +11569,7 @@ Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
 \@footnotetext ...tins {\reset@font \footnotesize 
                                                   \interlinepenalty \interfo...
-l.125 ...r{Olbrich} (\citeyear{Olbrich}), S. 26f.}
+l.124 ...r{Olbrich} (\citeyear{Olbrich}), S. 26f.}
                                                   \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -11600,7 +11580,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \@footnotetext ...}\color@begingroup \@makefntext 
                                                   {\rule \z@ \footnotesep \i...
-l.125 ...r{Olbrich} (\citeyear{Olbrich}), S. 26f.}
+l.124 ...r{Olbrich} (\citeyear{Olbrich}), S. 26f.}
                                                   \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -11611,7 +11591,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> Vgl. \citeauthor 
                             {Olbrich} (\citeyear {Olbrich}), S. 26f.
-l.125 ...r{Olbrich} (\citeyear{Olbrich}), S. 26f.}
+l.124 ...r{Olbrich} (\citeyear{Olbrich}), S. 26f.}
                                                   \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -11622,7 +11602,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> Vgl. \citeauthor {Olbrich} (\citeyear 
                                                  {Olbrich}), S. 26f.
-l.125 ...r{Olbrich} (\citeyear{Olbrich}), S. 26f.}
+l.124 ...r{Olbrich} (\citeyear{Olbrich}), S. 26f.}
                                                   \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -11631,42 +11611,42 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (18.0556pt too wide) in paragraph at lines 125--125
+Overfull \hbox (18.0556pt too wide) in paragraph at lines 124--124
 [][]\OT1/cmr/m/n/10 Vgl.
  []
 
 
-Overfull \hbox (13.88892pt too wide) in paragraph at lines 125--125
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 124--124
 \OT1/cmr/m/n/10 Ol-
  []
 
 
-Overfull \hbox (21.97226pt too wide) in paragraph at lines 125--125
+Overfull \hbox (21.97226pt too wide) in paragraph at lines 124--124
 \OT1/cmr/m/n/10 brich
  []
 
 
-Overfull \hbox (17.77782pt too wide) in paragraph at lines 125--125
+Overfull \hbox (17.77782pt too wide) in paragraph at lines 124--124
 \OT1/cmr/m/n/10 (Ol-
  []
 
 
-Overfull \hbox (28.63895pt too wide) in paragraph at lines 125--125
+Overfull \hbox (28.63895pt too wide) in paragraph at lines 124--124
 \OT1/cmr/m/n/10 brich),
  []
 
 
-Overfull \hbox (8.33336pt too wide) in paragraph at lines 125--125
+Overfull \hbox (8.33336pt too wide) in paragraph at lines 124--124
 \OT1/cmr/m/n/10 S.
  []
 
 
-Overfull \hbox (15.83339pt too wide) in paragraph at lines 125--125
+Overfull \hbox (15.83339pt too wide) in paragraph at lines 124--124
 \OT1/cmr/m/n/10 26f.| 
  []
 
 
-Overfull \hbox (8.47226pt too wide) in paragraph at lines 124--126
+Overfull \hbox (8.47226pt too wide) in paragraph at lines 123--125
                                            [] 
  []
 
@@ -11750,6 +11730,7 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no l in font nullfont!
+Missing character: There is no - in font nullfont!
 Missing character: There is no b in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no i in font nullfont!
@@ -11791,6 +11772,7 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no - in font nullfont!
 Missing character: There is no k in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no m in font nullfont!
@@ -11948,7 +11930,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no m in font nullfont!
+Missing character: There is no n in font nullfont!
 Missing character: There is no K in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no n in font nullfont!
@@ -12261,7 +12243,6 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
-Missing character: There is no e in font nullfont!
 Missing character: There is no w in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no c in font nullfont!
@@ -12788,5 +12769,5 @@ Here is how much of TeX's memory you used:
  3468 multiletter control sequences out of 15000+200000
  3948 words of font info for 15 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 24i,5n,22p,1666b,152s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 24i,5n,22p,1633b,152s stack positions out of 5000i,500n,10000p,200000b,50000s
 !  ==> Fatal error occurred, no output PDF file produced!

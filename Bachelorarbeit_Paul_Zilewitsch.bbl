@@ -26,9 +26,8 @@ Martin Andenmatten.
   28.06.2011.
 \newblock abgerufen am: 10.05.2016.
 
-\bibitem[{Buchsein, R., Victor, F., G{\"u}nther, H., Machmeier,
-  V.}(2007)]{Buchsein}
-{Buchsein, R., Victor, F., G{\"u}nther, H., Machmeier, V.}
+\bibitem[{Buchsein, R. et al.}(2007)]{Buchsein}
+{Buchsein, R. et al.}
 \newblock \emph{IT-Management mit ITIL{\textregistered} V3: Strategien,
   Kennzahlen, Umsetzung}.
 \newblock Vieweg+Teubner Verlag, 2 edition, 2007.
@@ -39,19 +38,19 @@ N.~Ebel.
   Zertifizierungsvorbereitung f{\"u}r die ITIL-Foundation-Pr{\"u}fung}.
 \newblock Pearson Deutschland, 2008.
 
-\bibitem[9000(2005)]{ISO9000}
-DIN EN~ISO 9000.
+\bibitem[{DIN EN ISO 9000}(2005)]{ISO9000}
+{DIN EN ISO 9000}.
 \newblock \emph{DIN EN ISO 9000 (2005) : Qualitätsmanagementsysteme -
   Grundlagen und Begriffe.}
 \newblock Berlin, 2005.
 
-\bibitem[{Cannon, D., Wheeldon, D.}(2007)]{Cannon}
-{Cannon, D., Wheeldon, D.}
+\bibitem[{Cannon, D. / Wheeldon, D.}(2007)]{Cannon}
+{Cannon, D. / Wheeldon, D.}
 \newblock \emph{Service Operation}.
 \newblock The Stationery Office (TSO), 2007.
 
-\bibitem[{Meier, A., Myrach, T.}(2004)]{Meier}
-{Meier, A., Myrach, T.}
+\bibitem[{Meier, A. / Myrach, T.}(2004)]{Meier}
+{Meier, A. / Myrach, T.}
 \newblock \emph{IT-Servicemanagement in deutschen Unternehmen - Ergebnisse
   einer empirischen Studie zu ITIL}.
 \newblock dpunkt.verlag.Heidelberg, 2004.
@@ -62,13 +61,13 @@ Wikipedia.
 \newblock \url{https://de.wikipedia.org/wiki/Servicedesk}, 09.05.2016.
 \newblock abgerufen am: 24.05.2016.
 
-\bibitem[{Steinbaerg, R. A., Orr, A. T.}(2011)]{ITILBuch}
-{Steinbaerg, R. A., Orr, A. T.}
+\bibitem[{Steinbaerg, R. A. / Orr, A. T.}(2011)]{ITILBuch}
+{Steinbaerg, R. A. / Orr, A. T.}
 \newblock \emph{ITIL Service Operation 2011}.
 \newblock The Stationery Office Ltd, 2011 ed. edition, 2011.
 
-\bibitem[{Victor, F., G{\"u}nther, H.}(2005)]{Victor}
-{Victor, F., G{\"u}nther, H.}
+\bibitem[{Victor, F. / G{\"u}nther, H.}(2005)]{Victor}
+{Victor, F. / G{\"u}nther, H.}
 \newblock \emph{Optimiertes IT-Management mit ITIL}.
 \newblock Springer Fachmedien Wiesbaden, 2 edition, 2005.
 
@@ -138,8 +137,8 @@ T.~Joos.
 \newblock \emph{Microsoft Exchange Server 2013}.
 \newblock O'Reilly, Deutschland, 2014.
 
-\bibitem[{Ellis, C. A., Gibbs, S. J., Rein, G. L.}(1991)]{Ellis}
-{Ellis, C. A., Gibbs, S. J., Rein, G. L.}
+\bibitem[{Ellis, C. A. / Gibbs, S. J. / Rein, G. L.}(1991)]{Ellis}
+{Ellis, C. A. / Gibbs, S. J. / Rein, G. L.}
 \newblock \emph{Groupware - Some Issues and Experiences. Communications of the
   ACM}.
 \newblock ACM New York, NY, USA, 1991.
@@ -154,10 +153,8 @@ U.~Schneider.
 \newblock \emph{Taschenbuch der Informatik: mit 108 Tabellen}.
 \newblock Fachbuchverl. Leipzig im Carl-Hanser-Verlag, 7 edition, 2012.
 
-\bibitem[{Volodarsky, M., Cheah, B., Londer, O., Hill, B., Schofield, S.,
-  Aguilar Mares, C., Meyer, K.}(2009)]{Volodarsky}
-{Volodarsky, M., Cheah, B., Londer, O., Hill, B., Schofield, S., Aguilar Mares,
-  C., Meyer, K.}
+\bibitem[{Volodarsky, M. et al.}(2009)]{Volodarsky}
+{Volodarsky, M. et al.}
 \newblock \emph{Microsoft Internetinformations-dienste (IIS) 7.0 – Die
   technische Referenz}.
 \newblock Microsoft Press Deutschland, 2009.
@@ -185,8 +182,8 @@ Microsoft.
   {\natexlab{a}}.
 \newblock abgerufen am: 15.06.2016.
 
-\bibitem[{Schill, A., Springer, T.}(2012)]{Schill}
-{Schill, A., Springer, T.}
+\bibitem[{Schill, A. / Springer, T.}(2012)]{Schill}
+{Schill, A. / Springer, T.}
 \newblock \emph{Verteilte Systeme: Grundlagen und Basistechnologien}.
 \newblock Springer Berlin Heidelberg, 2012.
 
@@ -231,8 +228,8 @@ Microsoft.
   {\natexlab{c}}.
 \newblock abgerufen am: 21.06.2016.
 
-\bibitem[{Eilebrecht, K., Starke, G.}(2013)]{PatternsKompakt}
-{Eilebrecht, K., Starke, G.}
+\bibitem[{Eilebrecht, K. / Starke, G.}(2013)]{PatternsKompakt}
+{Eilebrecht, K. / Starke, G.}
 \newblock \emph{Patterns Kompakt - Entwurfsmuster für effektive
   Software-Entwicklung}.
 \newblock Springer-Verlag Berlin Heidelberg, 4 edition, 2013.
@@ -248,8 +245,8 @@ Microsoft.
 \newblock \url{https://msdn.microsoft.com/de-de/library/0yd65esw.aspx}.
 \newblock abgerufen am: 27.06.2016.
 
-\bibitem[{Vivenzio, A., Vivenzio, D.}(2012)]{Vivenzio}
-{Vivenzio, A., Vivenzio, D.}
+\bibitem[{Vivenzio, A. / Vivenzio, D.}(2012)]{Vivenzio}
+{Vivenzio, A. / Vivenzio, D.}
 \newblock \emph{Testmanagement bei SAP-Projekten: Erfolgreich Planen , Steuern,
   Reporten bei der Einf{\"u}hrung von SAP-Banking}.
 \newblock Springer Fachmedien Wiesbaden, 2012.

@@ -25,7 +25,7 @@
 
 @book{Buchsein,
   title={IT-Management mit ITIL{\textregistered} V3: Strategien, Kennzahlen, Umsetzung},
-  author={{Buchsein, R., Victor, F., G{\"u}nther, H., Machmeier, V.}},
+  author={{Buchsein, R. et al.}},
   year={2007},
   Edition = {2}, 
   publisher={Vieweg+Teubner Verlag}
@@ -34,7 +34,7 @@
 
 @book{Victor,
   title={Optimiertes IT-Management mit ITIL},
-  author={{Victor, F., G{\"u}nther, H.}},
+  author={{Victor, F. / G{\"u}nther, H.}},
   year={2005},
   Edition = {2}, 
   publisher={Springer Fachmedien Wiesbaden}
@@ -49,7 +49,7 @@
 
 @book{ISO9000,
   title={DIN EN ISO 9000 (2005) : Qualitätsmanagementsysteme - Grundlagen und Begriffe.},
-  author={DIN EN ISO 9000},
+  author={{DIN EN ISO 9000}},
   year={2005},
   publisher={Berlin}
 }
@@ -72,28 +72,28 @@
 
 @book{Cannon,
   title={Service Operation},
-  author={{Cannon, D.,  Wheeldon, D.}},
+  author={{Cannon, D. / Wheeldon, D.}},
   year={2007},
   publisher={The Stationery Office (TSO)}
 }
 
 @book{Meier,
   title={IT-Servicemanagement in deutschen Unternehmen - Ergebnisse einer empirischen Studie zu ITIL},
-  author={{Meier, A., Myrach, T.}},
+  author={{Meier, A. / Myrach, T.}},
   year={2004},
   publisher={dpunkt.verlag.Heidelberg}
 }
 
 @book{Volodarsky,
   title={Microsoft Internetinformations-dienste (IIS) 7.0 – Die technische Referenz},
-  author={{Volodarsky, M., Cheah, B., Londer, O., Hill, B., Schofield, S., Aguilar Mares, C., Meyer, K.}},
+  author={{Volodarsky, M. et al.}},
   year={2009},
   publisher={Microsoft Press Deutschland}
 }
 
 @book{Ellis,
   title={Groupware - Some Issues and Experiences. Communications of the ACM},
-  author={{Ellis, C. A., Gibbs, S. J., Rein, G. L.}},
+  author={{Ellis, C. A. / Gibbs, S. J. / Rein, G. L.}},
   year={1991},
   publisher={ACM New York, NY, USA}
 }
@@ -115,14 +115,14 @@
 
 @book{Schill,
   title={Verteilte Systeme: Grundlagen und Basistechnologien},
-  author={{Schill, A., Springer, T.}},
+  author={{Schill, A. / Springer, T.}},
   year={2012},
   publisher={Springer Berlin Heidelberg}
 }
 
 @book{ITILBuch,
   title={ITIL Service Operation 2011},
-  author={{Steinbaerg, R. A., Orr, A. T.}},
+  author={{Steinbaerg, R. A. / Orr, A. T.}},
   year={2011},
   edition = {2011 ed.},
   publisher={The Stationery Office Ltd}
@@ -130,7 +130,7 @@
 
 @book{PatternsKompakt,
   title={Patterns Kompakt - Entwurfsmuster für effektive Software-Entwicklung},
-  author={{Eilebrecht, K., Starke, G.}},
+  author={{Eilebrecht, K. / Starke, G.}},
   year={2013},
   edition = {4},
   publisher={Springer-Verlag Berlin Heidelberg}
@@ -159,8 +159,8 @@
 }
 
 @book{Vivenzio,
-  title={Testmanagement bei SAP-Projekten: Erfolgreich Planen • Steuern • Reporten bei der Einf{\"u}hrung von SAP-Banking},
-  author={{Vivenzio, A., Vivenzio, D.}},
+  title={Testmanagement bei SAP-Projekten: Erfolgreich Planen , Steuern, Reporten bei der Einf{\"u}hrung von SAP-Banking},
+  author={{Vivenzio, A. / Vivenzio, D.}},
   year={2012},
   publisher={Springer Fachmedien Wiesbaden}
 }
@@ -325,7 +325,7 @@
 
 @misc{Ranking3,
   title = {The Best Help Desk Software of 2016},
-  author = {Oliver Haslam },
+  author = {Oliver Haslam},
   howpublished = {\url{http://uk.pcmag.com/software/70330/guide/the-best-help-desk-software-of-2016}},
   year ={22.03.2016},
   note = {abgerufen am: 20.06.2016}

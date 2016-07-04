@@ -31,7 +31,7 @@
 \contentsline {subsubsection}{\numberline {5.2.2}Derzeitige Verwendung in GEBman 10}{26}
 \contentsline {section}{\numberline {6}Konzipierung}{27}
 \contentsline {subsection}{\numberline {6.1}Vorbetrachtung}{27}
-\contentsline {subsection}{\numberline {6.2}Zielsetzung und Grundidee Module-Service }{28}
+\contentsline {subsection}{\numberline {6.2}Zielsetzung und Grundidee Module Service }{28}
 \contentsline {subsection}{\numberline {6.3}UML - Modellierung}{29}
 \contentsline {subsection}{\numberline {6.4}Sicherheitsaspekte}{33}
 \contentsline {section}{\numberline {7}Umsetzung}{35}

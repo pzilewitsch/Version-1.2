@@ -1,15 +1,17 @@
 % !TEX root = Bachelorarbeit_Paul_Zilewitsch.tex
+
 \begin{flushright}
 Anhang 1\\
 Blatt 1\\
 \end{flushright}
 
-\noindent Einige Exchange Verbindungen
-\begin{flushleft}
+\begin{figure}[h!]
+\centering
 \includegraphics[width=0.65\textwidth]{Abbildungen/Exchange_Verbindungen.png}
-\end{flushleft}
+\caption*{Exchange Verbindungen, Quelle: http://www.msxfaq.de/basics/excomm.htm}
 \label{Exchange Verbindung}
-\noindent Quelle: http://www.msxfaq.de/basics/excomm.htm
+\end{figure}
+
 
 \newpage
 
