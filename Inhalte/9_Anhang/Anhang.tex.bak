@@ -7,9 +7,9 @@ Blatt 1\\
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.65\textwidth]{Abbildungen/Exchange_Verbindungen.png}
-\caption*{Exchange Verbindungen, Quelle: http://www.msxfaq.de/basics/excomm.htm}
-\label{Exchange Verbindung}
+\includegraphics[width=0.70\textwidth]{Abbildungen/Exchange_Verbindungen.png}
+\caption*{\\Exchange Verbindungen, Quelle: http://www.msxfaq.de/basics/excomm.htm}
+\label{Exchange_Verbindungen}
 \end{figure}
 
 
@@ -17,57 +17,78 @@ Blatt 1\\
 
 \begin{flushright}
 Anhang 2\\
-Blatt 2\\
+Blatt 1\\
 \end{flushright}
 
-\noindent Übersicht verschiedener APIs
-\begin{flushleft}
-\includegraphics[width=1.0\textwidth]{Abbildungen/API_1.png}
-\end{flushleft}
-\label{API_1}
-\begin{flushleft}
-\includegraphics[width=1.0\textwidth]{Abbildungen/API_2.png}
-\end{flushleft}
-\noindent Quelle: http://www.msxfaq.de/code/wege.htm
+\begin{figure}[h!]
+\includegraphics[width=1.0\textwidth]{Abbildungen/API_Geschichte.pdf}
+\caption*{\\Geschichte der APIs, Quelle: http://www.msxfaq.de/code/wege.htm}
+\label{API_Geschichte}
+\end{figure}
 
 \newpage
 
 \begin{flushright}
 Anhang 3\\
-Blatt 3\\
-\label{Anhang3}
+Blatt 1\\
+\label{Anhang3_1}
 \end{flushright}
 
-\noindent Screenshots der Service Desk-Softwarelösungen \\\\
-\noindent Freshdesk
-\begin{flushleft}
-\includegraphics[width=1.0\textwidth]{Abbildungen/Freshdesk.png}
-\end{flushleft}
-\noindent Quelle: https://kmscomputergmbh.freshdesk.com/helpdesk/dashboard \\\\
+\begin{figure}[h!]
+\includegraphics[width=0.85\textwidth]{Abbildungen/Freshdesk.pdf}
+\caption*{Screenshot Freshdesk Dashboard, \newline
+Quelle: https://kmscomputergmbh.freshdesk.com/helpdesk/dashboard}
+\label{Freshdesk}
+\end{figure}
 
-\noindent Desk.com
-\begin{flushleft}
-\includegraphics[width=1.0\textwidth]{Abbildungen/Deskcom.png}
-\end{flushleft}
-\noindent Quelle: https://kmscomputergmbh.desk.com/web/agent \\\\
 
-\noindent Zendesk
-\begin{flushleft}
-\includegraphics[width=1.0\textwidth]{Abbildungen/Zendesk.png}
-\end{flushleft}
-\noindent Quelle: https://kmscomputergmbh.zendesk.com/agent/discovery\\\\
 
-\noindent SysAid
-\begin{flushleft}
-\includegraphics[width=1.0\textwidth]{Abbildungen/SysAid.png}
-\end{flushleft}
-\noindent Quelle: http://gebmanhelp.gebman.com:8080/HelpDesk.jsp?helpdeskfrm\&fromId\=List
+\begin{figure}[h!]
+\includegraphics[width=0.85\textwidth]{Abbildungen/Deskcom.pdf}
+\caption*{Screenshot Desk.com Dashboard,Quelle: https://kmscomputergmbh.desk.com/web/agent}
+\label{Deskcom}
+\end{figure}
+
 \newpage
 
 \begin{flushright}
-Anhang 4\\
-Blatt 6\\
+Anhang 3\\
+Blatt 2\\
+\label{Anhang3_2}
 \end{flushright}
+
+
+\begin{figure}[h!]
+\includegraphics[width=0.85\textwidth]{Abbildungen/Zendesk.pdf}
+\caption*{Screenshot Zendesk Dashboard, \newline
+Quelle: https://kmscomputergmbh.zendesk.com/agent/discovery}
+\label{Zendesk}
+\end{figure}
+
+\begin{figure}[h!]
+\includegraphics[width=0.85\textwidth]{Abbildungen/SysAid.pdf}
+\caption*{Screenshot SysAid Dashboard, \newline
+Quelle: http://gebmanhelp.gebman.com:8080/HelpDesk.jsp?helpdeskfrm\&fromId\=List}
+\label{SysAid}
+\end{figure}
+
+\newpage
+
+
+\begin{flushright}
+Anhang 4\\
+Blatt 1\\
+\label{Anhang4}
+\end{flushright}
+
+
+\begin{figure}[h!]
+\includegraphics[width=0.9\textwidth]{Abbildungen/Codeausschnitt.png}
+	\caption*{Codeausschnitt \textit{GetMails( )}, Quelle: eigene Darstellung}
+	\label{Codeausschnitt}
+\end{figure}
+
+
 
 
 

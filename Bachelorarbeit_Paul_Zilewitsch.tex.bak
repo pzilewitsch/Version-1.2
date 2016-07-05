@@ -72,7 +72,9 @@ Ziel der vorliegenden Arbeit ist es...
 %-------------------------------------------------------------------------------------------------------
 \addsec{Abbildungsverzeichnis} %vergebe keine Kapitelnummer
 \vspace*{-1cm}
+\begin{spacing}{1.8}
 \listoffigures
+\end{spacing}
 \newpage
 
 %-------------------------------------------------------------------------------------------------------
@@ -99,7 +101,9 @@ Ziel der vorliegenden Arbeit ist es...
 %-------------------------------------------------------------------------------------------------------
 \addsec{Tabellenverzeichnis} %vergebe keine Kapitelnummer
 \vspace*{-1cm}
+\begin{spacing}{1.8}
 \listoftables
+\end{spacing}
 \newpage
 
 %-------------------------------------------------------------------------------------------------------
@@ -169,12 +173,19 @@ Ziel der vorliegenden Arbeit ist es...
 %-------------------------------------------------------------------------------------------------------
 \addsec{Anhangsverzeichnis} %vergebe keine Kapitelnummer
 
+\begin{flushleft}
 \begin{tabularx}{\textwidth}{Xr}
-	\addlinespace[1em]
-	Exchange Verbindung \dotfill   &   \pageref{Exchange Verbindung}\\
-	\nameref{API_1} \dotfill   &   \pageref{API_1}\\
+	%\addlinespace[1em]
+	Exchange Verbindungen \dotfill   &   \pageref{Exchange_Verbindungen}\\
+	Geschichte der APIs \dotfill   &   \pageref{API_Geschichte}\\
+	Screeshot Freshdesk Dashboard \dotfill   &   \pageref{Freshdesk}\\
+	Screeshot Desk.com Dashboard  \dotfill   &   \pageref{Deskcom}\\
+	Screeshot Zendesk Dashboard  \dotfill   &   \pageref{Zendesk}\\
+	Screeshot SysAid Dashboard  \dotfill   &   \pageref{SysAid}\\
+	Codeausschnitt GetMails( )  \dotfill   &   \pageref{Codeausschnitt}\\
 \end{tabularx}
-	
+\end{flushleft}
+
 \newpage
 
 %-------------------------------------------------------------------------------------------------------
