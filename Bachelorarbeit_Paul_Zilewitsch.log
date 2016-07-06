@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.14)  6 JUL 2016 16:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.14)  6 JUL 2016 21:38
 entering extended mode
 **./Bachelorarbeit_Paul_Zilewitsch.tex
 (Bachelorarbeit_Paul_Zilewitsch.tex
@@ -1322,13 +1322,13 @@ File: Abbildungen/ITIL_Lebenszyklus.png Graphic file (type png)
 Package pdftex.def Info: Abbildungen/ITIL_Lebenszyklus.png used on input line 2
 8.
 (pdftex.def)             Requested size: 227.62206pt x 227.61984pt.
- [5 <./Abbildungen/ITIL_Lebenszyklus.png>] <Abbildungen/SPOC_2.png, id=42, 426.
-84468pt x 117.43875pt>
-File: Abbildungen/SPOC_2.png Graphic file (type png)
+ [5 <./Abbildungen/ITIL_Lebenszyklus.png>] <Abbildungen/SPOC_3.png, id=42, 809.
+27344pt x 368.1253pt>
+File: Abbildungen/SPOC_3.png Graphic file (type png)
 
-<use Abbildungen/SPOC_2.png>
-Package pdftex.def Info: Abbildungen/SPOC_2.png used on input line 39.
-(pdftex.def)             Requested size: 341.43307pt x 93.94572pt.
+<use Abbildungen/SPOC_3.png>
+Package pdftex.def Info: Abbildungen/SPOC_3.png used on input line 39.
+(pdftex.def)             Requested size: 318.66948pt x 144.96133pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 41--41
 [][][]|\T1/ptm/m/n/12 Sin-gle Point of Con-tact, Quelle:http://edoc.hu-berlin.d
@@ -1340,7 +1340,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--47
 
  []
 
-[6 <./Abbildungen/SPOC_2.png>] [7]
+[6 <./Abbildungen/SPOC_3.png>] [7]
 Underfull \hbox (badness 10000) in paragraph at lines 108--110
 
  []
@@ -1545,10 +1545,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--93
  []
 
 [21]) [22] (Inhalte/5_Microsoft_Exchange_Server/MES.tex
-
-LaTeX Warning: Reference `Exchange Verbindung' on page 23 undefined on input li
-ne 9.
-
 <Abbildungen/RPC_TCP.pdf, id=104, 844.65562pt x 596.98032pt>
 File: Abbildungen/RPC_TCP.pdf Graphic file (type pdf)
 
@@ -1773,43 +1769,44 @@ File: Abbildungen/Exchange_Verbindungen.png Graphic file (type png)
 Package pdftex.def Info: Abbildungen/Exchange_Verbindungen.png used on input li
 ne 10.
 (pdftex.def)             Requested size: 318.66948pt x 444.47578pt.
- [42 <./Abbildungen/Exchange_Verbindungen.png>]
-<Abbildungen/API_Geschichte.pdf, id=509, 1161.33875pt x 772.8875pt>
-File: Abbildungen/API_Geschichte.pdf Graphic file (type pdf)
+ [42 <./Abbildungen/Exchange_Verbindungen.png>] <Abbildungen/API_Geschichte2.pd
+f, id=509, 614.295pt x 794.97pt>
+File: Abbildungen/API_Geschichte2.pdf Graphic file (type pdf)
 
-<use Abbildungen/API_Geschichte.pdf>
-Package pdftex.def Info: Abbildungen/API_Geschichte.pdf used on input line 24.
-(pdftex.def)             Requested size: 455.24411pt x 302.96983pt.
- [43 <./Abbildungen/API_Geschichte.pdf>]
-<Abbildungen/Freshdesk.pdf, id=515, 845.0471pt x 597.51233pt>
+<use Abbildungen/API_Geschichte2.pdf>
+Package pdftex.def Info: Abbildungen/API_Geschichte2.pdf used on input line 24.
+
+(pdftex.def)             Requested size: 455.24411pt x 589.14197pt.
+ [43 <./Abbildungen/API_Geschichte2.pdf>]
+<Abbildungen/Freshdesk.pdf, id=519, 845.0471pt x 597.51233pt>
 File: Abbildungen/Freshdesk.pdf Graphic file (type pdf)
 
 <use Abbildungen/Freshdesk.pdf>
 Package pdftex.def Info: Abbildungen/Freshdesk.pdf used on input line 38.
 (pdftex.def)             Requested size: 386.96027pt x 273.60994pt.
 
-<Abbildungen/Deskcom.pdf, id=516, 845.0471pt x 597.51233pt>
+<Abbildungen/Deskcom.pdf, id=520, 845.0471pt x 597.51233pt>
 File: Abbildungen/Deskcom.pdf Graphic file (type pdf)
 
 <use Abbildungen/Deskcom.pdf>
 Package pdftex.def Info: Abbildungen/Deskcom.pdf used on input line 47.
 (pdftex.def)             Requested size: 386.96027pt x 273.60994pt.
  [44 <./Abbildungen/Freshdesk.pdf> <./Abbildungen/Deskcom.pdf>] <Abbildungen/Ze
-ndesk.pdf, id=526, 845.0471pt x 597.51233pt>
+ndesk.pdf, id=530, 845.0471pt x 597.51233pt>
 File: Abbildungen/Zendesk.pdf Graphic file (type pdf)
 
 <use Abbildungen/Zendesk.pdf>
 Package pdftex.def Info: Abbildungen/Zendesk.pdf used on input line 62.
 (pdftex.def)             Requested size: 386.96027pt x 273.60994pt.
 
-<Abbildungen/SysAid.pdf, id=527, 845.0471pt x 597.51233pt>
+<Abbildungen/SysAid.pdf, id=531, 845.0471pt x 597.51233pt>
 File: Abbildungen/SysAid.pdf Graphic file (type pdf)
 
 <use Abbildungen/SysAid.pdf>
 Package pdftex.def Info: Abbildungen/SysAid.pdf used on input line 69.
 (pdftex.def)             Requested size: 386.96027pt x 273.60994pt.
  [45 <./Abbildungen/Zendesk.pdf> <./Abbildungen/SysAid.pdf>] <Abbildungen/Codea
-usschnitt.png, id=538, 624.08156pt x 455.45157pt>
+usschnitt.png, id=542, 624.08156pt x 455.45157pt>
 File: Abbildungen/Codeausschnitt.png Graphic file (type png)
 
 <use Abbildungen/Codeausschnitt.png>
@@ -1864,10 +1861,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 13369 strings out of 493634
- 197377 string characters out of 3147820
+ 13368 strings out of 493634
+ 197361 string characters out of 3147820
  367890 words of memory out of 3000000
- 16412 multiletter control sequences out of 15000+200000
+ 16411 multiletter control sequences out of 15000+200000
  71568 words of font info for 117 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  57i,18n,51p,1697b,477s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1875,10 +1872,10 @@ Here is how much of TeX's memory you used:
 ype1/public/amsfonts/symbols/msam10.pfb><F:/Texmaker/mitex/fonts/type1/urw/time
 s/utmb8a.pfb><F:/Texmaker/mitex/fonts/type1/urw/times/utmr8a.pfb><F:/Texmaker/m
 itex/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Bachelorarbeit_Paul_Zilewitsch.pdf (56 pages, 3277742 bytes).
+Output written on Bachelorarbeit_Paul_Zilewitsch.pdf (56 pages, 3452754 bytes).
 
 PDF statistics:
- 570 PDF objects out of 1000 (max. 8388607)
+ 574 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  96 words of extra memory for PDF output out of 10000 (max. 10000000)
 
