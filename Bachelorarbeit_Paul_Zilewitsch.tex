@@ -10,10 +10,9 @@
 %-------------------------------------------------------------------------------------------------------
 \thispagestyle{empty}
 \large
-	%noindent = kein absatzeinzug
 	\noindent Berufsakademie Sachsen \hfill KMS Computer GmbH\\
-	Staatliche Studienakademie Dresden \\
-	Studiengang Informationstechnik
+	Staatliche Studienakademie Dresden\\
+	Studiengang Informationstechnik 
 \begin{center}	
 	\vspace*{4cm}
 	\textbf{Konzipierung und prototypische Entwicklung einer E-Mail Integration auf Basis der Microsoft Exchange Web Services im Service Desk der CAFM Software GEBman 10}\\
@@ -23,7 +22,7 @@
 	eingereicht von:\\Zilewitsch, Paul
 	\vspace*{3cm}
 \end{center}
-	1. Gutachter: Dr. rer. nat., Dipl.-Chem. Hansi Schilling\\
+	1. Gutachter: Dr. rer. nat. Dipl.-Chem. Hansi Schilling\\
 	2. Gutachter: B.Sc. Sebastian Schulze 
 	\\\\
 	\begin{tabular}{@{}ll}
@@ -34,7 +33,7 @@
 
 
 %-------------------------------------------------------------------------------------------------------
-%					Auftragsblatt lose hineinlegen, wird aber mitgezählt
+%					Auftragsblatt wird mit abgeheftet und mitgezählt
 %-------------------------------------------------------------------------------------------------------
 
 
@@ -50,10 +49,11 @@ Autorenreferat
 \newline\newline
 \noindent
 ZILEWITSCH, Paul: Konzipierung und prototypische Entwicklung einer E-mail Integration auf Basis der Microsoft Exchange Web Services im Service Desk der CAFM Software GEBman 10,  Berufsakademie Sachsen, Staatliche Studienakademie Dresden, Studiengang Informationstechnik, Bachelorarbeit, 2016.\\ 
-XXX Seiten, XXX Literaturquellen , XXX Anlagen. \\\\\\
+41 Seiten, 42 Literaturquellen , 4 Anlagen. \\\\\\\\
 
 \noindent
-Ziel der vorliegenden Arbeit ist es...
+Die KMS Computer GmbH entwickelt seit 2011 die Webanwendung GEBman 10. Diese Webanwendung besitzt über 40 Module. Eines davon ist das Modul Service Desk. Ziel der vorliegenden Arbeit ist es, Verbesserungsmöglichkeiten dieses Service Desk-Moduls festzuhalten. Dadurch könnte es als Service Desk-Softwarelösung des Supports der KMS Computer GmbH dienen und auf eine externe Lösung verzichtet werden kann. Hierfür werden verschiedene, auf dem Markt befindlichen, Service Desk-Softwarelösungen analysiert und ausgewertet, um anschießend Verbesserungsmöglichkeiten für das Service Desk-Modul identifizieren zu können.\newline
+Außerdem soll die E-Mail Integration des Service Desk-Moduls erweitert werden. Dabei wird auf die bereits vorhandenen Funktionalitäten in GEBman 10 zurückgegriffen, die auf den Microsoft Exchange Web Services basieren.
 
 \newpage
 
@@ -82,17 +82,17 @@ Ziel der vorliegenden Arbeit ist es...
 %------------------------------------------------------------------------------------------------------
 \addsec{Abkürzungsverzeichnis} %vergebe keine Kapitelnummer
 \begin{itemize}[leftmargin=*] 
-\item[1] CAFM \tabto{3cm} Computer-Aided Facility Management
-\item[2] ITIL \tabto{3cm} Information Technology Infrastructure Library
-\item[3] HTTP \tabto{3cm} Hypertext Transfer Protocol
-\item[4] HTTPS \tabto{3cm} Hypertext Transfer Protocol Secure
-\item[5] API \tabto{3cm} Application Programming Interface
-\item[6] REST API \tabto{3cm} Representational State Transfer Application Programming Interface
-\item[7] SOAP \tabto{3cm} Simple Object Access Protocol
-\item[8] XML \tabto{3cm} Extensible Markup Language
-\item[9] SPoC \tabto{3cm} Single Point of Contact
-\item[10] UML \tabto{3cm} Unifed Modeling Language
-\item[11] XSS \tabto{3cm} Cross-Site-Scripting
+\item[] API \tabto{3cm} Application Programming Interface
+\item[] CAFM \tabto{3cm} Computer-Aided Facility Management
+\item[] HTTP \tabto{3cm} Hypertext Transfer Protocol
+\item[] HTTPS \tabto{3cm} Hypertext Transfer Protocol Secure
+\item[] ITIL \tabto{3cm} Information Technology Infrastructure Library
+\item[] REST API \tabto{3cm} Representational State Transfer Application Programming Interface
+\item[] SOAP \tabto{3cm} Simple Object Access Protocol
+\item[] SPoC \tabto{3cm} Single Point of Contact
+\item[] UML \tabto{3cm} Unifed Modeling Language
+\item[] XML \tabto{3cm} Extensible Markup Language
+\item[] XSS \tabto{3cm} Cross-Site-Scripting
 \end{itemize}
 \newpage
 
@@ -197,11 +197,18 @@ Ziel der vorliegenden Arbeit ist es...
 \newpage
 
 %-------------------------------------------------------------------------------------------------------
-%					10 Literaturverzeichnis
+%					Literaturverzeichnis
 %-------------------------------------------------------------------------------------------------------
 
-%\addsec{Literaturverzeichnis} %vergebe keine Kapitelnummer
 \addcontentsline{toc}{section}{Literaturverzeichnis}
 \bibliography{literatur}
+
+
+%-------------------------------------------------------------------------------------------------------
+%					10 Eidestaatliche Erklärung
+%-------------------------------------------------------------------------------------------------------
+
+\newpage
+ \input{Inhalte/10_Eid/Eid}
 
 \end{document}

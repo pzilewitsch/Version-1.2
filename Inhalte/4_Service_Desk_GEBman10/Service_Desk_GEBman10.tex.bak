@@ -44,8 +44,7 @@ Bevor man den Service Desk nutzt, ist es sinnvoll, die drei Standardkataloge fü
 \noindent
 Wenn ein Mitarbeiter beim Erstellen einer Meldung informiert werden soll, so muss zunächst im Modul Verwaltung der entsprechende Exchange Server dafür konfiguriert werden. Hierfür muss der Benutzer unter Einstellungen und dann die Rubrik Groupware wählen. Die Einrichtung des Exchange Servers gestaltet sich wie üblich mit den Kontodaten und der verwendeten Exchange Server Version.\newline
 Interessanter gestaltet sich die Konfiguration der Events. Hier können Events erstellt werden, bei denen eine Mail von an dem zuvor erstellten Server an eine beliebige Person geschickt werden kann. Ein Beispielszenario für das Modul Service Desk:\newline
-Bei dem Service Desk bietet es sich an, die Meldungen für einen möglichen Eventauslöser zu bestimmen. Es kann entschieden werden, ob beim Erstellen, Bearbeiten, Löschen oder bei einer Wertänderung dieser Meldung eine Mail verschickt werden soll. Dafür müssen noch ein Betreff und eine Beschreibung der Mail eingetragen werden. GEBman 10 besitzt das Feature, das es ermöglicht, Parameter in der Mail mit zu übergeben. Somit kann beispielsweise mit der Mail in Erfahrung gebracht werden, zu welchem Gebäude die Meldung gehört. Dadurch hat der Empfänger der Mail einen direkten Einblick auf die Daten, ohne direkt in den Service Desk schauen zu müssen.\newline
-Für das Verständnis der Status im Service Desk ist die nachfolgende Tabelle hilfreich.\\
+Bei dem Service Desk bietet es sich an, die Meldungen für einen möglichen Eventauslöser zu bestimmen. Es kann entschieden werden, ob beim Erstellen, Bearbeiten, Löschen oder bei einer Wertänderung dieser Meldung eine Mail verschickt werden soll. Dafür müssen noch ein Betreff und eine Beschreibung der Mail eingetragen werden. GEBman 10 besitzt das Feature, das es ermöglicht, Parameter in der Mail mit zu übergeben. Somit kann beispielsweise mit der Mail in Erfahrung gebracht werden, zu welchem Gebäude die Meldung gehört. Dadurch hat der Empfänger der Mail einen direkten Einblick auf die Daten, ohne direkt in den Service Desk schauen zu müssen. Für das Verständnis der Status im Service Desk ist die nachfolgende Tabelle hilfreich.\\
 
 \begin{table}[h!]
     \begin{tabular}{ | l | l | p{8cm} |}
@@ -76,7 +75,7 @@ Für das Verständnis der Status im Service Desk ist die nachfolgende Tabelle hi
 \end{picture}Blau & Wiedereröffnet & Die Meldung wurde wiedereröffnet. \\
     \hline
     \end{tabular}
-    \caption[Übersicht der Status im Service Desk]{Übersicht der Status im Service Desk, Quelle: eigene Darstellung}
+    \caption[Übersicht der Status im Service Desk]{Übersicht der Status im Service Desk, Quelle: in Anlehnung an Handbuch GEBman 10}
 \end{table}
 
 \subsection{Verbesserungsmöglichkeiten des Service Desk Moduls}

@@ -9,31 +9,47 @@ Da diese API bereits in GEBman10 für das Versenden von E-Mails integriert wurde
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.75\textwidth]{Abbildungen/Screenshot_Verweise.pdf}
-	\caption[Verweise]{Entwurfsmuster Fabrikmethode, Quelle: eigene Darstellung}
+	\caption[Verweise der EWS Managed API]{Verweise der EWS Managed API, Quelle: eigene Darstellung}
 	\label{fig:Verweise}
 \end{figure}
 
 \noindent
 Bei der Implementierung wurde sich stark an das Fabrikmethoden-Entwurfsmuster gehalten. Bevor hierauf näher eingegangen wird, sollte das Entwurfsmuster näher erläutert werden.\\
 \noindent
-Die Fabrikmethode (Factory Method) ist ein Erzeugungsmuster, bei dem die Objekterstellung von der Objektverarbeitung getrennt wird. Hierbei wird die Unterklasse durch eine abstrakte Methode der Oberklasse erzeugt.\footnote{Vgl. \citeauthor{PatternsKompakt} \citeyear{PatternsKompakt}, S.34ff.} Dieses Entwurfsmuster wurde auch bei der Implementierung in GEBman10 verwendet. 
+Die Fabrikmethode (Factory Method) ist ein Erzeugungsmuster, bei dem die Objekterstellung von der Objektverarbeitung getrennt wird. Hierbei wird die Unterklasse durch eine abstrakte Methode der Oberklasse erzeugt.\footnote{Vgl. \citeauthor{PatternsKompakt} \citeyear{PatternsKompakt}, S.34ff.} Dieses Entwurfsmuster wurde auch bei der Implementierung in GEBman10 verwendet.\\ 
 
-\begin{figure}[h!]
-\centering
-\includegraphics[width=0.9\textwidth]{Abbildungen/Entwurfsmuster.pdf}
-	\caption[Entwurfsmuster Fabrikmethode]{Entwurfsmuster Fabrikmethode, Quelle: in Anlehnung an Eilebrecht, Starke (2013) S.35}
-	\label{fig:Entwurfsmuster}
+\begin{figure}[htb]
+    \centering
+    \begin{minipage}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=.90\textwidth]{Abbildungen/Entwurfsmuster.pdf}
+        \caption[Entwurfsmuster Fabrikmethode]{Entwurfsmuster Fabrikmethode, Quelle: in Anlehnung an Eilebrecht, Starke (2013) S.35}
+        \label{fig:Entwurfsmuster}
+    \end{minipage}% <- sonst wird hier ein Leerzeichen eingefügt
+    \hfill
+    \begin{minipage}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=.99\textwidth]{Abbildungen/ModuleService.png}
+        \caption[Module Service Aufruf]{Module Service Aufruf, Quelle: eigene Darstellung}
+        \label{fig:ModuleService}
+    \end{minipage}
 \end{figure}
 
 \noindent
-Bei jedem Intervall wird über den \textit{SchedulerService} (Abbildung~\ref{fig:Entwurfsmuster} links) der Module Service \textit{TicketHandler} instanziiert und die Methode \textit{MailsToObjects( )} der abstrakten Oberklasse aufgerufen. Die Fabrikmethode (rechts) macht deutlich, dass die abstrakte Klasse \textit{GroupwareMailToObjectFactory} der Erzeuger und \textit{TicketHandler} der konkrete Erzeuger ist. Der konkrete Erzeuger wiederum erstellt dann ein Objekt über die abstrakte Methode \textit{CreateObject( )}. Das Objekt ist in diesem Falle ein Ticket (Meldung). Vorteil dieses Entwurfsmusters ist die klare Kapselung des Erzeugers. Somit kann die Klasse \textit{GroupwareMailToObjectFactory} auch für andere Module eingesetzt werden, die ebenfalls neue Objekte aus E-Mails erzeugen sollen. Die beiden Experten für Entwurfsmuster Eilebrecht und Starke sehen die Anwendung der Fabrikmethode als sinnvoll, wenn \enquote{eine Klasse die von ihr zu erzeugenden Objekte nicht im Voraus kennt}.\footnote{Vgl. \citeauthor{PatternsKompakt} \citeyear{PatternsKompakt}, S.34ff.} Genau dieser Anwendungsfall trifft hier zu und ist deshalb auch gerechtfertigt.\\
+Die Fabrikmethode (Abbildung~\ref{fig:Entwurfsmuster}) macht deutlich, dass die abstrakte Klasse \textit{GroupwareMailToObjectFactory} der Erzeuger und \textit{TicketHandler} der konkrete Erzeuger ist. Der konkrete Erzeuger wiederum erstellt dann ein Objekt über die abstrakte Methode \textit{CreateObject( )}. Das Objekt ist in diesem Falle ein Ticket (Meldung). Vorteil dieses Entwurfsmusters ist die klare Kapselung des Erzeugers. Somit kann die Klasse \textit{GroupwareMailToObjectFactory} auch für andere Module eingesetzt werden, die ebenfalls neue Objekte aus E-Mails erzeugen sollen.\\
+
+\noindent
+Die beiden Experten für Entwurfsmuster Eilebrecht und Starke sehen die Anwendung der Fabrikmethode als sinnvoll, wenn \enquote{eine Klasse die von ihr zu erzeugenden Objekte nicht im Voraus kennt}.\footnote{\citeauthor{PatternsKompakt} \citeyear{PatternsKompakt}, S.34ff.} Genau dieser Anwendungsfall trifft hier zu und ist deshalb auch gerechtfertigt.\\
+
+\noindent
+Bei jedem Intervall wird über den \textit{SchedulerService} (Abbildung~\ref{fig:ModuleService}) der Module Service \textit{TicketHandler} instanziiert und die Methode \textit{MailsToObjects( )} der abstrakten Oberklasse aufgerufen. Das Intervall wurde hier mit \enquote{T00:01:00} bestimmt, was einen Zeitabstand von einer Minute entspricht.
 
 
 
 
 \subsection{Erläuterung einzelner Methoden}
 \noindent
-Die Methode \textit{GetMails( )} in der Klasse \textit{GroupwareMailsToObjectFactory} ist die entscheidende Methode der Erweiterung bei dem Abrufen der E-Mails eines Exchange Servers. Hier werden nicht nur alle Mails abgerufen, sondern auch verschiedene Attribute der einer E-Mails geladen. Im Anhang au Seite \pageref{Codeausschnitt} befindet sich ein Codeausschnitt, in dem diese Schritte in der Programmiersprache C\#/.NET implementiert sind.\\
+Die Methode \textit{GetMails( )} in der Klasse \textit{GroupwareMailsToObjectFactory} ist die entscheidende Methode der Erweiterung bei dem Abrufen der E-Mails eines Exchange Servers. Hier werden nicht nur alle Mails abgerufen, sondern auch verschiedene Attribute der einer E-Mails geladen. Im Anhang auf Seite \pageref{Codeausschnitt} befindet sich ein Codeausschnitt, in dem diese Schritte in der Programmiersprache C\#/.NET implementiert sind. Zu sehen ist hier, wie zunächst alle Exchange Server aus Datenbank in eine Liste gespeichert werden. Darauffolgend wird der erste Server aus der Liste dazu genutzt, einen Exchange Service zu erzeugen. Für den Exchange Service sind Benutzername, Passwort, die Domain und eine Autodiscover URL notwendig, um auf alle Funktionalitäten zugreifen zu können. Nun können auch auch schon alle E-Mails aus dem Postfach des Exchange Servers abgefragt werden. Jedoch müssen einige Eigenschaften (Properties) der E-Mails (Items) erst geladen werden, bevor auf sie verwendet werden können. Alle für den weiteren Verlauf benötigten Eigenschaften sind in der Variablen  \textit{additionalProperties} definiert und werden mit der Methode  \textit{LoadPropertiesForItems( )} geladen. Der Exchange Service speichert alle E-Mails (Items), die er gefunden hat, in die  \textit{ItemCollection result}, die am Ende der Methode  \textit{GetMails( )} den Rückgabewert bildet. 
 
 \noindent
 Das erstellen einer Meldung (bzw. eines Objektes) erfolgt in der Methode \textit{CreateObject( )}. Diese Methode ist in der \textit{GroupwareMailsToObjectFatory} als abstrakte Methode definiert, wird der Klasse \textit{TicketHandler} vererbt und hier auch explizit aufgerufen. Wichtig bei diese Methode ist die Übergabe einer Session. In GEBman10 benötigt jede Datenbankbearbeitung eine neue \textit{SessionTransaction}.\footnote{Vgl. \citeauthor{Fowler} \citeyear{Fowler}, S.103ff.} 
@@ -62,8 +78,11 @@ Das zweite Problem bestand bei der Abfrage der neusten Mails vom Exchange Server
 
 \subsection{Erweiterungsmöglichkeiten der E-Mail Integration}
 \noindent
-Die E-Mail Integration könnte dahingehend erweitert werden, dass der Benutzer mit einer E-Mail mehr Möglichkeiten zum Verändern vorhandener Meldungen hat. Sollte ein Benutzer beispielsweise den Status einer Meldung auf \enquote{Technisch fertig setzen} setzen wollen, könnt er das über eine E-Mail bewerkstelligen, ohne dabei in GEBman 10 eingeloggt sein zu müssen. Denkbar wäre es, in den Betreff der E-Mail einen Parameter wie \enquote{\#fertig} einzusetzen. Beim Auslesen der E-Mails durch den Module Service könnte das erkannt werden und dem Absender der E-Mail könnte ein Link geschickt werden. Mit diesem Link könnte der Benutzer dann zu einem temporären Webfrontend gelangen, auf dem dann die Fertigstellung der Meldung noch einmal bestätigt.\\\\
-\noindent
-In GEBman 10 können mehrere Benutzer mit ihren E-Mail Adressen hinterlegt werden. Der Modul Service könnte abgleichen, ob ein Absender einer E-Mail im Exchange Postfach eine identische E-Mail Adresse wie ein registrierter Benutzer in GEBman 10 hat. Ist die E-Mail Adressen eines hinterlegten Benutzer identisch mit der E-Mail Adresse eines Absenders für eine neue Meldung, kann in der Meldung im Service Desk-Modul direkt der registrierte Benutzer als Melder eingetragen werden. Die Eigenschaft Melder ist zwar nicht unbedingt notwendig, dadurch kann eine Meldung aber besser gefiltert werden und man hat direkte Einsicht darauf, an wen man sich bei Fragen wenden kann.
+Die E-Mail Integration könnte dahingehend erweitert werden, dass der Benutzer mit einer E-Mail mehr Möglichkeiten zum Verändern vorhandener Meldungen hat. Sollte ein Benutzer beispielsweise den Status einer Meldung auf \enquote{Technisch fertig setzen} setzen wollen, könnt er das über eine E-Mail bewerkstelligen, ohne dabei in GEBman 10 eingeloggt sein zu müssen. Denkbar wäre es, in den Betreff der E-Mail einen Parameter wie \enquote{\#fertig} einzusetzen. Beim Auslesen der E-Mails durch den Module Service könnte das erkannt werden und dem Absender der E-Mail könnte ein Link geschickt werden. Mit diesem Link könnte der Benutzer dann zu einem temporären Webfrontend gelangen, auf dem dann die Fertigstellung der Meldung noch einmal bestätigt.\\
 
+\noindent
+In GEBman 10 können mehrere Benutzer mit ihren E-Mail Adressen hinterlegt werden. Der Modul Service könnte abgleichen, ob ein Absender einer E-Mail im Exchange Postfach eine identische E-Mail Adresse wie ein registrierter Benutzer in GEBman 10 hat. Ist die E-Mail Adressen eines hinterlegten Benutzer identisch mit der E-Mail Adresse eines Absenders für eine neue Meldung, kann in der Meldung im Service Desk-Modul direkt der registrierte Benutzer als Melder eingetragen werden. Die Eigenschaft Melder ist zwar nicht unbedingt notwendig, dadurch kann eine Meldung aber besser gefiltert werden und man hat direkte Einsicht darauf, an wen man sich bei Fragen wenden kann.\\
+
+\noindent
+Des Weiteren wird in der prototypischen Implementierung die Abfrage der E-Mails nur für ein Exchange Server aus der Datenbank durchgeführt. Es ist in GEBman 10 aber durchaus möglich, mehrere Exchange Server zu konfigurieren. Diese zusätzlichen Server werden derzeit noch nicht berücksichtigt und demzufolge werden auch keine E-Mails abgerufen. Da alle Exchange Server im Programmcode in eine Liste gespeichert werden, sollte dies jedoch keine große Hürde darstellen.
 

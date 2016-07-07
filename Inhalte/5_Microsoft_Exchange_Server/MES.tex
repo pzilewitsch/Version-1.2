@@ -11,7 +11,7 @@ Am bekanntesten ist sicher der Microsoft Outlook-Client. Aus diesem Grund wird d
 
 \begin{figure}[h!]
 \centering
-	\includegraphics[width=0.59\textwidth]{Abbildungen/RPC_TCP.pdf}
+	\includegraphics[width=0.55\textwidth]{Abbildungen/RPC_TCP.pdf}
 	\caption[Aufbau einer klassischen RPC Verbindung]{Aufabu einer klassischen RPC Verbindung,    in Anlehnung an:\\https://technet.microsoft.com/de-de/library/e8feb37e-f3a9-4f26-bed0-6583d8a110ed}
 	\label{fig:RPC_TCP}
 \end{figure}
@@ -34,7 +34,7 @@ In der Abbildung \ref{fig:RPC_HTTP} sieht man deutlich, dass der Outlook-Client 
 
 \subsection{Exchange Web Services}
 \noindent
-Die Grundlagen von Mircosoft Exchange Server sind geklärt. Doch wie können nun Programmierer über Quellcode auf den Exchange Server zugreifen. Hierfür hat Mircosoft im Laufe der Jahre eine Reihe von Programmierschnittstellen bereitgestellt. Eine Schnittstellen zur Anwendungsprogrammierung wird als API (englisch application programming interface) bezeichnet. Es ist nicht nötig, alle Programmierschnittstellen zu erläutern, da eine Vielzahl der APIs keine Verwendung mehr finden oder nicht mehr unterstützt werden. Zu Informationszwecken befindet sich jedoch im Anhang auf Seite~\pageref{API_1} eine Übersicht einiger Programmierschnittstellen ab dem Jahr 1992. Ab Exchange 2007 setzt Microsoft immer mehr auf den Exchange Web Services (kurz EWS) als Programmierschnittstelle und baut diese seitdem weiter aus.\footnote{Website:\cite{MSXews}}
+Die Grundlagen von Mircosoft Exchange Server sind geklärt. Doch wie können nun Programmierer über Quellcode auf den Exchange Server zugreifen. Hierfür hat Mircosoft im Laufe der Jahre eine Reihe von Programmierschnittstellen bereitgestellt. Eine Schnittstellen zur Anwendungsprogrammierung wird als API (englisch application programming interface) bezeichnet. Es ist nicht nötig, alle Programmierschnittstellen zu erläutern, da eine Vielzahl der APIs keine Verwendung mehr finden oder nicht mehr unterstützt werden. Zu Informationszwecken befindet sich jedoch im Anhang auf Seite~\pageref{API_Geschichte} eine Übersicht einiger Programmierschnittstellen ab dem Jahr 1992. Ab Exchange 2007 setzt Microsoft immer mehr auf den Exchange Web Services (kurz EWS) als Programmierschnittstelle und baut diese seitdem weiter aus.\footnote{Website:\cite{MSXews}}
 Redmond schreibt im Handbuch Exchange 2010: 
 \enquote{Abgesehen von Windows PowerShell liegt der Schwerpunkt für die meisten Entwickler jetzt auf der API EWS (Exchange-Webdienste), die in Exchange Server 2007 eingeführt wurde.}\footnote{\citeauthor{Redmond} \citeyear{Redmond}, S.634.}
 Er macht deutlich, dass EWS die erste Anlaufstelle für Entwickler ist. Eine weitere Programmierschnittstelle namens REST API erschien 2015 mit Office 365. Der REST API wird aber keine weitere Beachtung geschenkt, da sie lediglich in der Office 365-Umgebung Anwendung findet.\footnote{Website:\cite{MicrosoftAPI}}

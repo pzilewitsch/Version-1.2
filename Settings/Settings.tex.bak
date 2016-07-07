@@ -6,6 +6,12 @@
 \urlstyle{same}
 \usepackage{pdfpages}
 
+%Anhangsverzeichnis
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{nameref}
+\usepackage{caption}
+
 % deutsche Silbentrennung
 \usepackage[ngerman]{babel}
 
@@ -73,12 +79,6 @@
   {\tablename\enspace\thecontentslabel:\enspace}
   {}
   {\titlerule*[0.5pc]{.}\contentspage}
-
-%Anhangsverzeichnis
-\usepackage{tabularx}
-\usepackage{booktabs}
-\usepackage{nameref}
-\usepackage{caption}
 
 
 %Seitenränder
