@@ -5,7 +5,7 @@
 \noindent Für die Klärung des Begriffs \enquote{Service Desk} ist es sinnvoll, sich auf die Information Technology Infrastructure Library - kurz ITIL - zu beziehen.
 ITIL ist zwar keine Norm, die in der IT-Branche eingehalten werden muss, dennoch bezieht man sich im IT-Service Management vorrangig auf ITIL.
 Bereits 1989 wurde die Central Computer and Telecommunication Agency (CCTA) von der britischen Regierung beauftragt, Geschäftsprozesse und ihre Abhängigkeiten zu beschreiben und schriftlich festzuhalten.\footnote{Vgl. \citeauthor{Olbrich} (\citeyear{Olbrich}), S. 1.}
-Ziel war es, Abläufe in der Unternehmenswelt darzustellen und dadurch die IT-Betriebskosten zu reduzieren. Im Laufe der Jahre wurden die ersten Ausarbeitungen überarbeitet und ergänzt. Die ITIL Edition 2011 ist die derzeitig neuste Fassung und stellt ein Update der 2007 veröffentlichten Version ITIL v3 dar.\footnote{Website:\cite{Andenmatten}}
+Ziel war es, Abläufe in der Unternehmenswelt darzustellen und dadurch die IT-Betriebskosten zu reduzieren. Im Laufe der Jahre wurden die ersten Ausarbeitungen überarbeitet und ergänzt. Die ITIL Edition 2011 ist die derzeitig neuste Fassung und stellt ein Update der 2007 veröffentlichten Version ITIL v3 dar.\footnote{Website: \citeauthor{Andenmatten} (2011)}
 Auch bestimmte Normen leiten sich aus dem ITIL-Rahmenkonzept ab. Der internationale Standard ISO/IEC 20000 beispielsweise basiert auf der Version ITIL v2 und definiert die Minimalanforderungen des IT-Service-Managements für Organisationen.\footnote{Vgl. \citeauthor{Buchsein} (\citeyear{Buchsein}), S. 5ff.}
 ITIL kann deshalb als "Quasi-Standard" gesehen werden. Es ist ein  Best-Practice Leitfaden, der beschreibt "Was zu tun ist, aber nicht wie". Das macht deutlich, dass ITIL durchaus Handlungs -und Interpretationsspielraum zulässt, aber dennoch in einem vorher definierten Rahmen greifbar sein muss. Beschrieben wird ITIL v3 in fünf Büchern, auf die später noch eingegangen wird:
 
@@ -36,7 +36,7 @@ Es ist nicht notwendig, auf alle Teilbereiche einzugehen. Der Service Desk ist n
 
 \begin{figure}[h!]
 \centering
-	\includegraphics[width=0.75\textwidth]{Abbildungen/SPOC_2.png}
+	\includegraphics[width=0.70\textwidth]{Abbildungen/SPOC_3.png}
 	\caption[Single Point of Contact]{Single Point of Contact, Quelle:http://edoc.hu-berlin.de/
 	conferences/dfn2006/fischlin-roger-105/PDF/fischlin.pdf}
 	\label{fig:ITIL_Single_Point_of_Contact}
@@ -48,7 +48,7 @@ Der Support kann die Meldungen der Anwender nun den entsprechenden Managementber
 
 \subsection{Unterschied zu Help Desk}
 \noindent
-Bei der Begriffsabgrenzung zwischen Help Desk und Service Desk ist Vorsicht geboten. In mehreren Quellen ist zu finden, dass Help Desk (auch User-Help-Desk) lediglich ein veralteter Begriff für den Service Desk sei.\footnote{Vgl. \citeauthor{Buchsein} (\citeyear{Buchsein}), S. 26.}\footnote{Vgl. \citeauthor{Meier} (\citeyear{Meier}), S. 26.} Im Internet heißt es beispielsweise auf Wikipedia: \enquote{Die Artikel Helpdesk und Servicedesk überschneiden sich thematisch.}\footnote{Website:\cite{WikiServiceDesk}} In anderen Literaturquellen tritt der Begriff Help Desk erst gar nicht auf oder wird dem Service Desk gleichgesetzt.\footnote{Vgl. \citeauthor{Olbrich} (\citeyear{Olbrich}), S. 19.} Im Zweifelsfall sollte man sich direkt auf das Buch ITIL Service Operation beziehen. In dem heißt es übersetzt unter dem Stichwort Help Desk:
+Bei der Begriffsabgrenzung zwischen Help Desk und Service Desk ist Vorsicht geboten. In mehreren Quellen ist zu finden, dass Help Desk (auch User-Help-Desk) lediglich ein veralteter Begriff für den Service Desk sei.\footnote{Vgl. \citeauthor{Buchsein} (\citeyear{Buchsein}), S. 26.}\footnote{Vgl. \citeauthor{Meier} (\citeyear{Meier}), S. 26.} Im Internet heißt es beispielsweise auf Wikipedia: \enquote{Die Artikel Helpdesk und Servicedesk überschneiden sich thematisch.}\footnote{Website: \cite{WikiServiceDesk}} In anderen Literaturquellen tritt der Begriff Help Desk erst gar nicht auf oder wird dem Service Desk gleichgesetzt.\footnote{Vgl. \citeauthor{Olbrich} (\citeyear{Olbrich}), S. 19.} Im Zweifelsfall sollte man sich direkt auf das Buch ITIL Service Operation beziehen. In dem heißt es übersetzt unter dem Stichwort Help Desk:
 \enquote{Eine Anlaufstelle für Anwender, um Incidents zu erfassen. Ein Help Desk ist in der
 Regel eher technisch orientiert als ein Service Desk und stellt keinen Single Point
 of Contact für die gesamte Interaktion bereit. Der Begriff 'Help Desk' wird häufig

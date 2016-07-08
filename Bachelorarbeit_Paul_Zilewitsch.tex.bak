@@ -81,19 +81,39 @@ Außerdem soll die E-Mail Integration des Service Desk-Moduls erweitert werden. 
 %					Abkürzungsverzeichnis
 %------------------------------------------------------------------------------------------------------
 \addsec{Abkürzungsverzeichnis} %vergebe keine Kapitelnummer
-\begin{itemize}[leftmargin=*] 
-\item[] API \tabto{3cm} Application Programming Interface
-\item[] CAFM \tabto{3cm} Computer-Aided Facility Management
-\item[] HTTP \tabto{3cm} Hypertext Transfer Protocol
-\item[] HTTPS \tabto{3cm} Hypertext Transfer Protocol Secure
-\item[] ITIL \tabto{3cm} Information Technology Infrastructure Library
-\item[] REST API \tabto{3cm} Representational State Transfer Application Programming Interface
-\item[] SOAP \tabto{3cm} Simple Object Access Protocol
-\item[] SPoC \tabto{3cm} Single Point of Contact
-\item[] UML \tabto{3cm} Unifed Modeling Language
-\item[] XML \tabto{3cm} Extensible Markup Language
-\item[] XSS \tabto{3cm} Cross-Site-Scripting
-\end{itemize}
+
+\noindent
+API \tabto{4cm} Application Programming Interface\\
+
+\noindent
+CAFM \tabto{4cm} Computer-Aided Facility Management\\
+
+\noindent
+HTTP \tabto{4cm} Hypertext Transfer Protocol\\
+
+\noindent
+HTTPS \tabto{4cm} Hypertext Transfer Protocol Secure\\
+
+\noindent
+ITIL \tabto{4cm} Information Technology Infrastructure Library\\
+
+\noindent
+REST API \tabto{4cm} Representational State Transfer Application Programming Interface\\
+
+\noindent
+SOAP \tabto{4cm} Simple Object Access Protocol\\
+
+\noindent
+SPoC \tabto{4cm} Single Point of Contact\\
+
+\noindent
+UML \tabto{4cm} Unifed Modeling Language\\
+
+\noindent
+XML \tabto{4cm} Extensible Markup Language\\
+
+\noindent
+XSS \tabto{4cm} Cross-Site-Scripting
 \newpage
 
 %-------------------------------------------------------------------------------------------------------
@@ -201,7 +221,7 @@ Außerdem soll die E-Mail Integration des Service Desk-Moduls erweitert werden. 
 %-------------------------------------------------------------------------------------------------------
 
 \addcontentsline{toc}{section}{Literaturverzeichnis}
-\bibliography{literatur}
+\bibliography{Literaturverzeichnis/literatur}
 
 
 %-------------------------------------------------------------------------------------------------------

@@ -73,7 +73,7 @@ Der Benutzer muss sich direkt zu Beginn entscheiden, ob er eine neue Meldung ers
 Möchte der Benutzer allerdings auf bereits bestehende Meldungen antworten, so kann er direkt auf eine E-Mail von GEBman 10 antworten. Der Betreff wird automatisch übernommen und somit ist die ID schon eingetragen. Sollte der Benutzer zusätzliche Information wie eine Excel-Tablle oder ein Bild an die Meldung binden wollen, kann er der E-Mail einen Anhang hinzufügen.\\\\
 
 \noindent
-Anders als beim Aktivitätsdiagramm wird in der nachfolgenden Abbildung ein Zustandsdiagramm dargestellt. Die beiden Diagramme ähneln sich von ihrer Notation sehr. Das Zustandsdiagramm legt den Fokus jedoch auf die Zustände des Systems, die es während der Laufzeit annehmen kann. Deshalb ist es auch das zweite Verhaltensdiagramm. Hierbei ist es wichtig, dass immer ein Ereignis eintreffen muss, damit das System in ein anderen Zustand wechseln kann.\footnote{Vgl. \citeauthor{Balzert} (\citeyear{Balzert}), S. 40.}
+Anders als bei dem Aktivitätsdiagramm wird in der nachfolgenden Abbildung ein Zustandsdiagramm dargestellt. Die beiden Diagramme ähneln sich von ihrer Notation sehr. Das Zustandsdiagramm legt den Fokus jedoch auf die Zustände des Systems, die es während der Laufzeit annehmen kann. Deshalb ist es auch das zweite Verhaltensdiagramm. Hierbei ist es wichtig, dass immer ein Ereignis eintreffen muss, damit das System in ein anderen Zustand wechseln kann.\footnote{Vgl. \citeauthor{Balzert} (\citeyear{Balzert}), S. 40.}
 
 \begin{figure}[h!]
 \centering
@@ -112,7 +112,7 @@ Die abstrakten Methoden werden dann in der Klasse TicketHandler überschrieben. 
 
 \subsection{Sicherheitsaspekte}
 \noindent
-Immer wieder vernachlässigen Entwickler die Sicherheit ihrer Implementierungen.\footnote{Vgl. \citeauthor{Ziegler} (\citeyear{Ziegler}), S. 53.}\footnote{Website:\cite{Sicherheit1}} Das liegt häufig an mangelnder Zeit, da Releases einen festen Zeitplan verfolgen, den es einzuhalten gilt. Es kann aber auch sein, dass die Implementierung nicht aus dem Blickwinkel der Sicherheit betrachtet wird und der Fokus eher auf Bereiche wie Benutzerfreundlichkeit gelegt wird. Natürlich hat das wenig mit Sicherheit zu tun. Dabei können es Entwickler mit wenig Aufwand, Angreifern deutlich schwerer machen. Deswegen werden im nachfolgendem zwei Sicherheitsprobleme für die Umsetzung des Konzepts in GEBman 10 besprochen. Die Abbildung~\ref{fig:Sicherheitsprobleme} zeigt zwei kritische Bereiche, die genauer erläutert werden müssen.
+Immer wieder vernachlässigen Entwickler die Sicherheit ihrer Implementierungen.\footnote{Vgl. \citeauthor{Ziegler} (\citeyear{Ziegler}), S. 53.}\footnote{Website :\cite{Sicherheit1}} Das liegt häufig an mangelnder Zeit, da Releases einen festen Zeitplan verfolgen, den es einzuhalten gilt. Es kann aber auch sein, dass die Implementierung nicht aus dem Blickwinkel der Sicherheit betrachtet wird und der Fokus eher auf Bereiche wie Benutzerfreundlichkeit gelegt wird. Natürlich hat das wenig mit Sicherheit zu tun. Dabei können es Entwickler mit wenig Aufwand, Angreifern deutlich schwerer machen. Deswegen werden im nachfolgendem zwei Sicherheitsprobleme für die Umsetzung des Konzepts in GEBman 10 besprochen. Die Abbildung~\ref{fig:Sicherheitsprobleme} zeigt zwei kritische Bereiche, die genauer erläutert werden müssen.
 
 \begin{figure}[h!]
 \centering
