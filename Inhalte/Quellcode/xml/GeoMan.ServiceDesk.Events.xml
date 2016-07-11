@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?Mapping XmlNamespace="urn:bfsvclib" ClrNamespace="dotNetBF" Assembly="bfsvclib"?>
+<ObjectEventSubscriptionCollection xmlns="urn:bfsvclib">
+
+	<ObjectScriptEventSubscription Entity="Bmm.Erp.Order" Events="Saving"><![CDATA[
+		if(Status != null && dotNetBF.Core.ObjectBroker.IsModified(this, Bmm.Erp.Order.Class.Status) && Status.Phase >= 50) {
+				for(var t : GeoMan.ServiceDesk.Ticket in ServiceDeskTickets){
+					if(t.Status != GeoMan.ServiceDesk.KnownObjects.Done){
+						t.Status = GeoMan.ServiceDesk.KnownObjects.Done;
+						t.DoneDate = DateTime.Now;
+					}
+				}
+			}
+	]]></ObjectScriptEventSubscription>
+
+  <!--	Übertragung der Meldungsvorlage-Werte auf die Meldung.
+				#68647: Bei mehrmaliger Auswahl verschiedener Meldungsvorlagen sollen auch leere Werte gesetzt werden. -->
+	<ObjectPropertyScriptTrigger Entity="GeoMan.ServiceDesk.Ticket" Properties="TicketTemplate">
+    <![CDATA[
+			var formFeature = session.GetProperty("PostbackCausingFormFeature") as dotNetBF.Gui.FormFeature;
+
+			var doTransfer = TicketTemplate != null;
+			doTransfer = doTransfer && session.GetProperty("GuiSave") != true;
+			doTransfer = doTransfer && (formFeature == null || formFeature.Name.Equals("TicketTemplate", System.StringComparison.InvariantCultureIgnoreCase));
+			
+			if(doTransfer)
+			{
+				Message = TicketTemplate.Message;
+				Description = TicketTemplate.Description;
+				Type = TicketTemplate.Type;
+				Trade = TicketTemplate.Trade;
+				EMail = TicketTemplate.Email;
+				Org = TicketTemplate.Org;
+			}
+    ]]>
+  </ObjectPropertyScriptTrigger>
+
+  <!--	Wenn nach Wahl einer Meldungsvorlage irgendein Wert dieser Vorlage im Formular geändert wurde, 
+				wird die Meldungsvorlage auf null gesetzt, wenn ein entsprechendes Setting gesetzt ist.-->
+  <ObjectScriptEventSubscription Entity="GeoMan.ServiceDesk.Ticket" Events="Saving">
+    <![CDATA[
+			if(Status != null && dotNetBF.Core.ObjectBroker.IsModified(this,GeoMan.ServiceDesk.Ticket.Class.Status))
+        GeoMan.ServiceDesk.Services.AddStatusHistEntry(session,this);
+      if (OState == dotNetBF.Core.ObjectState.Deleted)
+				return;
+				
+			if (TicketTemplate != null)
+			{
+				var isDifferentUserInput = Message != TicketTemplate.Message;
+				isDifferentUserInput = isDifferentUserInput || Description != TicketTemplate.Description;
+				isDifferentUserInput = isDifferentUserInput || Type != TicketTemplate.Type;
+				isDifferentUserInput = isDifferentUserInput || Trade != TicketTemplate.Trade;
+				isDifferentUserInput = isDifferentUserInput	|| EMail != TicketTemplate.Email;
+				isDifferentUserInput = isDifferentUserInput	|| Org != TicketTemplate.Org;
+				
+				if(isDifferentUserInput && (bool)GeoMan.Common.SettingsService.GetSetting("ServiceDeskResetTemplateOnDiff", "true"))
+					TicketTemplate = null;
+			}      
+    ]]>
+  </ObjectScriptEventSubscription>
+
+  <ObjectPropertyScriptTrigger Entity="GeoMan.ServiceDesk.Ticket" Properties="Status" Condition="Status==GeoMan.ServiceDesk.KnownObjects.Done">
+    <![CDATA[
+        DoneDate = DateTime.Now;
+    ]]>
+  </ObjectPropertyScriptTrigger>
+  <ObjectPropertyScriptTrigger Entity="GeoMan.ServiceDesk.Ticket" Properties="Status" Condition="Status!=GeoMan.ServiceDesk.KnownObjects.Done">
+    <![CDATA[
+        var dDate : DateTime = dotNetBF.Core.ObjectBroker.GetNullValue(typeof(DateTime));
+        DoneDate = dDate;
+    ]]>
+  </ObjectPropertyScriptTrigger>
+  <ObjectScriptEventSubscription Entity="GeoMan.ServiceDesk.Ticket" Events="Created">
+    <![CDATA[
+    Status = GeoMan.ServiceDesk.KnownObjects.Untouched;
+	  CreationDate = NotificationDate = DateTime.Now;
+    Creator = dotNetBF.Modules.Services.Security.SecurityService.CurrentUser.Person;
+    
+    var reporterAssignment = PersonAssignments.Find(x=>x.Type == GeoMan.ServiceDesk.KnownPersonAssignmentTypes.Reporter);
+    if (reporterAssignment == null) {
+      reporterAssignment = dotNetBF.Modules.Org.PersonAssignment.Create(session.Broker);
+      reporterAssignment.Type = GeoMan.ServiceDesk.KnownPersonAssignmentTypes.Reporter;
+      reporterAssignment.Ticket = this;
+    }
+    reporterAssignment.Person = Creator;
+      
+    GeoMan.ServiceDesk.Services.SetAddPropertiesTicket(this);
+    ]]>
+  </ObjectScriptEventSubscription>
+
+	<ObjectPropertyScriptTrigger Entity="GeoMan.ServiceDesk.Ticket" Properties="Device" Condition="Device!=null">
+        <![CDATA[
+		var rel : Bmm.Obj.MaintenableObjectRelation = Device.ToLeftRelations.Find(r=>r.Type==GeoMan.Devices.KnownObjectRelations.DeviceLocation);
+		var foLocation : GeoMan.Facilities.FacilityObject = rel != null ? rel.Left as GeoMan.Facilities.FacilityObject : null;
+		if (foLocation != null && foLocation.ObjectType != GeoMan.Facilities.KnownObjects.BuildingObjectType && foLocation.ObjectType != GeoMan.Facilities.KnownObjects.RealestateObjectType) 
+		  foLocation = GeoMan.Common.Core.Services.GetSpecificLeftObject(foLocation, GeoMan.Facilities.KnownObjects.BuildingObjectType, true) as GeoMan.Facilities.FacilityObject;        
+		
+    if (Building != foLocation)
+			Building = foLocation;
+	]]></ObjectPropertyScriptTrigger>
+
+	<ObjectPropertyScriptTrigger Entity="GeoMan.ServiceDesk.Ticket" Properties="Building,Device,Equi">
+        <![CDATA[
+		var mo : Bmm.Obj.MaintenableObject = Equi;
+    var resetPA = false;
+		if(mo == null) {
+			mo = Device;
+			if(mo == null && 
+         (PrimaryAsset == null || PrimaryAsset.ObjectType == GeoMan.Facilities.KnownObjects.BuildingObjectType 
+                               || PrimaryAsset.ObjectType == GeoMan.Facilities.KnownObjects.RealestateObjectType
+															 || PrimaryAsset.ObjectType == GeoMan.Facilities.KnownObjects.FloorObjectType
+                               || PrimaryAsset.ObjectType == GeoMan.Facilities.KnownObjects.RoomObjectType)) {
+				mo = Building;
+        resetPA = true;
+			}
+		}
+		if(mo != PrimaryAsset && mo != null || resetPA) {
+			PrimaryAsset = mo;
+		}
+	]]></ObjectPropertyScriptTrigger>
+
+  <ObjectPropertyScriptTrigger Entity="GeoMan.ServiceDesk.Ticket" Properties="PrimaryAsset">
+    <![CDATA[
+    //Equi muss notfalls null gesetzt werden    
+		if(PrimaryAsset is Bmm.Equi.Equipment && PrimaryAsset != Equi)
+    {      
+      Equi = PrimaryAsset as Bmm.Equi.Equipment;
+      if(Device == null)
+        Device = Equi.?InstallInfo.?MaintenableObject as Bmm.Obj.Device;
+    }
+    else if(PrimaryAsset is Bmm.Obj.Device && PrimaryAsset != Device)
+      Device = PrimaryAsset as Bmm.Obj.Device;
+    else if(PrimaryAsset == null || PrimaryAsset is GeoMan.Facilities.FacilityObject)
+    {
+      Device = null;      
+      Equi = null;
+      Planting = null;
+      if (PrimaryAsset == null && Building != null)
+        PrimaryAsset = Building;
+    }
+    //Building wird nicht zurückgesetzt, da das immer durch den Nutzer dirket gesetzt wird. Im Lookup auf PrimaryAsset sind keine FacilityObjects auswählbar (ausser Tür/Tor, da Building aber für den Standort genutzt wird, ist das dort nicht auswählbar, soll somit auch nicht auf Building übertragen werden) 
+    if(PrimaryAsset is GeoMan.Green.GreenInventory)
+      AssetLine = GeoMan.Playground.KnownObjects.PlaygroundAssetLine;
+    else
+      AssetLine = PrimaryAsset.?ObjectType.?Category.?AssetLine;
+      
+    if (PrimaryAsset != null && Org==null)
+      Org = PrimaryAsset.Org;
+      
+    if (PrimaryAsset != null && Building == null)
+			Building = (PrimaryAsset.ObjectType==GeoMan.Facilities.KnownObjects.RoomObjectType||PrimaryAsset.ObjectType==GeoMan.Facilities.KnownObjects.FloorObjectType||PrimaryAsset.ObjectType==GeoMan.Facilities.KnownObjects.BuildingObjectType||PrimaryAsset.ObjectType==GeoMan.Facilities.KnownObjects.RealestateObjectType ? PrimaryAsset : null) ??
+                 PrimaryAsset.ToLeftRelations.Find(r=>r.Left!= null && r.Left.ObjectType == GeoMan.Facilities.KnownObjects.RoomObjectType).?Left ?? 
+                 PrimaryAsset.ToLeftRelations.Find(r=>r.Left!= null && r.Left.ObjectType == GeoMan.Facilities.KnownObjects.FloorObjectType).?Left ?? 
+                 PrimaryAsset.ToLeftRelations.Find(r=>r.Left!= null && r.Left.ObjectType == GeoMan.Facilities.KnownObjects.BuildingObjectType).?Left ?? 
+                 PrimaryAsset.ToLeftRelations.Find(r=>r.Left!= null && r.Left.ObjectType == GeoMan.Facilities.KnownObjects.RealestateObjectType).?Left; //Nimmt den genausten Treffer
+                 
+    if(PrimaryAsset is GeoMan.Green.GreenSpace || PrimaryAsset is GeoMan.Green.GreenArea || PrimaryAsset is GeoMan.Green.GreenInventory || PrimaryAsset is GeoMan.Tree.Tree || PrimaryAsset is GeoMan.Tree.TreeGroup)
+      Building = null;
+	]]>
+  </ObjectPropertyScriptTrigger>
+	
+  <ObjectScriptEventSubscription Entity="GeoMan.ServiceDesk.Ticket" Events="Saving">
+      <![CDATA[
+    if(String.IsNullOrEmpty(Number2)) {
+      Number2 = GeoMan.ServiceDesk.Services.GetTicketNumber();
+      Number = GeoMan.ServiceDesk.Services.ConvertNumber(Number2);
+		}    
+    ]]>
+    </ObjectScriptEventSubscription>
+   
+  <ObjectScriptEventSubscription Entity="GeoMan.ServiceDesk.Ticket" Events="Saving">
+      <![CDATA[
+    GeoMan.Core.Exchange.CreateOrUpdateTicketInExchange(this);
+    ]]>
+  </ObjectScriptEventSubscription>
+  
+  <ObjectScriptEventSubscription Entity="GeoMan.ServiceDesk.Ticket" Events="Saving">
+    <![CDATA[
+    if (!String.IsNullOrEmpty(EMail))
+      EMail = EMail.Trim();  
+    ]]>
+  </ObjectScriptEventSubscription>
+
+  <!--Setzt ausgewählte Komponente wieder zurück, wenn diese nicht im ausgewählten Gerät eingebaut ist.-->
+  <ObjectScriptEventSubscription Entity="GeoMan.ServiceDesk.Ticket" Events="Saving">
+      <![CDATA[
+    if(Equi != null) {      
+			var dEqui : Bmm.Obj.Device = Equi.InstallInfo != null ? Equi.InstallInfo.MaintenableObject as Bmm.Obj.Device : null;
+			if(Device != dEqui) {        
+				Equi = null;
+			}
+		}
+  ]]></ObjectScriptEventSubscription>
+
+  <ObjectScriptEventSubscription Entity="GeoMan.ServiceDesk.Ticket" Events="Deleted">
+    <![CDATA[
+      GeoMan.Core.Exchange.DeleteApptInExchange(this);
+  ]]>
+  </ObjectScriptEventSubscription>
+	
+	<ObjectScriptEventSubscription Entity="GeoMan.ServiceDesk.Answer" Events="Created">
+    <![CDATA[
+    CreationDate = DateTime.Now;
+    
+     Author = dotNetBF.Modules.Services.Security.SecurityService.CurrentUser.Person;
+    if (Author != null && Author.RoleAssignments.Find(r => r.Role.ShortName == "Servicing") != null) {
+        NewRespPerson = Author; 
+    }
+    ]]>
+  </ObjectScriptEventSubscription>
+
+  <ObjectScriptEventSubscription Entity="GeoMan.ServiceDesk.Answer" Events="Saving">
+    <![CDATA[
+    if (Done)
+      GeoMan.Core.Exchange.DeleteApptInExchange(this.Ticket);
+    ]]>
+  </ObjectScriptEventSubscription>
+
+  <ObjectScriptEventSubscription Entity="GeoMan.ServiceDesk.Answer" Events="Saving">
+    <![CDATA[
+		if (OState == dotNetBF.Core.ObjectState.Deleted)
+			return;
+		
+    if(QuickAnswer!=null && Message==null)
+      Message = QuickAnswer.Name;
+    
+    if(Done)
+    {
+      Ticket.Status = GeoMan.ServiceDesk.KnownObjects.Completed;
+      Ticket.DoneDate = DateTime.Now;
+      GeoMan.ServiceDesk.Services.SynchronizeTicketToFidelio(Ticket);
+    }
+    else if(Ticket.Status != GeoMan.ServiceDesk.KnownObjects.Completed)
+      Ticket.Status = GeoMan.ServiceDesk.KnownObjects.InWork;
+      
+    if (Reopen)
+    {
+      Ticket.Status = GeoMan.ServiceDesk.KnownObjects.ReOpened;
+      var dDate : DateTime = dotNetBF.Core.ObjectBroker.GetNullValue(typeof(DateTime));
+      Ticket.DoneDate = dDate;
+    }
+      
+    //if(NewRespPerson!=null)
+      Ticket.ResponsiblePerson = NewRespPerson;
+      
+    //if(Trade!=null)
+      Ticket.Trade = Trade;
+   
+    //if(!dotNetBf.Core.ObjectBroker.IsNullValue(PlannedDate))
+      Ticket.PlannedExecution = PlannedDate;
+		if(OState == dotNetBF.Core.ObjectState.Added)
+		{	
+			var definition : dotNetBF.Modules.Services.Communication.NotificationDefinition = GeoMan.ServiceDesk.KnownNotificationDefinitions.TicketAnswerMail;
+			var mail = dotNetBF.Modules.Services.Communication.CommunicationService.RenderEmail(session, definition, dotNetBF.Modules.Services.Communication.TextContentFormat.Html,
+					new dotNetBF.Modules.Services.Properties.PropertyValue(definition.Parameters.Find(rp => rp.ShortName=="answer"), this));
+						
+						
+			var responsiblePersonAssignment : dotNetBF.Modules.Org.PersonAssignment = null;
+			if(Ticket.Device != null)
+				responsiblePersonAssignment = Ticket.Device.PersonAssignments.Find(pa => pa.Type == GeoMan.Devices.KnownPersonAssignmentTypes.ResponsiblePerson)
+			if(responsiblePersonAssignment == null && Ticket.Building != null)
+				responsiblePersonAssignment = Ticket.Building.PersonAssignments.Find(pa => pa.Type == GeoMan.Facilities.KnownPersonAssignmentTypes.ResponsiblePerson)
+				
+			if (Ticket.ResponsiblePerson != null && !string.IsNullOrEmpty(Ticket.ResponsiblePerson.EMail))
+				mail.To.Add(new dotNetBF.Modules.Services.Communication.EmailAddress(Ticket.ResponsiblePerson.EMail, dotNetBF.Gui.GuiRepository.GetDisplayText(Ticket.ResponsiblePerson)));
+			else if(Ticket.Trade != null && !string.IsNullOrEmpty(Ticket.Trade.EMail))
+				mail.To.Add(new dotNetBF.Modules.Services.Communication.EmailAddress(Ticket.Trade.EMail, Ticket.Trade.Name));
+					
+			if (responsiblePersonAssignment != null && mail.To.Count == 0 && !string.IsNullOrEmpty(responsiblePersonAssignment.Person.EMail))
+				mail.To.Add(new dotNetBF.Modules.Services.Communication.EmailAddress(responsiblePersonAssignment.Person.EMail, dotNetBF.Gui.GuiRepository.GetDisplayText(responsiblePersonAssignment.Person)));
+			else if (responsiblePersonAssignment != null && !string.IsNullOrEmpty(responsiblePersonAssignment.Person.EMail))
+				mail.CC.Add(new dotNetBF.Modules.Services.Communication.EmailAddress(responsiblePersonAssignment.Person.EMail, dotNetBF.Gui.GuiRepository.GetDisplayText(responsiblePersonAssignment.Person)));
+      
+      if(dotNetBF.Modules.Services.Security.SecurityService.CurrentUser.Person != null)
+      {
+          var ownMailAddr = dotNetBF.Modules.Services.Security.SecurityService.CurrentUser.Person.EMail;
+          if (mail.To.Count == 1 && !GeoMan.ServiceDesk.Services.ServiceDeskAnswerSelfMail && !string.IsNullOrEmpty(ownMailAddr) && mail.To[0].Address == ownMailAddr)
+            mail.To.RemoveAt(0);
+          if (mail.CC.Count == 1 && !GeoMan.ServiceDesk.Services.ServiceDeskAnswerSelfMail && !string.IsNullOrEmpty(ownMailAddr) && mail.CC[0].Address == ownMailAddr)
+            mail.CC.RemoveAt(0);
+          if (mail.CC.Count == 1 && !GeoMan.ServiceDesk.Services.ServiceDeskAnswerSelfMail)
+            mail.CC.RemoveAt(0);
+      
+			    if (!string.IsNullOrEmpty(Ticket.?Creator.?EMail))
+            if (!(!GeoMan.ServiceDesk.Services.ServiceDeskAnswerSelfMail && !string.IsNullOrEmpty(ownMailAddr) && Ticket.Creator.EMail == ownMailAddr)) 
+				      mail.To.Add(new dotNetBF.Modules.Services.Communication.EmailAddress(Ticket.Creator.EMail, dotNetBF.Gui.GuiRepository.GetDisplayText(Ticket.Creator)));
+      }   
+      
+      if (!string.IsNullOrEmpty(Ticket.EMail))
+        mail.To.Add(new dotNetBF.Modules.Services.Communication.EmailAddress(Ticket.EMail));
+      
+      if (mail.To.Count > 0)
+			  dotNetBF.Modules.Services.Communication.CommunicationService.SendEmail(session, mail);
+		}
+    ]]>
+  </ObjectScriptEventSubscription>
+	
+	<ObjectCascadingDeleteTrigger Entity="GeoMan.ServiceDesk.Answer" Association="PropertyValues" />
+
+  <!--Send Mail-->
+	<ObjectScriptEventSubscription Entity="GeoMan.ServiceDesk.Ticket" Events="Saving">
+		<![CDATA[
+		if(this.OState == dotNetBF.Core.ObjectState.Added)
+		{
+			var definition : dotNetBF.Modules.Services.Communication.NotificationDefinition = GeoMan.ServiceDesk.KnownNotificationDefinitions.TicketMail;
+			var mail = dotNetBF.Modules.Services.Communication.CommunicationService.RenderEmail(session, definition, dotNetBF.Modules.Services.Communication.TextContentFormat.Html,
+					new dotNetBF.Modules.Services.Properties.PropertyValue(definition.Parameters.Find(rp => rp.ShortName=="ticket"), this));						
+						
+			var responsiblePersonAssignment : dotNetBF.Modules.Org.PersonAssignment = null;
+			if(Device != null)
+				responsiblePersonAssignment = Device.PersonAssignments.Find(pa => pa.Type == GeoMan.Devices.KnownPersonAssignmentTypes.ResponsiblePerson)
+			if(responsiblePersonAssignment == null && this.Building != null)
+				responsiblePersonAssignment = Building.PersonAssignments.Find(pa => pa.Type == GeoMan.Facilities.KnownPersonAssignmentTypes.ResponsiblePerson)
+				
+			if (ResponsiblePerson != null && !string.IsNullOrEmpty(ResponsiblePerson.EMail))
+				mail.To.Add(new dotNetBF.Modules.Services.Communication.EmailAddress(ResponsiblePerson.EMail, dotNetBF.Gui.GuiRepository.GetDisplayText(ResponsiblePerson)));
+			else if(Trade != null && !string.IsNullOrEmpty(Trade.EMail))
+				mail.To.Add(new dotNetBF.Modules.Services.Communication.EmailAddress(Trade.EMail, Trade.Name));
+					
+			if (responsiblePersonAssignment != null && mail.To.Count == 0 && !string.IsNullOrEmpty(responsiblePersonAssignment.Person.EMail))
+				mail.To.Add(new dotNetBF.Modules.Services.Communication.EmailAddress(responsiblePersonAssignment.Person.EMail, dotNetBF.Gui.GuiRepository.GetDisplayText(responsiblePersonAssignment.Person)));
+			else if (responsiblePersonAssignment != null && !string.IsNullOrEmpty(responsiblePersonAssignment.Person.EMail))
+				mail.CC.Add(new dotNetBF.Modules.Services.Communication.EmailAddress(responsiblePersonAssignment.Person.EMail, dotNetBF.Gui.GuiRepository.GetDisplayText(responsiblePersonAssignment.Person)));
+      
+      if (Creator!=null && !string.IsNullOrEmpty(this.Creator.EMail) && (bool)GeoMan.Common.SettingsService.GetSetting("ServiceDeskNewCreatorMail","false"))
+        mail.To.Add(new dotNetBF.Modules.Services.Communication.EmailAddress(this.Creator.EMail, dotNetBF.Gui.GuiRepository.GetDisplayText(this.Creator)));
+
+      if (!string.IsNullOrEmpty(this.EMail))
+        mail.To.Add(new dotNetBF.Modules.Services.Communication.EmailAddress(this.EMail)); 
+        
+      if(mail.To.Count>0)
+			  dotNetBF.Modules.Services.Communication.CommunicationService.SendEmail(session, mail);
+		}
+		]]>
+	</ObjectScriptEventSubscription>	
+      
+  <ObjectScriptEventSubscription Entity="GeoMan.ServiceDesk.Ticket" Events="Saving">
+		<![CDATA[
+		if(OState == dotNetBF.Core.ObjectState.Added && DamageAssignments.Count > 0 && Order != null)						
+      {
+        var assoc : GeoMan.Devices.OrderDamageAssignment = null;
+        if(Order.DamageAssignments.Count==0){
+          assoc = GeoMan.Devices.OrderDamageAssignment.Create(session.Broker);
+          assoc.Order =Order;
+        } else assoc = Order.DamageAssignments[0];
+        
+        assoc.Damage = DamageAssignments[0].Damage;
+      }					
+		]]>
+	</ObjectScriptEventSubscription>
+	
+	<ObjectPropertyScriptTrigger Entity="GeoMan.ServiceDesk.Ticket" Properties="Order" Condition="Order!=null">
+      <![CDATA[
+		if (Status == GeoMan.ServiceDesk.KnownObjects.Untouched) {
+			Status = GeoMan.ServiceDesk.KnownObjects.InWork;
+		}
+    if(DamageAssignments.Count>0){
+       var assoc : GeoMan.Devices.OrderDamageAssignment = null;
+        if(Order.DamageAssignments.Count==0){
+          assoc = GeoMan.Devices.OrderDamageAssignment.Create(session.Broker);
+          assoc.Order =Order;
+        } else assoc = Order.DamageAssignments[0];
+        
+        assoc.Damage = DamageAssignments[0].Damage;
+    }
+	]]></ObjectPropertyScriptTrigger>
+
+  <ObjectPropertyScriptTrigger Entity="GeoMan.ServiceDesk.Ticket" Properties="Trade" Condition="Trade!=null">
+    <![CDATA[
+    if (ResponsiblePerson != null && (ResponsiblePerson.User==null || (ResponsiblePerson.User!=null && ResponsiblePerson.User.TradeAssignments.Find(r => r.Trade == Trade) == null)))
+		  ResponsiblePerson = null;
+	]]>
+  </ObjectPropertyScriptTrigger>
+
+	<ObjectCascadingDeleteTrigger Entity="GeoMan.ServiceDesk.Ticket" Association="Answers" />
+	<ObjectCascadingDeleteTrigger Entity="GeoMan.ServiceDesk.Ticket" Association="DamageAssignments" />
+	<ObjectCascadingDeleteTrigger Entity="GeoMan.ServiceDesk.Ticket" Association="Documents" />
+	<ObjectCascadingDeleteTrigger Entity="GeoMan.ServiceDesk.Ticket" Association="OrgCacheEntries" />
+  <ObjectCascadingDeleteTrigger Entity="GeoMan.ServiceDesk.Ticket" Association="PersonAssignments" />
+  <ObjectCascadingDeleteTrigger Entity="GeoMan.ServiceDesk.Ticket" Association="StatusHistEntries" />
+	<ObjectCascadingDeleteTrigger Entity="GeoMan.ServiceDesk.Ticket" Association="PropertyValues" />
+
+  <!--Wenn am Ticket ein Schadensbild hinterlegt wurde, muss das an den Arbeitsauftrag übernommen werden. -->
+  <ObjectPropertyScriptTrigger Entity="Bmm.Erp.OrderProcCustom" Properties="Order" Condition="Order!=null">
+    <![CDATA[
+    //immer das erste Schadensbild nehmen, das er finden kann #63665
+    for(var t : GeoMan.ServiceDesk.Ticket in Order.ServiceDeskTickets)
+    {
+		  if(t.DamageAssignments.Count > 0)						
+      {
+        DamageDescr = t.DamageAssignments[0].Damage;
+        break;
+      }					
+		}
+    if(Order.ServiceDeskTickets.Count == 0 && Order.DamageAssignments.Count > 0)
+      DamageDescr = Order.DamageAssignments[0].Damage;
+    ]]>
+  </ObjectPropertyScriptTrigger>
+
+  <ObjectScriptEventSubscription  Entity="Bmm.Erp.OrderProcCustom" Events="Saving">
+    <![CDATA[
+    
+    if(OState == dotNetBF.Core.ObjectState.Added && Order!= null && Order.DamageAssignments.Count == 0 && DamageDescr!= null){
+      var assoc : GeoMan.Devices.OrderDamageAssignment = GeoMan.Devices.OrderDamageAssignment.Create(session.Broker);
+      assoc.Damage = DamageDescr;
+      assoc.Order = Order;
+    }
+   ]]> 
+  </ObjectScriptEventSubscription>
+
+  <ObjectScriptEventSubscription Entity="GeoMan.Devices.OrderProcOutsourced" Events="Saved">
+    <![CDATA[
+    GeoMan.ServiceDesk.OrderProcOutsourcedRequest.SendOrderRequest(this);
+	]]>
+  </ObjectScriptEventSubscription>
+
+  <ObjectPropertyScriptTrigger Entity="GeoMan.ServiceDesk.Ticket" Properties="ResponsiblePerson">
+    <![CDATA[
+    var assign : dotNetBF.Modules.Org.PersonAssignment = PersonAssignments.Find(x=>x.Type == GeoMan.ServiceDesk.KnownPersonAssignmentTypes.TicketResponsiblePerson);
+    if (ResponsiblePerson == null && assign != null)
+      session.Broker.Delete(assign);
+    else  if (ResponsiblePerson != null)
+    {
+      if (assign == null)
+      {
+        assign = dotNetBF.Modules.Org.PersonAssignment.Create(session.Broker);
+        assign.Type = GeoMan.ServiceDesk.KnownPersonAssignmentTypes.TicketResponsiblePerson;
+        assign.Ticket = this;
+      }
+      if (ResponsiblePerson != assign.Person)
+        assign.Person = ResponsiblePerson;
+    }
+    ]]>
+  </ObjectPropertyScriptTrigger>
+  <ObjectPropertyScriptTrigger Entity="dotNetBF.Modules.Org.PersonAssignment" Properties="Person" Condition="Ticket != null &amp;&amp; Type == GeoMan.ServiceDesk.KnownPersonAssignmentTypes.TicketResponsiblePerson">
+    <![CDATA[
+    if (Ticket.ResponsiblePerson != Person)
+      Ticket.ResponsiblePerson = Person;
+    ]]>
+  </ObjectPropertyScriptTrigger>
+  <ObjectScriptEventSubscription Entity="dotNetBF.Modules.Org.PersonAssignment" Events="Deleting">
+    <![CDATA[
+    if (OState != dotNetBF.Core.ObjectState.Deleted && Ticket != null && Type == GeoMan.ServiceDesk.KnownPersonAssignmentTypes.TicketResponsiblePerson)
+    {
+      var ticket : GeoMan.ServiceDesk.Ticket = Ticket;
+      Ticket = null;
+      Person = null;
+      ticket.ResponsiblePerson = null;
+    }
+    ]]>
+  </ObjectScriptEventSubscription>
+  
+  <ObjectPropertyScriptTrigger Entity="GeoMan.ServiceDesk.Ticket" Properties="Reporter">
+    <![CDATA[
+    var assign : dotNetBF.Modules.Org.PersonAssignment = PersonAssignments.Find(x=>x.Type == GeoMan.ServiceDesk.KnownPersonAssignmentTypes.Reporter);
+    if (Reporter == null && assign != null)
+      session.Broker.Delete(assign);
+    else if (Reporter != null)
+    {
+      if (assign == null)
+      {
+        assign = dotNetBF.Modules.Org.PersonAssignment.Create(session.Broker);
+        assign.Type = GeoMan.ServiceDesk.KnownPersonAssignmentTypes.Reporter;
+        assign.Ticket = this;
+      }
+      if (Reporter != assign.Person)
+        assign.Person = Reporter;
+    }
+    ]]>
+  </ObjectPropertyScriptTrigger>
+
+	<ObjectPropertyScriptTrigger Entity="dotNetBF.Modules.Org.PersonAssignment" Properties="Person" Condition="Ticket != null &amp;&amp; Type == GeoMan.ServiceDesk.KnownPersonAssignmentTypes.Reporter">
+    <![CDATA[
+    if (Ticket.Reporter != Person)
+      Ticket.Reporter = Person;
+    ]]>
+  </ObjectPropertyScriptTrigger>
+  <ObjectScriptEventSubscription Entity="dotNetBF.Modules.Org.PersonAssignment" Events="Deleting">
+    <![CDATA[
+    if (OState != dotNetBF.Core.ObjectState.Deleted && Ticket != null && Type == GeoMan.ServiceDesk.KnownPersonAssignmentTypes.Reporter)
+    {
+      var ticket : GeoMan.ServiceDesk.Ticket = Ticket;
+      Ticket = null;
+      Person = null;
+      ticket.Reporter = null;
+    }
+    ]]>
+  </ObjectScriptEventSubscription>
+
+  <ObjectScriptEventSubscription Entity="GeoMan.ServiceDesk.TicketDamageAssignment" Events="Saving">
+  <![CDATA[
+    if(Ticket != null && Ticket.OState != dotNetBF.Core.ObjectState.Deleted && Ticket.OState != dotNetBF.Core.ObjectState.Historic)
+      ((dotNetBF.Core.IRdbBusinessObject)Ticket).RdsObj.BeginEdit().Touch();
+  ]]>
+  </ObjectScriptEventSubscription>
+  
+  <ObjectScriptEventSubscription Entity="GeoMan.ServiceDesk.TicketDamageAssignment" Events="Deleting">
+  <![CDATA[
+    if(Ticket != null && Ticket.OState != dotNetBF.Core.ObjectState.Deleted && Ticket.OState != dotNetBF.Core.ObjectState.Historic)
+      ((dotNetBF.Core.IRdbBusinessObject)Ticket).RdsObj.BeginEdit().Touch();
+  ]]>
+  </ObjectScriptEventSubscription>
+
+
+</ObjectEventSubscriptionCollection>

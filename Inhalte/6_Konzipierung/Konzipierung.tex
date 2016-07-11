@@ -21,13 +21,15 @@ Beschreibung & Für eine genauere Beschreibung des Vorfalls ist dieses Feld vorg
 
 \noindent
 Die Eigenschaften mit dem Stern ( * ) als Kennzeichnung sind die erwähnten Pflichtfelder. Bei diesen erforderlichen Eigenschaften ergibt sich ein Problem für die Erstellung einer Meldung über die E-Mail Integration. Derjenige, der eine E-Mail an den Exchange Server von GEBman 10 schreibt, müsste eine genaue Angabe über den Standort und/oder das Objekt der Meldung machen. Das ist in der Praxis nicht bedienerfreundlich und könnte zu Schreibfehlern führen. Auf der Seite der Implementierung hieße das, dass ein möglicher Schreibfehler abgefangen werden muss, da dieser Standort oder diese Objekte nicht in der Datenbank existieren. Außerdem hatten bereits mehrere Kunden von der KMS Computer GmbH dieses Pflichtfeld als nicht hilfreich bezeichnet. Will der Kunde einfach nur Meldungen in dem Service Desk Modul aufgeben, ist diese Eigenschaft unnütz. Aus diesen Gründen wurde entschieden, die Felder Standort und Objekt nicht mehr als notwendige Eigenschaften einer Meldung zu definieren. Dadurch werden diese beiden Eigenschaften in der Implementierung auch weiter beachtet und der Service Desk wird weiter vom Facility Management Bereich gelöst. \newline
-Die Informationsangabe Beschreibung ohne den Stern sind nicht verpflichtend, ist aber durchaus sinnvoll bei der Erstellung einer Meldung. Es gibt noch weitere Felder, die der Benutzer in der Benutzeroberfläche ausfüllen kann, die aber nicht verpflichtend sind. Diese zusätzlichen Informationen sind für die nachfolgenden Ausführungen nicht relevant.
+Die Informationsangabe Beschreibung (ohne den Stern) ist bei der Erstellung einer Meldung nicht unbedingt nötig, aber durchaus sinnvoll. Es gibt noch weitere Felder, die der Benutzer in der Benutzeroberfläche ausfüllen kann, die aber nicht verpflichtend sind. Diese zusätzlichen Informationen sind für die nachfolgenden Ausführungen nicht relevant.
 
 \subsection{Zielsetzung und Grundidee Module Service }
 \noindent
-Ausgangspunkt ist ein Benutzer, der Mails an den Exchange Server schreiben kann, um somit neue Meldungen im Service Desk Modul anzulegen. Alle E-Mails, die an den Exchange Server gesendet werden, landen im Posteingang des Exchange Servers. Ziel ist es, durch das Auswerten dieser im Posteingang befindlichen E-Mails, Meldungen zu erstellen, ohne dass sich ein Benutzer in GEBman 10 anmelden muss. Der Benutzer soll somit eine neue Meldung erstellen, auf eine vorhandene Meldung antworten können. Hierfür ist eine ID notwendig, die jeder neuen Meldung zugeteilt wird. Sollte der Benutzer einer Meldung eine Antwort hinzufügen wollen, muss die ID der Meldung im Betreff der E-Mail stehen. Demzufolge ist der Betreff einer E-Mail entscheidend für das weitere Vorgehen im Programmcode. Außerdem soll es möglich sein, mögliche E-Mail Anhänge direkt an die Meldung zu binden. In GEBman 10 hat jede Meldung bereits einen Bereich für Dokumente. So kann über den Programmcode dieser Bereich mit durch mögliche E-Mail Anhänge erweitert werden. \newline 
-In GEBman 10 ist eine Klasse Module Service implementiert, die es ermöglicht, einen Service asynchron vom restlichen System für das entsprechende Modul laufen zu lassen. Demnach muss in GEBman 10 ein neuer Service erstellt werden, der in bestimmten Intervallen seine Funktion ausführt. Das geschieht im Code im Package Common. In diesem zentralen Package werden Funktionalitäten implementiert, die für alle Module allgemein gültig sind. Dadurch kann die Erweiterung später auch für andere Module verwendet werden und nicht nur im Service Desk Modul.\newline
-Nach dem Auswerten der E-Mails im Packge Common muss im Modul Service Desk eine Meldung erstellt oder bearbeitet werden. Das heißt, dass diese Funktionalität im Package Service Desk implementiert werden sollte. Hier befinden sich alle Komponenten, die auf die Meldungen in GEBman 10 zugreifen. Nach der erfolgreichen Erstellung einer neuen Meldung soll der Benutzer eine Bestätigungsmail erhalten. Hierfür können die bereits vorhandenen Funktionalitäten als Grundlage genutzt werden.\newline
+Ausgangspunkt ist ein Benutzer, der Mails an den Exchange Server schreiben kann, um somit neue Meldungen im Service Desk Modul anzulegen. Alle E-Mails, die an den Exchange Server gesendet werden, landen im Posteingang. Ziel ist es, durch das Auswerten dieser im Posteingang befindlichen E-Mails, Meldungen zu erstellen, ohne dass sich ein Benutzer in GEBman 10 anmelden muss. Der Benutzer soll somit eine neue Meldung erstellen oder auf eine vorhandene Meldung antworten können. Zentrales Hilfsmittel hierfür wird die ID der Meldung sein. Will der Benutzer eine neue Meldung erstellen, beschreibt er in der Betreffzeile der E-Mail das konkrete Probleme (hier zunächst ohne ID) und schickt die E-Mail an den Exchange Server, der in GEBman 10 konfiguriert wurde. Der Module Service wird in regelmäßigen Abständen alle E-Mails auswerten und die Betreffzeile überprüfen. Sollte eine E-Mail keine ID  aufweisen, handelt es sich um eine neue Meldung. Diese wird im Service Desk erstellt und bekommt eine eindeutige ID. Wenn die Meldung erfolgreich erstellt wurde, soll eine Bestätigungsmail an den Ersteller geschickt werden, die in der Betreffzeile die ID der neu angelegten Meldung enthalten soll.\newline
+Wenn der Benutzer einer Meldung eine Notiz o.ä. hinzufügen möchte, so muss in der Betreffzeile der E-Mail die entsprechende ID der Meldung vorhanden sein. Der Module Service soll diese ID erkennen und eine Antwort für die entsprechende Meldung generieren. Demzufolge ist der Betreff einer E-Mail entscheidend für das weitere Vorgehen im Programmcode.\newline
+Außerdem soll es möglich sein, eventuell vorhandene E-Mail Anhänge direkt an die Meldung zu binden. In GEBman 10 hat jede Meldung bereits einen Bereich für Dokumente. Über Programmcode kann dieser Bereich erweitert werden. Hierfür wird der E-Mail Anhang als Dokument an die Meldung gebunden.\newline 
+In GEBman 10 ist die Klasse \textit{ModuleService} implementiert, die es ermöglicht, einen Service asynchron vom restlichen System für das entsprechende Modul laufen zu lassen. Demnach muss in GEBman 10 ein neuer Service erstellt werden, der in bestimmten Intervallen seine Funktion ausführt. Das geschieht im Code im \textit{Package Common}. In diesem zentralen Package werden Funktionalitäten implementiert, die für alle Module allgemein gültig sind. Dadurch kann die Erweiterung später auch für andere Module verwendet werden und nicht nur im Service Desk Modul.\newline
+Nach dem Auswerten der E-Mails im \textit{Packge Common} muss im Modul Service Desk eine Meldung erstellt oder bearbeitet werden. Das heißt, dass diese Funktionalität im \textit{Package ServiceDesk} implementiert werden sollte. Hier befinden sich alle Komponenten, die auf die Meldungen in GEBman 10 zugreifen.\newline
 Um diese Grundidee besser erläutern und umsetzen zu können, ist eine Darstellung der einzelnen Schritten in verschiedenen UML-Diagrammen sinnvoll.
 
 \newpage
@@ -64,13 +66,13 @@ Das erste Verhaltensdiagramm soll die Frage klären, welche Aktionen der Benutze
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.80\textwidth]{Abbildungen/Aktivitaetsdiagramm.pdf}
-	\caption[Aktivit{\"a}tsdiagramm]{Aktivit{\"a}tsdiagramm, Quelle: eigene Darstellung}
+	\caption[Aktivit{\"a}tsdiagramm der Erweiterung]{Aktivit{\"a}tsdiagramm der Erweiterung, Quelle: eigene Darstellung}
 	\label{fig:Aktivitaetsdiagramm}
 \end{figure}
 
 \noindent
-Der Benutzer muss sich direkt zu Beginn entscheiden, ob er eine neue Meldung erstellen oder auf eine bestehende Meldung antworten möchte. Sollte er ein neues Problem erkannt haben, schickt er eine E-Mail an GEBman 10. Im Betreff muss die Meldung eingetragen werden und im Textkörper der E-Mail kann der Benutzer die ausführliche Beschreibung des Problems angeben. Der ModulService in  GEBman 10 wertet diese E-Mail aus und legt eine neue Meldung im Service Desk an. Diese Meldung erhält eine eindeutige ID. Der Benutzer erhält anschließend eine Bestätigungsmail mit der ID der Meldung, wenn die Erstellung erfolgreich war.\newline
-Möchte der Benutzer allerdings auf bereits bestehende Meldungen antworten, so kann er direkt auf eine E-Mail von GEBman 10 antworten. Der Betreff wird automatisch übernommen und somit ist die ID schon eingetragen. Sollte der Benutzer zusätzliche Informationen wie eine Excel-Tablle oder ein Bild an die Meldung binden wollen, kann er der E-Mail einen Anhang hinzufügen.\\\\
+Der Benutzer muss sich zu Beginn entscheiden, ob er eine neue Meldung erstellen oder auf eine bestehende Meldung antworten möchte. Sollte er ein neues Problem erkannt haben, schickt er eine E-Mail an GEBman 10. Im Betreff muss die Meldung eingetragen werden und im Textkörper der E-Mail kann der Benutzer die ausführliche Beschreibung des Problems angeben.\newline Der ModuleService in  GEBman 10 wertet diese E-Mail aus und legt eine neue Meldung im Service Desk an. Diese Meldung erhält eine eindeutige ID. Der Benutzer erhält anschließend eine Bestätigungsmail mit der ID der Meldung, wenn die Erstellung erfolgreich war.\newline
+Möchte der Benutzer allerdings Rückmeldung auf bereits bestehende Meldungen geben, so kann er direkt auf eine E-Mail von GEBman 10 antworten. Der Betreff wird automatisch übernommen und somit ist die ID schon eingetragen. Sollte der Benutzer zusätzliche Informationen wie eine Excel-Tabelle oder ein Bild an die Meldung binden wollen, kann er der E-Mail einen Anhang hinzufügen.\\\\
 
 \noindent
 Anders als bei dem Aktivitätsdiagramm wird in der nachfolgenden Abbildung ein Zustandsdiagramm dargestellt. Die beiden Diagramme ähneln sich von ihrer Notation sehr. Das Zustandsdiagramm legt den Fokus jedoch auf die Zustände des Systems, die es während der Laufzeit annehmen kann. Deshalb ist es auch das zweite Verhaltensdiagramm. Hierbei ist es wichtig, dass immer ein Ereignis eintreffen muss, damit das System in einen anderen Zustand wechseln kann.\footnote{Vgl. \citeauthor{Balzert} (\citeyear{Balzert}), S. 40.}
@@ -78,14 +80,16 @@ Anders als bei dem Aktivitätsdiagramm wird in der nachfolgenden Abbildung ein Z
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.6\textwidth]{Abbildungen/Zustandsdiagramm.pdf}
-	\caption[Zustandsdiagramm]{Zustandsdiagramm, Quelle: eigene Darstellung}
+	\caption[Zustandsdiagramm der Erweiterung]{Zustandsdiagramm der Erweiterung, Quelle: eigene Darstellung}
 	\label{fig:Zustandsdiagramm}
 \end{figure}
 
 \noindent
-Sobald der Webserver gestartet ist, befindet sich das System im Zustand aktiver Module Service. In regelmäßigen Zeitabständen, werden über diesen Service die neuesten Mails von dem Exchange Server geholt. Dann werden die in der Betreffzeile der Mail befindlichen ID's ausgewertet. Ist keine ID vorhanden, geht der Module Service in den Zustand einer neuen Meldungserstellung über. Dabei werden alle nötigen Informationen der E-Mail entnommen. Anschließend wird die Bestätigungsmail versendet, wenn die Erstellung erfolgreich war.\newline
+Sobald der Webserver gestartet ist, befindet sich das System im Zustand aktiver Module Service. In regelmäßigen Zeitabständen, werden über diesen Service die neuesten Mails von dem Exchange Server geholt. Dann werden die in der Betreffzeile der Mail befindlichen ID's ausgewertet. Ist keine ID vorhanden, geht der Module Service in den Zustand einer neuen Meldungserstellung über. Dabei werden alle nötigen Informationen der E-Mail entnommen. Anschließend wird die Bestätigungsmail versendet, wenn die Erstellung erfolgreich war.\\
+
+\noindent
 Wurde bei der ID Auswertung allerdings festgestellt, dass eine Meldung mit identischer ID vorhanden ist, wechselt das Sytem in den Zustand der Antworterstellung. Hier wird der Textkörper der E-Mail als Antwort der Meldung hinzugefügt.\newline
-Nachdem eines der beiden Szenarien abgearbeitet wurde, kann das System noch in den Zustand der Anhangsspeicherung gelangen. In diesem Zustand wird dann der Anhang der E-Mail an die Meldung gebunden. Wurden alle Prozesse ohne Fehler abgeschlossen, kehrt das System wieder zu dem Anfangszustand es aktiven Webservice zurück. Der Modul Service wird dann im nächsten Intervall die Prozedur wiederholen. Nur wenn der Webserver beendet wird, ist logischerweise auch der Module Service deaktiviert. Ansonsten wird der Service permanent laufen.\\\\
+Nachdem eines der beiden Szenarien abgearbeitet wurde, kann das System noch in den Zustand der Anhangsspeicherung gelangen. In diesem Zustand wird dann der Anhang der E-Mail an die Meldung gebunden. Wurden alle Prozesse ohne Fehler abgeschlossen, kehrt das System wieder zu dem Anfangszustand es aktiven Webservice zurück. Der Module Service wird dann im nächsten Intervall die Prozedur wiederholen. Nur wenn der Webserver beendet wird, ist logischerweise auch der Module Service deaktiviert. Ansonsten wird der Service permanent laufen.\\\\
 
 \noindent
 Die Verhaltensdiagramme aus Benutzer -und Systemperspektive sind somit abgeschlossen. Das Klassendiagramm in Abbildung~\ref{fig:Klassendiagramm} ist ein Strukturdiagramm, welches einen groben Überblick über den zu implementierenden Module Service und seiner Beziehung zu dem restlichen System geben soll. \newpage 
@@ -93,16 +97,16 @@ Die Verhaltensdiagramme aus Benutzer -und Systemperspektive sind somit abgeschlo
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.80\textwidth]{Abbildungen/Klassendiagramm.pdf}
-	\caption[Klassendiagramm]{Klassendiagramm, Quelle: eigene Darstellung}
+	\caption[Klassendiagramm der Erweiterung]{Klassendiagramm der Erweiterung, Quelle: eigene Darstellung}
 	\label{fig:Klassendiagramm}
 \end{figure}
 
 \noindent
-Die Funktionalitäten für das Versenden von E-Mails in GEBman 10 befinden sich im Package \textit{GeoMan.Common.Core.GroupWare}. Die abstrakte Klasse für den Modul Service wird \textit{GroupWareMailToObjectFactory} heißen und sich ebenfalls in diesem Package befinden. Sie erbt von der ebenfalls abstrakten Klasse \textit{ModuleService}, welche sich in einem Framework befindet, das ein Partnerunternehmen der KMS Computer GmbH entwickelt.\\ 
+Die Funktionalitäten für das Versenden von E-Mails in GEBman 10 befinden sich im Package \textit{GeoMan.Common.Core.GroupWare}. Die abstrakte Klasse für den Module Service wird \textit{GroupWareMailToObjectFactory} heißen und sich ebenfalls in diesem Package befinden. Sie erbt von der ebenfalls abstrakten Klasse \textit{ModuleService}, welche sich in einem Framework befindet, das ein Partnerunternehmen der KMS Computer GmbH entwickelt.\\ 
 
 \noindent
 \textit{GroupWareMailToObjectFactory} wird nur das öffentliche Attribut \textit{DateFromLastEmail} besitzen. Diese Variable speichert das Ankunftsdatum von der neuesten E-Mail im Exchange Postfach und hat deshalb den Datentypen \textit{DateTime}. Somit müssen nicht alle E-Mails abgerufen werden, sondern nur die, die nach dem Ankunftsdatum der letzten E-Mail eingetroffen sind.\newline
-Diese Klasse\textit{GroupWareMailToObjectFactory} wird auf die Exchange Webservices zugreifen und sich Methoden der Klasse Exchange Service bedienen, um die E-Mails von Exchange Server abzufragen. Das übernimmt die Methode \textit{GetMails( )}, die den Zeitpunkt der zuletzt abgerufenen E-Mail als Argument übergeben bekommt. Der Rückgabewert ist eine ItemView vom Exchange Webservice. Deshalb wird eine Referenz auf die Microsoft Exchange Web Services Data benötigt.
+Diese Klasse\textit{GroupWareMailToObjectFactory} wird auf die Exchange Webservices zugreifen und sich Methoden der Klasse Exchange Service bedienen, um die E-Mails von Exchange Server abzufragen. Das übernimmt die Methode \textit{GetMails( )}, die den Zeitpunkt der zuletzt abgerufenen E-Mail als Argument übergeben bekommt. Der Rückgabewert ist eine ItemView vom Exchange Webservice. Deshalb wird eine Referenz auf die \textit{Microsoft.Exchange.WebServices.Data} benötigt.
 \newline 
 Die Methode \textit{CheckIdFromMails( )} wird die ID's überprüfen, die in den Betreff der Mails eingetragen wurde. Auch ist sie dafür zuständig, die entsprechenden Methoden für das weitere Vorgehen aufzurufen. Die Methoden \textit{SendConfirmationMail( )} und \textit{SendErrorMail( )} werden dafür zuständig sein, eine Bestätigungsmail oder eine Fehlermail zu versenden, wenn der entsprechende Fall eintritt. Es wird drei abstrakte Methoden geben, die eine Meldung erstellen (\textit{CreateObject}), eine Meldung bearbeiten (\textit{EditObject}) oder den Status einer Meldung ändern (\textit{CompleteObject}). Ihnen wird jeweils die entsprechende Mail als Attribut mitgegeben.\\
 
@@ -117,7 +121,7 @@ Immer wieder vernachlässigen Entwickler die Sicherheit ihrer Implementierungen.
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.85\textwidth]{Abbildungen/Sicherheitsaspekte.pdf}
-	\caption[Sicherheitsprobleme]{Sicherheitsprobleme, Quelle: eigene Darstellung}
+	\caption[Sicherheitsprobleme der Erweiterung]{Sicherheitsprobleme der Erweiterung, Quelle: eigene Darstellung}
 	\label{fig:Sicherheitsprobleme}
 \end{figure}
 

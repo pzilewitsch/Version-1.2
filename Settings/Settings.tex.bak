@@ -134,12 +134,13 @@ headsep=10mm, footskip=10mm}
 \usepackage[multiple, hang]{footmisc} % Komma zwischen mehreren Fußnoten
 \setlength{\footnotemargin}{1em}
 %\usepackage[justification=RaggedRight, singlelinecheck=false]{caption}
-%\usepackage{caption}
-%\captionsetup{%
-%  textfont=footnotesize,
-%  labelfont=footnotesize,
-%  font=singlespacing,
-%}
+
+\usepackage{caption}
+\captionsetup{%
+  textfont=footnotesize,
+  labelfont=footnotesize,
+  font=singlespacing,
+}
 
 
 %Bilder

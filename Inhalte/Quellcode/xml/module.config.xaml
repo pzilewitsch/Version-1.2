@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?Mapping XmlNamespace="urn:bfiolib" ClrNamespace="dotNetBF.Serialization" Assembly="bfiolib"?>
+<?Mapping XmlNamespace="urn:bfsvclib" ClrNamespace="dotNetBF" Assembly="bfsvclib"?>
+<?Mapping XmlNamespace="urn:bfmqlite" ClrNamespace="dotNetBF.Messaging" Assembly="bfmqlite"?>
+<?Mapping XmlNamespace="urn:bfweb" ClrNamespace="dotNetBF.Gui.Web" Assembly="bfweb"?>
+<?Mapping XmlNamespace="urn:geoman.common.core" ClrNamespace="" Assembly="GeoMan.Common.Core"?>
+<?Mapping XmlNamespace="urn:geoman.servicedesk.core" ClrNamespace="GeoMan.ServiceDesk" Assembly="GeoMan.ServiceDesk.Core"?>
+<?Mapping XmlNamespace="urn:geoman.servicedesk.import" ClrNamespace="GeoMan.ServiceDesk.Import" Assembly="GeoMan.ServiceDesk.Core"?>
+<Module xmlns="urn:bfsvclib" xmlns:s="urn:bfiolib" xmlns:r="urn:bfrdblib" xmlns:mq="urn:bfmqlite" xmlns:geoman.servicedesk.import="urn:geoman.servicedesk.import" xmlns:bfweb="urn:bfweb" xmlns:GeoMan.ServiceDesk="urn:geoman.servicedesk.core" Name="GeoMan.ServiceDesk">
+  <ModuleReference Name="GeoMan.Common" />
+  <ModuleReference Name="GeoMan.Device" />
+  <ModuleReference Name="GeoMan.Facility" />
+  <ModuleReference Name="GeoMan.Green" />
+	
+  <!--<SettingsService>
+    <Setting Name="key" Value="value" />
+  </SettingsService>-->
+              
+  <AssemblyReference AssemblyName="GeoMan.ServiceDesk.Core" Propagate="true" />
+
+  <RulesRepository>    
+    <s:XmlSource File="GeoMan.ServiceDesk.Rules.xml" />
+  </RulesRepository>
+
+  <ObjectEventService>
+    <s:XmlSource File="GeoMan.ServiceDesk.Events.xml" />
+  </ObjectEventService>
+
+  <GuiRepository>
+    <s:XmlSource File="GeoMan.ServiceDesk.Gui.xml" />
+    <s:XmlSource File="GeoMan.ServiceDesk.Gui.Catalog.xml" />
+    <s:XmlSource File="GeoMan.ServiceDesk.Gui.Ticket.xml" />
+    <s:XmlSource File="GeoMan.ServiceDesk.Gui.Answer.xml" />
+    <s:XmlSource File="GeoMan.ServiceDesk.Gui.SearchList.Ticket.xml" />    
+    <s:XmlSource File="GeoMan.ServiceDesk.Gui.SearchList.Document.xml" />
+		<s:XmlSource File="GeoMan.ServiceDesk.BulkUpdate.Ticket.xml" />
+	</GuiRepository>
+
+	<BaseUriConverter Moniker="geoman-servicedeskimg" BaseUri="Images" />
+	<BaseUriConverter Moniker="geoman-servicedeskweb" BaseUri="..\GeoMan.ServiceDesk.UI.Web" />
+
+	<bfweb:WebUIService>
+		<bfweb:WebUIRoute>
+			<MenuRepository Source="geoman-servicedeskweb://Menus.xaml" />
+		</bfweb:WebUIRoute>
+	</bfweb:WebUIService>
+	
+	<bfweb:WorkflowSource Source="geoman-servicedeskweb://Workflows.xaml" />
+
+	<GeoMan.ServiceDesk:ModuleInfo />
+  <geoman.servicedesk.import:FidelioActivityImportService />
+  <GeoMan.ServiceDesk:ServiceDeskUserOrgService />
+  
+ 
+  <SchedulerService>
+    <InMemoryTimerService />
+    <ScheduleSubscription Name="GeoMan.ServiceDesk.TicketHandler" Schedule="T00:01:00">
+      var service : GeoMan.ServiceDesk.TicketHandler =
+      Module.GetService(typeof(GeoMan.ServiceDesk.TicketHandler));
+      service.MailsToObjects();
+    </ScheduleSubscription>
+  </SchedulerService>
+  <GeoMan.ServiceDesk:TicketHandler />
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</Module>
+
+            

@@ -5,10 +5,10 @@
 \contentsline {figure}{\numberline {4}{\ignorespaces Aufbau einer klassischen RPC Verbindung}}{24}
 \contentsline {figure}{\numberline {5}{\ignorespaces RPC over HTTP Prinzip}}{24}
 \contentsline {figure}{\numberline {6}{\ignorespaces EWS Funktionsumfang}}{26}
-\contentsline {figure}{\numberline {7}{\ignorespaces Aktivit{\"a}tsdiagramm}}{30}
-\contentsline {figure}{\numberline {8}{\ignorespaces Zustandsdiagramm}}{31}
-\contentsline {figure}{\numberline {9}{\ignorespaces Klassendiagramm}}{32}
-\contentsline {figure}{\numberline {10}{\ignorespaces Sicherheitsprobleme}}{33}
+\contentsline {figure}{\numberline {7}{\ignorespaces Aktivit{\"a}tsdiagramm der Erweiterung}}{30}
+\contentsline {figure}{\numberline {8}{\ignorespaces Zustandsdiagramm der Erweiterung}}{31}
+\contentsline {figure}{\numberline {9}{\ignorespaces Klassendiagramm der Erweiterung}}{32}
+\contentsline {figure}{\numberline {10}{\ignorespaces Sicherheitsprobleme der Erweiterung}}{33}
 \contentsline {figure}{\numberline {11}{\ignorespaces Verweise der EWS Managed API}}{35}
 \contentsline {figure}{\numberline {12}{\ignorespaces Entwurfsmuster Fabrikmethode}}{36}
 \contentsline {figure}{\numberline {13}{\ignorespaces Aufruf des Module Service}}{36}

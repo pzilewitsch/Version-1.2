@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rulesRepository xmlns="urn:boom-dotnetbf:rulesrepository">
+
+	<entity name="GeoMan.ServiceDesk.Answer">
+		<!--<requAssoc>Trade</requAssoc>-->
+		<!--<requAssoc>NewRespPerson</requAssoc> für ExchangeErweiterung-->
+    <rule name="DoneRule">
+      <fail>Done &amp;&amp; dotNetBF.Core.ObjectBroker.IsModified(this, GeoMan.ServiceDesk.Answer.Class.Done) &amp;&amp; Ticket.?Order.?Status.?Phase &lt;= Bmm.Erp.OrderStateMachine.TecDone.Phase</fail>
+      <textArgs></textArgs>
+      <text ref="Done_Error" />
+    </rule>
+	</entity>
+
+  <entity name="GeoMan.ServiceDesk.TicketTemplate">
+		<requAssoc name="RequType">Type</requAssoc>
+    <requValue name="RequMessage">Message</requValue>
+		<regex feature="Email" pattern="^[A-Za-z0-9|ä|ü|ö|Ä|Ü|Ö|\-|\.|_]+@[A-Za-z0-9|ä|ü|ö|Ä|Ü|Ö|\-|\.|_]+\.[A-Za-z0-9]{2,4}$">
+			<messageArgs>obj.Email</messageArgs>
+			<message ref="GeoMan.ServiceDesk.Ticket/NoValidEmail"/>
+		</regex>
+	</entity>
+
+  <entity name="GeoMan.ServiceDesk.UserToTradeAssignment">
+    <requAssoc>Trade</requAssoc>
+  </entity>
+  
+  <entity name="GeoMan.ServiceDesk.StatusHistEntry" >
+    <requAssoc>Status</requAssoc>
+    <requAssoc>Ticket</requAssoc>
+  </entity>
+  
+	<entity name="GeoMan.ServiceDesk.Ticket">
+    <requAssoc name="RequiredType">Type</requAssoc>
+    <requAssoc>Status</requAssoc>
+    <requValue name="RequiredMessage">Message</requValue>
+    <regex feature="EMail" pattern="^[A-Za-z0-9|ä|ü|ö|Ä|Ü|Ö|\-|\.|_]+@[A-Za-z0-9|ä|ü|ö|Ä|Ü|Ö|\-|\.|_]+\.[A-Za-z0-9]{2,4}$">
+      <messageArgs>obj.EMail</messageArgs>
+      <message ref="GeoMan.ServiceDesk.Ticket/NoValidEmail"/>
+    </regex>
+		<!-- für ExchangeErweiterung
+    <rule type="save" name="##1">
+			<expression>PrimaryAsset!=null</expression>
+			<text>"Ein Standort oder Objekt muss zugeordnet werden."</text>
+		</rule>-->
+		<emptyAssoc type="delete" name="DeleteEmptyAssocOrder" feature="Order" />
+    <group filter="GeoMan.ServiceDesk.Services.WithRequDamageEntry(this)" name="RequDamagePatternGrp" type="save">
+      <countAssoc min="1" feature="DamageAssignments" name="RequDamagePattern" type="save">
+        <messageArgs>dotNetBF.Gui.GuiRepository.GetText(typeof(Bmm.Prc.DamageCatalogEntry),"DamagePattern")</messageArgs>
+        <message ref="RequDamagePattern"></message>
+      </countAssoc>
+    </group>
+  </entity>
+
+</rulesRepository>
