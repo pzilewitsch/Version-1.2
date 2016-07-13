@@ -644,6 +644,7 @@ namespace GeoMan.ServiceDesk
 			Assert.AreEqual(ticket.EMail, m_ticketEmail, "Email wurde fälschlicherweise von der Meldungsvorlage überschrieben");
 		}
 
+        //Testmethode zum Überprüfen der E-Mail-Integration
         private void TestMailToObject(ISession session)
         {
             try

@@ -17,10 +17,13 @@ namespace GeoMan.Common.Core.GroupWare
 {
     public abstract class GroupwareMailToObjectFactory : ModuleService
     {
+        //Name zu Speicherung der Variablen
         private const string DateFromLastEmailSettingName = "GroupwareMailToObjectFactory_DateFromLastEmail";
 
+        //Log-Eintrag für Diagnosen
         private static readonly dotNetBF.Core.Diagnostics.ILog Log = dotNetBF.Core.Diagnostics.LogManager.GetLogger(typeof(GroupwareMailToObjectFactory));
 
+        //Datum der zuletzt abgerufenen E-Mail im Posteingang des Exchange Servers
         protected virtual DateTime DateFromLastEmail
         {
             get
@@ -63,6 +66,7 @@ namespace GeoMan.Common.Core.GroupWare
             }
         }
 
+        //Einstiegsmethode des ModuleService -> hier wird über das weitere Vorgehen entschieden
         public void MailsToObjects()
         {
             ISessionTransaction session = dotNetBF.Modules.Services.Security.SecurityService.OpenServiceTransaction(Module, TransactionBehavior.NewTransaction);
@@ -106,6 +110,7 @@ namespace GeoMan.Common.Core.GroupWare
             }  
         }
 
+        //Methode für das Abrufen der E-Mails vom Exchnage Server
         private FindItemsResults<Item> GetMails(DateTime date, ISessionTransaction session)
         {
             //Server aus Datenbank in Liste speichern
@@ -170,6 +175,7 @@ namespace GeoMan.Common.Core.GroupWare
             return result;
         }
 
+        //Methode zum Versenden einer Bestätigungsmail
         public void SendConfirmationMail(Item item, ISessionTransaction session, int id)
         {
             ResponseMessage responseMessage = PrepareReplyMail(item);
@@ -178,6 +184,7 @@ namespace GeoMan.Common.Core.GroupWare
             //responseMessage.SendAndSaveCopy();
         }
 
+        //Methode zum Versenden einer Fehlermail
         public void SendErrorMail(Item item, Exception exception)
         {
             ResponseMessage responseMessage = PrepareReplyMail(item);
@@ -186,9 +193,10 @@ namespace GeoMan.Common.Core.GroupWare
             //responseMessage.SendAndSaveCopy();
         }
 
+        //Methode für das Erstellen der Nachricht, die gesendet werden soll
         private ResponseMessage PrepareReplyMail(Item item)
         {
-            ExchangeService service = item.Service;
+            ExchangeService service = item.Service;     //in den Items sind auch die Informationen des Exchange Service gespeichert
             service.AutodiscoverUrl(((Microsoft.Exchange.WebServices.Data.EmailMessage)item).ToRecipients.First().Address);
 
             EmailMessage message = EmailMessage.Bind(service, item.Id, BasePropertySet.IdOnly);
@@ -196,12 +204,16 @@ namespace GeoMan.Common.Core.GroupWare
             return responseMessage;
         }
 
+        //abstrakte Methode für das Vervollständigen eines Objektes 
         protected abstract void CompleteObject(Item item, ISessionTransaction session, int id);
 
+        //abstrakte Methode zum Verändern eines Objektes
         protected abstract void ChangeObject(Item item, ISessionTransaction session, int id);
 
+        //abstrakte Methode zum Erstellen eines Objektes
         protected abstract void CreateObject(Item item, ISessionTransaction session);
 
+        //Methode zum identifizieren der ID in der Betreffzeile
         private int GetObjectId(Item item)
         {
             int id;

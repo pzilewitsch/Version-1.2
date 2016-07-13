@@ -142,10 +142,11 @@ Microsoft.
   {\natexlab{c}}.
 \newblock abgerufen am: 15.06.2016.
 
-\bibitem[Microsoft.()]{TryCatch}
+\bibitem[Microsoft({\natexlab{d}})]{TryCatch}
 Microsoft.
 \newblock try-catch (c-sharp-referenz).
-\newblock \url{https://msdn.microsoft.com/de-de/library/0yd65esw.aspx}.
+\newblock \url{https://msdn.microsoft.com/de-de/library/0yd65esw.aspx},
+  {\natexlab{d}}.
 \newblock abgerufen am: 27.06.2016.
 
 \bibitem[Nävy(2006)]{Naevy}

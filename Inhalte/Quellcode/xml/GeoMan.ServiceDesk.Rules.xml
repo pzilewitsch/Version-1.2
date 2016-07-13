@@ -3,7 +3,8 @@
 
 	<entity name="GeoMan.ServiceDesk.Answer">
 		<!--<requAssoc>Trade</requAssoc>-->
-		<!--<requAssoc>NewRespPerson</requAssoc> für ExchangeErweiterung-->
+    <!--E-Mail-Integration:für das Erstellen eines Tickets ist kein Melder mehr nötig-->
+		<!--<requAssoc>NewRespPerson</requAssoc>-->
     <rule name="DoneRule">
       <fail>Done &amp;&amp; dotNetBF.Core.ObjectBroker.IsModified(this, GeoMan.ServiceDesk.Answer.Class.Done) &amp;&amp; Ticket.?Order.?Status.?Phase &lt;= Bmm.Erp.OrderStateMachine.TecDone.Phase</fail>
       <textArgs></textArgs>
@@ -37,8 +38,8 @@
       <messageArgs>obj.EMail</messageArgs>
       <message ref="GeoMan.ServiceDesk.Ticket/NoValidEmail"/>
     </regex>
-		<!-- für ExchangeErweiterung
-    <rule type="save" name="##1">
+    <!--E-Mail-Integration:für das Erstellen eines Tickets ist kein Standort oder Objekt mehr nötig-->
+    <!--<rule type="save" name="##1">
 			<expression>PrimaryAsset!=null</expression>
 			<text>"Ein Standort oder Objekt muss zugeordnet werden."</text>
 		</rule>-->

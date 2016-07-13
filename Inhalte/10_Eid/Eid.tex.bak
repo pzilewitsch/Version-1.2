@@ -1,8 +1,8 @@
 % !TEX root = Bachelorarbeit_Paul_Zilewitsch.tex
-
+\thispagestyle{empty}
 \section*{Eidesstattliche Erklärung }
 \noindent
-Ich (Wir) erkläre(n) an Eides statt, dass ich (wir) die vorliegende Arbeit selbständig und ohne unerlaubte fremde Hilfe angefertigt,  andere  als  die  angegebenen  Quellen  und  Hilfsmittel  nicht  benutzt habe(n). Die aus fremden Quellen direkt oder indirekt übernommenen Stellen sind als solche kenntlich gemacht. Die Zustimmung des Partnerunternehmens in der Praxis zur Verwendung betrieblicher Unterlagen habe(n) ich (wir) eingeholt. Die Arbeit wurde bisher in gleicher oder ähnlicher Form keiner anderen  Prüfungsbehörde  vorgelegt  und  auch  nicht  veröffentlicht.
+Ich erkläre an Eides statt, dass ich die vorliegende Arbeit selbständig und ohne unerlaubte fremde Hilfe angefertigt,  andere  als  die  angegebenen  Quellen  und  Hilfsmittel  nicht  benutzt habe. Die aus fremden Quellen direkt oder indirekt übernommenen Stellen sind als solche kenntlich gemacht. Die Zustimmung des Partnerunternehmens in der Praxis zur Verwendung betrieblicher Unterlagen habe ich eingeholt. Die Arbeit wurde bisher in gleicher oder ähnlicher Form keiner anderen  Prüfungsbehörde  vorgelegt  und  auch  nicht  veröffentlicht.
 ~\\
 ~\\
 ~\\
@@ -13,4 +13,4 @@ Ich (Wir) erkläre(n) an Eides statt, dass ich (wir) die vorliegende Arbeit selb
 Ort, Abgabetermin\hfill Unterschrift des Verfassers\\
 
 \noindent
-Dresden,  18.07.2016  
+Dresden,  18.07.2016\hfill \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_

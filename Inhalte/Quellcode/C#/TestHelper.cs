@@ -255,6 +255,7 @@ namespace GeoMan
             return defaultTreeType;
         }
 
+        //Methode zum Erstellen eins Exchange Servers
         public static GroupWare.Server CreateExchangeServer(ISession session)
         {
             GroupWare.Server server = GroupWare.Server.Create(session.Broker);
@@ -268,6 +269,7 @@ namespace GeoMan
             return server;
         }
 
+        //Methode zum Erstellen eines Exchange Service (Exchange Server nötig)
         public static ExchangeService CreateExchangeService(GroupWare.Server server)
         {
             ExchangeService service = new ExchangeService((ExchangeVersion)server.Version);
@@ -276,6 +278,7 @@ namespace GeoMan
             return service;
         }
 
+        //Methode zum Versenden einer E-Mail mittels Exchange Service (Exchnage Service nötig)
         public static void SendMail(ExchangeService service)
         {
             EmailMessage message = new EmailMessage(service);

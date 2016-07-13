@@ -39,7 +39,7 @@
 \contentsline {subsection}{\numberline {7.2}Erl\IeC {\"a}uterung einzelner Methoden}{36}
 \contentsline {subsection}{\numberline {7.3}Testf\IeC {\"a}lle}{37}
 \contentsline {subsection}{\numberline {7.4}Fehlschl\IeC {\"a}ge/Erfahrungen}{38}
-\contentsline {subsection}{\numberline {7.5}Erweiterungsm\IeC {\"o}glichkeiten der E-Mail Integration}{39}
+\contentsline {subsection}{\numberline {7.5}Erweiterungsm\IeC {\"o}glichkeiten der E-Mail-Integration}{39}
 \contentsline {section}{\numberline {8}Fazit}{40}
 \contentsline {section}{Anhangsverzeichnis}{42}
 \contentsline {section}{Anhang}{43}

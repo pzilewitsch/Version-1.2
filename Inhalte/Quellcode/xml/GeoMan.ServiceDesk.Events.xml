@@ -198,6 +198,7 @@
   ]]>
   </ObjectScriptEventSubscription>
 	
+  <!--E-Mail-Integration: Answer eines Tickets braucht nun keinen author mehr-->
 	<ObjectScriptEventSubscription Entity="GeoMan.ServiceDesk.Answer" Events="Created">
     <![CDATA[
     CreationDate = DateTime.Now;

@@ -50,8 +50,8 @@
 	<GeoMan.ServiceDesk:ModuleInfo />
   <geoman.servicedesk.import:FidelioActivityImportService />
   <GeoMan.ServiceDesk:ServiceDeskUserOrgService />
-  
- 
+
+  <!--ModuleService für die E-Mail-Integration-->
   <SchedulerService>
     <InMemoryTimerService />
     <ScheduleSubscription Name="GeoMan.ServiceDesk.TicketHandler" Schedule="T00:01:00">

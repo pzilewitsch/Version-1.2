@@ -17,6 +17,7 @@ namespace GeoMan.ServiceDesk
 {
     public class TicketHandler : GroupwareMailToObjectFactory
     {
+        //abstrakte Methode für das Vervollständigen eines Objektes (Schließen einer Meldung)
         protected override void CompleteObject(Item item, ISessionTransaction session, int id)
         {
             try
@@ -39,6 +40,7 @@ namespace GeoMan.ServiceDesk
             }
         }
 
+        //überschriebene abstrakte Methode zum Verändern eines Objektes (einer Meldung)
         protected override void ChangeObject(Item item, ISessionTransaction session, int id)
         {
             try
@@ -69,6 +71,7 @@ namespace GeoMan.ServiceDesk
             }
         }
 
+        //überschriebene abstrakte Methode zum Erstellen eines Objektes (einer Meldung)
         protected override void CreateObject(Item item, ISessionTransaction session)
         {
             try
@@ -91,6 +94,7 @@ namespace GeoMan.ServiceDesk
             }
         }
 
+        //Methode für das Speichern des E-mail Anhangs als Dokument einer Meldung
         protected void SaveAttachments(Item item, ISessionTransaction session, Ticket ticket)
         {        
             try
@@ -128,7 +132,7 @@ namespace GeoMan.ServiceDesk
         }
 
         /// <summary>
-        /// Ticket mit der angegebenen ID finden
+        /// Ticket mit der angegebenen ID in der Datenbank finden
         /// </summary>
         /// <param name="session"></param>
         /// <param name="id"></param>
